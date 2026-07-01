@@ -24,6 +24,7 @@ async def create_leadgen_form(
     is_optimized_for_quality: bool = True,
     is_phone_sms_verify_enabled: bool = False,
     locale: str | None = None,
+    follow_up_action_url: str | None = None,
     context_card: dict[str, Any] | None = None,
     thank_you_page: dict[str, Any] | None = None,
     page_id: str | None = None,
@@ -48,6 +49,10 @@ async def create_leadgen_form(
     }
     if locale:
         fields["locale"] = locale
+    if follow_up_action_url:
+        # Website the lead is sent to after submitting (thank-you CTA). Meta
+        # requires it for this form config.
+        fields["follow_up_action_url"] = follow_up_action_url
     if context_card:
         fields["context_card"] = json.dumps(context_card)
     if thank_you_page:

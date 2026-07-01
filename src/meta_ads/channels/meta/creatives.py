@@ -165,15 +165,25 @@ def build_object_story_spec(
     message: str,
     image_hash: str | None = None,
     video_id: str | None = None,
+    image_url: str | None = None,
+    cta_type: str = "SIGN_UP",
     instagram_user_id: str | None = None,
 ) -> dict[str, Any]:
-    """AdCreative object_story_spec with CTA type=LEAD → the lead form.
+    """AdCreative object_story_spec whose CTA opens the lead form.
 
+    `cta_type` must be a Meta-valid button (SIGN_UP, LEARN_MORE, GET_QUOTE,
+    APPLY_NOW, INQUIRE_NOW, ...). Note: "LEAD" is NOT accepted for lead-form
+    creatives. Video creatives require a thumbnail (image_url or image_hash);
     IG placements need instagram_user_id or the ad silently won't run on IG."""
-    cta = {"type": "LEAD", "value": {"lead_gen_form_id": lead_gen_form_id}}
+    cta = {"type": cta_type, "value": {"lead_gen_form_id": lead_gen_form_id}}
     spec: dict[str, Any] = {"page_id": page_id}
     if video_id:
-        spec["video_data"] = {"video_id": video_id, "call_to_action": cta, "message": message}
+        video_data: dict[str, Any] = {"video_id": video_id, "call_to_action": cta, "message": message}
+        if image_url:
+            video_data["image_url"] = image_url
+        elif image_hash:
+            video_data["image_hash"] = image_hash
+        spec["video_data"] = video_data
     elif image_hash:
         spec["link_data"] = {"image_hash": image_hash, "call_to_action": cta, "message": message}
     else:
@@ -181,6 +191,16 @@ def build_object_story_spec(
     if instagram_user_id:
         spec["instagram_user_id"] = instagram_user_id
     return spec
+
+
+async def get_video_thumbnail(video_id: str) -> str | None:
+    """Fetch Meta's auto-generated preferred thumbnail URI for a video."""
+    async with await GraphClient.for_provider(SYSTEM_USER) as g:
+        data = (await g.get(video_id, params={"fields": "thumbnails"})).get("thumbnails", {}).get("data", [])
+    if not data:
+        return None
+    preferred = next((t for t in data if t.get("is_preferred")), data[0])
+    return preferred.get("uri")
 
 
 async def create_creative(name: str, object_story_spec: dict[str, Any]) -> str:

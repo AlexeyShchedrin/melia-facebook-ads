@@ -64,7 +64,7 @@ def test_object_story_spec_lead_cta() -> None:
     spec = build_object_story_spec(page_id="P", lead_gen_form_id="F", message="hi", image_hash="H")
     assert spec["page_id"] == "P"
     cta = spec["link_data"]["call_to_action"]
-    assert cta["type"] == "LEAD"
+    assert cta["type"] == "SIGN_UP"  # "LEAD" is rejected by Meta for lead creatives
     assert cta["value"]["lead_gen_form_id"] == "F"
 
 
