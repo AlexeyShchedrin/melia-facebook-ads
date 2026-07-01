@@ -1,4 +1,4 @@
-"""Instant (lead) forms — create & read via the Page.
+"""Instant (lead) forms — create & read via the Page (Page token).
 
 Quality knobs that reduce junk (see research/05): is_optimized_for_quality,
 is_phone_sms_verify_enabled, custom questions. `privacy_policy` is mandatory.
@@ -6,8 +6,12 @@ is_phone_sms_verify_enabled, custom questions. `privacy_policy` is mandatory.
 
 from __future__ import annotations
 
+import json
 import logging
 from typing import Any
+
+from meta_ads.channels.meta.client import PAGE, GraphClient
+from meta_ads.config import get_settings
 
 logger = logging.getLogger(__name__)
 
@@ -21,11 +25,32 @@ async def create_leadgen_form(
     is_phone_sms_verify_enabled: bool = False,
     context_card: dict[str, Any] | None = None,
     thank_you_page: dict[str, Any] | None = None,
+    page_id: str | None = None,
 ) -> str:
-    """POST /{page_id}/leadgen_forms (Page token). Returns form_id. TODO(phase1)."""
-    raise NotImplementedError("TODO(phase1): create leadgen form via Page token")
+    """POST /{page_id}/leadgen_forms (Page token). Returns form_id."""
+    page_id = page_id or get_settings().meta_page_id
+    if not page_id:
+        raise RuntimeError("META_PAGE_ID not set")
+    fields: dict[str, Any] = {
+        "name": name,
+        "questions": json.dumps(questions),
+        "privacy_policy": json.dumps(privacy_policy),
+        "is_optimized_for_quality": str(is_optimized_for_quality).lower(),
+        "is_phone_sms_verify_enabled": str(is_phone_sms_verify_enabled).lower(),
+    }
+    if context_card:
+        fields["context_card"] = json.dumps(context_card)
+    if thank_you_page:
+        fields["thank_you_page"] = json.dumps(thank_you_page)
+    async with await GraphClient.for_provider(PAGE) as g:
+        resp = await g.post(f"{page_id}/leadgen_forms", data=fields)
+    logger.info("created leadgen form %s -> %s", name, resp.get("id"))
+    return resp["id"]
 
 
-async def list_forms(page_id: str) -> list[dict[str, Any]]:
-    """GET forms on the Page (for the polling reconciler to enumerate). TODO(phase1)."""
-    raise NotImplementedError("TODO(phase1): list leadgen forms")
+async def list_forms(page_id: str | None = None) -> list[dict[str, Any]]:
+    """GET /{page_id}/leadgen_forms — enumerate forms (for the polling reconciler)."""
+    page_id = page_id or get_settings().meta_page_id
+    async with await GraphClient.for_provider(PAGE) as g:
+        resp = await g.get(f"{page_id}/leadgen_forms", params={"fields": "id,name,status,leads_count"})
+    return resp.get("data", [])

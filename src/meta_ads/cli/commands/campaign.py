@@ -18,7 +18,7 @@ def create(
     daily_budget_eur: float = typer.Option(5.0, help="Ad set daily budget (EUR)"),
     validate_only: bool = typer.Option(True, help="Server-side dry run (no objects created)"),
 ) -> None:
-    """Create Campaign(OUTCOME_LEADS)→AdSet(LEAD_GENERATION), PAUSED."""
+    """Create Campaign(OUTCOME_LEADS) -> AdSet(LEAD_GENERATION), PAUSED."""
 
     async def _run() -> object:
         return await campaigns.create_lead_campaign(
@@ -30,5 +30,6 @@ def create(
 
     try:
         typer.echo(asyncio.run(_run()))
-    except NotImplementedError as exc:
-        typer.echo(f"[skeleton] {exc}")
+    except Exception as exc:  # noqa: BLE001
+        typer.secho(f"error: {exc}", err=True, fg=typer.colors.RED)
+        raise typer.Exit(1) from exc

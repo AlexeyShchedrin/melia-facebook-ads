@@ -36,3 +36,42 @@ def test_worker_imports() -> None:
     from meta_ads.worker import main
 
     assert main.main
+
+
+# ─── pipeline A pure-logic (no network / no DB) ──────────────────────
+
+
+def test_spec_hash_is_order_independent() -> None:
+    from meta_ads.channels.meta.campaigns import spec_hash
+
+    a = spec_hash({"x": 1, "y": 2})
+    b = spec_hash({"y": 2, "x": 1})
+    assert a == b and len(a) == 64
+
+
+def test_eur_to_minor() -> None:
+    from decimal import Decimal
+
+    from meta_ads.channels.meta.campaigns import eur_to_minor
+
+    assert eur_to_minor(Decimal("5")) == 500
+    assert eur_to_minor(Decimal("12.34")) == 1234
+
+
+def test_object_story_spec_lead_cta() -> None:
+    from meta_ads.channels.meta.creatives import build_object_story_spec
+
+    spec = build_object_story_spec(page_id="P", lead_gen_form_id="F", message="hi", image_hash="H")
+    assert spec["page_id"] == "P"
+    cta = spec["link_data"]["call_to_action"]
+    assert cta["type"] == "LEAD"
+    assert cta["value"]["lead_gen_form_id"] == "F"
+
+
+def test_object_story_spec_needs_a_creative() -> None:
+    import pytest
+
+    from meta_ads.channels.meta.creatives import build_object_story_spec
+
+    with pytest.raises(ValueError):
+        build_object_story_spec(page_id="P", lead_gen_form_id="F", message="hi")

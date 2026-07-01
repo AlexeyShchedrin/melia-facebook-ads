@@ -23,6 +23,6 @@ def test() -> None:
     """How to generate a free test lead (the engineering gate before go-live)."""
     typer.echo(
         "Use the Lead Ads Testing Tool: https://developers.facebook.com/tools/lead-ads-testing\n"
-        "Pick the Page + an active form → Create Lead. It fires a REAL webhook to the CRM relay\n"
-        "and creates a resolvable leadgen_id — the whole path (relay → resolve → CRM) runs free."
+        "Pick the Page + an active form -> Create Lead. It fires a REAL webhook to the CRM relay\n"
+        "and creates a resolvable leadgen_id - the whole path (relay -> resolve -> CRM) runs free."
     )

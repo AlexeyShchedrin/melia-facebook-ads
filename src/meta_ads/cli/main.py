@@ -2,12 +2,21 @@
 
 from __future__ import annotations
 
+import contextlib
+import sys
+
 import typer
 
 from meta_ads import __version__
 from meta_ads.cli.commands import auth, campaign, conversions, creative, leads, sync
 
-app = typer.Typer(no_args_is_help=True, help="Meta (Facebook/Instagram) ads CLI — Melia Budva")
+# Windows consoles default to cp1252 and raise UnicodeEncodeError on non-ASCII
+# in help/output. Force UTF-8 on the streams so `fb --help` etc. never crash.
+for _stream in (sys.stdout, sys.stderr):
+    with contextlib.suppress(Exception):
+        _stream.reconfigure(encoding="utf-8")  # type: ignore[union-attr]
+
+app = typer.Typer(no_args_is_help=True, help="Meta (Facebook/Instagram) ads CLI - Melia Budva")
 
 # grouped
 app.add_typer(creative.app, name="creative", help="Upload creatives from local disk")

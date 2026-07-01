@@ -41,7 +41,7 @@ def bootstrap() -> None:
     async def _run() -> None:
         su = s.meta_system_user_token.get_secret_value()
         if su:
-            await _store(SYSTEM_USER, s.meta_ad_account_id, su)
+            await _store(SYSTEM_USER, "", su)  # System User is account-global here
             stored.append("system_user")
         pg = s.meta_page_token.get_secret_value()
         if pg:

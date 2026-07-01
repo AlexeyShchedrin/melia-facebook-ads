@@ -27,7 +27,7 @@ def upload(path: str) -> None:
         return await creatives.upload_image(p)
 
     try:
-        ref = asyncio.run(_run())
-        typer.echo(ref)
-    except NotImplementedError as exc:
-        typer.echo(f"[skeleton] {exc}")
+        typer.echo(asyncio.run(_run()))
+    except Exception as exc:  # noqa: BLE001
+        typer.secho(f"error: {exc}", err=True, fg=typer.colors.RED)
+        raise typer.Exit(1) from exc
