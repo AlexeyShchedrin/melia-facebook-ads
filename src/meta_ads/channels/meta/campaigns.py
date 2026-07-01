@@ -76,6 +76,7 @@ async def create_lead_campaign(
     targeting: dict[str, Any],
     page_id: str | None = None,
     special_ad_categories: list[str] | None = None,
+    advantage_audience: bool = False,
     external_id: str | None = None,
     validate_only: bool = True,
 ) -> dict[str, Any]:
@@ -96,6 +97,12 @@ async def create_lead_campaign(
     if existing is not None:
         logger.info("campaign external_id=%s already launched -> %s", external_id, existing)
         return {"campaign_id": existing, "adset_id": None, "reused": True}
+
+    # Meta requires an explicit Advantage-audience decision on every new ad set
+    # (subcode 1870227). Default 0 = strict targeting: geo stays hard either way,
+    # but 0 also stops Meta expanding age/interests — right for per-geo forms.
+    if "targeting_automation" not in targeting:
+        targeting = {**targeting, "targeting_automation": {"advantage_audience": 1 if advantage_audience else 0}}
 
     sh = spec_hash({"name": name, "budget": str(daily_budget_eur), "targeting": targeting, "page_id": page_id, "cats": cats})
 
