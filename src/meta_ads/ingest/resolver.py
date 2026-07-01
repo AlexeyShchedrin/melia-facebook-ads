@@ -80,7 +80,7 @@ class InboundResolver:
             resp = await http.post(self._settings.crm_ingest_url, content=body, headers=headers)
             resp.raise_for_status()
             data = resp.json() if resp.content else {}
-            return data.get("lead_id")
+            return data.get("leadId") or data.get("lead_id")  # CRM route answers camelCase
 
     async def run(self, *, limit: int = 100) -> ResolveOutcome:
         from meta_ads.db import async_session_maker  # noqa: PLC0415
