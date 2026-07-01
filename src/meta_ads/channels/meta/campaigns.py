@@ -108,16 +108,22 @@ async def create_lead_campaign(
                     "objective": "OUTCOME_LEADS",
                     "status": "PAUSED",
                     "special_ad_categories": json.dumps(cats),
+                    # ABO (budget lives on the ad set): Meta requires the campaign to
+                    # declare this explicitly. False = ad sets don't share budget.
+                    "is_adset_budget_sharing_enabled": "false",
                 },
             )
         )["id"]
 
         try:
             adset_fields: dict[str, Any] = {
-                "name": f"{name} — adset",
+                "name": f"{name} - adset",
                 "campaign_id": campaign_id,
                 "optimization_goal": "LEAD_GENERATION",
                 "billing_event": "IMPRESSIONS",
+                # Highest Volume — no bid amount needed (account default may be a
+                # cap strategy, which would otherwise require bid_amount).
+                "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
                 "daily_budget": str(eur_to_minor(daily_budget_eur)),
                 "targeting": json.dumps(targeting),
                 "promoted_object": json.dumps({"page_id": page_id}),
