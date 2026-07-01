@@ -16,6 +16,9 @@ from decimal import Decimal
 # deal value from the lead when available.
 OUTBOX_KIND_TO_EVENT: dict[str, tuple[str, Decimal | None]] = {
     "lifecycle_qualified": ("lead_qualified", Decimal("20.00")),
+    # Sales offer sent — funnel position right after lead_qualified (user's
+    # call, 2026-07-02); value between qualified (20) and meeting (50).
+    "lifecycle_offer": ("lead_offer_sent", Decimal("30.00")),
     "lifecycle_meeting": ("lead_meeting_scheduled", Decimal("50.00")),
     "lifecycle_deposit": ("lead_deposit_paid", None),
     "lifecycle_contract": ("lead_contract_signed", None),
@@ -23,6 +26,4 @@ OUTBOX_KIND_TO_EVENT: dict[str, tuple[str, Decimal | None]] = {
 }
 
 # Kinds we knowingly skip (record processed, never upload).
-OUTBOX_KIND_SKIP: frozenset[str] = frozenset(
-    {"lead_submitted", "lifecycle_offer", "lifecycle_negotiation"}
-)
+OUTBOX_KIND_SKIP: frozenset[str] = frozenset({"lead_submitted", "lifecycle_negotiation"})

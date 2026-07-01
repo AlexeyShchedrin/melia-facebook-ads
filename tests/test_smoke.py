@@ -25,6 +25,13 @@ def test_lead_submitted_is_skipped() -> None:
     assert "lead_submitted" not in OUTBOX_KIND_TO_EVENT
 
 
+def test_offer_maps_to_lead_offer_sent() -> None:
+    event_name, value = OUTBOX_KIND_TO_EVENT["lifecycle_offer"]
+    assert event_name == "lead_offer_sent"
+    assert value is not None
+    assert "lifecycle_offer" not in OUTBOX_KIND_SKIP
+
+
 def test_hashing_is_normalized() -> None:
     # Same identity, different formatting → identical hash (Meta match rules).
     assert hash_email(" Foo@Bar.COM ") == hash_email("foo@bar.com")
