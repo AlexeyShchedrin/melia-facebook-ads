@@ -63,7 +63,8 @@ App Review не нужен. Кампании собираются програм
 **CLI `fb` (работает):** `auth-bootstrap`, `creative upload <path>` (image_hash/video_id,
 кэш по path+mtime+size), `campaign create` (Campaign OUTCOME_LEADS → AdSet
 LEAD_GENERATION, всегда PAUSED, `validate_only=True` по умолчанию), `leads poll`,
-`leads test`. Стабы (phase 2–3): `sync` (insights), `conversions` (CAPI-конфиг).
+`leads test`, `conversions setup-datasets` / `conversions drain-outbox` (CAPI,
+phase 2 реализован). Стаб (phase 3): `sync` (insights).
 
 **MCP `kvadra-facebook-ads`:** мутации гейтованы `dry_run=True` + `FB_ALLOW_MUTATIONS`
 (`upload_creative`, `create_lead_campaign`, `pause_campaign`, `resume_campaign`,
@@ -96,12 +97,14 @@ resolve → CRM ingest), `lead_poll` (сверка <90 дней), `capi_drain` (
 
 ```
 lifecycle_qualified → lead_qualified          (€20)
+lifecycle_offer     → lead_offer_sent         (€30)
 lifecycle_meeting   → lead_meeting_scheduled  (€50)
 lifecycle_deposit   → lead_deposit_paid       (реальная сумма)
 lifecycle_contract  → lead_contract_signed    (реальная сумма)
 lifecycle_paid      → lead_paid               (реальная сумма)
-SKIP: lead_submitted, lifecycle_offer, lifecycle_negotiation
+SKIP: lead_submitted (сабмит формы Meta уже видит), lifecycle_negotiation
 ```
+Сверяй с `src/meta_ads/conversions/taxonomy.py` — таксономия живёт там.
 
 **Инвариант:** событие уходит в CAPI только при наличии Meta `lead_id`
 (v_leads_meta.meta_lead_id). Никогда не определять "наш ли лид" по хешу PII.
