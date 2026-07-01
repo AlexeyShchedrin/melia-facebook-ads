@@ -68,6 +68,30 @@ def test_object_story_spec_lead_cta() -> None:
     assert cta["value"]["lead_gen_form_id"] == "F"
 
 
+def test_capi_event_shape() -> None:
+    from datetime import UTC, datetime
+    from decimal import Decimal
+
+    from meta_ads.channels.base import ConversionEvent
+    from meta_ads.channels.meta.conversions import MetaCapiUploader
+
+    ev = ConversionEvent(
+        action_name="lead_qualified",
+        event_time=datetime(2026, 7, 2, 12, 0, tzinfo=UTC),
+        value_eur=Decimal("20.00"),
+        hashed_email="e" * 64,
+        meta_lead_id="1363055189106002",
+        lead_id=3870,
+        order_id="crm-outbox-42",
+    )
+    m = MetaCapiUploader("ds1")._to_meta_event(ev)
+    assert m["event_name"] == "lead_qualified"
+    assert m["action_source"] == "system_generated"
+    assert m["user_data"]["lead_id"] == "1363055189106002"  # THE join key (PLAN §5)
+    assert m["event_id"] == "crm-outbox-42"  # CAPI dedup
+    assert m["custom_data"] == {"value": 20.0, "currency": "EUR"}
+
+
 def test_object_story_spec_needs_a_creative() -> None:
     import pytest
 

@@ -199,14 +199,21 @@ class CapiDrain:
                 )
                 batches.setdefault(dataset_id, []).append((row, event))
 
-            # Upload per dataset, then record each result.
+            # Upload per dataset, then record each result. In dry_run we do NOT
+            # record upload candidates as processed — a later live drain must
+            # still pick them up (skips above ARE recorded: they're
+            # deterministic classifications, independent of dry_run).
             for dataset_id, items in batches.items():
+                if dry_run:
+                    await MetaCapiUploader(dataset_id).upload(
+                        [ev for _, ev in items], dry_run=True
+                    )
+                    outcome.deferred += len(items)
+                    continue
                 uploader = MetaCapiUploader(dataset_id)
                 try:
-                    await uploader.upload([ev for _, ev in items], dry_run=dry_run)
+                    await uploader.upload([ev for _, ev in items], dry_run=False)
                     ok, err = True, None
-                except NotImplementedError:
-                    raise  # phase-2 not wired yet — surface loudly in dev
                 except Exception as exc:  # noqa: BLE001
                     ok, err = False, str(exc)
                     logger.exception("CAPI upload failed for dataset %s", dataset_id)

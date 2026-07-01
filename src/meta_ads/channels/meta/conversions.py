@@ -44,14 +44,21 @@ class MetaCapiUploader:
 
     async def upload(
         self, events: list[ConversionEvent], *, dry_run: bool = False
-    ) -> list[dict[str, Any]]:
-        """POST the batch to /{dataset_id}/events. TODO(phase2): send + parse result.
+    ) -> dict[str, Any]:
+        """POST the batch to /{dataset_id}/events; returns the Graph response
+        ({"events_received": N, "fbtrace_id": ...}).
 
         Every event MUST carry meta_lead_id (enforced upstream by the drain)."""
+        import json  # noqa: PLC0415
+
         payload = [self._to_meta_event(e) for e in events]
         if dry_run:
-            logger.info("CAPI dry_run: %d events for dataset %s", len(payload), self._dataset_id)
-            return [{"dry_run": True} for _ in payload]
+            logger.info("CAPI dry_run: %d event(s) for dataset %s (not sent)", len(payload), self._dataset_id)
+            return {"dry_run": True, "events": len(payload)}
         async with await GraphClient.for_provider(DATASET, self._dataset_id) as g:
-            _ = g  # TODO(phase2): g.post(f"{self._dataset_id}/events", data={"data": json.dumps(payload)})
-        raise NotImplementedError("TODO(phase2): send events to Conversions API")
+            resp = await g.post(f"{self._dataset_id}/events", data={"data": json.dumps(payload)})
+        logger.info(
+            "CAPI: dataset %s accepted events_received=%s (sent %d)",
+            self._dataset_id, resp.get("events_received"), len(payload),
+        )
+        return resp
