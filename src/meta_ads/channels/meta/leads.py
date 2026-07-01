@@ -10,11 +10,27 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-from meta_ads.channels.meta.client import PAGE, GraphClient
+from meta_ads.channels.meta.client import PAGE, SYSTEM_USER, GraphClient
 
 logger = logging.getLogger(__name__)
 
 _RESOLVE_FIELDS = "field_data,created_time,id,ad_id,adset_id,campaign_id,form_id,platform,is_organic"
+
+
+async def resolve_ad_names(ad_id: str) -> dict[str, str]:
+    """One call → ad/adset/campaign names for a lead's attribution display."""
+    async with await GraphClient.for_provider(SYSTEM_USER) as g:
+        d = await g.get(ad_id, params={"fields": "name,adset{name},campaign{name}"})
+    return {
+        "ad_name": d.get("name") or "",
+        "adset_name": (d.get("adset") or {}).get("name") or "",
+        "campaign_name": (d.get("campaign") or {}).get("name") or "",
+    }
+
+
+async def resolve_form_name(form_id: str) -> str:
+    async with await GraphClient.for_provider(PAGE) as g:
+        return (await g.get(form_id, params={"fields": "name"})).get("name") or ""
 
 
 async def resolve_lead(leadgen_id: str) -> dict[str, Any]:

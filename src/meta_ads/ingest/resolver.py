@@ -20,11 +20,42 @@ import httpx
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from meta_ads.channels.meta.leads import field_data_to_map, resolve_lead
+from meta_ads.channels.meta.leads import (
+    field_data_to_map,
+    resolve_ad_names,
+    resolve_form_name,
+    resolve_lead,
+)
 from meta_ads.config import get_settings
 from meta_ads.security import sign_ingest
 
 logger = logging.getLogger(__name__)
+
+# In-process caches — ads/forms repeat across leads, names rarely change, and
+# the worker restarts on every deploy.
+_ad_names_cache: dict[str, dict[str, str]] = {}
+_form_name_cache: dict[str, str] = {}
+
+
+async def _names_for(ad_id: str | None, form_id: str | None) -> dict[str, str]:
+    """Best-effort display names for the lead's attribution (never fatal)."""
+    out: dict[str, str] = {}
+    if ad_id:
+        try:
+            if ad_id not in _ad_names_cache:
+                _ad_names_cache[ad_id] = await resolve_ad_names(ad_id)
+            out.update(_ad_names_cache[ad_id])
+        except Exception:  # noqa: BLE001
+            logger.warning("could not resolve ad names for %s", ad_id)
+    if form_id:
+        try:
+            if form_id not in _form_name_cache:
+                _form_name_cache[form_id] = await resolve_form_name(form_id)
+            if _form_name_cache[form_id]:
+                out["form_name"] = _form_name_cache[form_id]
+        except Exception:  # noqa: BLE001
+            logger.warning("could not resolve form name for %s", form_id)
+    return out
 
 
 @dataclass
@@ -92,14 +123,18 @@ class InboundResolver:
             for item in items:
                 try:
                     raw = await resolve_lead(item.leadgen_id)
+                    form_id = raw.get("form_id") or item.form_id
+                    names = await _names_for(raw.get("ad_id"), form_id)
                     lead = {
                         "leadgen_id": item.leadgen_id,
-                        "form_id": raw.get("form_id") or item.form_id,
+                        "form_id": form_id,
                         "created_time": raw.get("created_time"),
                         "campaign_id": raw.get("campaign_id"),
                         "adset_id": raw.get("adset_id"),
                         "ad_id": raw.get("ad_id"),
                         "platform": raw.get("platform"),
+                        "is_organic": raw.get("is_organic"),
+                        **names,  # campaign_name / adset_name / ad_name / form_name
                         "fields": field_data_to_map(raw.get("field_data", [])),
                     }
                     crm_lead_id = await self._post_to_crm(lead)
