@@ -36,6 +36,9 @@ def _configure_logging() -> None:
         level=get_settings().fb_log_level,
         format="%(asctime)s %(levelname)s %(name)s :: %(message)s",
     )
+    # httpx logs full request URLs at INFO — Graph URLs carry access_token as a
+    # query param, so that would leak tokens into the journal. Quiet it down.
+    logging.getLogger("httpx").setLevel(logging.WARNING)
 
 
 async def _run() -> None:
