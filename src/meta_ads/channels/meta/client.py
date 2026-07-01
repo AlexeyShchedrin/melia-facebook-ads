@@ -78,13 +78,35 @@ async def get_token(provider: str, asset_id: str | None = None) -> str:
     s = get_settings()
     if provider == SYSTEM_USER and s.meta_system_user_token.get_secret_value():
         return s.meta_system_user_token.get_secret_value()
-    if provider == PAGE and s.meta_page_token.get_secret_value():
-        return s.meta_page_token.get_secret_value()
+    if provider == PAGE:
+        if s.meta_page_token.get_secret_value():
+            return s.meta_page_token.get_secret_value()
+        # Mint a Page token from the System User (which has a role on the Page) —
+        # no need to store a separate Page token.
+        return await _mint_page_token(asset_id or s.meta_page_id)
     if provider == DATASET and s.meta_system_user_token.get_secret_value():
         return s.meta_system_user_token.get_secret_value()  # dataset events via System User
     raise RuntimeError(
         f"No token for provider={provider!r} asset_id={asset_id!r} — run `fb auth-bootstrap`."
     )
+
+
+async def _mint_page_token(page_id: str) -> str:
+    """GET /{page_id}?fields=access_token with the System User token → Page token.
+
+    TODO(phase-b): cache this for the high-volume lead-resolve worker instead of
+    minting per call.
+    """
+    if not page_id:
+        raise RuntimeError("META_PAGE_ID not set — cannot mint a Page token.")
+    su = await get_token(SYSTEM_USER)
+    base = get_settings().graph_base.rstrip("/") + "/"
+    async with httpx.AsyncClient(base_url=base, timeout=30.0) as h:
+        body = (await h.get(page_id, params={"fields": "access_token", "access_token": su})).json()
+    token = body.get("access_token")
+    if not token:
+        raise RuntimeError(f"could not mint Page token for {page_id}: {body.get('error', body)}")
+    return token
 
 
 class GraphClient:
