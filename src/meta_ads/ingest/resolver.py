@@ -97,6 +97,7 @@ class InboundResolver:
                         "form_id": raw.get("form_id") or item.form_id,
                         "created_time": raw.get("created_time"),
                         "campaign_id": raw.get("campaign_id"),
+                        "adset_id": raw.get("adset_id"),
                         "ad_id": raw.get("ad_id"),
                         "platform": raw.get("platform"),
                         "fields": field_data_to_map(raw.get("field_data", [])),

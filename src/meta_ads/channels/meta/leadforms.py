@@ -23,11 +23,19 @@ async def create_leadgen_form(
     privacy_policy: dict[str, str],
     is_optimized_for_quality: bool = True,
     is_phone_sms_verify_enabled: bool = False,
+    locale: str | None = None,
     context_card: dict[str, Any] | None = None,
     thank_you_page: dict[str, Any] | None = None,
     page_id: str | None = None,
 ) -> str:
-    """POST /{page_id}/leadgen_forms (Page token). Returns form_id."""
+    """POST /{page_id}/leadgen_forms (Page token). Returns form_id.
+
+    - `locale` (e.g. "en_US", "sr_RS", "ru_RU", "de_DE") + localized question
+      labels → one form per language/geo.
+    - `is_phone_sms_verify_enabled=True` → the lead must confirm their phone via
+      SMS OTP before the form submits (cuts fake numbers). Availability is
+      per-market on Meta's side.
+    """
     page_id = page_id or get_settings().meta_page_id
     if not page_id:
         raise RuntimeError("META_PAGE_ID not set")
@@ -38,6 +46,8 @@ async def create_leadgen_form(
         "is_optimized_for_quality": str(is_optimized_for_quality).lower(),
         "is_phone_sms_verify_enabled": str(is_phone_sms_verify_enabled).lower(),
     }
+    if locale:
+        fields["locale"] = locale
     if context_card:
         fields["context_card"] = json.dumps(context_card)
     if thank_you_page:
