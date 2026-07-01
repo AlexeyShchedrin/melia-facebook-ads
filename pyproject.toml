@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "meta-ads"
+version = "0.1.0"
+description = "Meta (Facebook/Instagram) ads + lead-gen service for Melia Budva residences"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "kvadra.me" }]
+
+dependencies = [
+    # Marketing/Graph API — official SDK + raw httpx for the bits the SDK is awkward at
+    # (chunked video upload, leadgen resolve, Conversions API for CRM).
+    "facebook_business>=22.0",
+    "httpx>=0.28",
+    # MCP "pult" for Claude Code
+    "mcp>=1.0",
+    "typer>=0.15",
+    # scheduler + db
+    "apscheduler>=3.10,<4",
+    "sqlalchemy[asyncio]>=2.0",
+    "alembic>=1.14",
+    "asyncpg>=0.30",
+    "psycopg[binary]>=3.2",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.6",
+    "cryptography>=43",
+    "tenacity>=9.0",
+    "python-telegram-bot>=21.7",
+    "pyyaml>=6.0",
+    "anyio>=4.6",
+]
+
+# NOTE (v2 architecture): no FastAPI/uvicorn — this service has NO inbound HTTP.
+# The Meta leadgen webhook is a thin relay in melia-crm; fb-worker only makes
+# outbound calls (resolve leads, upload conversions, pull insights) + LISTEN/NOTIFY.
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "pytest-mock>=3.14",
+    "ruff>=0.7",
+    "mypy>=1.13",
+    "types-pyyaml>=6.0",
+]
+
+[project.scripts]
+fb = "meta_ads.cli.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/meta_ads"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "ASYNC"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+plugins = ["pydantic.mypy"]
+mypy_path = "src"
+namespace_packages = true
+explicit_package_bases = true
+
+[[tool.mypy.overrides]]
+module = ["facebook_business.*", "apscheduler.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["src"]

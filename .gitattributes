@@ -1,0 +1,13 @@
+# Normalize to LF in the repo. deploy.sh + the heredoc run on the Linux box —
+# CRLF there breaks the shebang and `bash -s` ($'\r' errors). Force LF for text.
+* text=auto eol=lf
+
+# Binary assets (if any land here) — never normalize.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.mov binary
+*.webm binary
+*.ico binary

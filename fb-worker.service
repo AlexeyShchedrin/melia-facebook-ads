@@ -1,0 +1,18 @@
+[Unit]
+Description=kvadra facebook-ads worker (lead resolve + CAPI drain + APScheduler)
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/facebook-ads
+ExecStart=/opt/facebook-ads/.venv/bin/python -m meta_ads.worker.main
+Restart=always
+RestartSec=5
+User=root
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=fb-worker
+
+[Install]
+WantedBy=multi-user.target
