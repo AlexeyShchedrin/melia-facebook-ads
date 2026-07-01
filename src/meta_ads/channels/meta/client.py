@@ -46,22 +46,32 @@ def default_asset_id(provider: str) -> str:
 
 
 async def get_token(provider: str, asset_id: str | None = None) -> str:
-    """Fetch + decrypt a stored token; fall back to the .env bootstrap value."""
-    from meta_ads.db import async_session_maker  # noqa: PLC0415
+    """Fetch + decrypt a stored token; fall back to the .env bootstrap value.
 
+    The DB (schema `meta`) may be unreachable when running the CLI/MCP locally —
+    creatives + campaigns are a local, disk-first workflow. In that case fall
+    back to the .env token instead of failing on the DB lookup.
+    """
     if not asset_id:
         asset_id = default_asset_id(provider)
 
-    async with async_session_maker() as session:
-        row = (
-            await session.execute(
-                text(
-                    "SELECT encrypted_token FROM meta.oauth_tokens "
-                    "WHERE provider = :p AND asset_id = :a"
-                ),
-                {"p": provider, "a": asset_id},
-            )
-        ).first()
+    row = None
+    try:
+        from meta_ads.db import async_session_maker  # noqa: PLC0415
+
+        async with async_session_maker() as session:
+            row = (
+                await session.execute(
+                    text(
+                        "SELECT encrypted_token FROM meta.oauth_tokens "
+                        "WHERE provider = :p AND asset_id = :a"
+                    ),
+                    {"p": provider, "a": asset_id},
+                )
+            ).first()
+    except Exception:
+        logger.debug("oauth_tokens lookup unavailable — falling back to .env", exc_info=True)
+
     if row is not None:
         return decrypt_token(row.encrypted_token)
 

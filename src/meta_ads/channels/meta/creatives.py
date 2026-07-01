@@ -37,40 +37,47 @@ def _read_slice(path: Path, offset: int, length: int) -> bytes:
 
 
 async def _cache_get(path: Path, kind: str) -> str | None:
-    from meta_ads.db import async_session_maker  # noqa: PLC0415
-
     mtime, size = _stat(path)
-    async with async_session_maker() as s:
-        row = (
-            await s.execute(
-                text(
-                    "SELECT image_hash, video_id FROM meta.creative_upload "
-                    "WHERE local_path=:p AND mtime_ns=:m AND size_bytes=:s AND status='ready'"
-                ),
-                {"p": str(path), "m": mtime, "s": size},
-            )
-        ).first()
+    try:
+        from meta_ads.db import async_session_maker  # noqa: PLC0415
+
+        async with async_session_maker() as s:
+            row = (
+                await s.execute(
+                    text(
+                        "SELECT image_hash, video_id FROM meta.creative_upload "
+                        "WHERE local_path=:p AND mtime_ns=:m AND size_bytes=:s AND status='ready'"
+                    ),
+                    {"p": str(path), "m": mtime, "s": size},
+                )
+            ).first()
+    except Exception:
+        logger.debug("creative_upload cache unavailable (get) — skipping", exc_info=True)
+        return None
     if row is None:
         return None
     return row.image_hash if kind == "image" else row.video_id
 
 
 async def _cache_put(path: Path, kind: str, *, image_hash: str | None = None, video_id: str | None = None) -> None:
-    from meta_ads.db import async_session_maker  # noqa: PLC0415
-
     mtime, size = _stat(path)
-    async with async_session_maker() as s:
-        await s.execute(
-            text(
-                "INSERT INTO meta.creative_upload "
-                "(local_path, mtime_ns, size_bytes, kind, image_hash, video_id, status) "
-                "VALUES (:p,:m,:s,:k,:ih,:vid,'ready') "
-                "ON CONFLICT (local_path, mtime_ns, size_bytes) DO UPDATE SET "
-                "image_hash=EXCLUDED.image_hash, video_id=EXCLUDED.video_id, status='ready'"
-            ),
-            {"p": str(path), "m": mtime, "s": size, "k": kind, "ih": image_hash, "vid": video_id},
-        )
-        await s.commit()
+    try:
+        from meta_ads.db import async_session_maker  # noqa: PLC0415
+
+        async with async_session_maker() as s:
+            await s.execute(
+                text(
+                    "INSERT INTO meta.creative_upload "
+                    "(local_path, mtime_ns, size_bytes, kind, image_hash, video_id, status) "
+                    "VALUES (:p,:m,:s,:k,:ih,:vid,'ready') "
+                    "ON CONFLICT (local_path, mtime_ns, size_bytes) DO UPDATE SET "
+                    "image_hash=EXCLUDED.image_hash, video_id=EXCLUDED.video_id, status='ready'"
+                ),
+                {"p": str(path), "m": mtime, "s": size, "k": kind, "ih": image_hash, "vid": video_id},
+            )
+            await s.commit()
+    except Exception:
+        logger.debug("creative_upload cache unavailable (put) — skipping", exc_info=True)
 
 
 async def upload_image(path: str | Path) -> str:
