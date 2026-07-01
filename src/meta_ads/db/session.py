@@ -16,6 +16,10 @@ engine = create_async_engine(
     pool_pre_ping=True,
     pool_size=5,
     max_overflow=5,
+    # Fail fast if the DB is unreachable (e.g. running the CLI/MCP locally with no
+    # `meta` Postgres) so get_token / caches fall back to .env within seconds
+    # instead of hanging on the TCP connect.
+    connect_args={"connect_timeout": 2},
 )
 
 async_session_maker = async_sessionmaker(
