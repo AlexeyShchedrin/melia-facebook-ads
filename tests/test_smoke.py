@@ -32,6 +32,26 @@ def test_offer_maps_to_lead_offer_sent() -> None:
     assert "lifecycle_offer" not in OUTBOX_KIND_SKIP
 
 
+def test_lost_maps_to_lead_lost_with_reason_property() -> None:
+    from datetime import UTC, datetime
+
+    from meta_ads.channels.base import ConversionEvent
+    from meta_ads.channels.meta.conversions import MetaCapiUploader
+
+    event_name, value = OUTBOX_KIND_TO_EVENT["lifecycle_lost"]
+    assert event_name == "lead_lost"
+    assert value is None  # negative signal carries no value
+
+    ev = ConversionEvent(
+        action_name="lead_lost",
+        event_time=datetime(2026, 7, 2, 12, 0, tzinfo=UTC),
+        meta_lead_id="123",
+        properties={"loss_reason": "misclick"},
+    )
+    m = MetaCapiUploader("ds1")._to_meta_event(ev)
+    assert m["custom_data"] == {"loss_reason": "misclick"}  # no value key
+
+
 def test_hashing_is_normalized() -> None:
     # Same identity, different formatting → identical hash (Meta match rules).
     assert hash_email(" Foo@Bar.COM ") == hash_email("foo@bar.com")

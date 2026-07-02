@@ -38,8 +38,13 @@ class MetaCapiUploader:
         }
         if ev.order_id:
             event["event_id"] = ev.order_id  # CAPI dedup key
+        custom: dict[str, Any] = {}
         if ev.value_eur is not None:
-            event["custom_data"] = {"value": float(ev.value_eur), "currency": ev.currency}
+            custom = {"value": float(ev.value_eur), "currency": ev.currency}
+        if ev.properties:
+            custom.update(ev.properties)  # e.g. loss_reason on lead_lost
+        if custom:
+            event["custom_data"] = custom
         return event
 
     async def upload(

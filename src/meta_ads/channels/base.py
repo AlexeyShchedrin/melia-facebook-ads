@@ -88,6 +88,9 @@ class ConversionEvent(BaseModel):
     # Internal CRM lead reference for idempotency / outbox dedup.
     lead_id: int | None = None
     order_id: str | None = None
+    # Extra event properties merged into the platform's custom data
+    # (e.g. {"loss_reason": "misclick"} on lead_lost).
+    properties: dict[str, str] | None = None
 
 
 class AdChannel(ABC):

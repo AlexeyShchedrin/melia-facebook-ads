@@ -184,6 +184,7 @@ class CapiDrain:
 
                 email = attribution.get("email")
                 phone = attribution.get("phone")
+                loss_reason = row.payload.get("loss_reason")
                 event = ConversionEvent(
                     action_name=event_name,
                     event_time=_parse_dt(
@@ -196,6 +197,7 @@ class CapiDrain:
                     meta_lead_id=meta_lead_id,
                     lead_id=row.lead_id,
                     order_id=f"crm-outbox-{row.id}",
+                    properties={"loss_reason": str(loss_reason)} if loss_reason else None,
                 )
                 batches.setdefault(dataset_id, []).append((row, event))
 

@@ -23,6 +23,10 @@ OUTBOX_KIND_TO_EVENT: dict[str, tuple[str, Decimal | None]] = {
     "lifecycle_deposit": ("lead_deposit_paid", None),
     "lifecycle_contract": ("lead_contract_signed", None),
     "lifecycle_paid": ("lead_paid", None),
+    # Negative signal (user decision 2026-07-02): all loss reasons flow as one
+    # lead_lost event with loss_reason in custom_data. Lives in the funnel's
+    # "Other stages" — teaches the model what a junk lead looks like. No value.
+    "lifecycle_lost": ("lead_lost", None),
 }
 
 # Kinds we knowingly skip (record processed, never upload).
