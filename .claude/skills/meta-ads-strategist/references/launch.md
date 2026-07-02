@@ -81,7 +81,7 @@
 | Поле | Значения |
 |------|----------|
 | `LANG` (рынок-язык) | `RU` `SR` `EN` `DE` `PL` `HE` — совпадает с локалью лид-формы (одна форма на язык) |
-| `SEG` (сегмент из project-context) | `INV` инвесторы · `FAM` family second home · `WEL` wellness/longevity · `LIF` Budva lifestyle · `NOM` digital nomads · `BRK` брокеры |
+| `SEG` (сегмент из project-context) | `INV` инвесторы · `FAM` family second home · `WEL` wellness/longevity · `LIF` Budva lifestyle · `NOM` digital nomads · `BRK` брокеры · `MIX` мульти-сегментная (дефолт для консолидированной language-кампании с несколькими углами — сегмент тогда кодируется на уровне ада через PILLAR) |
 | `PILLAR` (7 столпов) | `FIRSTLINE` first-line ownership · `MELIAHOME` Meliá home · `INVEST` smart investment · `WELLNESS` · `FAMILY` · `ENERGY` Budva energy · `TURNKEY` turnkey quality |
 | `GEO` | ISO-коды стран через дефис (`GB`, `DE-AT-CH`, `IL`, `RS-ME`); кластеры фиксируются в vocab-таблице |
 | `AUD` | `BROAD` · `RTG-VID50` (50%+ video viewers) · `RTG-ENG` (page/IG engagers) · `LIST-CRM` |
