@@ -52,6 +52,27 @@ def test_lost_maps_to_lead_lost_with_reason_property() -> None:
     assert m["custom_data"] == {"loss_reason": "misclick"}  # no value key
 
 
+def test_multi_reason_lost_keeps_primary_and_joins_list() -> None:
+    # CRM multi-select (2026-07): primary rides the original loss_reason key,
+    # the full list arrives comma-joined under loss_reasons — both strings.
+    from datetime import UTC, datetime
+
+    from meta_ads.channels.base import ConversionEvent
+    from meta_ads.channels.meta.conversions import MetaCapiUploader
+
+    ev = ConversionEvent(
+        action_name="lead_lost",
+        event_time=datetime(2026, 7, 3, 12, 0, tzinfo=UTC),
+        meta_lead_id="123",
+        properties={"loss_reason": "price", "loss_reasons": "price,no_parking"},
+    )
+    m = MetaCapiUploader("ds1")._to_meta_event(ev)
+    assert m["custom_data"] == {
+        "loss_reason": "price",
+        "loss_reasons": "price,no_parking",
+    }
+
+
 def test_hashing_is_normalized() -> None:
     # Same identity, different formatting → identical hash (Meta match rules).
     assert hash_email(" Foo@Bar.COM ") == hash_email("foo@bar.com")

@@ -184,7 +184,19 @@ class CapiDrain:
 
                 email = attribution.get("email")
                 phone = attribution.get("phone")
+                # CRM loss reasons are a multi-select since 2026-07:
+                # `loss_reason` stays the single PRIMARY code (stable field,
+                # pre-multi-select payloads only have it), `loss_reasons` is
+                # the full ordered list. Send the primary under the original
+                # key and the full list comma-joined only when there's more
+                # than one, so single-reason events keep the exact old shape.
                 loss_reason = row.payload.get("loss_reason")
+                loss_reasons = row.payload.get("loss_reasons")
+                props: dict[str, str] = {}
+                if loss_reason:
+                    props["loss_reason"] = str(loss_reason)
+                if isinstance(loss_reasons, list) and len(loss_reasons) > 1:
+                    props["loss_reasons"] = ",".join(str(r) for r in loss_reasons)
                 event = ConversionEvent(
                     action_name=event_name,
                     event_time=_parse_dt(
@@ -197,7 +209,7 @@ class CapiDrain:
                     meta_lead_id=meta_lead_id,
                     lead_id=row.lead_id,
                     order_id=f"crm-outbox-{row.id}",
-                    properties={"loss_reason": str(loss_reason)} if loss_reason else None,
+                    properties=props or None,
                 )
                 batches.setdefault(dataset_id, []).append((row, event))
 
