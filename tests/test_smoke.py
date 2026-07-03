@@ -126,3 +126,22 @@ def test_object_story_spec_needs_a_creative() -> None:
 
     with pytest.raises(ValueError):
         build_object_story_spec(page_id="P", lead_gen_form_id="F", message="hi")
+
+
+def test_field_data_map_normalizes_api_form_keys() -> None:
+    """API-built HI-OTP forms use key "phone"; CRM ingest reads "phone_number"."""
+    from meta_ads.channels.meta.leads import field_data_to_map
+
+    out = field_data_to_map(
+        [
+            {"name": "full_name", "values": ["Ana"]},
+            {"name": "phone", "values": ["+38160123456"]},
+            {"name": "email", "values": ["a@b.me"]},
+            {"name": "budget", "values": ["250-400k"]},
+        ]
+    )
+    assert out["phone_number"] == "+38160123456"  # normalized alias
+    assert out["phone"] == "+38160123456"  # original kept for raw_row
+    # UI-form payloads (already phone_number) must pass through untouched
+    out2 = field_data_to_map([{"name": "phone_number", "values": ["+49111"]}])
+    assert out2["phone_number"] == "+49111"

@@ -41,6 +41,19 @@ async def resolve_lead(leadgen_id: str) -> dict[str, Any]:
         return await g.get(leadgen_id, params={"fields": _RESOLVE_FIELDS})
 
 
+# UI-built forms emit Meta's standard field keys (phone_number, email, ...);
+# API-built forms carry whatever `key` each question was created with — our
+# HI-OTP forms (2026-07) use "phone". The CRM ingest contract reads the
+# standard names (lead-ingest/route.ts: fields.phone_number), so normalize
+# here at the single flattening point. Original keys are kept alongside —
+# they still land in the CRM raw_row for display.
+_FIELD_KEY_ALIASES = {
+    "phone": "phone_number",
+    "work_phone": "work_phone_number",
+    "e-mail": "email",
+}
+
+
 def field_data_to_map(field_data: list[dict[str, Any]]) -> dict[str, str]:
     """Flatten Meta's [{name, values:[...]}] into {name: first_value}."""
     out: dict[str, str] = {}
@@ -48,6 +61,9 @@ def field_data_to_map(field_data: list[dict[str, Any]]) -> dict[str, str]:
         vals = f.get("values") or []
         if vals:
             out[f["name"]] = vals[0]
+    for src, dst in _FIELD_KEY_ALIASES.items():
+        if src in out and dst not in out:
+            out[dst] = out[src]
     return out
 
 
