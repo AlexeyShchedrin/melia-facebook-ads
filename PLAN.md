@@ -172,6 +172,14 @@ review) в `meta.moderation_state`; budget pacing (алерты дрейфа); i
   (нормализуется в [`lib/lead-source.ts`](melia-crm/lib/lead-source.ts)),
   `platform=meta_leadgen`, **`fb_lead_id` кладём как ключ дедупа** (`external_row_key` /
   `lead_external_keys`), полный payload в `raw_row`.
+- **Атрибуция языка/страны (сделано в CRM, миграция 0147):** payload ОБЯЗАН нести
+  `form_id` + `campaign_id` — ингест резолвит их через реестр `campaign_attribution`
+  (сигналы `meta_form`/`campaign_registry`; страна — телефон > гео кампании > IP,
+  `country_signal`). Живые формы/кампании июля-2026 засижены миграцией; **каждую новую
+  форму/кампанию — заводить в реестр ДО запуска** (`/settings/attribution` или
+  `POST /api/internal/ads/campaign-attribution`), иначе первый лид даст Telegram-алерт
+  «unmapped» и язык определится слабыми сигналами. Свой `locale` fb-worker может слать
+  как хинт (`adAttribution.localeHint`) — реестр CRM авторитетнее.
 
 *Миграции CRM* (следующий свободный номер, уточнить на merge — сейчас ~`0141`):
 - сид `lead_sources` `kind=meta_lead_form`, метка `"Meta"`;
