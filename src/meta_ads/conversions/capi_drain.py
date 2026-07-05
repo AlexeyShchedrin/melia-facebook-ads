@@ -26,7 +26,13 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from meta_ads.channels.base import ConversionEvent
 from meta_ads.channels.meta.conversions import MetaCapiUploader
 from meta_ads.config import get_settings
-from meta_ads.conversions.hashing import hash_email, hash_phone
+from meta_ads.conversions.hashing import (
+    hash_email,
+    hash_external_id,
+    hash_name_part,
+    hash_phone,
+    split_full_name,
+)
 from meta_ads.conversions.taxonomy import OUTBOX_KIND_SKIP, OUTBOX_KIND_TO_EVENT
 
 logger = logging.getLogger(__name__)
@@ -184,6 +190,7 @@ class CapiDrain:
 
                 email = attribution.get("email")
                 phone = attribution.get("phone")
+                fn, ln = split_full_name(attribution.get("name") or "")
                 # CRM loss reasons are a multi-select since 2026-07:
                 # `loss_reason` stays the single PRIMARY code (stable field,
                 # pre-multi-select payloads only have it), `loss_reasons` is
@@ -206,6 +213,9 @@ class CapiDrain:
                     value_eur=taxonomy_value if taxonomy_value is not None else dataset_default,
                     hashed_email=hash_email(email) if email else None,
                     hashed_phone=hash_phone(phone) if phone else None,
+                    hashed_fn=hash_name_part(fn) if fn else None,
+                    hashed_ln=hash_name_part(ln) if ln else None,
+                    hashed_external_id=hash_external_id(row.lead_id) if row.lead_id else None,
                     meta_lead_id=meta_lead_id,
                     lead_id=row.lead_id,
                     order_id=f"crm-outbox-{row.id}",

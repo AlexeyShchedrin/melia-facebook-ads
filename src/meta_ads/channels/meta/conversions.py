@@ -30,6 +30,12 @@ class MetaCapiUploader:
             user_data["em"] = [ev.hashed_email]
         if ev.hashed_phone:
             user_data["ph"] = [ev.hashed_phone]
+        if ev.hashed_fn:
+            user_data["fn"] = [ev.hashed_fn]
+        if ev.hashed_ln:
+            user_data["ln"] = [ev.hashed_ln]
+        if ev.hashed_external_id:
+            user_data["external_id"] = [ev.hashed_external_id]
         event: dict[str, Any] = {
             "event_name": ev.action_name,
             "event_time": int(ev.event_time.timestamp()),

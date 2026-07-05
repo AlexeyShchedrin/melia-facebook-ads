@@ -83,6 +83,11 @@ class ConversionEvent(BaseModel):
     # SHA-256 normalized email/phone for Enhanced Conversions / Advanced Matching.
     hashed_email: str | None = None
     hashed_phone: str | None = None
+    # SHA-256 normalized first/last name + hashed CRM id (Meta `external_id`) —
+    # redundancy for match modeling; lead_id remains THE deterministic key.
+    hashed_fn: str | None = None
+    hashed_ln: str | None = None
+    hashed_external_id: str | None = None
     # Meta lead_id — THE join key for Conversions API for CRM (see PLAN.md §5).
     meta_lead_id: str | None = None
     # Internal CRM lead reference for idempotency / outbox dedup.
