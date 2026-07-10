@@ -145,6 +145,19 @@ def _is_music_rights_error(err: GraphError) -> bool:
     )
 
 
+def _is_permanent_creative_error(err: GraphError) -> bool:
+    """Creative build that can never succeed for this media (don't retry).
+
+    Pinned live 2026-07-10: code 105 "param child_attachments has too many
+    elements" on carousels with more children than a boosted ad allows.
+    """
+    e = err.body.get("error", {}) if isinstance(err.body, dict) else {}
+    if e.get("code") == 105:
+        return True
+    blob = str(e.get("message", "")).lower()
+    return "child_attachments has too many" in blob
+
+
 async def _with_backoff(call: Any, *, what: str) -> dict[str, Any]:
     """Run a Graph call, retrying only the known throttling codes."""
     delay = _BACKOFF_BASE_S
@@ -451,6 +464,12 @@ class IgBoostEngine:
                     logger.warning("ig_boost: media %s not boostable (music/rights): %s", media_id, err)
                     await store.record(**base, zone="", decision="skipped_music", error=str(err))
                     outcome.skipped_music += 1
+                elif _is_permanent_creative_error(err):
+                    # e.g. carousel with too many children (code 105) — will
+                    # never succeed; record as skipped, don't retry every tick.
+                    logger.warning("ig_boost: media %s not boostable (creative): %s", media_id, err)
+                    await store.record(**base, zone="", decision="skipped_type", error=str(err))
+                    outcome.skipped_type += 1
                 else:
                     logger.warning("ig_boost: creative for media %s failed: %s", media_id, err)
                     await store.record(**base, zone="", decision="error", error=str(err))
@@ -546,9 +565,13 @@ class IgBoostEngine:
                 "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
                 "daily_budget": str(DAILY_BUDGET_MINOR),
                 "targeting": json.dumps(targeting),
-                # Pinned live 2026-07-10: без promoted_object ад-create падает
-                # subcode 1885154 (Ad Set with Promoted Object Is Required).
+                # Pinned live 2026-07-10: POST_ENGAGEMENT boosting needs BOTH
+                # promoted_object={page_id} AND destination_type=ON_POST — with
+                # only the former Meta silently stores promoted_object=null and
+                # the ad-create then fails subcode 1885154. With ON_POST the
+                # promoted_object sticks ({page_id, smart_pse_enabled:false}).
                 "promoted_object": json.dumps({"page_id": get_settings().meta_page_id}),
+                "destination_type": "ON_POST",
                 "status": "ACTIVE",
             }
             if zone.dsa:
