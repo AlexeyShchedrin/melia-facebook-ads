@@ -8,7 +8,8 @@ Jobs:
 - lead_poll      — every 15 min : reconcile missed webhooks (<90 d)                  [B]
 - perf_pull      — every 15 min : insights → meta.campaign_metrics                   [A]
 - moderation     — every 10 min : ad review state                                    [A]
-- pacing         — every 30 min : spend vs budget drift                              [A]
+- pacing         — every 30 min : spend vs budget drift
+- ig_boost       — every 6 h (first run 5 min after start) : auto-boost IG posts                              [A]
 """
 
 from __future__ import annotations
@@ -17,6 +18,7 @@ import asyncio
 import logging
 import signal
 from contextlib import suppress
+from datetime import UTC, datetime, timedelta
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
@@ -24,6 +26,7 @@ from apscheduler.triggers.interval import IntervalTrigger
 from meta_ads import __version__
 from meta_ads.config import get_settings
 from meta_ads.worker.jobs.capi_drain import listen_for_outbox, run_capi_drain
+from meta_ads.worker.jobs.ig_boost import run_ig_boost
 from meta_ads.worker.jobs.lead_poll import run_lead_poll
 from meta_ads.worker.jobs.lead_resolve import listen_for_leadgen, run_lead_resolve
 from meta_ads.worker.jobs.moderation import run_moderation_poll
@@ -63,6 +66,9 @@ async def _run() -> None:
     scheduler.add_job(_job(run_perf_pull, "perf_pull"), IntervalTrigger(minutes=15), id="perf_pull", replace_existing=True)
     scheduler.add_job(_job(run_moderation_poll, "moderation"), IntervalTrigger(minutes=10), id="moderation", replace_existing=True)
     scheduler.add_job(_job(run_budget_pacing, "pacing"), IntervalTrigger(minutes=30), id="pacing", replace_existing=True)
+    # start_date shifts the whole interval series: first run 5 min after start
+    # (one warm-up pass per deploy), then every 6 h.
+    scheduler.add_job(_job(run_ig_boost, "ig_boost"), IntervalTrigger(hours=6, start_date=datetime.now(UTC) + timedelta(minutes=5)), id="ig_boost", replace_existing=True)
 
     scheduler.start()
     log.info("scheduler started (jobs=%d)", len(scheduler.get_jobs()))

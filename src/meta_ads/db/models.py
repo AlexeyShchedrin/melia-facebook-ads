@@ -231,6 +231,35 @@ class PendingMutation(Base):
     expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
 
+class IgBoostState(Base):
+    """IG auto-boost ledger — one row per (IG media, zone) with what ig_boost
+    decided and the ad it created.
+
+    zone is 'B' / 'A' for per-zone boost rows and '' for media-level terminal
+    decisions (skipped_lint / skipped_type / skipped_music). zone is part of
+    the PK because a boosted post gets one ad per zone. decision='error' rows
+    are retried on later ticks; every other decision is final."""
+
+    __tablename__ = "ig_boost_state"
+    __table_args__ = ({"schema": SCHEMA},)
+
+    media_id: Mapped[str] = mapped_column(Text, primary_key=True)
+    zone: Mapped[str] = mapped_column(Text, primary_key=True, default="")
+    # boosted | skipped_lint | skipped_type | skipped_music | rotated_out | error
+    decision: Mapped[str] = mapped_column(Text, nullable=False)
+    lint_hits: Mapped[str | None] = mapped_column(Text, nullable=True)
+    ad_id: Mapped[str | None] = mapped_column(Text, nullable=True)
+    creative_id: Mapped[str | None] = mapped_column(Text, nullable=True)
+    caption_excerpt: Mapped[str | None] = mapped_column(Text, nullable=True)
+    media_product_type: Mapped[str | None] = mapped_column(Text, nullable=True)
+    boosted_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    rotated_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    error: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), nullable=False
+    )
+
+
 class Alert(Base):
     __tablename__ = "alerts"
     __table_args__ = (

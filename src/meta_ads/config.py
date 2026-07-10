@@ -47,6 +47,10 @@ class Settings(BaseSettings):
     # ─── Local creatives (pipeline A reads from disk) ────────────────
     creative_source_dirs: str = Field(default="")  # ';'-separated paths
 
+    # ─── IG auto-boost (worker job ig_boost) ─────────────────────────
+    fb_ig_boost_enabled: bool = False
+    fb_ig_user_id: str = Field(default="")  # IG professional-account user id
+
     # ─── Telegram ────────────────────────────────────────────────────
     telegram_bot_token: SecretStr = Field(default=SecretStr(""))
     telegram_fb_chat_id: str = Field(default="")
