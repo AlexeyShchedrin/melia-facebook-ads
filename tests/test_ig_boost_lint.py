@@ -14,25 +14,20 @@ HOT: list[tuple[str, str, str]] = [
     ("en-passive", "Earn passive income by the sea", "yield_roi"),
     ("en-residency", "Golden visa included with every purchase", "residency"),
     ("en-permit", "Residence permit assistance for buyers", "residency"),
-    ("en-beach", "Your own private beach residence", "private_beach"),
     ("ru-guarantee", "Гарантированная доходность 8% годовых", "guarantee"),
     ("ru-yield", "Стабильная доходность от аренды", "yield_roi"),
     ("ru-passive", "Пассивный доход у моря", "yield_roi"),
     ("ru-vnzh", "ВНЖ Черногории при покупке", "residency"),
     ("ru-permit", "Оформим вид на жительство", "residency"),
-    ("ru-beach", "Частный пляж только для резидентов", "private_beach"),
     ("de-guarantee", "Mieteinnahmen garantiert!", "guarantee"),
     ("de-rendite", "Hohe Rendite am Meer", "yield_roi"),
     ("de-rendite-plural", "Attraktive Renditen ab Tag eins", "yield_roi"),
     ("de-residency", "Aufenthaltserlaubnis inklusive", "residency"),
-    ("de-beach", "Eigener Privatstrand für Bewohner", "private_beach"),
     ("pl-guarantee", "Gwarantowany zysk z najmu", "guarantee"),
     ("pl-passive", "Dochód pasywny nad Adriatykiem", "yield_roi"),
-    ("pl-beach", "Prywatna plaża tylko dla mieszkańców", "private_beach"),
     ("sr-guarantee", "Garantovan povraćaj ulaganja", "guarantee"),
     ("sr-yield", "Siguran prinos od izdavanja", "yield_roi"),
     ("sr-residency", "Boravišna dozvola uz kupovinu", "residency"),
-    ("sr-beach", "Privatna plaža uz rezidenciju", "private_beach"),
     ("he-guarantee", "תשואה מובטחת לחמש שנים", "guarantee"),
     ("he-residency", "אשרת שהייה לרוכשים", "residency"),
     ("tr-yield", "yüksek randıman vaat ediyor", "yield_roi"),
@@ -71,5 +66,6 @@ def test_clean_captions_pass(caption: str) -> None:
 
 def test_hits_carry_rule_and_fragment() -> None:
     hits = lint_caption("Guaranteed yield and a private beach")
-    assert sorted(h.split(":", 1)[0] for h in hits) == ["guarantee", "private_beach", "yield_roi"]
+    # private beach — больше не правило (D-11); фильтруются только Meta-риски
+    assert sorted(h.split(":", 1)[0] for h in hits) == ["guarantee", "yield_roi"]
     assert "guarantee:Guarantee" in hits  # fragment kept for ig_boost_state.lint_hits

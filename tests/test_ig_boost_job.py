@@ -24,6 +24,7 @@ IG_USER = "17890000000000000"
 def fake_settings(**over: Any) -> SimpleNamespace:
     base: dict[str, Any] = {
         "fb_ig_boost_enabled": True,
+        "fb_ig_boost_lint_enabled": False,  # D-11: default no filters
         "fb_ig_user_id": IG_USER,
         "meta_ad_account_id": "act_1",
         "meta_page_id": "page_1",
@@ -286,10 +287,24 @@ async def test_seen_media_is_not_reprocessed(monkeypatch: pytest.MonkeyPatch) ->
 # ── skips ─────────────────────────────────────────────────────────────
 
 
+async def test_banned_caption_boosts_when_lint_disabled(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """D-11 default: никаких фильтров — даже 'гарантированная доходность' бустится."""
+    monkeypatch.setattr(engine_mod, "get_settings", lambda: fake_settings())
+    g = FakeGraph(media=[media_item("m2", caption="Гарантированная доходность 8%!")])
+    store = FakeStore()
+    out = await make_engine(g, store).run()
+    assert out is not None and out.skipped_lint == 0
+    assert out.boosted == 2  # обе зоны
+
+
 async def test_banned_caption_is_skipped_lint_no_ad(
     monkeypatch: pytest.MonkeyPatch, caplog: pytest.LogCaptureFixture
 ) -> None:
-    monkeypatch.setattr(engine_mod, "get_settings", lambda: fake_settings())
+    monkeypatch.setattr(
+        engine_mod, "get_settings", lambda: fake_settings(fb_ig_boost_lint_enabled=True)
+    )
     g = FakeGraph(media=[media_item("m2", caption="Гарантированная доходность 8%!")])
     store = FakeStore()
     with caplog.at_level("WARNING", logger="meta_ads.boost.engine"):

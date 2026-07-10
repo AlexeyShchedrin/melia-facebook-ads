@@ -50,6 +50,9 @@ class Settings(BaseSettings):
     # ─── IG auto-boost (worker job ig_boost) ─────────────────────────
     fb_ig_boost_enabled: bool = False
     fb_ig_user_id: str = Field(default="")  # IG professional-account user id
+    # Caption lint gate. Default OFF — user decision 2026-07-10 (D-11):
+    # boost EVERYTHING published, no filters of ours.
+    fb_ig_boost_lint_enabled: bool = False
 
     # ─── Telegram ────────────────────────────────────────────────────
     telegram_bot_token: SecretStr = Field(default=SecretStr(""))

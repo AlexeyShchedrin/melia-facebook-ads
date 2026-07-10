@@ -128,12 +128,21 @@ def _is_music_rights_error(err: GraphError) -> bool:
     not eligible → skipped_music).
     """
     e = err.body.get("error", {}) if isinstance(err.body, dict) else {}
+    # Pinned live 2026-07-10: subcode 2875030 = "Reels that use copyrighted
+    # music can't be boosted as ads." Это отказ самой Меты, не наш фильтр.
+    if e.get("error_subcode") == 2875030:
+        return True
     blob = " ".join(
         str(v)
         for v in (e.get("message"), e.get("error_user_title"), e.get("error_user_msg"))
         if v
     ).lower()
-    return "licensed music" in blob or "not eligible" in blob
+    return (
+        "licensed music" in blob
+        or "copyrighted music" in blob
+        or "can't be boosted" in blob
+        or "not eligible" in blob
+    )
 
 
 async def _with_backoff(call: Any, *, what: str) -> dict[str, Any]:
@@ -413,15 +422,19 @@ class IgBoostEngine:
             "media_product_type": product_type or None,
         }
 
-        hits = lint_caption(caption)
-        if hits:
-            logger.warning(
-                "ig_boost: media %s caption tripped compliance lint (%s) — not boosting; %s",
-                media_id, ", ".join(hits), m.get("permalink") or "",
-            )
-            await store.record(**base, zone="", decision="skipped_lint", lint_hits=",".join(hits))
-            outcome.skipped_lint += 1
-            return
+        # User decision 2026-07-10 (D-11, подтверждено явно): бустим ВСЁ
+        # опубликованное без каких-либо фильтров. Линт оставлен в коде за
+        # флагом (default OFF) на случай пересмотра.
+        if get_settings().fb_ig_boost_lint_enabled:
+            hits = lint_caption(caption)
+            if hits:
+                logger.warning(
+                    "ig_boost: media %s caption tripped compliance lint (%s) — not boosting; %s",
+                    media_id, ", ".join(hits), m.get("permalink") or "",
+                )
+                await store.record(**base, zone="", decision="skipped_lint", lint_hits=",".join(hits))
+                outcome.skipped_lint += 1
+                return
 
         if m.get("media_type") not in BOOSTABLE_MEDIA_TYPES or product_type == "STORY":
             await store.record(**base, zone="", decision="skipped_type")
@@ -533,6 +546,9 @@ class IgBoostEngine:
                 "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
                 "daily_budget": str(DAILY_BUDGET_MINOR),
                 "targeting": json.dumps(targeting),
+                # Pinned live 2026-07-10: без promoted_object ад-create падает
+                # subcode 1885154 (Ad Set with Promoted Object Is Required).
+                "promoted_object": json.dumps({"page_id": get_settings().meta_page_id}),
                 "status": "ACTIVE",
             }
             if zone.dsa:

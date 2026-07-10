@@ -2,11 +2,13 @@
 
 The brief's hard guardrails (brand/brief.md in melia-montage, mirrored in
 research/06-strategy-2026.md) ban absolute claims in paid placements:
-guaranteed anything, yield/ROI promises, residency/visa promises, and
-"private beach" (the beach is public). Organic captions are written by hand
-and sometimes slip — so anything the auto-boost job would put money behind is
-linted first. One hit → the media is recorded `skipped_lint` and never
-boosted; a human rewrites the caption or boosts manually.
+guaranteed anything, yield/ROI promises, residency/visa promises. Organic
+captions are written by hand and sometimes slip — so anything the auto-boost
+job would put money behind is linted first. One hit → the media is recorded
+`skipped_lint` and never boosted; a human rewrites the caption or boosts
+manually. Scope note (user decision 2026-07-10, D-11): the lint gates ONLY
+Meta-rejection risks; brand-style wording like "private beach" is allowed in
+boosted organic posts.
 
 Languages covered (the funnel's audience mix): RU / EN / DE / PL / SR / HE /
 TR / UA / SQ. Patterns are stems, case-insensitive, with a leading word
@@ -32,10 +34,6 @@ _RULES: dict[str, str] = {
     "residency": (
         r"\b(?:residence permit|golden visa|ВНЖ|вид на жительство"
         r"|Aufenthalt\w*|boravišn\w*|אשרת)"
-    ),
-    "private_beach": (
-        r"\b(?:private beach|частн\w+ пляж|privatstrand|prywatn\w+ plaż\w+"
-        r"|privatna plaža)"
     ),
 }
 
