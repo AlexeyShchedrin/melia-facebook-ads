@@ -98,6 +98,17 @@ Cities Campaign June 2026", форма "SR Lead Form 12062026") — page-level w
 6. Кампания: `is_adset_budget_sharing_enabled=false` (ABO); адсет:
    `bid_strategy=LOWEST_COST_WITHOUT_CAP` + явный `targeting_automation.advantage_audience`;
    CTA `SIGN_UP` (не "LEAD"); видео-креативу нужен thumbnail; форме — `follow_up_action_url`.
+7. **IG-identity (правило пользователя 2026-07-11):** каждый НОВЫЙ креатив несёт
+   `object_story_spec.instagram_user_id = "17841475384506205"` (аккаунт
+   melia.residences.montenegro) рядом с `page_id` — на IG-плейсментах ад идёт
+   от лица реального инстаграма, а не page-backed. Поле именно `instagram_user_id`
+   (не `instagram_actor_id` — отвергается). Старые ады НЕ переделываем (это был
+   бы learning reset) — identity переезжает по мере ротации: новые крео уже
+   IG-native, старые доигрывают и уходят. thumbnail видео протухает за дни —
+   тянуть свежий `/{video_id}/thumbnails` перед каждым созданием креатива.
+8. **Рефреш креативов — add-only:** новые ады ДОБАВЛЯЕМ к живому адсету, старые
+   не удаляем/не паузим (Andromeda сама перераспределит показы; удаление =
+   потеря сигнала + риск при откате). Держим 6–10 живых разных крео на адсет.
 
 ## CAPI-таксономия (CRM lifecycle → Meta event, conversions/taxonomy.py)
 
@@ -118,7 +129,10 @@ SKIP: lead_submitted (сабмит формы Meta уже видит), lifecycle
 ## Креативный конвейер
 
 - Студия: `melia-montage` (Remotion + ElevenLabs v3 + HeyGen). Финалы →
-  `OneDrive\Desktop\Melia Reels\` (сейчас: `Final Basic` — EN/PL/SR × 1x1/4x5/9x16).
+  `OneDrive\Desktop\Melia Reels\` (по концептам-папкам). Бриф в студию — файл в
+  `melia-montage/briefs/`; правило производства (D-08): **EN-мастер первым →
+  приёмка → транскреация на ВСЕ 9 языков (RU/SR/EN/DE/PL/HE/TR/UA/SQ)**, каждый
+  концепт во всех языках. Заливаем в кампании только языки с живой кампанией.
 - Копибанк: `melia-montage/brand/copy/` (reels EN/RU), 70+ заголовков.
 - 7 креативных столпов: first-line ownership, Meliá home, smart investment, wellness,
   family, Budva energy, turnkey quality. 8 визуальных тем в visual-style.md.
