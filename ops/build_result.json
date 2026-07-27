@@ -1,0 +1,1693 @@
+{
+  "campaigns": [
+    {
+      "name": "MB_LEADS_PL_MIX_202607",
+      "id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_PL_V1",
+          "ad_id": "120250397103180233",
+          "creative_id": "1056436376948091",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_PL_V1",
+          "ad_id": "120250397104900233",
+          "creative_id": "1809713783329822",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_PL_V1",
+          "ad_id": "120250397106710233",
+          "creative_id": "2093538737924881",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_PL_V1",
+          "ad_id": "120250397107550233",
+          "creative_id": "1015582277734290",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID916_PL_V1",
+          "ad_id": "120250397110000233",
+          "creative_id": "1477244364158428",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID45_PL_V1",
+          "ad_id": "120250397111630233",
+          "creative_id": "1033570925934749",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID916_PL_V1",
+          "ad_id": "120250397112870233",
+          "creative_id": "1035805398864191",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID45_PL_V1",
+          "ad_id": "120250397113260233",
+          "creative_id": "1662741131484616",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_PL_V1",
+          "ad_id": "120250397113820233",
+          "creative_id": "1022315793854746",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_PL_V1",
+          "ad_id": "120250397114430233",
+          "creative_id": "1021125316997873",
+          "type": "image"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_PL_V1",
+          "ad_id": "120250397115620233",
+          "creative_id": "2076867926521010",
+          "type": "image"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID916_PL_V1",
+          "ad_id": "120250397895660233",
+          "creative_id": "1867428190886955",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID45_PL_V1",
+          "ad_id": "120250397896530233",
+          "creative_id": "1335983981357232",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_PL_V2",
+          "ad_id": "120250677706730233",
+          "creative_id": "2058039401772186",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_PL_V2",
+          "ad_id": "120250677718380233",
+          "creative_id": "972859899099124",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_PL_V2",
+          "ad_id": "120250677727230233",
+          "creative_id": "2389410094801813",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID45_PL_V2",
+          "ad_id": "120250677734740233",
+          "creative_id": "1054047153977284",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_PL_V2",
+          "ad_id": "120250677740220233",
+          "creative_id": "1002904302657528",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID45_PL_V2",
+          "ad_id": "120250677742490233",
+          "creative_id": "2054165368641415",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_PL_V2",
+          "ad_id": "120250677746430233",
+          "creative_id": "1551895066347096",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_PL_V2",
+          "ad_id": "120250677749830233",
+          "creative_id": "2030155417869667",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_PL_V2",
+          "ad_id": "120250677753490233",
+          "creative_id": "3950087241959545",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_PL_V2",
+          "ad_id": "120250677757090233",
+          "creative_id": "27246501404978265",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 20,
+        "image": 3,
+        "total": 23
+      }
+    },
+    {
+      "name": "MB_LEADS_DE_MIX_202607",
+      "id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_DE_V1",
+          "ad_id": "120250397195650233",
+          "creative_id": "1362720169325838",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_DE_V1",
+          "ad_id": "120250397196650233",
+          "creative_id": "1002006999221115",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_DE_V1",
+          "ad_id": "120250397197410233",
+          "creative_id": "2283830822444665",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_DE_V1",
+          "ad_id": "120250397198100233",
+          "creative_id": "1031915406494152",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID916_DE_V1",
+          "ad_id": "120250397198600233",
+          "creative_id": "1040075665342886",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID45_DE_V1",
+          "ad_id": "120250397199360233",
+          "creative_id": "2229809551141626",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID916_DE_V1",
+          "ad_id": "120250397200400233",
+          "creative_id": "2567882363646450",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID45_DE_V1",
+          "ad_id": "120250397201580233",
+          "creative_id": "1469112611653885",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_DE_V1",
+          "ad_id": "120250397202240233",
+          "creative_id": "1705925823776284",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_DE_V1",
+          "ad_id": "120250397203500233",
+          "creative_id": "1678958623389054",
+          "type": "image"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_DE_V1",
+          "ad_id": "120250397204410233",
+          "creative_id": "958479927209406",
+          "type": "image"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID916_DE_V1",
+          "ad_id": "120250397817130233",
+          "creative_id": "1025442706656270",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID45_DE_V1",
+          "ad_id": "120250397819180233",
+          "creative_id": "993952739931265",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_DE_V2",
+          "ad_id": "120250677624830233",
+          "creative_id": "1812791239503889",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_DE_V2",
+          "ad_id": "120250677627740233",
+          "creative_id": "893317553820909",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_DE_V2",
+          "ad_id": "120250677640660233",
+          "creative_id": "1033571926195003",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID45_DE_V2",
+          "ad_id": "120250677647600233",
+          "creative_id": "2105518066976623",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_DE_V2",
+          "ad_id": "120250677650880233",
+          "creative_id": "852908057661474",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID45_DE_V2",
+          "ad_id": "120250677655300233",
+          "creative_id": "1500303314720301",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_DE_V2",
+          "ad_id": "120250677658000233",
+          "creative_id": "2451999968601912",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_DE_V2",
+          "ad_id": "120250677665050233",
+          "creative_id": "2098141074468277",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_DE_V2",
+          "ad_id": "120250677675500233",
+          "creative_id": "1509714346931285",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_DE_V2",
+          "ad_id": "120250677689990233",
+          "creative_id": "2432522667214622",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 20,
+        "image": 3,
+        "total": 23
+      }
+    },
+    {
+      "name": "MB_LEADS_SR_MIX_202607",
+      "id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_SR_V1",
+          "ad_id": "120250397398550233",
+          "creative_id": "1553943959515065",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_SR_V1",
+          "ad_id": "120250397399190233",
+          "creative_id": "1374512387869765",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_SR_V1",
+          "ad_id": "120250397400750233",
+          "creative_id": "1960771735312708",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_SR_V1",
+          "ad_id": "120250397401550233",
+          "creative_id": "2958119651204720",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID916_SR_V1",
+          "ad_id": "120250397402750233",
+          "creative_id": "1542767427486076",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID45_SR_V1",
+          "ad_id": "120250397403840233",
+          "creative_id": "1457823609436114",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID916_SR_V1",
+          "ad_id": "120250397404610233",
+          "creative_id": "1042004844838085",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID45_SR_V1",
+          "ad_id": "120250397405320233",
+          "creative_id": "2463376824076338",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID916_SR_V1",
+          "ad_id": "120250397406760233",
+          "creative_id": "2028167157773247",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID45_SR_V1",
+          "ad_id": "120250397408310233",
+          "creative_id": "28465951629660591",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_SR_V1",
+          "ad_id": "120250397409610233",
+          "creative_id": "1542205047568775",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_SR_V1",
+          "ad_id": "120250397411670233",
+          "creative_id": "2404889769919906",
+          "type": "image"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_SR_V1",
+          "ad_id": "120250397415060233",
+          "creative_id": "2127188317837820",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_SR_V2",
+          "ad_id": "120250677612710233",
+          "creative_id": "950576304660815",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_SR_V2",
+          "ad_id": "120250677613180233",
+          "creative_id": "1589535676110031",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_SR_V2",
+          "ad_id": "120250677614520233",
+          "creative_id": "1015332528147831",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID45_SR_V2",
+          "ad_id": "120250677616830233",
+          "creative_id": "1595910572065203",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_SR_V2",
+          "ad_id": "120250677618040233",
+          "creative_id": "1305568224929791",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID45_SR_V2",
+          "ad_id": "120250677619360233",
+          "creative_id": "1446365283915737",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_SR_V2",
+          "ad_id": "120250677620400233",
+          "creative_id": "1342405274688650",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_SR_V2",
+          "ad_id": "120250677621310233",
+          "creative_id": "4107999229336872",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_SR_V2",
+          "ad_id": "120250677622340233",
+          "creative_id": "1002704992369908",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_SR_V2",
+          "ad_id": "120250677623050233",
+          "creative_id": "1049313287676219",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 20,
+        "image": 3,
+        "total": 23
+      }
+    },
+    {
+      "name": "MB_LEADS_ME_MIX_202607",
+      "id": "120250397417770233",
+      "adset_id": "120250397504440233",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_SR_V1",
+          "ad_id": "120250397505890233",
+          "creative_id": "950640868034910",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_SR_V1",
+          "ad_id": "120250397506900233",
+          "creative_id": "1706141664029588",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_SR_V1",
+          "ad_id": "120250397509110233",
+          "creative_id": "1001160726119251",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_SR_V1",
+          "ad_id": "120250397510980233",
+          "creative_id": "987387207445542",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID916_SR_V1",
+          "ad_id": "120250397512640233",
+          "creative_id": "850774597820427",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID45_SR_V1",
+          "ad_id": "120250397514410233",
+          "creative_id": "851327821099233",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_RU_V1",
+          "ad_id": "120250397516300233",
+          "creative_id": "1437701581450432",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_RU_V1",
+          "ad_id": "120250397518600233",
+          "creative_id": "1030322322786780",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_RU_V1",
+          "ad_id": "120250397520370233",
+          "creative_id": "1619091566540415",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_RU_V1",
+          "ad_id": "120250397521710233",
+          "creative_id": "1543325797263002",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID916_EN_V1",
+          "ad_id": "120250397523520233",
+          "creative_id": "2219006595517567",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID45_EN_V1",
+          "ad_id": "120250397524670233",
+          "creative_id": "1001566475972319",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_SR_V1",
+          "ad_id": "120250397525820233",
+          "creative_id": "1336169168015765",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_SR_V1",
+          "ad_id": "120250397527590233",
+          "creative_id": "1006339745442611",
+          "type": "image"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_RU_V1",
+          "ad_id": "120250397529010233",
+          "creative_id": "1031140375947206",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_RU_V1",
+          "ad_id": "120250397530180233",
+          "creative_id": "3090816641128086",
+          "type": "image"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_RU_V1",
+          "ad_id": "120250397531860233",
+          "creative_id": "1402461678392222",
+          "type": "image"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_EN_V1",
+          "ad_id": "120250397533120233",
+          "creative_id": "1047488000965199",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_EN_V1",
+          "ad_id": "120250397534180233",
+          "creative_id": "1009807468602479",
+          "type": "image"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID916_RU_V1",
+          "ad_id": "120250397810540233",
+          "creative_id": "1548163240198810",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID45_RU_V1",
+          "ad_id": "120250397815370233",
+          "creative_id": "1758620028642302",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_SR_V2",
+          "ad_id": "120250677156840233",
+          "creative_id": "950576304660815",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_SR_V2",
+          "ad_id": "120250677183500233",
+          "creative_id": "1589535676110031",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_SR_V2",
+          "ad_id": "120250677196000233",
+          "creative_id": "1015332528147831",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID45_SR_V2",
+          "ad_id": "120250677212650233",
+          "creative_id": "1595910572065203",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_SR_V2",
+          "ad_id": "120250677221880233",
+          "creative_id": "1305568224929791",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID45_SR_V2",
+          "ad_id": "120250677229790233",
+          "creative_id": "1446365283915737",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_SR_V2",
+          "ad_id": "120250677241640233",
+          "creative_id": "1002704992369908",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_SR_V2",
+          "ad_id": "120250677249260233",
+          "creative_id": "1049313287676219",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_SR_V2",
+          "ad_id": "120250677259240233",
+          "creative_id": "1342405274688650",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_SR_V2",
+          "ad_id": "120250677263410233",
+          "creative_id": "4107999229336872",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_RU_V2",
+          "ad_id": "120250677268180233",
+          "creative_id": "1716277739583693",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_RU_V2",
+          "ad_id": "120250677282040233",
+          "creative_id": "2231440084287384",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_RU_V2",
+          "ad_id": "120250677292760233",
+          "creative_id": "1382120300456536",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID45_RU_V2",
+          "ad_id": "120250677300370233",
+          "creative_id": "3458218514345153",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_RU_V2",
+          "ad_id": "120250677313650233",
+          "creative_id": "2182797749120171",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID45_RU_V2",
+          "ad_id": "120250677322870233",
+          "creative_id": "2075514129706792",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_RU_V2",
+          "ad_id": "120250677333350233",
+          "creative_id": "1382341053826580",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_RU_V2",
+          "ad_id": "120250677353450233",
+          "creative_id": "1716839722964343",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_RU_V2",
+          "ad_id": "120250677368400233",
+          "creative_id": "1059448483325928",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_RU_V2",
+          "ad_id": "120250677378480233",
+          "creative_id": "1742024393889992",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_EN_V2",
+          "ad_id": "120250677386560233",
+          "creative_id": "1569513008040588",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_EN_V2",
+          "ad_id": "120250677393300233",
+          "creative_id": "1666031478024856",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_EN_V2",
+          "ad_id": "120250677404770233",
+          "creative_id": "2431869050632550",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID45_EN_V2",
+          "ad_id": "120250677419690233",
+          "creative_id": "879216345255879",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_EN_V2",
+          "ad_id": "120250677423440233",
+          "creative_id": "1399114658786315",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID45_EN_V2",
+          "ad_id": "120250677432210233",
+          "creative_id": "3276805915842478",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_EN_V2",
+          "ad_id": "120250677438560233",
+          "creative_id": "1031638152729712",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_EN_V2",
+          "ad_id": "120250677441350233",
+          "creative_id": "1028459839760281",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_EN_V2",
+          "ad_id": "120250677446930233",
+          "creative_id": "1713153476690838",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 43,
+        "image": 7,
+        "total": 50
+      }
+    },
+    {
+      "name": "MB_RTG_B_MIX_202607",
+      "id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_SR_V1",
+          "ad_id": "120250397642570233",
+          "creative_id": "1702402231070693",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_SR_V1",
+          "ad_id": "120250397643730233",
+          "creative_id": "2467619397085958",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_RU_V1",
+          "ad_id": "120250397645040233",
+          "creative_id": "4550677865154379",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_RU_V1",
+          "ad_id": "120250397645820233",
+          "creative_id": "1375099217848105",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_EN_V1",
+          "ad_id": "120250397646520233",
+          "creative_id": "994992570107844",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_EN_V1",
+          "ad_id": "120250397647560233",
+          "creative_id": "1339680214248022",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_q4-2027_static_IMG45_SR_V1",
+          "ad_id": "120250397648600233",
+          "creative_id": "1018153440911914",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_SR_V1",
+          "ad_id": "120250397649840233",
+          "creative_id": "2095747231337565",
+          "type": "image"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_SR_V1",
+          "ad_id": "120250397651360233",
+          "creative_id": "1578515443879578",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_q4-2027_static_IMG45_RU_V1",
+          "ad_id": "120250397652120233",
+          "creative_id": "1894251197913869",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_service-fee_static_IMG45_RU_V1",
+          "ad_id": "120250397653750233",
+          "creative_id": "27544013528618155",
+          "type": "image"
+        },
+        {
+          "name": "INVEST_branded-premium_static_IMG45_RU_V1",
+          "ad_id": "120250397654320233",
+          "creative_id": "1023077600444419",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_q4-2027_static_IMG45_EN_V1",
+          "ad_id": "120250397657340233",
+          "creative_id": "4497552427130698",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_EN_V1",
+          "ad_id": "120250397658000233",
+          "creative_id": "1053254863796400",
+          "type": "image"
+        },
+        {
+          "name": "INVEST_branded-premium_static_IMG45_EN_V1",
+          "ad_id": "120250397659770233",
+          "creative_id": "1106701055870371",
+          "type": "image"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_SR_V2",
+          "ad_id": "120250677759430233",
+          "creative_id": "1002704992369908",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_SR_V2",
+          "ad_id": "120250677761720233",
+          "creative_id": "1049313287676219",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_SR_V2",
+          "ad_id": "120250677765290233",
+          "creative_id": "1342405274688650",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_SR_V2",
+          "ad_id": "120250677768240233",
+          "creative_id": "4107999229336872",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_static_IMG916_SR_V2",
+          "ad_id": "120250677771870233",
+          "creative_id": "1021964770700893",
+          "type": "image",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_static_IMG45_SR_V2",
+          "ad_id": "120250677774420233",
+          "creative_id": "1577821980647252",
+          "type": "image",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_RU_V2",
+          "ad_id": "120250677775860233",
+          "creative_id": "1382341053826580",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_RU_V2",
+          "ad_id": "120250677777120233",
+          "creative_id": "1716839722964343",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_RU_V2",
+          "ad_id": "120250677779710233",
+          "creative_id": "1059448483325928",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_RU_V2",
+          "ad_id": "120250677782840233",
+          "creative_id": "1742024393889992",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_static_IMG916_RU_V2",
+          "ad_id": "120250677787660233",
+          "creative_id": "27351885981148001",
+          "type": "image",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_static_IMG45_RU_V2",
+          "ad_id": "120250677793230233",
+          "creative_id": "2085125905547577",
+          "type": "image",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_EN_V2",
+          "ad_id": "120250677795110233",
+          "creative_id": "1031638152729712",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_EN_V2",
+          "ad_id": "120250677797600233",
+          "creative_id": "1028459839760281",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_EN_V2",
+          "ad_id": "120250677799420233",
+          "creative_id": "1713153476690838",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_EN_V2",
+          "ad_id": "120250677802130233",
+          "creative_id": "3848565321952704",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_static_IMG916_EN_V2",
+          "ad_id": "120250677806420233",
+          "creative_id": "968951199467564",
+          "type": "image",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_static_IMG45_EN_V2",
+          "ad_id": "120250677812600233",
+          "creative_id": "1726111005087810",
+          "type": "image",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 18,
+        "image": 15,
+        "total": 33
+      }
+    },
+    {
+      "name": "MB_LEADS_SQ_MIX_202607",
+      "id": "120250398551880233",
+      "adset_id": "120250398554020233",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_SQ_V1",
+          "ad_id": "120250398558580233",
+          "creative_id": "1557971755705299",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_SQ_V1",
+          "ad_id": "120250398563200233",
+          "creative_id": "1581135436779280",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_SQ_V1",
+          "ad_id": "120250398566100233",
+          "creative_id": "1576252774118668",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_SQ_V1",
+          "ad_id": "120250398568840233",
+          "creative_id": "1020376207405426",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID916_SQ_V1",
+          "ad_id": "120250398570970233",
+          "creative_id": "1944135179636731",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID45_SQ_V1",
+          "ad_id": "120250398572740233",
+          "creative_id": "1529308678599393",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID916_SQ_V1",
+          "ad_id": "120250398574630233",
+          "creative_id": "1369232448435226",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID45_SQ_V1",
+          "ad_id": "120250398578100233",
+          "creative_id": "995702809735014",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_SQ_V1",
+          "ad_id": "120250398582200233",
+          "creative_id": "1020998757518586",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_SQ_V1",
+          "ad_id": "120250398584480233",
+          "creative_id": "864808742941963",
+          "type": "image"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_SQ_V1",
+          "ad_id": "120250398586740233",
+          "creative_id": "1356449853091804",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_SQ_V2",
+          "ad_id": "120250677817120233",
+          "creative_id": "2516201482174167",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_SQ_V2",
+          "ad_id": "120250677821130233",
+          "creative_id": "1609803197489643",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_SQ_V2",
+          "ad_id": "120250677824330233",
+          "creative_id": "1055053393612432",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID45_SQ_V2",
+          "ad_id": "120250677828820233",
+          "creative_id": "1063157736383517",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_SQ_V2",
+          "ad_id": "120250677832120233",
+          "creative_id": "1727152981657023",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID45_SQ_V2",
+          "ad_id": "120250677834780233",
+          "creative_id": "1699995664387812",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_SQ_V2",
+          "ad_id": "120250677839810233",
+          "creative_id": "1803885497589550",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_SQ_V2",
+          "ad_id": "120250677843510233",
+          "creative_id": "2594143757692119",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 16,
+        "image": 3,
+        "total": 19
+      }
+    },
+    {
+      "name": "MB_LEADS_DE_MIX_20260707",
+      "id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_DE_AT_V1",
+          "ad_id": "120250543094960233",
+          "creative_id": "1344027943841304",
+          "type": "video"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_DE_AT_V1",
+          "ad_id": "120250543096190233",
+          "creative_id": "1052032620548155",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_DE_AT_V1",
+          "ad_id": "120250543097180233",
+          "creative_id": "1042973275358552",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_DE_AT_V1",
+          "ad_id": "120250543098240233",
+          "creative_id": "2505453183250358",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID45_DE_AT_V1",
+          "ad_id": "120250543100920233",
+          "creative_id": "1682130826411938",
+          "type": "video"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID916_DE_AT_V1",
+          "ad_id": "120250543103240233",
+          "creative_id": "979069135163339",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID45_DE_AT_V1",
+          "ad_id": "120250543105400233",
+          "creative_id": "883158501509232",
+          "type": "video"
+        },
+        {
+          "name": "TURNKEY_one-day-first-line_pov-day_VID916_DE_AT_V1",
+          "ad_id": "120250543106650233",
+          "creative_id": "1346247304147054",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID916_DE_AT_V1",
+          "ad_id": "120250543108970233",
+          "creative_id": "1050068247554664",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_first-line-all-day_allday_VID45_DE_AT_V1",
+          "ad_id": "120250543111740233",
+          "creative_id": "2177740156403746",
+          "type": "video"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_DE_AT_V1",
+          "ad_id": "120250543112930233",
+          "creative_id": "4463250344001395",
+          "type": "image"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_DE_AT_V1",
+          "ad_id": "120250543114950233",
+          "creative_id": "772494752592808",
+          "type": "image"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_DE_V2",
+          "ad_id": "120250677844610233",
+          "creative_id": "1812791239503889",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_DE_V2",
+          "ad_id": "120250677846970233",
+          "creative_id": "893317553820909",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_DE_V2",
+          "ad_id": "120250677850320233",
+          "creative_id": "1033571926195003",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID45_DE_V2",
+          "ad_id": "120250677852580233",
+          "creative_id": "2105518066976623",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_DE_V2",
+          "ad_id": "120250677854160233",
+          "creative_id": "852908057661474",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID45_DE_V2",
+          "ad_id": "120250677855950233",
+          "creative_id": "1500303314720301",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_DE_V2",
+          "ad_id": "120250677857080233",
+          "creative_id": "2451999968601912",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_DE_V2",
+          "ad_id": "120250677859260233",
+          "creative_id": "2098141074468277",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_DE_V2",
+          "ad_id": "120250677861340233",
+          "creative_id": "1509714346931285",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_DE_V2",
+          "ad_id": "120250677865990233",
+          "creative_id": "2432522667214622",
+          "type": "video",
+          "refresh": "2026-07-11",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 20,
+        "image": 2,
+        "total": 22
+      }
+    },
+    {
+      "name": "MB_LEADS_TR_MIX_202607",
+      "id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "launched": "2026-07-12",
+      "form_id": "2081818585879954",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_TR_V1",
+          "ad_id": "120250707889070233",
+          "creative_id": "4135073836636642",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_TR_V1",
+          "ad_id": "120250707889920233",
+          "creative_id": "2834783350189751",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_TR_V1",
+          "ad_id": "120250707891870233",
+          "creative_id": "27810278401923262",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_TR_V1",
+          "ad_id": "120250707896530233",
+          "creative_id": "1692827535351359",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID916_TR_V1",
+          "ad_id": "120250707903990233",
+          "creative_id": "4585604861716669",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID45_TR_V1",
+          "ad_id": "120250707905650233",
+          "creative_id": "1363075909117245",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_TR_V1",
+          "ad_id": "120250707908500233",
+          "creative_id": "931858142646885",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_TR_V1",
+          "ad_id": "120250707909840233",
+          "creative_id": "1018533960901780",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_TR_V1",
+          "ad_id": "120250707911330233",
+          "creative_id": "1949050075802744",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_TR_V1",
+          "ad_id": "120250707912390233",
+          "creative_id": "1761705448476798",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_TR_V1",
+          "ad_id": "120250707913270233",
+          "creative_id": "1393183925957903",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_TR_V1",
+          "ad_id": "120250707914170233",
+          "creative_id": "1358006662957195",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_TR_V1",
+          "ad_id": "120250707916620233",
+          "creative_id": "2505130589912065",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_TR_V1",
+          "ad_id": "120250707919270233",
+          "creative_id": "1970051327008851",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_TR_V1",
+          "ad_id": "120250707921170233",
+          "creative_id": "1367191732040016",
+          "type": "image",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_TR_V1",
+          "ad_id": "120250707922840233",
+          "creative_id": "962443773491103",
+          "type": "image",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 14,
+        "image": 2,
+        "total": 16
+      }
+    },
+    {
+      "name": "MB_LEADS_UA_MIX_202607",
+      "id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "launched": "2026-07-12",
+      "form_id": "1041430885197460",
+      "ads": [
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID916_UA_V1",
+          "ad_id": "120250708228070233",
+          "creative_id": "1403369238520316",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_avatar-presenter_talking-head_VID45_UA_V1",
+          "ad_id": "120250708231350233",
+          "creative_id": "1904445866894626",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_UA_V1",
+          "ad_id": "120250708234750233",
+          "creative_id": "4410074742569823",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_UA_V1",
+          "ad_id": "120250708236240233",
+          "creative_id": "1001568652714875",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID916_UA_V1",
+          "ad_id": "120250708237800233",
+          "creative_id": "1347573804134817",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "ENERGY_dawn-to-lights_timelapse_VID45_UA_V1",
+          "ad_id": "120250708239170233",
+          "creative_id": "1507873521022921",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID916_UA_V1",
+          "ad_id": "120250708242850233",
+          "creative_id": "1010828888471802",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-a_VID45_UA_V1",
+          "ad_id": "120250708245940233",
+          "creative_id": "1570160247800180",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-b_VID916_UA_V1",
+          "ad_id": "120250708247970233",
+          "creative_id": "27062642376765809",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "TURNKEY_one-day-v2_hook-c_VID916_UA_V1",
+          "ad_id": "120250708250500233",
+          "creative_id": "1008747145102944",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_UA_V1",
+          "ad_id": "120250708253340233",
+          "creative_id": "1737912544006719",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_UA_V1",
+          "ad_id": "120250708255700233",
+          "creative_id": "3580737988749803",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_UA_V1",
+          "ad_id": "120250708258140233",
+          "creative_id": "1575224887376763",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID45_UA_V1",
+          "ad_id": "120250708259300233",
+          "creative_id": "2261360038020711",
+          "type": "video",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_UA_V1",
+          "ad_id": "120250708261050233",
+          "creative_id": "1550436029791365",
+          "type": "image",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_UA_V1",
+          "ad_id": "120250708263950233",
+          "creative_id": "1376073631098242",
+          "type": "image",
+          "status": "ACTIVE"
+        }
+      ],
+      "counts": {
+        "video": 14,
+        "image": 2,
+        "total": 16
+      }
+    }
+  ],
+  "dsa_source": "old DACH adset 120245381260240233 ('New Leads Ad Set', campaign 'Austria- Leads Campaign')",
+  "refresh_2026_07_11": {
+    "added_ads": 95,
+    "note": "add-only IG-identity refresh; new ads carry instagram_user_id 17841475384506205"
+  }
+}
