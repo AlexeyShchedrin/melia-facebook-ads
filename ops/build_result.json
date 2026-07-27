@@ -1683,6 +1683,74 @@
         "image": 2,
         "total": 16
       }
+    },
+    {
+      "name": "MB_RTG_A_MIX_202607",
+      "id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "ads": [
+        {
+          "name": "INVEST_price-video_kinetic_VID916_DE_V2",
+          "ad_id": "120251109200620233",
+          "creative_id": "1509714346931285"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_DE_V2",
+          "ad_id": "120251109202190233",
+          "creative_id": "2432522667214622"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_DE_V2",
+          "ad_id": "120251109203270233",
+          "creative_id": "2451999968601912"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_DE_V1",
+          "ad_id": "120251109205140233",
+          "creative_id": "1705925823776284"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_DE_V1",
+          "ad_id": "120251109207460233",
+          "creative_id": "1678958623389054"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_DE_V1",
+          "ad_id": "120251109209410233",
+          "creative_id": "958479927209406"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID916_PL_V2",
+          "ad_id": "120251109210770233",
+          "creative_id": "1551895066347096"
+        },
+        {
+          "name": "INVEST_price-video_kinetic_VID45_PL_V2",
+          "ad_id": "120251109213390233",
+          "creative_id": "2030155417869667"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_presenter_VID916_PL_V2",
+          "ad_id": "120251109215630233",
+          "creative_id": "3950087241959545"
+        },
+        {
+          "name": "FIRSTLINE_price-anchor_static_IMG45_PL_V1",
+          "ad_id": "120251109218000233",
+          "creative_id": "1022315793854746"
+        },
+        {
+          "name": "TURNKEY_payment-plan_static_IMG45_PL_V1",
+          "ad_id": "120251109221710233",
+          "creative_id": "1021125316997873"
+        },
+        {
+          "name": "MELIAHOME_operator-trust_static_IMG45_PL_V1",
+          "ad_id": "120251109223810233",
+          "creative_id": "2076867926521010"
+        }
+      ],
+      "launched": "2026-07-27"
     }
   ],
   "dsa_source": "old DACH adset 120245381260240233 ('New Leads Ad Set', campaign 'Austria- Leads Campaign')",
