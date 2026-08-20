@@ -67,11 +67,17 @@ def field_data_to_map(field_data: list[dict[str, Any]]) -> dict[str, str]:
     return out
 
 
-async def poll_form_leads(form_id: str, since_unix: int | None = None) -> list[dict[str, Any]]:
+async def poll_form_leads(
+    form_id: str, since_unix: int | None = None, *, max_pages: int = 100
+) -> list[dict[str, Any]]:
     """GET /{form_id}/leads — reconciliation drain (cursor-paginated).
 
     Returns full lead objects (same shape as resolve_lead). `since_unix` filters
-    server-side on time_created, so the 15-min poll only pulls new rows."""
+    server-side on time_created, so the 15-min poll only pulls new rows.
+
+    Meta returns leads newest-first, so `max_pages` is a useful knob and not just a
+    runaway guard: a reconciler that only needs to know "did we miss anything
+    recently" can cap at a page or two instead of walking the 90-day window."""
     import json  # noqa: PLC0415
 
     params: dict[str, Any] = {"fields": _RESOLVE_FIELDS, "limit": 50}
@@ -80,13 +86,25 @@ async def poll_form_leads(form_id: str, since_unix: int | None = None) -> list[d
             [{"field": "time_created", "operator": "GREATER_THAN", "value": since_unix}]
         )
     leads: list[dict[str, Any]] = []
+    pages = 0
     async with await GraphClient.for_provider(PAGE) as g:
         resp = await g.get(f"{form_id}/leads", params=params)
         while True:
             leads.extend(resp.get("data", []))
+            pages += 1
             paging = resp.get("paging") or {}
             after = (paging.get("cursors") or {}).get("after")
             if not paging.get("next") or not after:
+                break
+            if pages >= max_pages:
+                # Never truncate a time-bounded sweep silently: that one looks
+                # exactly like a complete window to the caller and may really have
+                # dropped leads. A capped newest-first scan is by design.
+                log = logger.warning if since_unix else logger.debug
+                log(
+                    "poll_form_leads(%s): stopped at the %d-page cap with %d leads",
+                    form_id, max_pages, len(leads),
+                )
                 break
             resp = await g.get(f"{form_id}/leads", params={**params, "after": after})
     return leads

@@ -192,9 +192,19 @@ review) в `meta.moderation_state`; budget pacing (алерты дрейфа); i
 (Page-токен) → маппит `field_data[].{name,values}` → POST в `/api/ads/meta/lead-ingest`
 (HMAC) → пишет `meta.processed_inbound` (идемпотентность по `leadgen_id`).
 
-**Polling-сверщик** (`jobs/lead_poll.py`): `GET /{form_id}/leads` с фильтром `created_time`
-(окно <90д) → тот же resolve+ингест. Нужен, т.к. доставка вебхука at-least-once, без
-гарантии порядка, с дропами. Дедуп на всех путях по `leadgen_id`.
+**Polling-сверщик** (`jobs/lead_poll.py` → `ingest/poller.py`, **реализован 2026-08-20**):
+каждые 15 мин `GET /{page_id}/leadgen_forms`, дальше по каждой активной форме
+`GET /{form_id}/leads` с фильтром `created_time` (окно 24ч, `FB_LEAD_POLL_*`). Всё, чего
+нет в `meta.processed_inbound`, идёт через тот же `ingest_and_record`, что и живой путь —
+восстановленный лид байт-в-байт равен пришедшему вебхуком. Плюс ретрай строк с
+`crm_lead_id IS NULL` (ограничен `attempts`), поэтому 422 больше **не терминален**.
+
+Нужен, т.к. доставка вебхука at-least-once, без гарантии порядка, с дропами — а деплой CRM
+на время окна отдаёт inbound-вебхукам 502. Дедуп на всех путях по `leadgen_id`; гонку с
+живым резолвером снимает общий advisory-lock. `leads_count` формы — только подсказка
+(не считает тестовые лиды и в проде показывал 0 у формы с 203 лидами), поэтому она никогда
+не гейтит сверку: если Meta насчитала больше нашего, это лишь повод просканировать
+новейшие страницы без фильтра (Meta отдаёт лиды newest-first).
 
 **Качество формы** (меньше мусора): `is_optimized_for_quality`,
 `is_phone_sms_verify_enabled` (OTP), кастомные вопросы (↓ prefill-фрод). Обязательный

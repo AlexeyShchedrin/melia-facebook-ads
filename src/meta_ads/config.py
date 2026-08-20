@@ -54,6 +54,24 @@ class Settings(BaseSettings):
     # boost EVERYTHING published, no filters of ours.
     fb_ig_boost_lint_enabled: bool = False
 
+    # ─── Lead reconciliation (worker job lead_poll) ──────────────────
+    # Safety net for leadgen webhooks that never arrive. Meta keeps leads
+    # retrievable for 90 days, so a miss is recoverable — but only if something
+    # actually looks.
+    fb_lead_poll_enabled: bool = True
+    # Routine window per form. Wide enough to cover a webhook Meta retried and
+    # gave up on, narrow enough that each poll returns almost nothing.
+    fb_lead_poll_lookback_hours: int = 24
+    # When Meta's leads_count exceeds ours, scan the newest pages with no time
+    # filter instead — leads come back newest-first, so a small gap surfaces at
+    # once however old it is.
+    fb_lead_poll_deep_pages: int = 2
+    fb_lead_poll_max_pages: int = 5
+    # Recorded failures are re-tried until this many attempts, then left alone
+    # for a human (they stay visible as crm_lead_id IS NULL).
+    fb_lead_poll_max_attempts: int = 5
+    fb_lead_poll_retry_limit: int = 25
+
     # ─── Telegram ────────────────────────────────────────────────────
     telegram_bot_token: SecretStr = Field(default=SecretStr(""))
     telegram_fb_chat_id: str = Field(default="")

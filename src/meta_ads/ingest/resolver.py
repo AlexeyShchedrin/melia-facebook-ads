@@ -61,6 +61,31 @@ async def _names_for(ad_id: str | None, form_id: str | None) -> dict[str, str]:
     return out
 
 
+async def build_crm_payload(
+    leadgen_id: str, raw: dict[str, Any], form_id_hint: str | None = None
+) -> dict[str, Any]:
+    """Graph lead object -> the CRM ingest contract.
+
+    The single place the payload is shaped: the live resolver and the lead_poll
+    reconciler both go through here, so a recovered lead is byte-identical to a
+    webhook-delivered one.
+    """
+    form_id = raw.get("form_id") or form_id_hint
+    names = await _names_for(raw.get("ad_id"), form_id)
+    return {
+        "leadgen_id": leadgen_id,
+        "form_id": form_id,
+        "created_time": raw.get("created_time"),
+        "campaign_id": raw.get("campaign_id"),
+        "adset_id": raw.get("adset_id"),
+        "ad_id": raw.get("ad_id"),
+        "platform": raw.get("platform"),
+        "is_organic": raw.get("is_organic"),
+        **names,  # campaign_name / adset_name / ad_name / form_name
+        "fields": field_data_to_map(raw.get("field_data", [])),
+    }
+
+
 @dataclass
 class ResolveOutcome:
     fetched: int = 0
@@ -126,6 +151,32 @@ class InboundResolver:
             data = resp.json() if resp.content else {}
             return data.get("leadId") or data.get("lead_id")  # CRM route answers camelCase
 
+    async def ingest_and_record(
+        self,
+        session: AsyncSession,
+        *,
+        leadgen_id: str,
+        form_id: str | None,
+        raw: dict[str, Any] | None = None,
+    ) -> bool:
+        """Resolve -> POST to the CRM -> record the outcome. Never raises.
+
+        `raw` lets a caller hand over a lead object it already holds: poll_form_leads
+        returns the same shape as resolve_lead, so reconciling costs no second Graph
+        call per lead. Returns True when the CRM took the lead.
+        """
+        item = _Inbound(id=0, leadgen_id=leadgen_id, form_id=form_id)
+        try:
+            lead = raw if raw is not None else await resolve_lead(leadgen_id)
+            payload = await build_crm_payload(leadgen_id, lead, form_id)
+            crm_lead_id = await self._post_to_crm(payload)
+            await self._record(session, item, crm_lead_id=crm_lead_id, error=None)
+            return True
+        except Exception as exc:  # noqa: BLE001
+            logger.exception("resolve failed for leadgen_id=%s", leadgen_id)
+            await self._record(session, item, crm_lead_id=None, error=str(exc))
+            return False
+
     async def run(self, *, limit: int = 100) -> ResolveOutcome:
         from meta_ads.db import async_session_maker  # noqa: PLC0415
 
@@ -147,28 +198,11 @@ class InboundResolver:
             items = await self._fetch_unprocessed(session, limit)
             outcome.fetched = len(items)
             for item in items:
-                try:
-                    raw = await resolve_lead(item.leadgen_id)
-                    form_id = raw.get("form_id") or item.form_id
-                    names = await _names_for(raw.get("ad_id"), form_id)
-                    lead = {
-                        "leadgen_id": item.leadgen_id,
-                        "form_id": form_id,
-                        "created_time": raw.get("created_time"),
-                        "campaign_id": raw.get("campaign_id"),
-                        "adset_id": raw.get("adset_id"),
-                        "ad_id": raw.get("ad_id"),
-                        "platform": raw.get("platform"),
-                        "is_organic": raw.get("is_organic"),
-                        **names,  # campaign_name / adset_name / ad_name / form_name
-                        "fields": field_data_to_map(raw.get("field_data", [])),
-                    }
-                    crm_lead_id = await self._post_to_crm(lead)
-                    await self._record(session, item, crm_lead_id=crm_lead_id, error=None)
+                if await self.ingest_and_record(
+                    session, leadgen_id=item.leadgen_id, form_id=item.form_id
+                ):
                     outcome.ingested += 1
-                except Exception as exc:  # noqa: BLE001
-                    logger.exception("resolve failed for leadgen_id=%s", item.leadgen_id)
-                    await self._record(session, item, crm_lead_id=None, error=str(exc))
+                else:
                     outcome.failed += 1
             await session.commit()
         logger.info(
