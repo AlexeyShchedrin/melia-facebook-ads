@@ -36,6 +36,9 @@ logger = logging.getLogger(__name__)
 _ad_names_cache: dict[str, dict[str, str]] = {}
 _form_name_cache: dict[str, str] = {}
 
+# Single-flight key for the resolver (arbitrary, stable): "metald" in hex.
+_RESOLVE_LOCK_KEY = 0x6D6574616C64
+
 
 async def _names_for(ad_id: str | None, form_id: str | None) -> dict[str, str]:
     """Best-effort display names for the lead's attribution (never fatal)."""
@@ -92,13 +95,23 @@ class InboundResolver:
     async def _record(
         self, session: AsyncSession, item: _Inbound, *, crm_lead_id: int | None, error: str | None
     ) -> None:
+        # A leadgen_id can still be recorded twice (a run that predates the advisory
+        # lock, or a retry): one attempt carries the crm_lead_id, the other an error.
+        # This SET list used to omit crm_lead_id, so whichever attempt INSERTed first
+        # decided what stuck -- when the failing one won the race the successful one's
+        # lead id was thrown away AND its NULL error cleared the failure message, which
+        # left 8 ingested leads looking like they never reached the CRM. Keep the id
+        # once we have one, and treat a racing duplicate's error as noise.
         await session.execute(
             text(
                 "INSERT INTO meta.processed_inbound "
                 "(leadgen_id, form_id, crm_lead_id, error, attempts, processed_at) "
                 "VALUES (:lid, :fid, :clid, :err, 1, now()) "
                 "ON CONFLICT (leadgen_id) DO UPDATE SET "
-                "error = EXCLUDED.error, attempts = meta.processed_inbound.attempts + 1, processed_at = now()"
+                "crm_lead_id = COALESCE(EXCLUDED.crm_lead_id, meta.processed_inbound.crm_lead_id), "
+                "error = CASE WHEN COALESCE(EXCLUDED.crm_lead_id, meta.processed_inbound.crm_lead_id) "
+                "IS NULL THEN EXCLUDED.error ELSE NULL END, "
+                "attempts = meta.processed_inbound.attempts + 1, processed_at = now()"
             ),
             {"lid": item.leadgen_id, "fid": item.form_id, "clid": crm_lead_id, "err": error},
         )
@@ -118,6 +131,19 @@ class InboundResolver:
 
         outcome = ResolveOutcome()
         async with async_session_maker() as session:
+            # Single-flight. This job fires from BOTH the 30 s timer and the LISTEN
+            # callback -- separate asyncio tasks, so APScheduler's max_instances=1 does
+            # not cover them -- and _fetch_unprocessed cannot see rows the other run has
+            # resolved but not yet committed. Without the lock both runs resolve the same
+            # leadgen_id and POST it twice, the loser tripping the CRM's unique
+            # external-key index with a 500 (15% of rows show attempts > 1). The lock is
+            # transaction-scoped: it releases on commit/rollback as this session closes.
+            # A skipped tick costs at most 30 s, and the next tick picks the work up.
+            if not await session.scalar(
+                text("SELECT pg_try_advisory_xact_lock(:k)"), {"k": _RESOLVE_LOCK_KEY}
+            ):
+                logger.debug("inbound resolve: another run holds the lock -- skipping")
+                return outcome
             items = await self._fetch_unprocessed(session, limit)
             outcome.fetched = len(items)
             for item in items:

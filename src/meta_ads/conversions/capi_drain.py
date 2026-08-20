@@ -128,7 +128,10 @@ class CapiDrain:
                 "INSERT INTO meta.processed_outbox "
                 "(crm_outbox_id, kind, lead_id, meta_lead_id, event_id, error, attempts, processed_at) "
                 "VALUES (:id, :kind, :lead_id, :mlid, :eid, :err, 1, now()) "
+                # Same shape as meta.processed_inbound above: without the COALESCE a
+                # re-record drops the meta_lead_id the CAPI event was sent with.
                 "ON CONFLICT (crm_outbox_id) DO UPDATE SET "
+                "meta_lead_id = COALESCE(EXCLUDED.meta_lead_id, meta.processed_outbox.meta_lead_id), "
                 "error = EXCLUDED.error, attempts = meta.processed_outbox.attempts + 1, processed_at = now()"
             ),
             {
