@@ -288,6 +288,24 @@ MVP связывает A+B (без кампании и без приёма ли�
 готовность доказывается **бесплатно** (testing tool) до трат; «живой лид» зависит от
 неинженерных факторов (funding, TOS, модерация ≤24ч, бюджет, живой человек) — закладываем дни.
 
+### Мульти-Page (2026-08, запуск Sunraf)
+
+Сервис работает с несколькими Facebook Page: `META_EXTRA_PAGE_IDS` (CSV) в
+`.env` добавляет Page к основной (`settings.page_ids`, основная первой).
+Page-токены резолвятся per-page (`oauth_tokens(provider='meta_page',
+asset_id=<page_id>)`, иначе минт через System User — он должен иметь роль на
+каждой Page; env-`META_PAGE_TOKEN` принадлежит ТОЛЬКО основной Page).
+Резолвер читает `page_id` из `v_meta_inbound` и хранит его в
+`meta.processed_inbound` (alembic 0003), чтобы ретрай lead_poll шёл тем же
+токеном; реконсайлер обходит формы каждой Page. Роутинг лида в проект CRM
+(Sunraf и т.д.) делает CRM-реестр `campaign_attribution` (колонки
+project/purpose + ответ формы `deal_type`) — сервису проект знать не нужно.
+
+**CAPI для Sunraf — осознанный non-goal v1**: `v_leads_meta` пришита к slug
+`meta-lead-form` (Melia), лиды Sunraf живут на `meta-lead-form-sunraf`,
+поэтому drain видит их outbox-события как «не meta-лид» и штатно скипает.
+Свой dataset и роутинг drain по проекту — отдельной фазой.
+
 ---
 
 ## 8. Деплой серверной части (проверено на боксе 2026-07-01)
