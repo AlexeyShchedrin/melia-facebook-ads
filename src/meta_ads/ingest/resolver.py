@@ -40,7 +40,9 @@ _form_name_cache: dict[str, str] = {}
 _RESOLVE_LOCK_KEY = 0x6D6574616C64
 
 
-async def _names_for(ad_id: str | None, form_id: str | None) -> dict[str, str]:
+async def _names_for(
+    ad_id: str | None, form_id: str | None, page_id: str | None = None
+) -> dict[str, str]:
     """Best-effort display names for the lead's attribution (never fatal)."""
     out: dict[str, str] = {}
     if ad_id:
@@ -53,7 +55,7 @@ async def _names_for(ad_id: str | None, form_id: str | None) -> dict[str, str]:
     if form_id:
         try:
             if form_id not in _form_name_cache:
-                _form_name_cache[form_id] = await resolve_form_name(form_id)
+                _form_name_cache[form_id] = await resolve_form_name(form_id, page_id)
             if _form_name_cache[form_id]:
                 out["form_name"] = _form_name_cache[form_id]
         except Exception:  # noqa: BLE001
@@ -62,7 +64,10 @@ async def _names_for(ad_id: str | None, form_id: str | None) -> dict[str, str]:
 
 
 async def build_crm_payload(
-    leadgen_id: str, raw: dict[str, Any], form_id_hint: str | None = None
+    leadgen_id: str,
+    raw: dict[str, Any],
+    form_id_hint: str | None = None,
+    page_id: str | None = None,
 ) -> dict[str, Any]:
     """Graph lead object -> the CRM ingest contract.
 
@@ -71,7 +76,7 @@ async def build_crm_payload(
     webhook-delivered one.
     """
     form_id = raw.get("form_id") or form_id_hint
-    names = await _names_for(raw.get("ad_id"), form_id)
+    names = await _names_for(raw.get("ad_id"), form_id, page_id)
     return {
         "leadgen_id": leadgen_id,
         "form_id": form_id,
@@ -98,6 +103,9 @@ class _Inbound:
     id: int
     leadgen_id: str
     form_id: str | None
+    # Page the webhook relay recorded — the lead is only readable with THAT
+    # page's token (multi-page). None (pre-multi-page rows) = the primary Page.
+    page_id: str | None = None
 
 
 class InboundResolver:
@@ -107,7 +115,7 @@ class InboundResolver:
     async def _fetch_unprocessed(self, session: AsyncSession, limit: int) -> list[_Inbound]:
         rows = await session.execute(
             text(
-                "SELECT i.id, i.leadgen_id, i.form_id "
+                "SELECT i.id, i.leadgen_id, i.form_id, i.page_id "
                 "FROM ads_contract.v_meta_inbound i "
                 "LEFT JOIN meta.processed_inbound p ON p.leadgen_id = i.leadgen_id "
                 "WHERE p.leadgen_id IS NULL "
@@ -115,7 +123,10 @@ class InboundResolver:
             ),
             {"lim": limit},
         )
-        return [_Inbound(id=r.id, leadgen_id=r.leadgen_id, form_id=r.form_id) for r in rows]
+        return [
+            _Inbound(id=r.id, leadgen_id=r.leadgen_id, form_id=r.form_id, page_id=r.page_id)
+            for r in rows
+        ]
 
     async def _record(
         self, session: AsyncSession, item: _Inbound, *, crm_lead_id: int | None, error: str | None
@@ -130,15 +141,25 @@ class InboundResolver:
         await session.execute(
             text(
                 "INSERT INTO meta.processed_inbound "
-                "(leadgen_id, form_id, crm_lead_id, error, attempts, processed_at) "
-                "VALUES (:lid, :fid, :clid, :err, 1, now()) "
+                "(leadgen_id, form_id, page_id, crm_lead_id, error, attempts, processed_at) "
+                "VALUES (:lid, :fid, :pid, :clid, :err, 1, now()) "
                 "ON CONFLICT (leadgen_id) DO UPDATE SET "
                 "crm_lead_id = COALESCE(EXCLUDED.crm_lead_id, meta.processed_inbound.crm_lead_id), "
+                # page_id is COALESCE-preserved like crm_lead_id: without it the
+                # lead_poll retry would re-resolve a non-primary page's lead with
+                # the wrong (primary) Page token and burn all 5 attempts.
+                "page_id = COALESCE(EXCLUDED.page_id, meta.processed_inbound.page_id), "
                 "error = CASE WHEN COALESCE(EXCLUDED.crm_lead_id, meta.processed_inbound.crm_lead_id) "
                 "IS NULL THEN EXCLUDED.error ELSE NULL END, "
                 "attempts = meta.processed_inbound.attempts + 1, processed_at = now()"
             ),
-            {"lid": item.leadgen_id, "fid": item.form_id, "clid": crm_lead_id, "err": error},
+            {
+                "lid": item.leadgen_id,
+                "fid": item.form_id,
+                "pid": item.page_id,
+                "clid": crm_lead_id,
+                "err": error,
+            },
         )
 
     async def _post_to_crm(self, lead: dict[str, Any]) -> int | None:
@@ -158,17 +179,20 @@ class InboundResolver:
         leadgen_id: str,
         form_id: str | None,
         raw: dict[str, Any] | None = None,
+        page_id: str | None = None,
     ) -> bool:
         """Resolve -> POST to the CRM -> record the outcome. Never raises.
 
         `raw` lets a caller hand over a lead object it already holds: poll_form_leads
         returns the same shape as resolve_lead, so reconciling costs no second Graph
-        call per lead. Returns True when the CRM took the lead.
+        call per lead. `page_id` picks the owning Page's token for the Graph reads
+        (multi-page); None = the primary Page. Returns True when the CRM took the
+        lead.
         """
-        item = _Inbound(id=0, leadgen_id=leadgen_id, form_id=form_id)
+        item = _Inbound(id=0, leadgen_id=leadgen_id, form_id=form_id, page_id=page_id)
         try:
-            lead = raw if raw is not None else await resolve_lead(leadgen_id)
-            payload = await build_crm_payload(leadgen_id, lead, form_id)
+            lead = raw if raw is not None else await resolve_lead(leadgen_id, page_id)
+            payload = await build_crm_payload(leadgen_id, lead, form_id, page_id)
             crm_lead_id = await self._post_to_crm(payload)
             await self._record(session, item, crm_lead_id=crm_lead_id, error=None)
             return True
@@ -199,7 +223,10 @@ class InboundResolver:
             outcome.fetched = len(items)
             for item in items:
                 if await self.ingest_and_record(
-                    session, leadgen_id=item.leadgen_id, form_id=item.form_id
+                    session,
+                    leadgen_id=item.leadgen_id,
+                    form_id=item.form_id,
+                    page_id=item.page_id,
                 ):
                     outcome.ingested += 1
                 else:

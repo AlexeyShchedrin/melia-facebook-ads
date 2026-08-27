@@ -46,6 +46,9 @@ class FormPoll:
     since_unix: int | None
     max_pages: int
     reason: str
+    # Page the form belongs to — its token is the only one that can read the
+    # form's leads (multi-page). None = the primary Page.
+    page_id: str | None = None
 
 
 @dataclass
@@ -68,6 +71,7 @@ def plan_polls(
     lookback_hours: int,
     deep_pages: int,
     max_pages: int,
+    page_id: str | None = None,
 ) -> list[FormPoll]:
     """Decide which forms to sweep, and how far back to look.
 
@@ -94,10 +98,12 @@ def plan_polls(
             continue  # a form that has never taken a lead — nothing to reconcile
         if isinstance(theirs, int) and theirs > ours:
             plans.append(
-                FormPoll(form_id, None, deep_pages, f"meta says {theirs}, we hold {ours}")
+                FormPoll(
+                    form_id, None, deep_pages, f"meta says {theirs}, we hold {ours}", page_id
+                )
             )
         else:
-            plans.append(FormPoll(form_id, cutoff, max_pages, "routine"))
+            plans.append(FormPoll(form_id, cutoff, max_pages, "routine", page_id))
     return plans
 
 
@@ -115,11 +121,16 @@ class LeadPoller:
         )
         return {r[0]: r[1] for r in rows}
 
-    async def _retryable(self, session: AsyncSession) -> list[tuple[str, str | None]]:
-        """Rows that never reached the CRM and still have attempts left."""
+    async def _retryable(
+        self, session: AsyncSession
+    ) -> list[tuple[str, str | None, str | None]]:
+        """Rows that never reached the CRM and still have attempts left.
+
+        page_id rides along (NULL for pre-multi-page rows = primary Page) so a
+        retry resolves with the same Page token the live attempt used."""
         rows = await session.execute(
             text(
-                "SELECT leadgen_id, form_id FROM meta.processed_inbound "
+                "SELECT leadgen_id, form_id, page_id FROM meta.processed_inbound "
                 "WHERE crm_lead_id IS NULL AND attempts < :max "
                 "ORDER BY processed_at LIMIT :lim"
             ),
@@ -128,7 +139,7 @@ class LeadPoller:
                 "lim": self._settings.fb_lead_poll_retry_limit,
             },
         )
-        return [(r[0], r[1]) for r in rows]
+        return [(r[0], r[1], r[2]) for r in rows]
 
     async def _known(self, session: AsyncSession, ids: list[str]) -> set[str]:
         if not ids:
@@ -153,20 +164,34 @@ class LeadPoller:
             our_counts = await self._our_counts(session)
             retry = await self._retryable(session)
 
-        plans = plan_polls(
-            await list_forms(),
-            our_counts,
-            now_unix=int(datetime.now(UTC).timestamp()),
-            lookback_hours=self._settings.fb_lead_poll_lookback_hours,
-            deep_pages=self._settings.fb_lead_poll_deep_pages,
-            max_pages=self._settings.fb_lead_poll_max_pages,
-        )
+        # Every configured Page gets its own form sweep — the safety net must
+        # cover the second project's Page too, or its dropped webhooks would
+        # never be recovered. One unreachable Page must not sink the others.
+        now_unix = int(datetime.now(UTC).timestamp())
+        plans: list[FormPoll] = []
+        for page_id in self._settings.page_ids:
+            try:
+                page_forms = await list_forms(page_id)
+            except Exception:  # noqa: BLE001
+                logger.exception("lead_poll: listing forms for page %s failed", page_id)
+                continue
+            plans.extend(
+                plan_polls(
+                    page_forms,
+                    our_counts,
+                    now_unix=now_unix,
+                    lookback_hours=self._settings.fb_lead_poll_lookback_hours,
+                    deep_pages=self._settings.fb_lead_poll_deep_pages,
+                    max_pages=self._settings.fb_lead_poll_max_pages,
+                    page_id=page_id,
+                )
+            )
 
-        candidates: dict[str, tuple[str, dict[str, Any]]] = {}
+        candidates: dict[str, tuple[str, dict[str, Any], str | None]] = {}
         for plan in plans:
             try:
                 leads = await poll_form_leads(
-                    plan.form_id, plan.since_unix, max_pages=plan.max_pages
+                    plan.form_id, plan.since_unix, max_pages=plan.max_pages, page_id=plan.page_id
                 )
             except Exception:  # noqa: BLE001
                 # One unreadable form must not sink the sweep for the other 15.
@@ -178,18 +203,18 @@ class LeadPoller:
             for raw in leads:
                 leadgen_id = str(raw.get("id") or "")
                 if leadgen_id:
-                    candidates[leadgen_id] = (plan.form_id, raw)
+                    candidates[leadgen_id] = (plan.form_id, raw, plan.page_id)
 
         # Which of those do we actually not have? A read, so it happens before we
         # take the lock: on a quiet tick (the normal case) this job then opens no
         # transaction and never interrupts the live resolver at all.
-        fresh: list[tuple[str, str, dict[str, Any]]] = []
+        fresh: list[tuple[str, str, dict[str, Any], str | None]] = []
         if candidates:
             async with async_session_maker() as session:
                 known = await self._known(session, list(candidates))
             fresh = [
-                (leadgen_id, form_id, raw)
-                for leadgen_id, (form_id, raw) in candidates.items()
+                (leadgen_id, form_id, raw, page_id)
+                for leadgen_id, (form_id, raw, page_id) in candidates.items()
                 if leadgen_id not in known
             ]
 
@@ -206,7 +231,7 @@ class LeadPoller:
                 logger.info("lead_poll: resolver busy -- deferring to the next tick")
                 return outcome
 
-            for leadgen_id, form_id, raw in fresh:
+            for leadgen_id, form_id, raw, page_id in fresh:
                 # Loud on purpose: this is a lead the live path never saw at all.
                 logger.warning(
                     "lead_poll: recovering lead %s (form %s) -- no webhook ever arrived",
@@ -214,13 +239,13 @@ class LeadPoller:
                     form_id,
                 )
                 if await self._resolver.ingest_and_record(
-                    session, leadgen_id=leadgen_id, form_id=form_id, raw=raw
+                    session, leadgen_id=leadgen_id, form_id=form_id, raw=raw, page_id=page_id
                 ):
                     outcome.recovered += 1
                 else:
                     outcome.failed += 1
 
-            for leadgen_id, form_id in retry:
+            for leadgen_id, form_id, page_id in retry:
                 # Reuse the polled object when this sweep already fetched it.
                 polled = candidates.get(leadgen_id)
                 if await self._resolver.ingest_and_record(
@@ -228,6 +253,7 @@ class LeadPoller:
                     leadgen_id=leadgen_id,
                     form_id=form_id,
                     raw=polled[1] if polled else None,
+                    page_id=page_id if page_id else (polled[2] if polled else None),
                 ):
                     outcome.retried += 1
                 else:

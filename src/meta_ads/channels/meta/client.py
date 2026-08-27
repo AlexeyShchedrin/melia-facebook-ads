@@ -79,7 +79,11 @@ async def get_token(provider: str, asset_id: str | None = None) -> str:
     if provider == SYSTEM_USER and s.meta_system_user_token.get_secret_value():
         return s.meta_system_user_token.get_secret_value()
     if provider == PAGE:
-        if s.meta_page_token.get_secret_value():
+        # The .env bootstrap token belongs to the PRIMARY page only — handing
+        # it out for another page_id (multi-page: e.g. the Sunraf Page) would
+        # resolve that page's leads with the wrong token. Extra pages mint via
+        # the System User (which must hold a role on them) instead.
+        if s.meta_page_token.get_secret_value() and asset_id == s.meta_page_id:
             return s.meta_page_token.get_secret_value()
         # Mint a Page token from the System User (which has a role on the Page) —
         # no need to store a separate Page token.

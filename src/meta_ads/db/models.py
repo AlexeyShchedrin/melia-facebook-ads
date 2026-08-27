@@ -155,6 +155,11 @@ class ProcessedInbound(Base):
 
     leadgen_id: Mapped[str] = mapped_column(String(32), primary_key=True)
     form_id: Mapped[str | None] = mapped_column(String(64), nullable=True)
+    # Page the webhook relay recorded (multi-page). NULL (pre-multi-page rows)
+    # = the primary Page. Persisted so the lead_poll RETRY resolves with the
+    # same Page token the live attempt used — without it a non-primary page's
+    # failed lead would burn its remaining attempts with the wrong token.
+    page_id: Mapped[str | None] = mapped_column(String(64), nullable=True)
     crm_lead_id: Mapped[int | None] = mapped_column(BigInteger, nullable=True)
     error: Mapped[str | None] = mapped_column(Text, nullable=True)
     attempts: Mapped[int] = mapped_column(Integer, default=0, nullable=False)

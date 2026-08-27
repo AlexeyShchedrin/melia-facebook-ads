@@ -1,3 +1,4 @@
+import re
 from functools import lru_cache
 from pathlib import Path
 from typing import Literal
@@ -26,6 +27,15 @@ class Settings(BaseSettings):
     meta_api_version: str = Field(default="v25.0")
     meta_ad_account_id: str = Field(default="")  # act_<id>
     meta_page_id: str = Field(default="")
+    # Additional Facebook Pages the workspace advertises from (multi-project:
+    # e.g. the Sunraf Page next to the Melia one). Comma/semicolon-separated
+    # ids; empty = single-page behaviour, byte-identical to before this knob
+    # existed. Each extra Page needs the System User to hold a role on it
+    # (Page tokens are minted per page) and the app subscribed to its leadgen
+    # webhook. The webhook relay records page_id per lead; the resolver uses
+    # it to pick the right Page token, and the reconciler sweeps every listed
+    # Page's forms.
+    meta_extra_page_ids: str = Field(default="")
     meta_dataset_id: str = Field(default="")  # Conversions API dataset
 
     # Bootstrap tokens (primary copies live encrypted in meta.oauth_tokens).
@@ -100,6 +110,19 @@ class Settings(BaseSettings):
     @property
     def creative_dirs(self) -> list[Path]:
         return [Path(p.strip()) for p in self.creative_source_dirs.split(";") if p.strip()]
+
+    @property
+    def page_ids(self) -> list[str]:
+        """Every Page the service works with: the primary + META_EXTRA_PAGE_IDS.
+
+        Ordered (primary first), deduplicated. With no extras this is exactly
+        [meta_page_id], so single-page installs behave as before."""
+        out: list[str] = []
+        for pid in [self.meta_page_id, *re.split(r"[;,]", self.meta_extra_page_ids)]:
+            pid = pid.strip()
+            if pid and pid not in out:
+                out.append(pid)
+        return out
 
 
 @lru_cache(maxsize=1)

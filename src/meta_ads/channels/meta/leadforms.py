@@ -57,15 +57,20 @@ async def create_leadgen_form(
         fields["context_card"] = json.dumps(context_card)
     if thank_you_page:
         fields["thank_you_page"] = json.dumps(thank_you_page)
-    async with await GraphClient.for_provider(PAGE) as g:
+    # Token must belong to the page the form is created on (multi-page).
+    async with await GraphClient.for_provider(PAGE, page_id) as g:
         resp = await g.post(f"{page_id}/leadgen_forms", data=fields)
     logger.info("created leadgen form %s -> %s", name, resp.get("id"))
     return resp["id"]
 
 
 async def list_forms(page_id: str | None = None) -> list[dict[str, Any]]:
-    """GET /{page_id}/leadgen_forms — enumerate forms (for the polling reconciler)."""
+    """GET /{page_id}/leadgen_forms — enumerate forms (for the polling reconciler).
+
+    The token must belong to the SAME page being enumerated (multi-page):
+    for_provider(PAGE, page_id) resolves that page's token, minting via the
+    System User when no stored/bootstrap token matches."""
     page_id = page_id or get_settings().meta_page_id
-    async with await GraphClient.for_provider(PAGE) as g:
+    async with await GraphClient.for_provider(PAGE, page_id) as g:
         resp = await g.get(f"{page_id}/leadgen_forms", params={"fields": "id,name,status,leads_count"})
     return resp.get("data", [])

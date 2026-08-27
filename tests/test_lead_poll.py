@@ -26,6 +26,9 @@ def fake_settings(**over: Any) -> SimpleNamespace:
         "fb_lead_poll_max_pages": 5,
         "fb_lead_poll_max_attempts": 5,
         "fb_lead_poll_retry_limit": 25,
+        # Multi-page: the run loop sweeps every configured Page's forms.
+        "meta_page_id": "PAGE1",
+        "page_ids": ["PAGE1"],
     }
     base.update(over)
     return SimpleNamespace(**base)
@@ -77,6 +80,20 @@ def test_a_form_reporting_zero_while_we_hold_leads_is_still_swept() -> None:
 def test_missing_leads_count_falls_back_to_routine() -> None:
     [plan] = planned([form("f1", leads=None)], {"f1": 5})
     assert plan.reason == "routine"
+
+
+def test_plans_carry_the_owning_page_id() -> None:
+    """Multi-page: a plan remembers which Page's token can read its form."""
+    [plan] = plan_polls(
+        [form("f1", leads=10)],
+        {"f1": 10},
+        now_unix=NOW,
+        lookback_hours=24,
+        deep_pages=2,
+        max_pages=5,
+        page_id="PAGE2",
+    )
+    assert plan.page_id == "PAGE2"
 
 
 # ── the run loop ────────────────────────────────────────────────────────────
@@ -135,12 +152,20 @@ class FakeDb:
 class FakeResolver:
     def __init__(self, *, fail: set[str] | None = None) -> None:
         self.ingested: list[tuple[str, str | None, bool]] = []
+        self.pages: list[str | None] = []
         self._fail = fail or set()
 
     async def ingest_and_record(
-        self, _session: Any, *, leadgen_id: str, form_id: str | None, raw: Any = None
+        self,
+        _session: Any,
+        *,
+        leadgen_id: str,
+        form_id: str | None,
+        raw: Any = None,
+        page_id: str | None = None,
     ) -> bool:
         self.ingested.append((leadgen_id, form_id, raw is not None))
+        self.pages.append(page_id)
         return leadgen_id not in self._fail
 
 
@@ -162,11 +187,15 @@ def wire(monkeypatch: pytest.MonkeyPatch):
     ) -> tuple[LeadPoller, FakeResolver, list[tuple[str, int | None, int]]]:
         calls: list[tuple[str, int | None, int]] = []
 
-        async def fake_list_forms() -> list[dict[str, Any]]:
+        async def fake_list_forms(page_id: str | None = None) -> list[dict[str, Any]]:
             return forms
 
         async def fake_poll(
-            form_id: str, since_unix: int | None = None, *, max_pages: int = 100
+            form_id: str,
+            since_unix: int | None = None,
+            *,
+            max_pages: int = 100,
+            page_id: str | None = None,
         ) -> list[dict[str, Any]]:
             calls.append((form_id, since_unix, max_pages))
             return leads_by_form.get(form_id, [])
@@ -214,7 +243,7 @@ async def test_leads_already_recorded_are_left_alone(wire) -> None:
 
 async def test_failed_rows_are_retried_and_reuse_the_polled_object(wire) -> None:
     """A row recorded without a crm_lead_id gets another go — a 422 is no longer terminal."""
-    db = FakeDb(counts={"f1": 1}, retryable=[("stuck1", "f1")], known={"stuck1"})
+    db = FakeDb(counts={"f1": 1}, retryable=[("stuck1", "f1", None)], known={"stuck1"})
     p, resolver, _ = wire(
         forms=[form("f1", leads=1)], leads_by_form={"f1": [lead("stuck1")]}, db=db
     )
@@ -228,7 +257,7 @@ async def test_failed_rows_are_retried_and_reuse_the_polled_object(wire) -> None
 
 
 async def test_retry_without_a_polled_object_resolves_from_graph(wire) -> None:
-    db = FakeDb(counts={}, retryable=[("old1", "f9")])
+    db = FakeDb(counts={}, retryable=[("old1", "f9", None)])
     p, resolver, _ = wire(forms=[], leads_by_form={}, db=db)
 
     out = await p.run()
@@ -271,7 +300,13 @@ async def test_one_broken_form_does_not_sink_the_sweep(wire, monkeypatch) -> Non
         db=db,
     )
 
-    async def explode(form_id: str, since_unix: int | None = None, *, max_pages: int = 100):
+    async def explode(
+        form_id: str,
+        since_unix: int | None = None,
+        *,
+        max_pages: int = 100,
+        page_id: str | None = None,
+    ):
         if form_id == "f1":
             raise RuntimeError("graph is down for this form")
         return [lead("m2")]
@@ -282,6 +317,26 @@ async def test_one_broken_form_does_not_sink_the_sweep(wire, monkeypatch) -> Non
 
     assert out.forms_polled == 1  # f1 failed, f2 still swept
     assert [lid for lid, *_ in resolver.ingested] == ["m2"]
+
+
+async def test_every_configured_page_is_swept(wire) -> None:
+    """Multi-page: the reconciler must cover the second project's Page too —
+    otherwise its dropped webhooks would never be recovered."""
+    db = FakeDb(counts={}, known=set())
+    p, resolver, calls = wire(
+        forms=[form("f1", leads=1)],
+        leads_by_form={"f1": [lead("m1")]},
+        db=db,
+        settings=fake_settings(page_ids=["PAGE1", "PAGE2"]),
+    )
+
+    out = await p.run()
+
+    # The (shared fake) form list is enumerated once per Page.
+    assert out.forms_polled == 2
+    assert len(calls) == 2
+    # The recovered lead carries the page the sweep found it on.
+    assert resolver.pages and all(pg in {"PAGE1", "PAGE2"} for pg in resolver.pages)
 
 
 async def test_disabled_poller_touches_nothing(wire) -> None:

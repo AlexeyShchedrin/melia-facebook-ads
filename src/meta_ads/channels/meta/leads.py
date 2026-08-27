@@ -28,16 +28,19 @@ async def resolve_ad_names(ad_id: str) -> dict[str, str]:
     }
 
 
-async def resolve_form_name(form_id: str) -> str:
-    async with await GraphClient.for_provider(PAGE) as g:
+async def resolve_form_name(form_id: str, page_id: str | None = None) -> str:
+    """`page_id` picks the owning Page's token (multi-page); None = primary."""
+    async with await GraphClient.for_provider(PAGE, page_id) as g:
         return (await g.get(form_id, params={"fields": "name"})).get("name") or ""
 
 
-async def resolve_lead(leadgen_id: str) -> dict[str, Any]:
+async def resolve_lead(leadgen_id: str, page_id: str | None = None) -> dict[str, Any]:
     """GET /{leadgen_id}?fields=field_data,... → the full lead.
 
+    A lead is readable only with ITS page's token, so multi-page callers pass
+    the page_id the webhook relay recorded; None = the primary Page.
     Returns the raw Graph object; `field_data` is a list of {name, values}."""
-    async with await GraphClient.for_provider(PAGE) as g:
+    async with await GraphClient.for_provider(PAGE, page_id) as g:
         return await g.get(leadgen_id, params={"fields": _RESOLVE_FIELDS})
 
 
@@ -68,7 +71,11 @@ def field_data_to_map(field_data: list[dict[str, Any]]) -> dict[str, str]:
 
 
 async def poll_form_leads(
-    form_id: str, since_unix: int | None = None, *, max_pages: int = 100
+    form_id: str,
+    since_unix: int | None = None,
+    *,
+    max_pages: int = 100,
+    page_id: str | None = None,
 ) -> list[dict[str, Any]]:
     """GET /{form_id}/leads — reconciliation drain (cursor-paginated).
 
@@ -87,7 +94,7 @@ async def poll_form_leads(
         )
     leads: list[dict[str, Any]] = []
     pages = 0
-    async with await GraphClient.for_provider(PAGE) as g:
+    async with await GraphClient.for_provider(PAGE, page_id) as g:
         resp = await g.get(f"{form_id}/leads", params=params)
         while True:
             leads.extend(resp.get("data", []))

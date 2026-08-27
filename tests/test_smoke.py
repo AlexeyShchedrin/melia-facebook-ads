@@ -19,6 +19,19 @@ def test_config_imports() -> None:
     assert s.graph_base.endswith(s.meta_api_version)
 
 
+def test_page_ids_parsing() -> None:
+    # Multi-page: primary first, extras parsed from comma/semicolon list,
+    # deduplicated; empty extras = single-page behaviour.
+    from meta_ads.config import Settings
+
+    s = Settings(meta_page_id="P1", meta_extra_page_ids="")
+    assert s.page_ids == ["P1"]
+    s = Settings(meta_page_id="P1", meta_extra_page_ids="P2, P3; P1")
+    assert s.page_ids == ["P1", "P2", "P3"]
+    s = Settings(meta_page_id="", meta_extra_page_ids="P9")
+    assert s.page_ids == ["P9"]
+
+
 def test_lead_submitted_is_skipped() -> None:
     # Meta already knows the form submit — sending it via CAPI would double-count.
     assert "lead_submitted" in OUTBOX_KIND_SKIP
