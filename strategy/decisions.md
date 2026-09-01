@@ -8,12 +8,14 @@
   случай для awareness): (1) `MB_EXPO_IPS-DUBAI_REACH_202609` — OUTCOME_AWARENESS
   / REACH, €70/д, частотный кап 3 за 5 дней, гео Дубай (+пины DWTC, Downtown,
   Business Bay, DIFC, Marina, Palm, Jumeirah, Emirates Hills, Al Barari, Nad Al
-  Sheba, Mirdif), 28–65, 8 видео EN/DE/TR/UA (keys-2027, seasons-alive) с
+  Sheba, Mirdif), 28–65, 10 видео EN/DE/TR/UA/RU (keys-2027, seasons-alive) с
   экспо-текстом «Stand E25 · 7–9 Sept»; (2) `MB_EXPO_IPS-DUBAI_LEADS_202609` —
-  OUTCOME_LEADS €30/д, форма `LF_AE_IPS-DUBAI_202609` «Book a meeting at Stand
-  E25» (дата встречи + бюджет) → CRM-видимость по имени кампании/формы.
-  end_time 06.09 23:59 Dubai. RU-креативы не используем (решение продаж),
-  AR — нет native-review. Экспо-статики (24 файла EN/DE/TR/UK) — срочный бриф
+  OUTCOME_LEADS €30/д, формы `LF_AE_IPS-DUBAI_202609` (EN) и `LF_AE_IPS-DUBAI_RU_202609`
+  (RU) «Book a meeting at Stand E25» (дата встречи + бюджет) → CRM-видимость
+  по имени кампании/формы.
+  end_time 06.09 23:59 Dubai. **RU включён по настоянию владельца** (совет
+  Сандры «skip Russian» отклонён — поправка 02.09), AR — нет native-review.
+  Экспо-статики (30 файлов EN/DE/TR/UK/RU) — срочный бриф
   `melia-montage/briefs/2026-09/BRIEF-ips-dubai-expo.md`, доливаются сегодня.
 - **Почему так, а не «только лиды»:** цель прогрева — чтобы посетитель IPS
   узнал бренд ДО стенда; reach с частотой 2–3 даёт это за €70/д (~50–70k

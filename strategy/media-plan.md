@@ -5,16 +5,17 @@
 Факты: IPS 2026, Dubai World Trade Centre (Halls 2–8), **стенд E25**, 7–9.09,
 10:00–18:00. Гео/национальности — из письма Сандры 01.09 (Дубай: DWTC, SZR,
 Business Bay, DIFC, Downtown, Marina, Palm, Jumeirah, Emirates Hills, Al
-Barari, Nad Al Sheba, Mirdif; TR/DE/CH/UK/AE/SA/US/LB/KZ/UA, без RU).
+Barari, Nad Al Sheba, Mirdif; TR/DE/CH/UK/AE/SA/US/LB/KZ/UA; RU добавлен
+по решению владельца 02.09).
 Структура (вне годового плана, +€500 к сентябрю, AE — не SAC-зона):
 - `MB_EXPO_IPS-DUBAI_REACH_202609` — REACH €70/д, кап 3/5 дней, 28–65,
-  8 видео EN/DE/TR/UA (keys-2027 + seasons-alive) с экспо-текстом.
-- `MB_EXPO_IPS-DUBAI_LEADS_202609` — LEAD €30/д, форма `LF_AE_IPS-DUBAI_202609`
-  «Book a meeting at Stand E25» (дата 7/8/9 или презентация + бюджет) →
+  10 видео EN/DE/TR/UA/RU (keys-2027 + seasons-alive) с экспо-текстом.
+- `MB_EXPO_IPS-DUBAI_LEADS_202609` — LEAD €30/д, формы `LF_AE_IPS-DUBAI_202609`
+  (EN) + `LF_AE_IPS-DUBAI_RU_202609` (RU) «Book a meeting at Stand E25» (дата 7/8/9 или презентация + бюджет) →
   CRM видит по имени кампании/формы; форму регистрируем в реестре атрибуции
-  (project 1, locale en).
+  (project 1, locale en / ru).
 - Оба адсета с end_time 06.09 23:59 Dubai — **останов автоматический, это не
-  инцидент**. Экспо-статики (24, EN/DE/TR/UK) доливаются по готовности студии.
+  инцидент**. Экспо-статики (30, EN/DE/TR/UK/RU) доливаются по готовности студии.
 - Чтение 07.09 утром: охват/частота/CPM, формы+CPL, встречи в CRM; продление
   на дни выставки — отдельное решение.
 
