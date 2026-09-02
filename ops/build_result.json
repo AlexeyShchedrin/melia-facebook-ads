@@ -194,12 +194,92 @@
           "type": "video",
           "status": "PAUSED",
           "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_PL_W3",
+          "ad_id": "120252041601060233",
+          "creative_id": "4589016928049415",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_PL_W3",
+          "ad_id": "120252041601410233",
+          "creative_id": "3197704033751152",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_PL_W3",
+          "ad_id": "120252041602140233",
+          "creative_id": "3712830555545741",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_PL_W3",
+          "ad_id": "120252041602560233",
+          "creative_id": "1666649031599418",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_PL_W3",
+          "ad_id": "120252041603140233",
+          "creative_id": "1098990985806231",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID45_PL_W3",
+          "ad_id": "120252041603240233",
+          "creative_id": "1054756717525080",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_PL_W3",
+          "ad_id": "120252041604220233",
+          "creative_id": "1664551099003260",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_PL_W3",
+          "ad_id": "120252041604340233",
+          "creative_id": "1973206816676484",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_PL_W3",
+          "ad_id": "120252041612960233",
+          "creative_id": "954589551021924",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-card4-sqm_static_IMG45_PL_W3",
+          "ad_id": "120252041613070233",
+          "creative_id": "1087035453687607",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "counts": {
-        "video": 24,
-        "image": 3,
-        "total": 27
+        "video": 31,
+        "image": 6,
+        "total": 37
       }
     },
     {
@@ -396,12 +476,92 @@
           "type": "video",
           "status": "PAUSED",
           "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_DE_W3",
+          "ad_id": "120252041590090233",
+          "creative_id": "1406088084795635",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_DE_W3",
+          "ad_id": "120252041590500233",
+          "creative_id": "1603910897842890",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+          "ad_id": "120252041591040233",
+          "creative_id": "2272598086832341",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_DE_W3",
+          "ad_id": "120252041591850233",
+          "creative_id": "2578365032597074",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+          "ad_id": "120252041592290233",
+          "creative_id": "2446121469131699",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID45_DE_W3",
+          "ad_id": "120252041592940233",
+          "creative_id": "1369816822032616",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_DE_W3",
+          "ad_id": "120252041594060233",
+          "creative_id": "3161272034058543",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+          "ad_id": "120252041594880233",
+          "creative_id": "1082468587967469",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+          "ad_id": "120252041595010233",
+          "creative_id": "1463143825659291",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-card4-sqm_static_IMG45_DE_W3",
+          "ad_id": "120252041595410233",
+          "creative_id": "876562955388662",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "counts": {
-        "video": 24,
-        "image": 3,
-        "total": 27
+        "video": 31,
+        "image": 6,
+        "total": 37
       }
     },
     {
@@ -598,12 +758,92 @@
           "type": "video",
           "status": "PAUSED",
           "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_SR_W3",
+          "ad_id": "120252041529980233",
+          "creative_id": "1645040453718720",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_SR_W3",
+          "ad_id": "120252041530590233",
+          "creative_id": "1765185674808672",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_SR_W3",
+          "ad_id": "120252041530770233",
+          "creative_id": "2125139788880870",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_SR_W3",
+          "ad_id": "120252041531480233",
+          "creative_id": "1603485051309366",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+          "ad_id": "120252041532230233",
+          "creative_id": "1717027026079916",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID45_SR_W3",
+          "ad_id": "120252041532740233",
+          "creative_id": "2913650845650348",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_SR_W3",
+          "ad_id": "120252041533430233",
+          "creative_id": "1402733111788700",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_SR_W3",
+          "ad_id": "120252041534760233",
+          "creative_id": "2256582151847666",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_SR_W3",
+          "ad_id": "120252041535350233",
+          "creative_id": "1859072785500293",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-card4-sqm_static_IMG45_SR_W3",
+          "ad_id": "120252041536600233",
+          "creative_id": "1024224390615325",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "counts": {
-        "video": 24,
-        "image": 3,
-        "total": 27
+        "video": 31,
+        "image": 6,
+        "total": 37
       }
     },
     {
@@ -968,12 +1208,52 @@
           "type": "video",
           "refresh": "2026-07-11",
           "status": "ACTIVE"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_SR_W3",
+          "ad_id": "120252041693790233",
+          "creative_id": "2052193955434143",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_SR_W3",
+          "ad_id": "120252041702770233",
+          "creative_id": "1474776930854341",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+          "ad_id": "120252041706500233",
+          "creative_id": "1529759968920485",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_RU_W3",
+          "ad_id": "120252041708150233",
+          "creative_id": "1632565491636033",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_RU_W3",
+          "ad_id": "120252041712630233",
+          "creative_id": "4190469461244440",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "counts": {
-        "video": 43,
+        "video": 48,
         "image": 7,
-        "total": 50
+        "total": 55
       }
     },
     {
@@ -1238,12 +1518,76 @@
           "type": "image",
           "status": "PAUSED",
           "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_SR_W3",
+          "ad_id": "120252041719250233",
+          "creative_id": "4697292710592404",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_SR_W3",
+          "ad_id": "120252041720290233",
+          "creative_id": "3517450738423246",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-card6-inventory_static_IMG45_SR_W3",
+          "ad_id": "120252041728280233",
+          "creative_id": "2241514200040737",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+          "ad_id": "120252041732660233",
+          "creative_id": "1436148718403168",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_RU_W3",
+          "ad_id": "120252041732880233",
+          "creative_id": "1809911513685988",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_RU_W3",
+          "ad_id": "120252041741080233",
+          "creative_id": "1878087826503832",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-card6-inventory_static_IMG45_RU_W3",
+          "ad_id": "120252041741580233",
+          "creative_id": "28339408439005168",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_RU_W3",
+          "ad_id": "120252041750680233",
+          "creative_id": "1081986047616853",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "counts": {
-        "video": 18,
-        "image": 18,
-        "total": 36
+        "video": 20,
+        "image": 24,
+        "total": 44
       }
     },
     {
@@ -1576,12 +1920,92 @@
           "type": "video",
           "status": "PAUSED",
           "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_DE_W3",
+          "ad_id": "120252041596020233",
+          "creative_id": "1069257445594196",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_DE_W3",
+          "ad_id": "120252041596530233",
+          "creative_id": "1042870281969830",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+          "ad_id": "120252041597060233",
+          "creative_id": "1803086940706566",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_DE_W3",
+          "ad_id": "120252041597740233",
+          "creative_id": "1704568054104252",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+          "ad_id": "120252041598240233",
+          "creative_id": "1712238803185838",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID45_DE_W3",
+          "ad_id": "120252041598400233",
+          "creative_id": "1097130382770129",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_DE_W3",
+          "ad_id": "120252041599260233",
+          "creative_id": "959414107171705",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+          "ad_id": "120252041599350233",
+          "creative_id": "2308029019947608",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+          "ad_id": "120252041599780233",
+          "creative_id": "1100462652422325",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-card4-sqm_static_IMG45_DE_W3",
+          "ad_id": "120252041600150233",
+          "creative_id": "1692227111854241",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "counts": {
-        "video": 24,
-        "image": 2,
-        "total": 26
+        "video": 31,
+        "image": 5,
+        "total": 36
       }
     },
     {
@@ -1734,12 +2158,92 @@
           "type": "video",
           "status": "PAUSED",
           "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_TR_W3",
+          "ad_id": "120252041622720233",
+          "creative_id": "1401373114748581",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_TR_W3",
+          "ad_id": "120252041626320233",
+          "creative_id": "1368504321600306",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_TR_W3",
+          "ad_id": "120252041627610233",
+          "creative_id": "1089148170163753",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_TR_W3",
+          "ad_id": "120252041629110233",
+          "creative_id": "1150026580931125",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_TR_W3",
+          "ad_id": "120252041629620233",
+          "creative_id": "4146343328999674",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID45_TR_W3",
+          "ad_id": "120252041630680233",
+          "creative_id": "912315998619757",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_TR_W3",
+          "ad_id": "120252041631570233",
+          "creative_id": "1684428389319817",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_TR_W3",
+          "ad_id": "120252041631840233",
+          "creative_id": "1051784587771216",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_TR_W3",
+          "ad_id": "120252041632190233",
+          "creative_id": "1658294402643754",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-card4-sqm_static_IMG45_TR_W3",
+          "ad_id": "120252041632810233",
+          "creative_id": "29030641866523768",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "counts": {
-        "video": 18,
-        "image": 2,
-        "total": 20
+        "video": 25,
+        "image": 5,
+        "total": 30
       }
     },
     {
@@ -1892,12 +2396,92 @@
           "type": "video",
           "status": "PAUSED",
           "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_UA_W3",
+          "ad_id": "120252041633320233",
+          "creative_id": "2091231878150236",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_UA_W3",
+          "ad_id": "120252041633730233",
+          "creative_id": "1062912729689195",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_UA_W3",
+          "ad_id": "120252041634060233",
+          "creative_id": "1963991967617124",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_UA_W3",
+          "ad_id": "120252041634470233",
+          "creative_id": "1090676223436224",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_UA_W3",
+          "ad_id": "120252041651550233",
+          "creative_id": "1049808407835608",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID45_UA_W3",
+          "ad_id": "120252041652990233",
+          "creative_id": "1437151918275258",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_UA_W3",
+          "ad_id": "120252041653190233",
+          "creative_id": "2158578238409438",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_UA_W3",
+          "ad_id": "120252041684190233",
+          "creative_id": "1110844991695565",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_UA_W3",
+          "ad_id": "120252041687230233",
+          "creative_id": "1518321760314602",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-card4-sqm_static_IMG45_UA_W3",
+          "ad_id": "120252041689660233",
+          "creative_id": "1145220201413368",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "counts": {
-        "video": 18,
-        "image": 2,
-        "total": 20
+        "video": 25,
+        "image": 5,
+        "total": 30
       }
     },
     {
@@ -1980,6 +2564,86 @@
           "type": "image",
           "status": "PAUSED",
           "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+          "ad_id": "120252041753150233",
+          "creative_id": "942669708226275",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+          "ad_id": "120252041753560233",
+          "creative_id": "1794581821897048",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-card6-inventory_static_IMG45_DE_W3",
+          "ad_id": "120252041756690233",
+          "creative_id": "2176827236597912",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+          "ad_id": "120252041766750233",
+          "creative_id": "932992129881002",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+          "ad_id": "120252041767880233",
+          "creative_id": "1836468354179486",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-card2-timeline_static_IMG45_PL_W3",
+          "ad_id": "120252041775780233",
+          "creative_id": "2633955007041225",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "MELIAHOME_w3-card3-melia_static_IMG45_PL_W3",
+          "ad_id": "120252041776020233",
+          "creative_id": "1410936097848148",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w3-card6-inventory_static_IMG45_PL_W3",
+          "ad_id": "120252041784310233",
+          "creative_id": "944018912071522",
+          "type": "image",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "TURNKEY_w3-keys-2027_site-footage_VID916_PL_W3",
+          "ad_id": "120252041787860233",
+          "creative_id": "4457637267898696",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_PL_W3",
+          "ad_id": "120252041788660233",
+          "creative_id": "2559989254423289",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "w3-2026-09-01"
         }
       ],
       "launched": "2026-07-27"

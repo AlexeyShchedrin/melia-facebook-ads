@@ -1,0 +1,5197 @@
+{
+  "batch": "w3-2026-09-01",
+  "account": "act_776404808314031",
+  "created_utc": "2026-09-01T23:03:02Z",
+  "api_version": "v25.0",
+  "phase_log": [
+    {
+      "phase": "probe",
+      "ts": "2026-09-01T23:03:17Z",
+      "note": "ok"
+    },
+    {
+      "phase": "delete",
+      "ts": "2026-09-01T23:04:01Z",
+      "note": "2 verified"
+    },
+    {
+      "phase": "probe",
+      "ts": "2026-09-01T23:11:43Z",
+      "note": "ok"
+    },
+    {
+      "phase": "upload",
+      "ts": "2026-09-01T23:30:38Z",
+      "note": "12 videos ready, 21 images"
+    },
+    {
+      "phase": "upload",
+      "ts": "2026-09-02T00:03:46Z",
+      "note": "37 videos ready, 21 images"
+    },
+    {
+      "phase": "build",
+      "ts": "2026-09-02T01:04:20Z",
+      "note": "83 ads tracked"
+    },
+    {
+      "phase": "activate",
+      "ts": "2026-09-02T01:12:03Z",
+      "note": "83 active, 0 not activated"
+    },
+    {
+      "phase": "pause_old",
+      "ts": "2026-09-02T01:28:31Z",
+      "note": "131 paused"
+    }
+  ],
+  "probe": {
+    "ts": "2026-09-01T23:04:03Z",
+    "campaigns": {
+      "MB_LEADS_SR_MIX_202607": {
+        "campaign_id": "120250397204950233",
+        "adset_id": "120250397397660233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 37,
+        "active_ads": 26,
+        "free_slots": 13,
+        "planned": 10,
+        "existing_w3": [
+          "SEASONS_w3-seasons-alive_four-seasons_VID916_SR_W3",
+          "SEASONS_w3-seasons-alive_four-seasons_VID45_SR_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_SR_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID45_SR_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID45_SR_W3",
+          "FIRSTLINE_w3-owner-morning_pov-price_VID916_SR_W3",
+          "TURNKEY_w3-card2-timeline_static_IMG45_SR_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_SR_W3",
+          "INVEST_w3-card4-sqm_static_IMG45_SR_W3"
+        ],
+        "donors": {
+          "SR": {
+            "ad_id": "120250677620400233",
+            "name": "INVEST_price-video_kinetic_VID916_SR_V2"
+          }
+        },
+        "old_active_to_pause_preview": 15,
+        "state_ads_at_refresh": 10
+      },
+      "MB_LEADS_DE_MIX_202607": {
+        "campaign_id": "120250397116900233",
+        "adset_id": "120250397193830233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 37,
+        "active_ads": 25,
+        "free_slots": 13,
+        "planned": 10,
+        "existing_w3": [
+          "SEASONS_w3-seasons-alive_four-seasons_VID916_DE_W3",
+          "SEASONS_w3-seasons-alive_four-seasons_VID45_DE_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID45_DE_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID45_DE_W3",
+          "FIRSTLINE_w3-owner-morning_pov-price_VID916_DE_W3",
+          "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+          "INVEST_w3-card4-sqm_static_IMG45_DE_W3"
+        ],
+        "donors": {
+          "DE": {
+            "ad_id": "120250677675500233",
+            "name": "INVEST_price-video_kinetic_VID916_DE_V2"
+          }
+        },
+        "old_active_to_pause_preview": 15,
+        "state_ads_at_refresh": 10
+      },
+      "MB_LEADS_DE_MIX_20260707": {
+        "campaign_id": "120250543084620233",
+        "adset_id": "120250543084900233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 36,
+        "active_ads": 26,
+        "free_slots": 14,
+        "planned": 10,
+        "existing_w3": [
+          "SEASONS_w3-seasons-alive_four-seasons_VID916_DE_W3",
+          "SEASONS_w3-seasons-alive_four-seasons_VID45_DE_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID45_DE_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID45_DE_W3",
+          "FIRSTLINE_w3-owner-morning_pov-price_VID916_DE_W3",
+          "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+          "INVEST_w3-card4-sqm_static_IMG45_DE_W3"
+        ],
+        "donors": {
+          "DE": {
+            "ad_id": "120250677861340233",
+            "name": "INVEST_price-video_kinetic_VID916_DE_V2"
+          }
+        },
+        "old_active_to_pause_preview": 15,
+        "state_ads_at_refresh": 10
+      },
+      "MB_LEADS_PL_MIX_202607": {
+        "campaign_id": "120250397098510233",
+        "adset_id": "120250397100510233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 37,
+        "active_ads": 26,
+        "free_slots": 13,
+        "planned": 10,
+        "existing_w3": [
+          "SEASONS_w3-seasons-alive_four-seasons_VID916_PL_W3",
+          "SEASONS_w3-seasons-alive_four-seasons_VID45_PL_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_PL_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID45_PL_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_PL_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID45_PL_W3",
+          "FIRSTLINE_w3-owner-morning_pov-price_VID916_PL_W3",
+          "TURNKEY_w3-card2-timeline_static_IMG45_PL_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_PL_W3",
+          "INVEST_w3-card4-sqm_static_IMG45_PL_W3"
+        ],
+        "donors": {
+          "PL": {
+            "ad_id": "120250677746430233",
+            "name": "INVEST_price-video_kinetic_VID916_PL_V2"
+          }
+        },
+        "old_active_to_pause_preview": 15,
+        "state_ads_at_refresh": 10
+      },
+      "MB_LEADS_TR_MIX_202607": {
+        "campaign_id": "120250707886890233",
+        "adset_id": "120250707887280233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 30,
+        "active_ads": 20,
+        "free_slots": 20,
+        "planned": 10,
+        "existing_w3": [
+          "SEASONS_w3-seasons-alive_four-seasons_VID916_TR_W3",
+          "SEASONS_w3-seasons-alive_four-seasons_VID45_TR_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_TR_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID45_TR_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_TR_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID45_TR_W3",
+          "FIRSTLINE_w3-owner-morning_pov-price_VID916_TR_W3",
+          "TURNKEY_w3-card2-timeline_static_IMG45_TR_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_TR_W3",
+          "INVEST_w3-card4-sqm_static_IMG45_TR_W3"
+        ],
+        "donors": {
+          "TR": {
+            "ad_id": "120250707913270233",
+            "name": "INVEST_price-video_kinetic_VID916_TR_V1"
+          }
+        },
+        "old_active_to_pause_preview": 9,
+        "state_ads_at_refresh": 10
+      },
+      "MB_LEADS_UA_MIX_202607": {
+        "campaign_id": "120250708215740233",
+        "adset_id": "120250708221320233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 30,
+        "active_ads": 20,
+        "free_slots": 20,
+        "planned": 10,
+        "existing_w3": [
+          "SEASONS_w3-seasons-alive_four-seasons_VID916_UA_W3",
+          "SEASONS_w3-seasons-alive_four-seasons_VID45_UA_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_UA_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID45_UA_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_UA_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID45_UA_W3",
+          "FIRSTLINE_w3-owner-morning_pov-price_VID916_UA_W3",
+          "TURNKEY_w3-card2-timeline_static_IMG45_UA_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_UA_W3",
+          "INVEST_w3-card4-sqm_static_IMG45_UA_W3"
+        ],
+        "donors": {
+          "UA": {
+            "ad_id": "120250708253340233",
+            "name": "INVEST_price-video_kinetic_VID916_UA_V1"
+          }
+        },
+        "old_active_to_pause_preview": 9,
+        "state_ads_at_refresh": 10
+      },
+      "MB_LEADS_ME_MIX_202607": {
+        "campaign_id": "120250397417770233",
+        "adset_id": "120250397504440233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 50,
+        "active_ads": 45,
+        "free_slots": 0,
+        "planned": 5,
+        "existing_w3": [
+          "SEASONS_w3-seasons-alive_four-seasons_VID916_SR_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_SR_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_RU_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_RU_W3"
+        ],
+        "donors": {
+          "RU": {
+            "ad_id": "120250677368400233",
+            "name": "INVEST_price-video_kinetic_VID916_RU_V2"
+          },
+          "SR": {
+            "ad_id": "120250677259240233",
+            "name": "INVEST_price-video_kinetic_VID916_SR_V2"
+          }
+        },
+        "old_active_to_pause_preview": 33,
+        "state_ads_at_refresh": 5
+      },
+      "MB_RTG_B_MIX_202607": {
+        "campaign_id": "120250397535350233",
+        "adset_id": "120250397641210233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 49,
+        "active_ads": 41,
+        "free_slots": 1,
+        "planned": 8,
+        "existing_w3": [
+          "TURNKEY_w3-card2-timeline_static_IMG45_SR_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_SR_W3",
+          "FIRSTLINE_w3-card6-inventory_static_IMG45_SR_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+          "TURNKEY_w3-card2-timeline_static_IMG45_RU_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_RU_W3",
+          "FIRSTLINE_w3-card6-inventory_static_IMG45_RU_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_RU_W3"
+        ],
+        "donors": {
+          "RU": {
+            "ad_id": "120250677779710233",
+            "name": "INVEST_price-video_kinetic_VID916_RU_V2"
+          },
+          "SR": {
+            "ad_id": "120250677765290233",
+            "name": "INVEST_price-video_kinetic_VID916_SR_V2"
+          }
+        },
+        "old_active_to_pause_preview": 20,
+        "state_ads_at_refresh": 8
+      },
+      "MB_RTG_A_MIX_202607": {
+        "campaign_id": "120251109198470233",
+        "adset_id": "120251109198870233",
+        "campaign_status": "ACTIVE/ACTIVE",
+        "adset_status": "ACTIVE/ACTIVE",
+        "live_ads": 22,
+        "active_ads": 14,
+        "free_slots": 28,
+        "planned": 10,
+        "existing_w3": [
+          "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+          "FIRSTLINE_w3-card6-inventory_static_IMG45_DE_W3",
+          "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+          "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+          "TURNKEY_w3-card2-timeline_static_IMG45_PL_W3",
+          "MELIAHOME_w3-card3-melia_static_IMG45_PL_W3",
+          "FIRSTLINE_w3-card6-inventory_static_IMG45_PL_W3"
+        ],
+        "donors": {
+          "DE": {
+            "ad_id": "120251109200620233",
+            "name": "INVEST_price-video_kinetic_VID916_DE_V2"
+          },
+          "PL": {
+            "ad_id": "120251109210770233",
+            "name": "INVEST_price-video_kinetic_VID916_PL_V2"
+          }
+        },
+        "old_active_to_pause_preview": 0,
+        "state_ads_at_refresh": 8
+      }
+    }
+  },
+  "donors": {
+    "MB_LEADS_SR_MIX_202607|SR": {
+      "donor_ad_id": "120250677620400233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_SR_V2",
+      "donor_creative_id": "1342405274688650",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Prva linija Jadrana — od €263.200",
+      "message": "Meliá rezidencije na prvoj liniji mora u Budvi. Od €263.200 (indikativne cene) · 20% učešća · beskamatne rate do Q4 2027. 10 m od plaže, 5★ Meliá servis.",
+      "lead_gen_form_id": "1001277082895735",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_DE_MIX_202607|DE": {
+      "donor_ad_id": "120250677675500233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_DE_V2",
+      "donor_creative_id": "1509714346931285",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Erste Meereslinie an der Adria — ab €263.200",
+      "message": "Meliá Residenzen in erster Meereslinie in Budva. Ab €263.200 (unverbindliche Preisangabe) · 20% Anzahlung · zinsfreie Raten bis Q4 2027. 10 m zum Strand, 5★ Meliá Service.",
+      "lead_gen_form_id": "1600030904874809",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_DE_MIX_20260707|DE": {
+      "donor_ad_id": "120250677861340233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_DE_V2",
+      "donor_creative_id": "1509714346931285",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Erste Meereslinie an der Adria — ab €263.200",
+      "message": "Meliá Residenzen in erster Meereslinie in Budva. Ab €263.200 (unverbindliche Preisangabe) · 20% Anzahlung · zinsfreie Raten bis Q4 2027. 10 m zum Strand, 5★ Meliá Service.",
+      "lead_gen_form_id": "1600030904874809",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_PL_MIX_202607|PL": {
+      "donor_ad_id": "120250677746430233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_PL_V2",
+      "donor_creative_id": "1551895066347096",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Pierwsza linia Adriatyku — od €263 200",
+      "message": "Rezydencje Meliá w pierwszej linii brzegowej Budvy. Od €263 200 (ceny orientacyjne) · 20% pierwszej wpłaty · nieoprocentowane raty do Q4 2027. 10 m do morza, serwis 5★ Meliá.",
+      "lead_gen_form_id": "1342846111284734",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_TR_MIX_202607|TR": {
+      "donor_ad_id": "120250707913270233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_TR_V1",
+      "donor_creative_id": "1393183925957903",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Adriyatik'in ilk sırası — €263.200'den başlayan fiyatlarla",
+      "message": "Budva'da denize sıfır Meliá rezidansları. €263.200'den başlayan fiyatlar (gösterge niteliğinde) · %20 peşinat · Q4 2027'ye kadar faizsiz taksit. Denize 10 m, 5★ Meliá hizmeti.",
+      "lead_gen_form_id": "2081818585879954",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_UA_MIX_202607|UA": {
+      "donor_ad_id": "120250708253340233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_UA_V1",
+      "donor_creative_id": "1737912544006719",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Перша лінія Адріатики — від €263 200",
+      "message": "Резиденції Meliá на першій лінії моря в Будві. Від €263 200 (орієнтовні ціни) · 20% перший внесок · безвідсоткова розстрочка до Q4 2027. 10 м до пляжу, сервіс 5★ Meliá.",
+      "lead_gen_form_id": "1041430885197460",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_ME_MIX_202607|RU": {
+      "donor_ad_id": "120250677368400233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_RU_V2",
+      "donor_creative_id": "1059448483325928",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Первая линия Адриатики — от €263 200",
+      "message": "Резиденции Meliá на первой линии Будвы. От €263 200 (цены индикативные) · 20% первый взнос · беспроцентная рассрочка до Q4 2027. 10 м до моря, сервис 5★ Meliá.",
+      "lead_gen_form_id": "1990944504878103",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_ME_MIX_202607|SR": {
+      "donor_ad_id": "120250677259240233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_SR_V2",
+      "donor_creative_id": "1342405274688650",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Prva linija Jadrana — od €263.200",
+      "message": "Meliá rezidencije na prvoj liniji mora u Budvi. Od €263.200 (indikativne cene) · 20% učešća · beskamatne rate do Q4 2027. 10 m od plaže, 5★ Meliá servis.",
+      "lead_gen_form_id": "1001277082895735",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_B_MIX_202607|RU": {
+      "donor_ad_id": "120250677779710233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_RU_V2",
+      "donor_creative_id": "1059448483325928",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Первая линия Адриатики — от €263 200",
+      "message": "Резиденции Meliá на первой линии Будвы. От €263 200 (цены индикативные) · 20% первый взнос · беспроцентная рассрочка до Q4 2027. 10 м до моря, сервис 5★ Meliá.",
+      "lead_gen_form_id": "1990944504878103",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_B_MIX_202607|SR": {
+      "donor_ad_id": "120250677765290233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_SR_V2",
+      "donor_creative_id": "1342405274688650",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Prva linija Jadrana — od €263.200",
+      "message": "Meliá rezidencije na prvoj liniji mora u Budvi. Od €263.200 (indikativne cene) · 20% učešća · beskamatne rate do Q4 2027. 10 m od plaže, 5★ Meliá servis.",
+      "lead_gen_form_id": "1001277082895735",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_A_MIX_202607|DE": {
+      "donor_ad_id": "120251109200620233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_DE_V2",
+      "donor_creative_id": "1509714346931285",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Erste Meereslinie an der Adria — ab €263.200",
+      "message": "Meliá Residenzen in erster Meereslinie in Budva. Ab €263.200 (unverbindliche Preisangabe) · 20% Anzahlung · zinsfreie Raten bis Q4 2027. 10 m zum Strand, 5★ Meliá Service.",
+      "lead_gen_form_id": "1600030904874809",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_A_MIX_202607|PL": {
+      "donor_ad_id": "120251109210770233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_PL_V2",
+      "donor_creative_id": "1551895066347096",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Pierwsza linia Adriatyku — od €263 200",
+      "message": "Rezydencje Meliá w pierwszej linii brzegowej Budvy. Od €263 200 (ceny orientacyjne) · 20% pierwszej wpłaty · nieoprocentowane raty do Q4 2027. 10 m do morza, serwis 5★ Meliá.",
+      "lead_gen_form_id": "1342846111284734",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    }
+  },
+  "deleted": [
+    {
+      "ad_id": "120250397506900233",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_SR_V1",
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "spend_eur": 71,
+      "response": {
+        "success": true
+      },
+      "verified": true,
+      "note": "post-delete GET: status=DELETED effective=DELETED",
+      "ts": "2026-09-01T23:03:59Z"
+    },
+    {
+      "ad_id": "120250397524670233",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID45_EN_V1",
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "spend_eur": 37,
+      "response": {
+        "success": true
+      },
+      "verified": true,
+      "note": "post-delete GET: status=DELETED effective=DELETED",
+      "ts": "2026-09-01T23:04:01Z"
+    }
+  ],
+  "uploads": {
+    "videos": {
+      "W3-01_DE_9x16.mp4": {
+        "video_id": "1125697216481445",
+        "status": "ready",
+        "size_mb": 41.6,
+        "ts": "2026-09-01T23:19:43Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-01_DE_4x5.mp4": {
+        "video_id": "1699301441155276",
+        "status": "ready",
+        "size_mb": 30.5,
+        "ts": "2026-09-01T23:19:50Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-01_PL_4x5.mp4": {
+        "video_id": "860714430339390",
+        "status": "ready",
+        "size_mb": 30.3,
+        "ts": "2026-09-01T23:19:57Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-01_PL_9x16.mp4": {
+        "video_id": "2374166436324158",
+        "status": "ready",
+        "size_mb": 41.6,
+        "ts": "2026-09-01T23:20:01Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-03_PL_9x16.mp4": {
+        "video_id": "1318084248056986",
+        "status": "ready",
+        "size_mb": 41.5,
+        "ts": "2026-09-01T23:26:25Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-01_SR_9x16.mp4": {
+        "video_id": "1034044316347540",
+        "status": "ready",
+        "size_mb": 41.5,
+        "ts": "2026-09-01T23:26:41Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-01_UA_9x16.mp4": {
+        "video_id": "1013797748347401",
+        "status": "ready",
+        "size_mb": 41.5,
+        "ts": "2026-09-01T23:26:41Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-03_DE_9x16.mp4": {
+        "video_id": "2142607439800013",
+        "status": "ready",
+        "size_mb": 41.5,
+        "ts": "2026-09-01T23:26:41Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-04_SR_9x16.mp4": {
+        "video_id": "3999176867056906",
+        "status": "ready",
+        "size_mb": 31.6,
+        "ts": "2026-09-01T23:29:14Z",
+        "ready_utc": "2026-09-01T23:30:23Z"
+      },
+      "W3-02_PL_9x16.mp4": {
+        "video_id": "2888014494867381",
+        "status": "ready",
+        "size_mb": 28.8,
+        "ts": "2026-09-01T23:30:11Z",
+        "ready_utc": "2026-09-01T23:30:38Z"
+      },
+      "W3-02_RU_9x16.mp4": {
+        "video_id": "3314544232082354",
+        "status": "ready",
+        "size_mb": 28.8,
+        "ts": "2026-09-01T23:30:14Z",
+        "ready_utc": "2026-09-01T23:30:38Z"
+      },
+      "W3-02_DE_9x16.mp4": {
+        "video_id": "1909937233756849",
+        "status": "ready",
+        "size_mb": 28.7,
+        "ts": "2026-09-01T23:30:20Z",
+        "ready_utc": "2026-09-01T23:30:38Z"
+      },
+      "W3-03_UA_9x16.mp4": {
+        "video_id": "941497738994638",
+        "status": "ready",
+        "size_mb": 41.4,
+        "ts": "2026-09-01T23:35:59Z",
+        "ready_utc": "2026-09-01T23:39:58Z"
+      },
+      "W3-01_TR_9x16.mp4": {
+        "video_id": "1368235598809701",
+        "status": "ready",
+        "size_mb": 41.5,
+        "ts": "2026-09-01T23:36:21Z",
+        "ready_utc": "2026-09-01T23:39:58Z"
+      },
+      "W3-03_TR_9x16.mp4": {
+        "video_id": "1435603615375542",
+        "status": "ready",
+        "size_mb": 41.3,
+        "ts": "2026-09-01T23:36:29Z",
+        "ready_utc": "2026-09-01T23:39:58Z"
+      },
+      "W3-03_SR_9x16.mp4": {
+        "video_id": "1724674395254875",
+        "status": "ready",
+        "size_mb": 41.3,
+        "ts": "2026-09-01T23:36:35Z",
+        "ready_utc": "2026-09-01T23:39:58Z"
+      },
+      "W3-02_PL_4x5.mp4": {
+        "video_id": "1416884320408349",
+        "status": "ready",
+        "size_mb": 20.4,
+        "ts": "2026-09-01T23:39:14Z",
+        "ready_utc": "2026-09-01T23:39:58Z"
+      },
+      "W3-01_SR_4x5.mp4": {
+        "video_id": "1386029163581771",
+        "status": "ready",
+        "size_mb": 30.4,
+        "ts": "2026-09-01T23:39:33Z",
+        "ready_utc": "2026-09-01T23:39:58Z"
+      },
+      "W3-02_UA_9x16.mp4": {
+        "video_id": "890446793942854",
+        "status": "ready",
+        "size_mb": 28.7,
+        "ts": "2026-09-01T23:39:46Z",
+        "ready_utc": "2026-09-01T23:40:14Z"
+      },
+      "W3-04_TR_9x16.mp4": {
+        "video_id": "4542330202680734",
+        "status": "ready",
+        "size_mb": 31.6,
+        "ts": "2026-09-01T23:39:57Z",
+        "ready_utc": "2026-09-01T23:40:29Z"
+      },
+      "W3-04_PL_9x16.mp4": {
+        "video_id": "1359691306079392",
+        "status": "ready",
+        "size_mb": 31.6,
+        "ts": "2026-09-01T23:45:06Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-04_UA_9x16.mp4": {
+        "video_id": "1390610903197801",
+        "status": "ready",
+        "size_mb": 31.6,
+        "ts": "2026-09-01T23:45:14Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-04_DE_9x16.mp4": {
+        "video_id": "2136944870230867",
+        "status": "ready",
+        "size_mb": 31.6,
+        "ts": "2026-09-01T23:46:34Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-03_RU_9x16.mp4": {
+        "video_id": "2091087768205479",
+        "status": "ready",
+        "size_mb": 41.3,
+        "ts": "2026-09-01T23:47:47Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-01_TR_4x5.mp4": {
+        "video_id": "1433628978705780",
+        "status": "ready",
+        "size_mb": 30.3,
+        "ts": "2026-09-01T23:51:18Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-01_UA_4x5.mp4": {
+        "video_id": "1314650871733425",
+        "status": "ready",
+        "size_mb": 30.3,
+        "ts": "2026-09-01T23:51:44Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-02_SR_9x16.mp4": {
+        "video_id": "928508673138593",
+        "status": "ready",
+        "size_mb": 28.6,
+        "ts": "2026-09-01T23:55:51Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-02_TR_9x16.mp4": {
+        "video_id": "2177613346432563",
+        "status": "ready",
+        "size_mb": 28.6,
+        "ts": "2026-09-01T23:56:32Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-03_DE_4x5.mp4": {
+        "video_id": "1735910014357514",
+        "status": "ready",
+        "size_mb": 28.5,
+        "ts": "2026-09-01T23:56:48Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-03_PL_4x5.mp4": {
+        "video_id": "912534104829690",
+        "status": "ready",
+        "size_mb": 28.5,
+        "ts": "2026-09-01T23:56:59Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-02_UA_4x5.mp4": {
+        "video_id": "4154424481525021",
+        "status": "ready",
+        "size_mb": 20.3,
+        "ts": "2026-09-01T23:59:25Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-02_TR_4x5.mp4": {
+        "video_id": "1414366367559431",
+        "status": "ready",
+        "size_mb": 20.3,
+        "ts": "2026-09-01T23:59:47Z",
+        "ready_utc": "2026-09-02T00:00:03Z"
+      },
+      "W3-03_UA_4x5.mp4": {
+        "video_id": "1327199056155428",
+        "status": "ready",
+        "size_mb": 28.3,
+        "ts": "2026-09-01T23:59:56Z",
+        "ready_utc": "2026-09-02T00:00:18Z"
+      },
+      "W3-03_SR_4x5.mp4": {
+        "video_id": "1071211435488045",
+        "status": "ready",
+        "size_mb": 28.3,
+        "ts": "2026-09-02T00:00:01Z",
+        "ready_utc": "2026-09-02T00:00:18Z"
+      },
+      "W3-02_SR_4x5.mp4": {
+        "video_id": "2093682411250305",
+        "status": "ready",
+        "size_mb": 20.1,
+        "ts": "2026-09-02T00:02:31Z",
+        "ready_utc": "2026-09-02T00:03:30Z"
+      },
+      "W3-02_DE_4x5.mp4": {
+        "video_id": "2250703272381311",
+        "status": "ready",
+        "size_mb": 20.2,
+        "ts": "2026-09-02T00:02:31Z",
+        "ready_utc": "2026-09-02T00:03:30Z"
+      },
+      "W3-03_TR_4x5.mp4": {
+        "video_id": "1574821237469718",
+        "status": "ready",
+        "size_mb": 28.3,
+        "ts": "2026-09-02T00:03:29Z",
+        "ready_utc": "2026-09-02T00:03:46Z"
+      }
+    },
+    "images": {
+      "W3-05_card2_DE_IMG45.png": {
+        "hash": "ebc99a1a5c6a4397c2a2cdd17e44fee1",
+        "ts": "2026-09-01T23:11:51Z"
+      },
+      "W3-05_card2_PL_IMG45.png": {
+        "hash": "a02f49f27d4317f5b7c88e21a75f7cfd",
+        "ts": "2026-09-01T23:11:59Z"
+      },
+      "W3-05_card2_RU_IMG45.png": {
+        "hash": "4ffb70ea206b797611416ab3515f88b4",
+        "ts": "2026-09-01T23:12:07Z"
+      },
+      "W3-05_card2_SR_IMG45.png": {
+        "hash": "9489bafe89916d32b9d92d288cc34b19",
+        "ts": "2026-09-01T23:12:15Z"
+      },
+      "W3-05_card2_TR_IMG45.png": {
+        "hash": "78c4e71f490c208bf6036897e780a110",
+        "ts": "2026-09-01T23:12:22Z"
+      },
+      "W3-05_card2_UA_IMG45.png": {
+        "hash": "30ca12fe0516ab8e63f37b680a324325",
+        "ts": "2026-09-01T23:12:29Z"
+      },
+      "W3-05_card3_DE_IMG45.png": {
+        "hash": "c7f7b75a787dce8e8452a16785c890cc",
+        "ts": "2026-09-01T23:12:36Z"
+      },
+      "W3-05_card3_PL_IMG45.png": {
+        "hash": "f7a4d193ed722ec5217a3f8e37ca3462",
+        "ts": "2026-09-01T23:12:44Z"
+      },
+      "W3-05_card3_RU_IMG45.png": {
+        "hash": "5ba04ff6fde5408d12a43ef0818951f9",
+        "ts": "2026-09-01T23:12:51Z"
+      },
+      "W3-05_card3_SR_IMG45.png": {
+        "hash": "bd59f3aff1ae6d24d93ea2eb9ad3fbd2",
+        "ts": "2026-09-01T23:12:59Z"
+      },
+      "W3-05_card3_TR_IMG45.png": {
+        "hash": "d8869aa8bf7ea804ead172d1daa26105",
+        "ts": "2026-09-01T23:13:06Z"
+      },
+      "W3-05_card3_UA_IMG45.png": {
+        "hash": "0dfc870ab8f04df10d58ae56f4d0d352",
+        "ts": "2026-09-01T23:13:14Z"
+      },
+      "W3-05_card4_DE_IMG45.png": {
+        "hash": "75096502281add9e0db9f0f56e138dd1",
+        "ts": "2026-09-01T23:13:24Z"
+      },
+      "W3-05_card4_PL_IMG45.png": {
+        "hash": "43442fed820e1ad14ffbcf2b00bd2dc6",
+        "ts": "2026-09-01T23:13:42Z"
+      },
+      "W3-05_card4_SR_IMG45.png": {
+        "hash": "813aea9be1ff3d841304ff3da527e44f",
+        "ts": "2026-09-01T23:14:00Z"
+      },
+      "W3-05_card4_TR_IMG45.png": {
+        "hash": "177791b7fad2d77433640db86e518588",
+        "ts": "2026-09-01T23:14:15Z"
+      },
+      "W3-05_card4_UA_IMG45.png": {
+        "hash": "90e3d1483a1ee39a44e1e6315345e524",
+        "ts": "2026-09-01T23:14:23Z"
+      },
+      "W3-05_card6_DE_IMG45.png": {
+        "hash": "be127697fc7ed2e92ba7f4d3c77d3c76",
+        "ts": "2026-09-01T23:14:32Z"
+      },
+      "W3-05_card6_PL_IMG45.png": {
+        "hash": "9100edecad62d2bc59ae7e2276ff1cee",
+        "ts": "2026-09-01T23:14:43Z"
+      },
+      "W3-05_card6_RU_IMG45.png": {
+        "hash": "2f8363a5d28c86a00e8ef79b027d37a7",
+        "ts": "2026-09-01T23:14:52Z"
+      },
+      "W3-05_card6_SR_IMG45.png": {
+        "hash": "8c4f95d65cbcf6e2e82d4e59ca6f0ea0",
+        "ts": "2026-09-01T23:15:01Z"
+      }
+    }
+  },
+  "ads": [
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_SR_W3",
+      "ad_id": "120252041529980233",
+      "creative_id": "1645040453718720",
+      "type": "video",
+      "lang": "SR",
+      "concept": "01",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:03:57Z",
+      "activated_utc": "2026-09-02T01:08:56Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_SR_W3",
+      "ad_id": "120252041530590233",
+      "creative_id": "1765185674808672",
+      "type": "video",
+      "lang": "SR",
+      "concept": "01",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:04:06Z",
+      "activated_utc": "2026-09-02T01:08:59Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_SR_W3",
+      "ad_id": "120252041530770233",
+      "creative_id": "2125139788880870",
+      "type": "video",
+      "lang": "SR",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:04:13Z",
+      "activated_utc": "2026-09-02T01:09:00Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_SR_W3",
+      "ad_id": "120252041531480233",
+      "creative_id": "1603485051309366",
+      "type": "video",
+      "lang": "SR",
+      "concept": "02",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:04:20Z",
+      "activated_utc": "2026-09-02T01:09:02Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+      "ad_id": "120252041532230233",
+      "creative_id": "1717027026079916",
+      "type": "video",
+      "lang": "SR",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:04:28Z",
+      "activated_utc": "2026-09-02T01:09:04Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID45_SR_W3",
+      "ad_id": "120252041532740233",
+      "creative_id": "2913650845650348",
+      "type": "video",
+      "lang": "SR",
+      "concept": "03",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:04:37Z",
+      "activated_utc": "2026-09-02T01:09:07Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_SR_W3",
+      "ad_id": "120252041533430233",
+      "creative_id": "1402733111788700",
+      "type": "video",
+      "lang": "SR",
+      "concept": "04",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:04:46Z",
+      "activated_utc": "2026-09-02T01:09:10Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_SR_W3",
+      "ad_id": "120252041534760233",
+      "creative_id": "2256582151847666",
+      "type": "image",
+      "lang": "SR",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:04:56Z",
+      "activated_utc": "2026-09-02T01:09:12Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_SR_W3",
+      "ad_id": "120252041535350233",
+      "creative_id": "1859072785500293",
+      "type": "image",
+      "lang": "SR",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:05:02Z",
+      "activated_utc": "2026-09-02T01:09:14Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "INVEST_w3-card4-sqm_static_IMG45_SR_W3",
+      "ad_id": "120252041536600233",
+      "creative_id": "1024224390615325",
+      "type": "image",
+      "lang": "SR",
+      "concept": "card4",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:05:08Z",
+      "activated_utc": "2026-09-02T01:09:16Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_DE_W3",
+      "ad_id": "120252041590090233",
+      "creative_id": "1406088084795635",
+      "type": "video",
+      "lang": "DE",
+      "concept": "01",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:15:38Z",
+      "activated_utc": "2026-09-02T01:09:19Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_DE_W3",
+      "ad_id": "120252041590500233",
+      "creative_id": "1603910897842890",
+      "type": "video",
+      "lang": "DE",
+      "concept": "01",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:15:47Z",
+      "activated_utc": "2026-09-02T01:09:21Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+      "ad_id": "120252041591040233",
+      "creative_id": "2272598086832341",
+      "type": "video",
+      "lang": "DE",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:15:55Z",
+      "activated_utc": "2026-09-02T01:09:23Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_DE_W3",
+      "ad_id": "120252041591850233",
+      "creative_id": "2578365032597074",
+      "type": "video",
+      "lang": "DE",
+      "concept": "02",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:16:06Z",
+      "activated_utc": "2026-09-02T01:09:25Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+      "ad_id": "120252041592290233",
+      "creative_id": "2446121469131699",
+      "type": "video",
+      "lang": "DE",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:16:14Z",
+      "activated_utc": "2026-09-02T01:09:28Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID45_DE_W3",
+      "ad_id": "120252041592940233",
+      "creative_id": "1369816822032616",
+      "type": "video",
+      "lang": "DE",
+      "concept": "03",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:16:23Z",
+      "activated_utc": "2026-09-02T01:09:30Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_DE_W3",
+      "ad_id": "120252041594060233",
+      "creative_id": "3161272034058543",
+      "type": "video",
+      "lang": "DE",
+      "concept": "04",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:16:33Z",
+      "activated_utc": "2026-09-02T01:09:32Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+      "ad_id": "120252041594880233",
+      "creative_id": "1082468587967469",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:16:40Z",
+      "activated_utc": "2026-09-02T01:09:34Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+      "ad_id": "120252041595010233",
+      "creative_id": "1463143825659291",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:16:48Z",
+      "activated_utc": "2026-09-02T01:09:37Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "INVEST_w3-card4-sqm_static_IMG45_DE_W3",
+      "ad_id": "120252041595410233",
+      "creative_id": "876562955388662",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card4",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:16:56Z",
+      "activated_utc": "2026-09-02T01:09:39Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_DE_W3",
+      "ad_id": "120252041596020233",
+      "creative_id": "1069257445594196",
+      "type": "video",
+      "lang": "DE",
+      "concept": "01",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:17:05Z",
+      "activated_utc": "2026-09-02T01:09:41Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_DE_W3",
+      "ad_id": "120252041596530233",
+      "creative_id": "1042870281969830",
+      "type": "video",
+      "lang": "DE",
+      "concept": "01",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:17:13Z",
+      "activated_utc": "2026-09-02T01:09:43Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+      "ad_id": "120252041597060233",
+      "creative_id": "1803086940706566",
+      "type": "video",
+      "lang": "DE",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:17:20Z",
+      "activated_utc": "2026-09-02T01:09:45Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_DE_W3",
+      "ad_id": "120252041597740233",
+      "creative_id": "1704568054104252",
+      "type": "video",
+      "lang": "DE",
+      "concept": "02",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:17:28Z",
+      "activated_utc": "2026-09-02T01:09:47Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+      "ad_id": "120252041598240233",
+      "creative_id": "1712238803185838",
+      "type": "video",
+      "lang": "DE",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:17:37Z",
+      "activated_utc": "2026-09-02T01:09:49Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID45_DE_W3",
+      "ad_id": "120252041598400233",
+      "creative_id": "1097130382770129",
+      "type": "video",
+      "lang": "DE",
+      "concept": "03",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:17:45Z",
+      "activated_utc": "2026-09-02T01:09:52Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_DE_W3",
+      "ad_id": "120252041599260233",
+      "creative_id": "959414107171705",
+      "type": "video",
+      "lang": "DE",
+      "concept": "04",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:17:54Z",
+      "activated_utc": "2026-09-02T01:09:54Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+      "ad_id": "120252041599350233",
+      "creative_id": "2308029019947608",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:18:02Z",
+      "activated_utc": "2026-09-02T01:09:56Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+      "ad_id": "120252041599780233",
+      "creative_id": "1100462652422325",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:18:09Z",
+      "activated_utc": "2026-09-02T01:09:58Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "INVEST_w3-card4-sqm_static_IMG45_DE_W3",
+      "ad_id": "120252041600150233",
+      "creative_id": "1692227111854241",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card4",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:18:16Z",
+      "activated_utc": "2026-09-02T01:10:00Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_PL_W3",
+      "ad_id": "120252041601060233",
+      "creative_id": "4589016928049415",
+      "type": "video",
+      "lang": "PL",
+      "concept": "01",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:18:27Z",
+      "activated_utc": "2026-09-02T01:10:02Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_PL_W3",
+      "ad_id": "120252041601410233",
+      "creative_id": "3197704033751152",
+      "type": "video",
+      "lang": "PL",
+      "concept": "01",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:18:37Z",
+      "activated_utc": "2026-09-02T01:10:05Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_PL_W3",
+      "ad_id": "120252041602140233",
+      "creative_id": "3712830555545741",
+      "type": "video",
+      "lang": "PL",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:18:46Z",
+      "activated_utc": "2026-09-02T01:10:07Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_PL_W3",
+      "ad_id": "120252041602560233",
+      "creative_id": "1666649031599418",
+      "type": "video",
+      "lang": "PL",
+      "concept": "02",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:18:55Z",
+      "activated_utc": "2026-09-02T01:10:09Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_PL_W3",
+      "ad_id": "120252041603140233",
+      "creative_id": "1098990985806231",
+      "type": "video",
+      "lang": "PL",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:19:05Z",
+      "activated_utc": "2026-09-02T01:10:11Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID45_PL_W3",
+      "ad_id": "120252041603240233",
+      "creative_id": "1054756717525080",
+      "type": "video",
+      "lang": "PL",
+      "concept": "03",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:19:13Z",
+      "activated_utc": "2026-09-02T01:10:14Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_PL_W3",
+      "ad_id": "120252041604220233",
+      "creative_id": "1664551099003260",
+      "type": "video",
+      "lang": "PL",
+      "concept": "04",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:19:23Z",
+      "activated_utc": "2026-09-02T01:10:16Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_PL_W3",
+      "ad_id": "120252041604340233",
+      "creative_id": "1973206816676484",
+      "type": "image",
+      "lang": "PL",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:19:31Z",
+      "activated_utc": "2026-09-02T01:10:19Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_PL_W3",
+      "ad_id": "120252041612960233",
+      "creative_id": "954589551021924",
+      "type": "image",
+      "lang": "PL",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:22:40Z",
+      "activated_utc": "2026-09-02T01:10:21Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "INVEST_w3-card4-sqm_static_IMG45_PL_W3",
+      "ad_id": "120252041613070233",
+      "creative_id": "1087035453687607",
+      "type": "image",
+      "lang": "PL",
+      "concept": "card4",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:22:47Z",
+      "activated_utc": "2026-09-02T01:10:23Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_TR_W3",
+      "ad_id": "120252041622720233",
+      "creative_id": "1401373114748581",
+      "type": "video",
+      "lang": "TR",
+      "concept": "01",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:24:57Z",
+      "activated_utc": "2026-09-02T01:10:26Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_TR_W3",
+      "ad_id": "120252041626320233",
+      "creative_id": "1368504321600306",
+      "type": "video",
+      "lang": "TR",
+      "concept": "01",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:25:29Z",
+      "activated_utc": "2026-09-02T01:10:28Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_TR_W3",
+      "ad_id": "120252041627610233",
+      "creative_id": "1089148170163753",
+      "type": "video",
+      "lang": "TR",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:25:37Z",
+      "activated_utc": "2026-09-02T01:10:30Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_TR_W3",
+      "ad_id": "120252041629110233",
+      "creative_id": "1150026580931125",
+      "type": "video",
+      "lang": "TR",
+      "concept": "02",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:25:45Z",
+      "activated_utc": "2026-09-02T01:10:32Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_TR_W3",
+      "ad_id": "120252041629620233",
+      "creative_id": "4146343328999674",
+      "type": "video",
+      "lang": "TR",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:25:52Z",
+      "activated_utc": "2026-09-02T01:10:35Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID45_TR_W3",
+      "ad_id": "120252041630680233",
+      "creative_id": "912315998619757",
+      "type": "video",
+      "lang": "TR",
+      "concept": "03",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:26:00Z",
+      "activated_utc": "2026-09-02T01:10:37Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_TR_W3",
+      "ad_id": "120252041631570233",
+      "creative_id": "1684428389319817",
+      "type": "video",
+      "lang": "TR",
+      "concept": "04",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:26:09Z",
+      "activated_utc": "2026-09-02T01:10:40Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_TR_W3",
+      "ad_id": "120252041631840233",
+      "creative_id": "1051784587771216",
+      "type": "image",
+      "lang": "TR",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:26:16Z",
+      "activated_utc": "2026-09-02T01:10:43Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_TR_W3",
+      "ad_id": "120252041632190233",
+      "creative_id": "1658294402643754",
+      "type": "image",
+      "lang": "TR",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:26:22Z",
+      "activated_utc": "2026-09-02T01:10:45Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "INVEST_w3-card4-sqm_static_IMG45_TR_W3",
+      "ad_id": "120252041632810233",
+      "creative_id": "29030641866523768",
+      "type": "image",
+      "lang": "TR",
+      "concept": "card4",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:26:29Z",
+      "activated_utc": "2026-09-02T01:10:47Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_UA_W3",
+      "ad_id": "120252041633320233",
+      "creative_id": "2091231878150236",
+      "type": "video",
+      "lang": "UA",
+      "concept": "01",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:26:37Z",
+      "activated_utc": "2026-09-02T01:10:50Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID45_UA_W3",
+      "ad_id": "120252041633730233",
+      "creative_id": "1062912729689195",
+      "type": "video",
+      "lang": "UA",
+      "concept": "01",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:26:44Z",
+      "activated_utc": "2026-09-02T01:10:52Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_UA_W3",
+      "ad_id": "120252041634060233",
+      "creative_id": "1963991967617124",
+      "type": "video",
+      "lang": "UA",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:26:52Z",
+      "activated_utc": "2026-09-02T01:10:54Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID45_UA_W3",
+      "ad_id": "120252041634470233",
+      "creative_id": "1090676223436224",
+      "type": "video",
+      "lang": "UA",
+      "concept": "02",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:27:01Z",
+      "activated_utc": "2026-09-02T01:10:56Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_UA_W3",
+      "ad_id": "120252041651550233",
+      "creative_id": "1049808407835608",
+      "type": "video",
+      "lang": "UA",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:35:11Z",
+      "activated_utc": "2026-09-02T01:10:58Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID45_UA_W3",
+      "ad_id": "120252041652990233",
+      "creative_id": "1437151918275258",
+      "type": "video",
+      "lang": "UA",
+      "concept": "03",
+      "fmt": "VID45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:36:03Z",
+      "activated_utc": "2026-09-02T01:11:01Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "FIRSTLINE_w3-owner-morning_pov-price_VID916_UA_W3",
+      "ad_id": "120252041653190233",
+      "creative_id": "2158578238409438",
+      "type": "video",
+      "lang": "UA",
+      "concept": "04",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:36:14Z",
+      "activated_utc": "2026-09-02T01:11:03Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_UA_W3",
+      "ad_id": "120252041684190233",
+      "creative_id": "1110844991695565",
+      "type": "image",
+      "lang": "UA",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:40:24Z",
+      "activated_utc": "2026-09-02T01:11:06Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_UA_W3",
+      "ad_id": "120252041687230233",
+      "creative_id": "1518321760314602",
+      "type": "image",
+      "lang": "UA",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:40:32Z",
+      "activated_utc": "2026-09-02T01:11:08Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "INVEST_w3-card4-sqm_static_IMG45_UA_W3",
+      "ad_id": "120252041689660233",
+      "creative_id": "1145220201413368",
+      "type": "image",
+      "lang": "UA",
+      "concept": "card4",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:40:41Z",
+      "activated_utc": "2026-09-02T01:11:10Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "campaign_id": "120250397417770233",
+      "adset_id": "120250397504440233",
+      "name": "SEASONS_w3-seasons-alive_four-seasons_VID916_SR_W3",
+      "ad_id": "120252041693790233",
+      "creative_id": "2052193955434143",
+      "type": "video",
+      "lang": "SR",
+      "concept": "01",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:40:51Z",
+      "activated_utc": "2026-09-02T01:11:13Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "campaign_id": "120250397417770233",
+      "adset_id": "120250397504440233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_SR_W3",
+      "ad_id": "120252041702770233",
+      "creative_id": "1474776930854341",
+      "type": "video",
+      "lang": "SR",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:41:00Z",
+      "activated_utc": "2026-09-02T01:11:16Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "campaign_id": "120250397417770233",
+      "adset_id": "120250397504440233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+      "ad_id": "120252041706500233",
+      "creative_id": "1529759968920485",
+      "type": "video",
+      "lang": "SR",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:41:10Z",
+      "activated_utc": "2026-09-02T01:11:19Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "campaign_id": "120250397417770233",
+      "adset_id": "120250397504440233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_RU_W3",
+      "ad_id": "120252041708150233",
+      "creative_id": "1632565491636033",
+      "type": "video",
+      "lang": "RU",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:41:21Z",
+      "activated_utc": "2026-09-02T01:11:22Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "campaign_id": "120250397417770233",
+      "adset_id": "120250397504440233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_RU_W3",
+      "ad_id": "120252041712630233",
+      "creative_id": "4190469461244440",
+      "type": "video",
+      "lang": "RU",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:42:30Z",
+      "activated_utc": "2026-09-02T01:11:25Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_SR_W3",
+      "ad_id": "120252041719250233",
+      "creative_id": "4697292710592404",
+      "type": "image",
+      "lang": "SR",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:43:39Z",
+      "activated_utc": "2026-09-02T01:11:27Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_SR_W3",
+      "ad_id": "120252041720290233",
+      "creative_id": "3517450738423246",
+      "type": "image",
+      "lang": "SR",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:43:48Z",
+      "activated_utc": "2026-09-02T01:11:29Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "FIRSTLINE_w3-card6-inventory_static_IMG45_SR_W3",
+      "ad_id": "120252041728280233",
+      "creative_id": "2241514200040737",
+      "type": "image",
+      "lang": "SR",
+      "concept": "card6",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:45:57Z",
+      "activated_utc": "2026-09-02T01:11:31Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_SR_W3",
+      "ad_id": "120252041732660233",
+      "creative_id": "1436148718403168",
+      "type": "video",
+      "lang": "SR",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:47:23Z",
+      "activated_utc": "2026-09-02T01:11:33Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_RU_W3",
+      "ad_id": "120252041732880233",
+      "creative_id": "1809911513685988",
+      "type": "image",
+      "lang": "RU",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:47:31Z",
+      "activated_utc": "2026-09-02T01:11:35Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_RU_W3",
+      "ad_id": "120252041741080233",
+      "creative_id": "1878087826503832",
+      "type": "image",
+      "lang": "RU",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:49:41Z",
+      "activated_utc": "2026-09-02T01:11:37Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "FIRSTLINE_w3-card6-inventory_static_IMG45_RU_W3",
+      "ad_id": "120252041741580233",
+      "creative_id": "28339408439005168",
+      "type": "image",
+      "lang": "RU",
+      "concept": "card6",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:49:50Z",
+      "activated_utc": "2026-09-02T01:11:40Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_RU_W3",
+      "ad_id": "120252041750680233",
+      "creative_id": "1081986047616853",
+      "type": "video",
+      "lang": "RU",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:53:00Z",
+      "activated_utc": "2026-09-02T01:11:42Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_DE_W3",
+      "ad_id": "120252041753150233",
+      "creative_id": "942669708226275",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:54:10Z",
+      "activated_utc": "2026-09-02T01:11:44Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_DE_W3",
+      "ad_id": "120252041753560233",
+      "creative_id": "1794581821897048",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:54:18Z",
+      "activated_utc": "2026-09-02T01:11:46Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "FIRSTLINE_w3-card6-inventory_static_IMG45_DE_W3",
+      "ad_id": "120252041756690233",
+      "creative_id": "2176827236597912",
+      "type": "image",
+      "lang": "DE",
+      "concept": "card6",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:55:27Z",
+      "activated_utc": "2026-09-02T01:11:48Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_DE_W3",
+      "ad_id": "120252041766750233",
+      "creative_id": "932992129881002",
+      "type": "video",
+      "lang": "DE",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:58:02Z",
+      "activated_utc": "2026-09-02T01:11:50Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_DE_W3",
+      "ad_id": "120252041767880233",
+      "creative_id": "1836468354179486",
+      "type": "video",
+      "lang": "DE",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T00:58:10Z",
+      "activated_utc": "2026-09-02T01:11:52Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "TURNKEY_w3-card2-timeline_static_IMG45_PL_W3",
+      "ad_id": "120252041775780233",
+      "creative_id": "2633955007041225",
+      "type": "image",
+      "lang": "PL",
+      "concept": "card2",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T01:00:20Z",
+      "activated_utc": "2026-09-02T01:11:54Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "MELIAHOME_w3-card3-melia_static_IMG45_PL_W3",
+      "ad_id": "120252041776020233",
+      "creative_id": "1410936097848148",
+      "type": "image",
+      "lang": "PL",
+      "concept": "card3",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T01:00:28Z",
+      "activated_utc": "2026-09-02T01:11:56Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "FIRSTLINE_w3-card6-inventory_static_IMG45_PL_W3",
+      "ad_id": "120252041784310233",
+      "creative_id": "944018912071522",
+      "type": "image",
+      "lang": "PL",
+      "concept": "card6",
+      "fmt": "IMG45",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T01:02:38Z",
+      "activated_utc": "2026-09-02T01:11:58Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "TURNKEY_w3-keys-2027_site-footage_VID916_PL_W3",
+      "ad_id": "120252041787860233",
+      "creative_id": "4457637267898696",
+      "type": "video",
+      "lang": "PL",
+      "concept": "03",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T01:04:07Z",
+      "activated_utc": "2026-09-02T01:12:00Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "INVEST_w3-price-math-2_rent-vs-down_VID916_PL_W3",
+      "ad_id": "120252041788660233",
+      "creative_id": "2559989254423289",
+      "type": "video",
+      "lang": "PL",
+      "concept": "02",
+      "fmt": "VID916",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS",
+      "batch": "w3-2026-09-01",
+      "ts": "2026-09-02T01:04:15Z",
+      "activated_utc": "2026-09-02T01:12:02Z"
+    }
+  ],
+  "skipped": [],
+  "errors": [],
+  "review": {
+    "started_utc": "2026-09-02T01:04:21Z",
+    "polls": [
+      {
+        "ts": "2026-09-02T01:04:22Z",
+        "distribution": {
+          "PAUSED": 80,
+          "PENDING_REVIEW": 1,
+          "IN_PROCESS": 2
+        }
+      },
+      {
+        "ts": "2026-09-02T01:05:53Z",
+        "distribution": {
+          "PAUSED": 80,
+          "PENDING_REVIEW": 3
+        }
+      },
+      {
+        "ts": "2026-09-02T01:08:54Z",
+        "distribution": {
+          "PAUSED": 83
+        }
+      }
+    ],
+    "distribution": {
+      "PAUSED": 83
+    },
+    "clean": true
+  },
+  "activation": {
+    "done": true,
+    "done_utc": "2026-09-02T01:12:03Z",
+    "activated": 83,
+    "not_activated": []
+  },
+  "paused": [
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_SR_V2",
+      "ad_id": "120250677612710233",
+      "created_time": "2026-07-11T11:05:26+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:15Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID45_SR_V1",
+      "ad_id": "120250397408310233",
+      "created_time": "2026-07-02T22:46:01+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:17Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_SR_V2",
+      "ad_id": "120250677618040233",
+      "created_time": "2026-07-11T11:05:49+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:20Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID45_SR_V2",
+      "ad_id": "120250677619360233",
+      "created_time": "2026-07-11T11:05:55+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:22Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID45_SR_V2",
+      "ad_id": "120250677613180233",
+      "created_time": "2026-07-11T11:05:32+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:24Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID45_SR_V2",
+      "ad_id": "120250677616830233",
+      "created_time": "2026-07-11T11:05:44+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:26Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_SR_V1",
+      "ad_id": "120250397400750233",
+      "created_time": "2026-07-02T22:44:59+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:28Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "TURNKEY_payment-plan_static_IMG45_SR_V1",
+      "ad_id": "120250397411670233",
+      "created_time": "2026-07-02T22:46:18+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:30Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "TURNKEY_one-day-first-line_pov-day_VID45_SR_V1",
+      "ad_id": "120250397405320233",
+      "created_time": "2026-07-02T22:45:44+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:33Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "FIRSTLINE_price-anchor_static_IMG45_SR_V1",
+      "ad_id": "120250397409610233",
+      "created_time": "2026-07-02T22:46:10+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:35Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_SR_V1",
+      "ad_id": "120250397399190233",
+      "created_time": "2026-07-02T22:44:49+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:37Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_SR_V1",
+      "ad_id": "120250397398550233",
+      "created_time": "2026-07-02T22:44:40+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:39Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "TURNKEY_one-day-first-line_pov-day_VID916_SR_V1",
+      "ad_id": "120250397404610233",
+      "created_time": "2026-07-02T22:45:36+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:41Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID916_SR_V1",
+      "ad_id": "120250397406760233",
+      "created_time": "2026-07-02T22:45:53+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:43Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_SR_V1",
+      "ad_id": "120250397401550233",
+      "created_time": "2026-07-02T22:45:10+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:16:45Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID916_DE_V1",
+      "ad_id": "120250397817130233",
+      "created_time": "2026-07-02T23:17:43+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:06Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID45_DE_V1",
+      "ad_id": "120250397819180233",
+      "created_time": "2026-07-02T23:17:48+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:08Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_DE_V2",
+      "ad_id": "120250677624830233",
+      "created_time": "2026-07-11T11:06:31+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:10Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_DE_V1",
+      "ad_id": "120250397197410233",
+      "created_time": "2026-07-02T22:36:13+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:13Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID916_DE_V2",
+      "ad_id": "120250677640660233",
+      "created_time": "2026-07-11T11:06:55+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:15Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID45_DE_V2",
+      "ad_id": "120250677655300233",
+      "created_time": "2026-07-11T11:07:33+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:17Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_DE_V2",
+      "ad_id": "120250677650880233",
+      "created_time": "2026-07-11T11:07:21+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:20Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID45_DE_V2",
+      "ad_id": "120250677647600233",
+      "created_time": "2026-07-11T11:07:08+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:21Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID45_DE_V2",
+      "ad_id": "120250677627740233",
+      "created_time": "2026-07-11T11:06:43+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:23Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "TURNKEY_one-day-first-line_pov-day_VID45_DE_V1",
+      "ad_id": "120250397201580233",
+      "created_time": "2026-07-02T22:36:50+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:25Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "FIRSTLINE_price-anchor_static_IMG45_DE_V1",
+      "ad_id": "120250397202240233",
+      "created_time": "2026-07-02T22:36:56+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:28Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_DE_V1",
+      "ad_id": "120250397195650233",
+      "created_time": "2026-07-02T22:35:57+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:30Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_DE_V1",
+      "ad_id": "120250397196650233",
+      "created_time": "2026-07-02T22:36:05+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:32Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "TURNKEY_payment-plan_static_IMG45_DE_V1",
+      "ad_id": "120250397203500233",
+      "created_time": "2026-07-02T22:37:03+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:34Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_DE_V1",
+      "ad_id": "120250397198100233",
+      "created_time": "2026-07-02T22:36:21+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:37Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_DE_AT_V1",
+      "ad_id": "120250543094960233",
+      "created_time": "2026-07-07T18:51:28+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:40Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_DE_AT_V1",
+      "ad_id": "120250543096190233",
+      "created_time": "2026-07-07T18:51:38+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:42Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_DE_AT_V1",
+      "ad_id": "120250543097180233",
+      "created_time": "2026-07-07T18:51:46+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:44Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_DE_AT_V1",
+      "ad_id": "120250543098240233",
+      "created_time": "2026-07-07T18:51:54+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:46Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "TURNKEY_one-day-first-line_pov-day_VID45_DE_AT_V1",
+      "ad_id": "120250543105400233",
+      "created_time": "2026-07-07T18:52:19+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:48Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "TURNKEY_one-day-first-line_pov-day_VID916_DE_AT_V1",
+      "ad_id": "120250543106650233",
+      "created_time": "2026-07-07T18:52:26+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:50Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID916_DE_AT_V1",
+      "ad_id": "120250543108970233",
+      "created_time": "2026-07-07T18:52:36+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:53Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID45_DE_AT_V1",
+      "ad_id": "120250543111740233",
+      "created_time": "2026-07-07T18:52:44+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:55Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "FIRSTLINE_price-anchor_static_IMG45_DE_AT_V1",
+      "ad_id": "120250543112930233",
+      "created_time": "2026-07-07T18:52:51+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:57Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_DE_V2",
+      "ad_id": "120250677844610233",
+      "created_time": "2026-07-11T11:14:25+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:24:59Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "TURNKEY_one-day-v2_hook-a_VID45_DE_V2",
+      "ad_id": "120250677846970233",
+      "created_time": "2026-07-11T11:14:31+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:00Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "TURNKEY_one-day-v2_hook-b_VID916_DE_V2",
+      "ad_id": "120250677850320233",
+      "created_time": "2026-07-11T11:14:36+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:02Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "TURNKEY_one-day-v2_hook-b_VID45_DE_V2",
+      "ad_id": "120250677852580233",
+      "created_time": "2026-07-11T11:14:42+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:04Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_DE_V2",
+      "ad_id": "120250677854160233",
+      "created_time": "2026-07-11T11:14:48+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:06Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "name": "TURNKEY_one-day-v2_hook-c_VID45_DE_V2",
+      "ad_id": "120250677855950233",
+      "created_time": "2026-07-11T11:14:54+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:08Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_PL_V1",
+      "ad_id": "120250397103180233",
+      "created_time": "2026-07-02T22:27:48+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:12Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_PL_V1",
+      "ad_id": "120250397104900233",
+      "created_time": "2026-07-02T22:27:56+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:14Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_PL_V1",
+      "ad_id": "120250397106710233",
+      "created_time": "2026-07-02T22:28:02+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:16Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_PL_V1",
+      "ad_id": "120250397107550233",
+      "created_time": "2026-07-02T22:28:09+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:19Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "TURNKEY_one-day-first-line_pov-day_VID916_PL_V1",
+      "ad_id": "120250397112870233",
+      "created_time": "2026-07-02T22:28:27+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:21Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "FIRSTLINE_price-anchor_static_IMG45_PL_V1",
+      "ad_id": "120250397113820233",
+      "created_time": "2026-07-02T22:28:35+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:22Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "TURNKEY_payment-plan_static_IMG45_PL_V1",
+      "ad_id": "120250397114430233",
+      "created_time": "2026-07-02T22:28:39+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:24Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID916_PL_V1",
+      "ad_id": "120250397895660233",
+      "created_time": "2026-07-02T23:24:53+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:27Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID45_PL_V1",
+      "ad_id": "120250397896530233",
+      "created_time": "2026-07-02T23:24:59+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:29Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_PL_V2",
+      "ad_id": "120250677706730233",
+      "created_time": "2026-07-11T11:08:35+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:31Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID45_PL_V2",
+      "ad_id": "120250677718380233",
+      "created_time": "2026-07-11T11:08:47+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:33Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID916_PL_V2",
+      "ad_id": "120250677727230233",
+      "created_time": "2026-07-11T11:08:58+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:35Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID45_PL_V2",
+      "ad_id": "120250677734740233",
+      "created_time": "2026-07-11T11:09:11+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:38Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_PL_V2",
+      "ad_id": "120250677740220233",
+      "created_time": "2026-07-11T11:09:24+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:40Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID45_PL_V2",
+      "ad_id": "120250677742490233",
+      "created_time": "2026-07-11T11:09:36+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:42Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_TR_V1",
+      "ad_id": "120250707889070233",
+      "created_time": "2026-07-12T22:48:04+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:46Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_TR_V1",
+      "ad_id": "120250707889920233",
+      "created_time": "2026-07-12T22:48:18+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:48Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_TR_V1",
+      "ad_id": "120250707891870233",
+      "created_time": "2026-07-12T22:48:31+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:50Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_TR_V1",
+      "ad_id": "120250707896530233",
+      "created_time": "2026-07-12T22:48:45+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:52Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_TR_V1",
+      "ad_id": "120250707908500233",
+      "created_time": "2026-07-12T22:49:24+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:53Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID45_TR_V1",
+      "ad_id": "120250707909840233",
+      "created_time": "2026-07-12T22:49:39+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:56Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID916_TR_V1",
+      "ad_id": "120250707911330233",
+      "created_time": "2026-07-12T22:49:52+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:25:58Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_TR_V1",
+      "ad_id": "120250707912390233",
+      "created_time": "2026-07-12T22:50:05+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:00Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "name": "FIRSTLINE_price-anchor_static_IMG45_TR_V1",
+      "ad_id": "120250707921170233",
+      "created_time": "2026-07-12T22:51:09+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:02Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_UA_V1",
+      "ad_id": "120250708228070233",
+      "created_time": "2026-07-12T23:39:12+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:06Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_UA_V1",
+      "ad_id": "120250708231350233",
+      "created_time": "2026-07-12T23:39:25+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:09Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_UA_V1",
+      "ad_id": "120250708234750233",
+      "created_time": "2026-07-12T23:39:39+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:12Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_UA_V1",
+      "ad_id": "120250708236240233",
+      "created_time": "2026-07-12T23:39:52+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:14Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_UA_V1",
+      "ad_id": "120250708242850233",
+      "created_time": "2026-07-12T23:40:31+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:16Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID45_UA_V1",
+      "ad_id": "120250708245940233",
+      "created_time": "2026-07-12T23:40:44+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:18Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID916_UA_V1",
+      "ad_id": "120250708247970233",
+      "created_time": "2026-07-12T23:40:57+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:21Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_UA_V1",
+      "ad_id": "120250708250500233",
+      "created_time": "2026-07-12T23:41:11+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:23Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "name": "FIRSTLINE_price-anchor_static_IMG45_UA_V1",
+      "ad_id": "120250708261050233",
+      "created_time": "2026-07-12T23:42:16+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:24Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_SR_V1",
+      "ad_id": "120250397505890233",
+      "created_time": "2026-07-02T22:53:52+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:28Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_SR_V1",
+      "ad_id": "120250397509110233",
+      "created_time": "2026-07-02T22:54:06+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:31Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_SR_V1",
+      "ad_id": "120250397510980233",
+      "created_time": "2026-07-02T22:54:13+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:33Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID916_SR_V1",
+      "ad_id": "120250397512640233",
+      "created_time": "2026-07-02T22:54:20+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:36Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID45_SR_V1",
+      "ad_id": "120250397514410233",
+      "created_time": "2026-07-02T22:54:27+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:39Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_RU_V1",
+      "ad_id": "120250397516300233",
+      "created_time": "2026-07-02T22:54:36+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:41Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_RU_V1",
+      "ad_id": "120250397518600233",
+      "created_time": "2026-07-02T22:54:44+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:44Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID916_RU_V1",
+      "ad_id": "120250397520370233",
+      "created_time": "2026-07-02T22:54:53+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:47Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_cinematic-noavatar_drone-open_VID45_RU_V1",
+      "ad_id": "120250397521710233",
+      "created_time": "2026-07-02T22:55:02+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:50Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID916_EN_V1",
+      "ad_id": "120250397523520233",
+      "created_time": "2026-07-02T22:55:09+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:52Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_payment-plan_static_IMG45_SR_V1",
+      "ad_id": "120250397527590233",
+      "created_time": "2026-07-02T22:55:32+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:55Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_price-anchor_static_IMG45_RU_V1",
+      "ad_id": "120250397529010233",
+      "created_time": "2026-07-02T22:55:39+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:57Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_payment-plan_static_IMG45_RU_V1",
+      "ad_id": "120250397530180233",
+      "created_time": "2026-07-02T22:55:45+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:26:59Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_price-anchor_static_IMG45_EN_V1",
+      "ad_id": "120250397533120233",
+      "created_time": "2026-07-02T22:55:59+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:02Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_payment-plan_static_IMG45_EN_V1",
+      "ad_id": "120250397534180233",
+      "created_time": "2026-07-02T22:56:07+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:04Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID916_RU_V1",
+      "ad_id": "120250397810540233",
+      "created_time": "2026-07-02T23:17:32+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:07Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID45_RU_V1",
+      "ad_id": "120250397815370233",
+      "created_time": "2026-07-02T23:17:38+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:09Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_SR_V2",
+      "ad_id": "120250677156840233",
+      "created_time": "2026-07-11T10:50:24+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:12Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID916_SR_V2",
+      "ad_id": "120250677196000233",
+      "created_time": "2026-07-11T10:51:19+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:14Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_SR_V2",
+      "ad_id": "120250677221880233",
+      "created_time": "2026-07-11T10:51:43+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:17Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID45_SR_V2",
+      "ad_id": "120250677229790233",
+      "created_time": "2026-07-11T10:51:56+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:20Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_RU_V2",
+      "ad_id": "120250677268180233",
+      "created_time": "2026-07-11T10:52:55+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:22Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID45_RU_V2",
+      "ad_id": "120250677282040233",
+      "created_time": "2026-07-11T10:53:07+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:24Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID916_RU_V2",
+      "ad_id": "120250677292760233",
+      "created_time": "2026-07-11T10:53:19+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:27Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID45_RU_V2",
+      "ad_id": "120250677300370233",
+      "created_time": "2026-07-11T10:53:31+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:29Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_RU_V2",
+      "ad_id": "120250677313650233",
+      "created_time": "2026-07-11T10:53:44+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:32Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID45_RU_V2",
+      "ad_id": "120250677322870233",
+      "created_time": "2026-07-11T10:53:56+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:34Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID916_EN_V2",
+      "ad_id": "120250677386560233",
+      "created_time": "2026-07-11T10:54:58+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:36Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-a_VID45_EN_V2",
+      "ad_id": "120250677393300233",
+      "created_time": "2026-07-11T10:55:10+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:39Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID916_EN_V2",
+      "ad_id": "120250677404770233",
+      "created_time": "2026-07-11T10:55:22+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:41Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-b_VID45_EN_V2",
+      "ad_id": "120250677419690233",
+      "created_time": "2026-07-11T10:55:35+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:43Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID916_EN_V2",
+      "ad_id": "120250677423440233",
+      "created_time": "2026-07-11T10:55:47+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:46Z"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "TURNKEY_one-day-v2_hook-c_VID45_EN_V2",
+      "ad_id": "120250677432210233",
+      "created_time": "2026-07-11T10:55:59+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:48Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_SR_V1",
+      "ad_id": "120250397642570233",
+      "created_time": "2026-07-02T23:03:32+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:51Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_SR_V1",
+      "ad_id": "120250397643730233",
+      "created_time": "2026-07-02T23:03:39+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:54Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_RU_V1",
+      "ad_id": "120250397645040233",
+      "created_time": "2026-07-02T23:03:48+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:56Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_RU_V1",
+      "ad_id": "120250397645820233",
+      "created_time": "2026-07-02T23:03:55+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:27:58Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID916_EN_V1",
+      "ad_id": "120250397646520233",
+      "created_time": "2026-07-02T23:04:02+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:00Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_EN_V1",
+      "ad_id": "120250397647560233",
+      "created_time": "2026-07-02T23:04:09+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:02Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "TURNKEY_q4-2027_static_IMG45_SR_V1",
+      "ad_id": "120250397648600233",
+      "created_time": "2026-07-02T23:04:18+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:04Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "TURNKEY_payment-plan_static_IMG45_SR_V1",
+      "ad_id": "120250397649840233",
+      "created_time": "2026-07-02T23:04:26+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:06Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "TURNKEY_q4-2027_static_IMG45_RU_V1",
+      "ad_id": "120250397652120233",
+      "created_time": "2026-07-02T23:04:42+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:08Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "TURNKEY_service-fee_static_IMG45_RU_V1",
+      "ad_id": "120250397653750233",
+      "created_time": "2026-07-02T23:04:50+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:10Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "INVEST_branded-premium_static_IMG45_RU_V1",
+      "ad_id": "120250397654320233",
+      "created_time": "2026-07-02T23:04:58+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:12Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "TURNKEY_q4-2027_static_IMG45_EN_V1",
+      "ad_id": "120250397657340233",
+      "created_time": "2026-07-02T23:05:07+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:14Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "TURNKEY_payment-plan_static_IMG45_EN_V1",
+      "ad_id": "120250397658000233",
+      "created_time": "2026-07-02T23:05:15+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:16Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "INVEST_branded-premium_static_IMG45_EN_V1",
+      "ad_id": "120250397659770233",
+      "created_time": "2026-07-02T23:05:23+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:17Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "INVEST_price-video_static_IMG916_SR_V2",
+      "ad_id": "120250677771870233",
+      "created_time": "2026-07-11T11:11:01+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:19Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "INVEST_price-video_static_IMG45_SR_V2",
+      "ad_id": "120250677774420233",
+      "created_time": "2026-07-11T11:11:11+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:22Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "INVEST_price-video_static_IMG916_RU_V2",
+      "ad_id": "120250677787660233",
+      "created_time": "2026-07-11T11:11:44+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:24Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "INVEST_price-video_static_IMG45_RU_V2",
+      "ad_id": "120250677793230233",
+      "created_time": "2026-07-11T11:11:55+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:26Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "INVEST_price-video_static_IMG916_EN_V2",
+      "ad_id": "120250677806420233",
+      "created_time": "2026-07-11T11:12:28+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:28Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "name": "INVEST_price-video_static_IMG45_EN_V2",
+      "ad_id": "120250677812600233",
+      "created_time": "2026-07-11T11:12:38+0200",
+      "verified": true,
+      "ts": "2026-09-02T01:28:30Z"
+    }
+  ],
+  "pause_old": {
+    "done": true,
+    "per_campaign": {
+      "MB_LEADS_SR_MIX_202607": {
+        "active_before": 21,
+        "candidates": 0,
+        "kept_old_active": 7,
+        "source": "live /ads",
+        "paused_now": 15,
+        "active_after": 21,
+        "done": true
+      },
+      "MB_LEADS_DE_MIX_202607": {
+        "source": "live /ads",
+        "active_before": 35,
+        "candidates": 15,
+        "kept_old_active": 6,
+        "paused_now": 15,
+        "active_after": 20,
+        "done": true
+      },
+      "MB_LEADS_DE_MIX_20260707": {
+        "source": "registry ids",
+        "active_before": 36,
+        "candidates": 15,
+        "kept_old_active": 7,
+        "paused_now": 15,
+        "active_after": 21,
+        "done": true
+      },
+      "MB_LEADS_PL_MIX_202607": {
+        "source": "registry ids",
+        "active_before": 36,
+        "candidates": 15,
+        "kept_old_active": 7,
+        "paused_now": 15,
+        "active_after": 21,
+        "done": true
+      },
+      "MB_LEADS_TR_MIX_202607": {
+        "source": "registry ids",
+        "active_before": 30,
+        "candidates": 9,
+        "kept_old_active": 7,
+        "paused_now": 9,
+        "active_after": 21,
+        "done": true
+      },
+      "MB_LEADS_UA_MIX_202607": {
+        "source": "registry ids",
+        "active_before": 30,
+        "candidates": 9,
+        "kept_old_active": 7,
+        "paused_now": 9,
+        "active_after": 21,
+        "done": true
+      },
+      "MB_LEADS_ME_MIX_202607": {
+        "source": "registry ids",
+        "active_before": 50,
+        "candidates": 33,
+        "kept_old_active": 12,
+        "paused_now": 33,
+        "active_after": 17,
+        "done": true
+      },
+      "MB_RTG_B_MIX_202607": {
+        "source": "registry ids",
+        "active_before": 49,
+        "candidates": 20,
+        "kept_old_active": 13,
+        "paused_now": 20,
+        "active_after": 29,
+        "done": true
+      },
+      "MB_RTG_A_MIX_202607": {
+        "source": "registry ids",
+        "active_before": 24,
+        "candidates": 0,
+        "kept_old_active": 0,
+        "paused_now": 0,
+        "active_after": 24,
+        "done": true
+      }
+    }
+  },
+  "registry_appended": true,
+  "updated_utc": "2026-09-02T01:28:31Z"
+}
