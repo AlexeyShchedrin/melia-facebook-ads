@@ -134,6 +134,21 @@
       "phase": "readback",
       "ts": "2026-09-02T00:11:43Z",
       "note": "ok"
+    },
+    {
+      "phase": "statics",
+      "ts": "2026-09-02T17:55:29Z",
+      "note": "16 ads PAUSED"
+    },
+    {
+      "phase": "statics_activate",
+      "ts": "2026-09-02T17:59:28Z",
+      "note": "16 ads ACTIVE, 0 not activated"
+    },
+    {
+      "phase": "statics_readback",
+      "ts": "2026-09-02T18:00:10Z",
+      "note": "ok"
     }
   ],
   "forms": {
@@ -957,6 +972,358 @@
       "issues_info": null,
       "ad_review_feedback": null,
       "activated_utc": "2026-09-02T00:10:22Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-A_IMG45_EN_E1",
+      "type": "image",
+      "lang": "EN",
+      "layout": "A",
+      "fmt": "IMG45",
+      "file": "IPS_A_EN_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "73085b666a76dc127edb0a070ecb5d3e",
+      "ad_id": "120252056673150233",
+      "creative_id": "1956912371659203",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:13Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:58:54Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_EN_E1",
+      "type": "image",
+      "lang": "EN",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_EN_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "8909bbdb890ee5bee7bd05239ee1e41a",
+      "ad_id": "120252056673730233",
+      "creative_id": "1964029024269266",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:18Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:58:56Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-A_IMG45_DE_E1",
+      "type": "image",
+      "lang": "DE",
+      "layout": "A",
+      "fmt": "IMG45",
+      "file": "IPS_A_DE_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "6b08d141f732f52815fe712fb2bf12bc",
+      "ad_id": "120252056674240233",
+      "creative_id": "29202276902707062",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:23Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:58:58Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_DE_E1",
+      "type": "image",
+      "lang": "DE",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_DE_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "d5a3675b224a061ec9b4daf6fa2265a8",
+      "ad_id": "120252056674510233",
+      "creative_id": "1633474408492265",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:28Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:01Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-A_IMG45_TR_E1",
+      "type": "image",
+      "lang": "TR",
+      "layout": "A",
+      "fmt": "IMG45",
+      "file": "IPS_A_TR_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "1ba6ef7df3c1f309d0e4a35a2b02e67d",
+      "ad_id": "120252056674980233",
+      "creative_id": "2115282952531836",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:33Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:03Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_TR_E1",
+      "type": "image",
+      "lang": "TR",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_TR_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "679d0d8478d0fac8c98ef8abb13ca20a",
+      "ad_id": "120252056675660233",
+      "creative_id": "1713853116583707",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:37Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:05Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-A_IMG45_UA_E1",
+      "type": "image",
+      "lang": "UA",
+      "layout": "A",
+      "fmt": "IMG45",
+      "file": "IPS_A_UA_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "3706c3ec9aecc8f2bf828e69bef5e60d",
+      "ad_id": "120252056676250233",
+      "creative_id": "4529503313991176",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:42Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:07Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_UA_E1",
+      "type": "image",
+      "lang": "UA",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_UA_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "3a5d806bb9bcc938d9fe1551bd3a2dc1",
+      "ad_id": "120252056677010233",
+      "creative_id": "1374033151465682",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:47Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:10Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-A_IMG45_RU_E1",
+      "type": "image",
+      "lang": "RU",
+      "layout": "A",
+      "fmt": "IMG45",
+      "file": "IPS_A_RU_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "92ce62e0e3aae6e5e197d2195b8eec4f",
+      "ad_id": "120252056677320233",
+      "creative_id": "2280137426095379",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:51Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:12Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_RU_E1",
+      "type": "image",
+      "lang": "RU",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_RU_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "dc6efdab99d598e1463fd11c9e2a289d",
+      "ad_id": "120252056677630233",
+      "creative_id": "1547510386634474",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:54:56Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:14Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_keys-expo_VID916_EN_E1",
+      "type": "video",
+      "lang": "EN",
+      "layout": null,
+      "fmt": "VID916",
+      "file": "IPS_video_EN_9x16.mp4",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "video_id": "1370208584782960",
+      "ad_id": "120252056678710233",
+      "creative_id": "1608338897323309",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:55:03Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:16Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_EN_L1",
+      "type": "image",
+      "lang": "EN",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_EN_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "8909bbdb890ee5bee7bd05239ee1e41a",
+      "ad_id": "120252056679360233",
+      "creative_id": "1055604263781384",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:55:08Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:18Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_DE_L1",
+      "type": "image",
+      "lang": "DE",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_DE_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "d5a3675b224a061ec9b4daf6fa2265a8",
+      "ad_id": "120252056680080233",
+      "creative_id": "898242756412549",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:55:13Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:20Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_TR_L1",
+      "type": "image",
+      "lang": "TR",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_TR_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "679d0d8478d0fac8c98ef8abb13ca20a",
+      "ad_id": "120252056680860233",
+      "creative_id": "4543457659272553",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:55:18Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:23Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_UA_L1",
+      "type": "image",
+      "lang": "UA",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_UA_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "3a5d806bb9bcc938d9fe1551bd3a2dc1",
+      "ad_id": "120252056682000233",
+      "creative_id": "878201815224524",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:55:23Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:25Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_static-B_IMG45_RU_L1",
+      "type": "image",
+      "lang": "RU",
+      "layout": "B",
+      "fmt": "IMG45",
+      "file": "IPS_B_RU_IMG45.png",
+      "batch": "ips-dubai-202609-statics",
+      "wave": "statics",
+      "image_hash": "dc6efdab99d598e1463fd11c9e2a289d",
+      "ad_id": "120252056682390233",
+      "creative_id": "1580106130533114",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "ts": "2026-09-02T17:55:28Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T17:59:27Z"
     }
   ],
   "review": {
@@ -1466,7 +1833,7 @@
       }
     }
   },
-  "updated_utc": "2026-09-02T00:11:43Z",
+  "updated_utc": "2026-09-02T18:00:10Z",
   "dof_mode": "full-opt-out",
   "dof_spec": {
     "creative_features_spec": {
@@ -1717,5 +2084,273 @@
         "enroll_status": "OPT_OUT"
       }
     }
+  },
+  "statics": {
+    "batch": "ips-dubai-202609-statics",
+    "created_utc": "2026-09-02T17:51:04Z",
+    "assets": "C:\\Users\\avshc\\OneDrive\\Desktop\\Melia Reels\\IPS Dubai 2026",
+    "manifest": "C:\\Users\\avshc\\OneDrive\\Desktop\\Melia Reels\\IPS Dubai 2026\\INDEX.md",
+    "uploads": {
+      "images": {
+        "IPS_A_EN_IMG45.png": {
+          "hash": "73085b666a76dc127edb0a070ecb5d3e",
+          "size_kb": 2494,
+          "ts": "2026-09-02T17:51:13Z"
+        },
+        "IPS_B_EN_IMG45.png": {
+          "hash": "8909bbdb890ee5bee7bd05239ee1e41a",
+          "size_kb": 2211,
+          "ts": "2026-09-02T17:51:21Z"
+        },
+        "IPS_A_DE_IMG45.png": {
+          "hash": "6b08d141f732f52815fe712fb2bf12bc",
+          "size_kb": 2494,
+          "ts": "2026-09-02T17:51:30Z"
+        },
+        "IPS_B_DE_IMG45.png": {
+          "hash": "d5a3675b224a061ec9b4daf6fa2265a8",
+          "size_kb": 2209,
+          "ts": "2026-09-02T17:51:39Z"
+        },
+        "IPS_A_TR_IMG45.png": {
+          "hash": "1ba6ef7df3c1f309d0e4a35a2b02e67d",
+          "size_kb": 2487,
+          "ts": "2026-09-02T17:51:48Z"
+        },
+        "IPS_B_TR_IMG45.png": {
+          "hash": "679d0d8478d0fac8c98ef8abb13ca20a",
+          "size_kb": 2211,
+          "ts": "2026-09-02T17:51:56Z"
+        },
+        "IPS_A_UA_IMG45.png": {
+          "hash": "3706c3ec9aecc8f2bf828e69bef5e60d",
+          "size_kb": 2493,
+          "ts": "2026-09-02T17:52:04Z"
+        },
+        "IPS_B_UA_IMG45.png": {
+          "hash": "3a5d806bb9bcc938d9fe1551bd3a2dc1",
+          "size_kb": 2207,
+          "ts": "2026-09-02T17:52:13Z"
+        },
+        "IPS_A_RU_IMG45.png": {
+          "hash": "92ce62e0e3aae6e5e197d2195b8eec4f",
+          "size_kb": 2491,
+          "ts": "2026-09-02T17:52:21Z"
+        },
+        "IPS_B_RU_IMG45.png": {
+          "hash": "dc6efdab99d598e1463fd11c9e2a289d",
+          "size_kb": 2207,
+          "ts": "2026-09-02T17:52:30Z"
+        }
+      },
+      "videos": {
+        "IPS_video_EN_9x16.mp4": {
+          "video_id": "1370208584782960",
+          "status": "ready",
+          "size_mb": 37.4,
+          "upload_sec": 66,
+          "ts": "2026-09-02T17:53:37Z",
+          "ready_utc": "2026-09-02T17:54:07Z"
+        }
+      }
+    },
+    "review": {
+      "started_utc": "2026-09-02T17:55:50Z",
+      "polls": [
+        {
+          "ts": "2026-09-02T17:55:50Z",
+          "distribution": {
+            "PENDING_REVIEW": 6,
+            "IN_PROCESS": 10
+          }
+        },
+        {
+          "ts": "2026-09-02T17:58:51Z",
+          "distribution": {
+            "PAUSED": 16
+          }
+        }
+      ],
+      "distribution": {
+        "PAUSED": 16
+      },
+      "clean": true
+    },
+    "activation": {
+      "done": true,
+      "done_utc": "2026-09-02T17:59:28Z",
+      "activated_ads": 16,
+      "not_activated": [],
+      "parents": [
+        {
+          "id": "120252041470810233",
+          "name": "MB_EXPO_IPS-DUBAI_REACH_202609",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE"
+        },
+        {
+          "id": "120252041472130233",
+          "name": "AE-DUBAI_REACH_EXPO",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE"
+        },
+        {
+          "id": "120252041472500233",
+          "name": "MB_EXPO_IPS-DUBAI_LEADS_202609",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE"
+        },
+        {
+          "id": "120252041473040233",
+          "name": "AE-DUBAI_LEADS_EXPO",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE"
+        }
+      ]
+    },
+    "readback": {
+      "ts": "2026-09-02T18:00:10Z",
+      "parents": {
+        "120252041470810233": {
+          "id": "120252041470810233",
+          "name": "MB_EXPO_IPS-DUBAI_REACH_202609",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE"
+        },
+        "120252041472130233": {
+          "id": "120252041472130233",
+          "name": "AE-DUBAI_REACH_EXPO",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE"
+        },
+        "120252041472500233": {
+          "id": "120252041472500233",
+          "name": "MB_EXPO_IPS-DUBAI_LEADS_202609",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE"
+        },
+        "120252041473040233": {
+          "id": "120252041473040233",
+          "name": "AE-DUBAI_LEADS_EXPO",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE"
+        }
+      },
+      "ads": {
+        "REACH": {
+          "count": 11,
+          "distribution": {
+            "ACTIVE": 11
+          },
+          "items": [
+            {
+              "name": "EXPO_ips-dubai_static-A_IMG45_EN_E1",
+              "ad_id": "120252056673150233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_EN_E1",
+              "ad_id": "120252056673730233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-A_IMG45_DE_E1",
+              "ad_id": "120252056674240233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_DE_E1",
+              "ad_id": "120252056674510233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-A_IMG45_TR_E1",
+              "ad_id": "120252056674980233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_TR_E1",
+              "ad_id": "120252056675660233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-A_IMG45_UA_E1",
+              "ad_id": "120252056676250233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_UA_E1",
+              "ad_id": "120252056677010233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-A_IMG45_RU_E1",
+              "ad_id": "120252056677320233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_RU_E1",
+              "ad_id": "120252056677630233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_keys-expo_VID916_EN_E1",
+              "ad_id": "120252056678710233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            }
+          ]
+        },
+        "LEADS": {
+          "count": 5,
+          "distribution": {
+            "ACTIVE": 5
+          },
+          "items": [
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_EN_L1",
+              "ad_id": "120252056679360233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_DE_L1",
+              "ad_id": "120252056680080233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_TR_L1",
+              "ad_id": "120252056680860233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_UA_L1",
+              "ad_id": "120252056682000233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            },
+            {
+              "name": "EXPO_ips-dubai_static-B_IMG45_RU_L1",
+              "ad_id": "120252056682390233",
+              "status": "ACTIVE",
+              "effective_status": "ACTIVE"
+            }
+          ]
+        }
+      }
+    },
+    "registry_appended": true
   }
 }

@@ -41,6 +41,8 @@ V3_STATE_PATH = OPS / "v3_rollout.json"
 ASSETS = Path(r"C:\Users\avshc\OneDrive\Desktop\Melia Reels\Wave 3")
 
 BATCH = "ips-dubai-202609"
+STATICS_BATCH = "ips-dubai-202609-statics"  # add-only wave 2 (expo statics + bonus video), 2026-09-02
+STATICS_ASSETS = Path(r"C:\Users\avshc\OneDrive\Desktop\Melia Reels\IPS Dubai 2026")
 EXPECTED_ACCOUNT = "act_776404808314031"
 IG_USER_ID = "17841475384506205"
 LINK = "https://meliabudva.com"
@@ -721,20 +723,29 @@ def phase_build(api: Api, state: dict) -> None:
 
 
 # ----------------------------------------------------------------------------
-def poll_pool(api: Api, state: dict) -> dict[str, int]:
-    infos = get_many(api, [a["ad_id"] for a in state["ads"]], "status,effective_status,issues_info,ad_review_feedback")
+def wave_ads(state: dict, batch: str) -> list[dict]:
+    return [a for a in state["ads"] if a.get("batch", BATCH) == batch]
+
+
+def poll_ads(api: Api, state: dict, ads: list[dict], rv: dict) -> dict[str, int]:
+    """Batched ?ids= poll (never the /ads listing edge) of the given ads; updates recs + the review block."""
+    infos = get_many(api, [a["ad_id"] for a in ads], "status,effective_status,issues_info,ad_review_feedback")
     dist: dict[str, int] = {}
-    for rec in state["ads"]:
+    for rec in ads:
         info = infos.get(rec["ad_id"]) or {}
         rec["status"] = info.get("status", rec.get("status"))
         rec["effective_status"] = info.get("effective_status", rec.get("effective_status"))
         rec["issues_info"] = info.get("issues_info")
         rec["ad_review_feedback"] = info.get("ad_review_feedback")
         dist[rec["effective_status"]] = dist.get(rec["effective_status"], 0) + 1
-    state["review"]["distribution"] = dist
-    state["review"]["polls"].append({"ts": now_utc(), "distribution": dist})
+    rv["distribution"] = dist
+    rv["polls"].append({"ts": now_utc(), "distribution": dist})
     save_state(state)
     return dist
+
+
+def poll_pool(api: Api, state: dict) -> dict[str, int]:
+    return poll_ads(api, state, wave_ads(state, BATCH), state["review"])
 
 
 def is_blocked(rec: dict) -> bool:
@@ -742,7 +753,7 @@ def is_blocked(rec: dict) -> bool:
 
 
 def phase_review(api: Api, state: dict) -> None:
-    assert len(state["ads"]) == len(ad_plan()), f"only {len(state['ads'])}/{len(ad_plan())} ads built — run build"
+    assert len(wave_ads(state, BATCH)) == len(ad_plan()), f"only {len(wave_ads(state, BATCH))}/{len(ad_plan())} ads built — run build"
     if state["activation"]["done"]:
         log("review: activation already done"); return
     rv = state["review"]
@@ -752,7 +763,7 @@ def phase_review(api: Api, state: dict) -> None:
     while True:
         dist = poll_pool(api, state)
         pending = sum(dist.get(s, 0) for s in PENDING_STATES)
-        blocked = sum(1 for a in state["ads"] if is_blocked(a))
+        blocked = sum(1 for a in wave_ads(state, BATCH) if is_blocked(a))
         elapsed_min = (datetime.now(timezone.utc) - started).total_seconds() / 60
         log(f"review: {dist} | pending {pending} | blocked {blocked} | {elapsed_min:.0f} min since start")
         if pending == 0:
@@ -773,7 +784,7 @@ def activate_all(api: Api, state: dict) -> None:
     act["not_activated"] = []
     act["objects"] = []
     clean_by_key: dict[str, list[dict]] = {k: [] for k in CAMPAIGNS}
-    for rec in state["ads"]:
+    for rec in wave_ads(state, BATCH):
         eff = rec.get("effective_status")
         if is_blocked(rec) or eff in PENDING_STATES:
             act["not_activated"].append({"campaign": rec["campaign"], "name": rec["name"], "ad_id": rec["ad_id"], "effective_status": eff,
@@ -878,15 +889,20 @@ def sync_registry(state: dict) -> None:
             entry["form_ids"] = {fl: f.get("id") for fl, f in state["forms"].items()}
         if state["activation"].get("done"):
             entry["launched"] = {"ts": state["activation"].get("done_utc"), "activated_ads": state["activation"].get("activated_ads")}
+        st_act = (state.get("statics") or {}).get("activation") or {}
+        if st_act.get("done"):
+            entry["launched_statics"] = {"ts": st_act.get("done_utc"), "activated_ads": st_act.get("activated_ads"), "batch": STATICS_BATCH}
         for rec in [a for a in state["ads"] if a["campaign"] == key]:
             existing = next((a for a in entry["ads"] if a.get("ad_id") == rec["ad_id"]), None)
             if existing:
                 if existing.get("status") != rec.get("status"):
                     existing["status"] = rec.get("status"); updated_a += 1
                 continue
-            entry["ads"].append({"name": rec["name"], "ad_id": rec["ad_id"], "creative_id": rec["creative_id"], "type": "video", "status": rec.get("status"), "batch": BATCH})
+            entry["ads"].append({"name": rec["name"], "ad_id": rec["ad_id"], "creative_id": rec["creative_id"], "type": rec.get("type", "video"),
+                                 "status": rec.get("status"), "batch": rec.get("batch", BATCH)})
             added_a += 1
         entry["counts"] = {"video": sum(1 for a in entry["ads"] if a.get("type") == "video"), "image": sum(1 for a in entry["ads"] if a.get("type") == "image"), "total": len(entry["ads"])}
+        entry["batches"] = sorted({a.get("batch") for a in entry["ads"] if a.get("batch")})
     REGISTRY_PATH.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     state["registry_appended"] = True
     save_state(state)
@@ -894,8 +910,289 @@ def sync_registry(state: dict) -> None:
 
 
 # ----------------------------------------------------------------------------
+# Wave 2 (add-only): expo statics (layout A/B x 5 langs, IMG45) + bonus EN video. Nothing is paused or deleted.
+def statics_plan() -> list[dict]:
+    plan = []
+    for lang in LANGS:
+        for layout in ("A", "B"):
+            plan.append({"campaign": "REACH", "lang": lang, "kind": "image", "layout": layout, "fmt": "IMG45",
+                         "name": f"EXPO_ips-dubai_static-{layout}_IMG45_{lang}_E1", "file": STATICS_ASSETS / lang / f"IPS_{layout}_{lang}_IMG45.png"})
+    plan.append({"campaign": "REACH", "lang": "EN", "kind": "video", "layout": None, "fmt": "VID916",
+                 "name": "EXPO_ips-dubai_keys-expo_VID916_EN_E1", "file": STATICS_ASSETS / "EN" / "IPS_video_EN_9x16.mp4"})
+    for lang in LANGS:
+        plan.append({"campaign": "LEADS", "lang": lang, "kind": "image", "layout": "B", "fmt": "IMG45",
+                     "name": f"EXPO_ips-dubai_static-B_IMG45_{lang}_L1", "file": STATICS_ASSETS / lang / f"IPS_B_{lang}_IMG45.png"})
+    return plan
+
+
+def statics_block(state: dict) -> dict:
+    return state.setdefault("statics", {
+        "batch": STATICS_BATCH, "created_utc": now_utc(), "assets": str(STATICS_ASSETS), "manifest": str(STATICS_ASSETS / "INDEX.md"),
+        "uploads": {"images": {}, "videos": {}},
+        "review": {"started_utc": None, "polls": [], "distribution": {}, "clean": False},
+        "activation": {"done": False, "done_utc": None, "activated_ads": 0, "not_activated": [], "parents": []},
+        "readback": {}, "registry_appended": False,
+    })
+
+
+def live_ads_safe(api: Api, adset_id: str) -> dict[str, dict] | None:
+    """The /ads listing edge may be throttled; after the backoff gives up we fall back to state-only idempotency."""
+    try:
+        return live_ads(api, adset_id)
+    except RuntimeError as exc:
+        log(f"statics: /ads listing for {adset_id} unavailable ({str(exc)[:160]}) -> idempotency by state + ?ids= only")
+        return None
+
+
+def statics_creative(api: Api, state: dict, item: dict) -> str:
+    blk = statics_block(state)
+    lang, key = item["lang"], item["campaign"]
+    txt = TEXTS[lang]
+    if key == "REACH":
+        cta = {"type": "LEARN_MORE", "value": {"link": LINK}}
+        message = txt["message"]
+    else:
+        cta = {"type": "SIGN_UP", "value": {"lead_gen_form_id": state["forms"][form_lang_for(lang)]["id"]}}
+        message = f"{txt['message']} {txt['leads_tail']}"
+    oss: dict = {"page_id": api.page_id, "instagram_user_id": IG_USER_ID}
+    fname = item["file"].name
+    if item["kind"] == "image":
+        img = blk["uploads"]["images"][fname]
+        # link_data.link is mandatory even for lead-form CTAs (subcode 2061015)
+        oss["link_data"] = {"image_hash": img["hash"], "link": LINK, "message": message, "name": txt["title"], "call_to_action": cta}
+    else:
+        vrec = blk["uploads"]["videos"][fname]
+        assert vrec.get("status") == "ready", f"video {fname} not ready"
+        thumb = fresh_thumbnail(api, vrec["video_id"])  # fresh, immediately before the create call
+        oss["video_data"] = {"video_id": vrec["video_id"], "image_url": thumb, "title": txt["title"], "message": message, "call_to_action": cta}
+    data = {"name": f"{item['name']}_cr {STATICS_BATCH}", "object_story_spec": json.dumps(oss, ensure_ascii=False)}
+    dof = state.get("dof_spec") or load_full_dof_spec() or SIMPLE_DOF
+    variants = [("locked-dof", {**data, "degrees_of_freedom_spec": json.dumps(dof)}), ("simple-dof", {**data, "degrees_of_freedom_spec": json.dumps(SIMPLE_DOF)})]
+    resp, label = post_variants(api, f"{api.account}/adcreatives", variants)
+    if label != "locked-dof":
+        log(f"statics: {item['name']}: creative made with '{label}' (full opt-out rejected)")
+    return resp["id"]
+
+
+def phase_statics(api: Api, state: dict) -> None:
+    assert all(state["forms"].get(fl, {}).get("id") for fl in FORMS), "forms missing"
+    assert all(state["campaigns"].get(k, {}).get("adset_id") for k in CAMPAIGNS), "campaigns/adsets missing"
+    blk = statics_block(state)
+    plan = statics_plan()
+    for it in plan:
+        assert it["file"].exists(), f"missing asset {it['file']}"
+    save_state(state)
+
+    # --- images: fresh hashes via /adimages (Meta dedups identical bytes to the same hash)
+    for it in [p for p in plan if p["kind"] == "image"]:
+        fname = it["file"].name
+        if blk["uploads"]["images"].get(fname, {}).get("hash"):
+            continue
+        if out_of_budget():
+            log("statics: budget exhausted (images) — re-run to continue"); return
+        with open(it["file"], "rb") as fh:
+            resp = api.graph("POST", f"{api.account}/adimages", files={"filename": (fname, fh, "image/png")}, timeout=600)
+        images = resp.get("images", {})
+        info = images.get(fname) or next(iter(images.values()), {})
+        assert info.get("hash"), f"no hash in adimages response for {fname}: {json.dumps(resp)[:200]}"
+        blk["uploads"]["images"][fname] = {"hash": info["hash"], "size_kb": it["file"].stat().st_size // 1024, "ts": now_utc()}
+        save_state(state)
+        log(f"statics: image {fname} -> hash {info['hash']}")
+        time.sleep(0.5)
+
+    # --- bonus video
+    vit = next(p for p in plan if p["kind"] == "video")
+    vname = vit["file"].name
+    vrec = blk["uploads"]["videos"].get(vname, {})
+    if not vrec.get("video_id"):
+        if out_of_budget():
+            log("statics: budget exhausted (video) — re-run to continue"); return
+        t0 = time.time()
+        with open(vit["file"], "rb") as fh:
+            resp = api.graph("POST", f"{api.account}/advideos", data={"name": vname}, files={"source": (vname, fh, "video/mp4")}, timeout=1800)
+        vrec = {"video_id": resp["id"], "status": "uploaded", "size_mb": round(vit["file"].stat().st_size / 1048576, 1), "upload_sec": round(time.time() - t0), "ts": now_utc()}
+        blk["uploads"]["videos"][vname] = vrec
+        save_state(state)
+        log(f"statics: video {vname} -> id {resp['id']} ({vrec['upload_sec']}s)")
+    while vrec.get("status") != "ready":
+        if out_of_budget():
+            log("statics: budget exhausted while video processing — re-run to continue"); return
+        vs = ((get_many(api, [vrec["video_id"]], "status").get(vrec["video_id"]) or {}).get("status") or {}).get("video_status")
+        if vs == "ready":
+            vrec["status"] = "ready"; vrec["ready_utc"] = now_utc(); save_state(state)
+            log(f"statics: video {vname} ready ({vrec['video_id']})")
+        elif vs == "error":
+            vrec["status"] = "error"; save_state(state)
+            add_error(state, stage="statics_video", file=vname, video_id=vrec["video_id"], error="video_status=error")
+            log(f"statics: video {vname} PROCESSING ERROR — video ad will be skipped"); break
+        else:
+            log(f"statics: waiting for video processing ({vs})..."); time.sleep(15)
+
+    # --- ads, all PAUSED, idempotent by name (live listing when available, state always)
+    created = 0
+    canary_done = {"image": any(a.get("type") == "image" for a in wave_ads(state, STATICS_BATCH)),
+                   "video": any(a.get("type") == "video" for a in wave_ads(state, STATICS_BATCH))}
+    for key in CAMPAIGNS:
+        adset_id = state["campaigns"][key]["adset_id"]
+        campaign_id = state["campaigns"][key]["campaign_id"]
+        names_live = live_ads_safe(api, adset_id)
+        for it in [p for p in plan if p["campaign"] == key]:
+            if out_of_budget():
+                log("statics: budget exhausted (ads) — re-run to continue"); save_state(state); return
+            name = it["name"]
+            if any(a["name"] == name for a in state["ads"]):
+                continue
+            if it["kind"] == "video" and blk["uploads"]["videos"].get(it["file"].name, {}).get("status") != "ready":
+                add_error(state, stage="statics_build", campaign=key, name=name, error="video not ready"); continue
+            base_rec = {"campaign": key, "campaign_id": campaign_id, "adset_id": adset_id, "name": name, "type": it["kind"], "lang": it["lang"],
+                        "layout": it["layout"], "fmt": it["fmt"], "file": it["file"].name, "batch": STATICS_BATCH, "wave": "statics"}
+            if it["kind"] == "image":
+                base_rec["image_hash"] = blk["uploads"]["images"][it["file"].name]["hash"]
+            else:
+                base_rec["video_id"] = blk["uploads"]["videos"][it["file"].name]["video_id"]
+            if names_live and name in names_live:
+                live = names_live[name]
+                info = get_many(api, [live["id"]], "status,effective_status,creative{id}").get(live["id"]) or {}
+                state["ads"].append({**base_rec, "ad_id": live["id"], "creative_id": (info.get("creative") or live.get("creative") or {}).get("id"),
+                                     "status": info.get("status"), "effective_status": info.get("effective_status"), "ts": now_utc(), "adopted_pre_existing": True})
+                save_state(state)
+                log(f"statics: {key}/{name}: adopted pre-existing ad {live['id']}")
+                continue
+            try:
+                creative_id = statics_creative(api, state, it)
+                data = {"name": name, "adset_id": adset_id, "creative": json.dumps({"creative_id": creative_id}), "status": "PAUSED"}
+                if not canary_done[it["kind"]]:
+                    api.graph("POST", f"{api.account}/ads", data={**data, "execution_options": json.dumps(["validate_only"])})
+                resp = api.graph("POST", f"{api.account}/ads", data=data)
+                chk = get_many(api, [resp["id"]], "status,effective_status").get(resp["id"]) or {}
+                assert chk.get("status") == "PAUSED", f"ad {resp['id']} status={chk.get('status')}"
+                canary_done[it["kind"]] = True
+                state["ads"].append({**base_rec, "ad_id": resp["id"], "creative_id": creative_id, "status": chk.get("status"), "effective_status": chk.get("effective_status"), "ts": now_utc()})
+                save_state(state)
+                created += 1
+                log(f"statics: {key}/{name}: ad {resp['id']} (creative {creative_id}) PAUSED [{chk.get('effective_status')}]")
+                time.sleep(1.0)
+            except Exception as exc:
+                add_error(state, stage="statics_build", campaign=key, name=name, error=str(exc)[:500])
+                log(f"statics: {key}/{name}: ERROR {str(exc)[:400]}")
+                if not canary_done[it["kind"]]:
+                    raise SystemExit(f"statics canary ({it['kind']}) failed — aborting: {exc}")
+    have = len(wave_ads(state, STATICS_BATCH))
+    log(f"statics: created {created} ads this run; {have}/{len(plan)} tracked")
+    if have == len(plan):
+        mark_phase(state, "statics", f"{have} ads PAUSED")
+
+
+def phase_statics_review(api: Api, state: dict) -> None:
+    blk = statics_block(state)
+    ads = wave_ads(state, STATICS_BATCH)
+    assert ads, "no statics ads — run statics"
+    if blk["activation"]["done"]:
+        log("statics_review: activation already done"); return
+    rv = blk["review"]
+    if not rv["started_utc"]:
+        rv["started_utc"] = now_utc(); save_state(state)
+    started = datetime.strptime(rv["started_utc"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    while True:
+        dist = poll_ads(api, state, ads, rv)
+        pending = sum(dist.get(s, 0) for s in PENDING_STATES)
+        blocked = sum(1 for a in ads if is_blocked(a))
+        elapsed_min = (datetime.now(timezone.utc) - started).total_seconds() / 60
+        log(f"statics_review: {dist} | pending {pending} | blocked {blocked} | {elapsed_min:.0f} min since start")
+        if pending == 0:
+            rv["clean"] = blocked == 0; save_state(state)
+            log("statics_review: no PENDING_REVIEW / IN_PROCESS left -> activating the clean ads"); break
+        if elapsed_min >= REVIEW_MAX_MIN:
+            log(f"statics_review: {pending} ads still in review after {REVIEW_MAX_MIN} min -> activating the clean ones, reporting the rest"); break
+        if time.time() + REVIEW_POLL_SEC > DEADLINE[0]:
+            log("statics_review: invocation budget reached — re-run to keep polling"); return
+        time.sleep(REVIEW_POLL_SEC)
+    activate_statics(api, state)
+
+
+def activate_statics(api: Api, state: dict) -> None:
+    blk = statics_block(state)
+    act = blk["activation"]
+    act["not_activated"] = []; act["parents"] = []
+    # parents must already be ACTIVE (wave 1); verify via ?ids=, re-activate only if something turned them off
+    parent_ids = [state["campaigns"][k][f] for k in CAMPAIGNS for f in ("campaign_id", "adset_id")]
+    infos = get_many(api, parent_ids, "id,name,status,effective_status")
+    for pid in parent_ids:
+        info = infos.get(pid) or {}
+        rec = {"id": pid, "name": info.get("name"), "status": info.get("status"), "effective_status": info.get("effective_status")}
+        if info.get("status") != "ACTIVE":
+            try:
+                api.graph("POST", pid, data={"status": "ACTIVE"})
+                chk = get_many(api, [pid], "status,effective_status").get(pid) or {}
+                rec.update({"status": chk.get("status"), "effective_status": chk.get("effective_status"), "reactivated": True})
+                log(f"statics_activate: parent {pid} was {info.get('status')} -> {chk.get('status')}")
+            except Exception as exc:
+                add_error(state, stage="statics_activate", object=pid, error=str(exc)[:400])
+        act["parents"].append(rec)
+    save_state(state)
+    activated = 0
+    for rec in wave_ads(state, STATICS_BATCH):
+        eff = rec.get("effective_status")
+        if is_blocked(rec) or eff in PENDING_STATES:
+            act["not_activated"].append({"campaign": rec["campaign"], "name": rec["name"], "ad_id": rec["ad_id"], "effective_status": eff,
+                                         "issues_info": rec.get("issues_info"), "ad_review_feedback": rec.get("ad_review_feedback")})
+            log(f"statics_activate: SKIP {rec['campaign']}/{rec['name']}: {eff} {json.dumps(rec.get('ad_review_feedback') or rec.get('issues_info') or '', ensure_ascii=False)[:200]}")
+            continue
+        if rec.get("status") == "ACTIVE":
+            activated += 1; continue
+        try:
+            api.graph("POST", rec["ad_id"], data={"status": "ACTIVE"})
+            chk = get_many(api, [rec["ad_id"]], "status,effective_status").get(rec["ad_id"]) or {}
+            rec["status"] = chk.get("status"); rec["effective_status"] = chk.get("effective_status"); rec["activated_utc"] = now_utc()
+            if chk.get("status") == "ACTIVE":
+                activated += 1
+                log(f"statics_activate: {rec['campaign']}/{rec['name']} -> ACTIVE [{chk.get('effective_status')}]")
+            else:
+                add_error(state, stage="statics_activate", campaign=rec["campaign"], name=rec["name"], ad_id=rec["ad_id"], error=f"status after POST = {chk.get('status')}")
+            save_state(state)
+            time.sleep(0.5)
+        except Exception as exc:
+            add_error(state, stage="statics_activate", campaign=rec["campaign"], name=rec["name"], ad_id=rec["ad_id"], error=str(exc)[:500])
+            log(f"statics_activate: {rec['campaign']}/{rec['name']} ERROR {exc}")
+    act["activated_ads"] = activated
+    act["done"] = True
+    act["done_utc"] = now_utc()
+    save_state(state)
+    mark_phase(state, "statics_activate", f"{activated} ads ACTIVE, {len(act['not_activated'])} not activated")
+    log(f"statics_activate: done — {activated} ads ACTIVE, {len(act['not_activated'])} not activated")
+
+
+def phase_statics_readback(api: Api, state: dict) -> None:
+    """Readback strictly via ?ids= (the /ads listing edge may be throttled), then registry append."""
+    blk = statics_block(state)
+    ads = wave_ads(state, STATICS_BATCH)
+    infos = get_many(api, [a["ad_id"] for a in ads], "id,name,status,effective_status,creative{id}")
+    for rec in ads:
+        info = infos.get(rec["ad_id"]) or {}
+        rec["status"] = info.get("status", rec.get("status")); rec["effective_status"] = info.get("effective_status", rec.get("effective_status"))
+    parent_ids = [state["campaigns"][k][f] for k in CAMPAIGNS for f in ("campaign_id", "adset_id")]
+    parents = get_many(api, parent_ids, "id,name,status,effective_status")  # mixed campaign+adset batch: common fields only
+    rb: dict = {"ts": now_utc(), "parents": parents, "ads": {}}
+    for key in CAMPAIGNS:
+        mine = [a for a in ads if a["campaign"] == key]
+        dist: dict[str, int] = {}
+        for a in mine:
+            dist[a.get("effective_status")] = dist.get(a.get("effective_status"), 0) + 1
+        rb["ads"][key] = {"count": len(mine), "distribution": dist, "items": [{"name": a["name"], "ad_id": a["ad_id"], "status": a.get("status"), "effective_status": a.get("effective_status")} for a in mine]}
+        c = state["campaigns"][key]
+        log(f"statics_readback: {key}: campaign {parents.get(c['campaign_id'], {}).get('status')}/{parents.get(c['campaign_id'], {}).get('effective_status')} | "
+            f"adset {parents.get(c['adset_id'], {}).get('status')}/{parents.get(c['adset_id'], {}).get('effective_status')} | statics ads {len(mine)} {dist}")
+    blk["readback"] = rb
+    save_state(state)
+    sync_registry(state)
+    blk["registry_appended"] = True
+    save_state(state)
+    mark_phase(state, "statics_readback", "ok")
+
+
+# ----------------------------------------------------------------------------
 def phase_status(state: dict) -> None:
-    print(f"batch {state['batch']} | forms {[(fl, f.get('id')) for fl, f in state['forms'].items()]} | ads {len(state['ads'])}/{len(ad_plan())} | errors {len(state['errors'])}")
+    print(f"batch {state['batch']} | forms {[(fl, f.get('id')) for fl, f in state['forms'].items()]} | wave-1 ads {len(wave_ads(state, BATCH))}/{len(ad_plan())} | total ads {len(state['ads'])} | errors {len(state['errors'])}")
     print(f"{'campaign':34} {'campaign_id':20} {'adset_id':20} {'budget':>7} {'ads':>4} {'active':>6} {'pending':>7} {'blocked':>7} status")
     for key, spec in CAMPAIGNS.items():
         c = state["campaigns"].get(key, {})
@@ -907,6 +1204,13 @@ def phase_status(state: dict) -> None:
               f"camp {c.get('campaign_status')} | adset {c.get('adset_status')}")
     print("videos:", {f: (r.get('video_id'), r.get('status'), r.get('source')) for f, r in state['uploads']['videos'].items()})
     print("review:", state["review"].get("distribution"), "| activation:", state["activation"].get("done"), state["activation"].get("activated_ads"))
+    if state.get("statics"):
+        blk = state["statics"]
+        print(f"statics wave ({STATICS_BATCH}): ads {len(wave_ads(state, STATICS_BATCH))}/{len(statics_plan())} | images {len(blk['uploads']['images'])} | videos {[(f, r.get('video_id'), r.get('status')) for f, r in blk['uploads']['videos'].items()]}")
+        for key in CAMPAIGNS:
+            mine = [a for a in wave_ads(state, STATICS_BATCH) if a["campaign"] == key]
+            print(f"   {key}: {len(mine)} ads | active {sum(1 for a in mine if a.get('status') == 'ACTIVE')} | pending {sum(1 for a in mine if a.get('effective_status') in PENDING_STATES)} | blocked {sum(1 for a in mine if is_blocked(a))}")
+        print("   review:", blk["review"].get("distribution"), "| activation:", blk["activation"].get("done"), blk["activation"].get("activated_ads"), "| not activated:", len(blk["activation"].get("not_activated", [])))
     for e in state["errors"]:
         print("ERROR:", json.dumps(e, ensure_ascii=False)[:300])
     for n in state["activation"].get("not_activated", []):
@@ -915,7 +1219,7 @@ def phase_status(state: dict) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("phase", choices=["form", "upload", "build", "review", "readback", "status"])
+    ap.add_argument("phase", choices=["form", "upload", "build", "review", "readback", "statics", "statics_review", "statics_readback", "status"])
     ap.add_argument("--budget-sec", type=int, default=560)
     ap.add_argument("--workers", type=int, default=2)
     args = ap.parse_args()
@@ -933,6 +1237,9 @@ def main() -> None:
         "build": lambda: phase_build(api, state),
         "review": lambda: phase_review(api, state),
         "readback": lambda: phase_readback(api, state),
+        "statics": lambda: phase_statics(api, state),
+        "statics_review": lambda: phase_statics_review(api, state),
+        "statics_readback": lambda: phase_statics_readback(api, state),
     }[args.phase]()
     save_state(state)
     log(f"phase '{args.phase}' finished; state at {STATE_PATH}")
