@@ -1,0 +1,3187 @@
+{
+  "batch": "v3-2026-07-28",
+  "created_utc": "2026-07-28T16:08:06Z",
+  "account": "act_776404808314031",
+  "api_version": "v25.0",
+  "probe": {
+    "ts": "2026-07-28T16:08:40Z",
+    "campaigns": {
+      "MB_LEADS_ME_MIX_202607": {
+        "campaign_id": "120250397417770233",
+        "adset_id": "120250397504440233",
+        "live_ads": 50,
+        "free_slots": 0,
+        "existing_v3": [],
+        "donors": {
+          "EN": {
+            "ad_id": "120250677446930233",
+            "name": "INVEST_price-video_kinetic_VID916_EN_V2"
+          },
+          "RU": {
+            "ad_id": "120250677368400233",
+            "name": "INVEST_price-video_kinetic_VID916_RU_V2"
+          },
+          "SR": {
+            "ad_id": "120250677259240233",
+            "name": "INVEST_price-video_kinetic_VID916_SR_V2"
+          }
+        }
+      },
+      "MB_LEADS_SR_MIX_202607": {
+        "campaign_id": "120250397204950233",
+        "adset_id": "120250397397660233",
+        "live_ads": 23,
+        "free_slots": 27,
+        "existing_v3": [],
+        "donors": {
+          "SR": {
+            "ad_id": "120250677620400233",
+            "name": "INVEST_price-video_kinetic_VID916_SR_V2"
+          }
+        }
+      },
+      "MB_LEADS_DE_MIX_202607": {
+        "campaign_id": "120250397116900233",
+        "adset_id": "120250397193830233",
+        "live_ads": 23,
+        "free_slots": 27,
+        "existing_v3": [],
+        "donors": {
+          "DE": {
+            "ad_id": "120250677675500233",
+            "name": "INVEST_price-video_kinetic_VID916_DE_V2"
+          }
+        }
+      },
+      "MB_LEADS_PL_MIX_202607": {
+        "campaign_id": "120250397098510233",
+        "adset_id": "120250397100510233",
+        "live_ads": 23,
+        "free_slots": 27,
+        "existing_v3": [],
+        "donors": {
+          "PL": {
+            "ad_id": "120250677746430233",
+            "name": "INVEST_price-video_kinetic_VID916_PL_V2"
+          }
+        }
+      },
+      "MB_LEADS_DE_MIX_20260707": {
+        "campaign_id": "120250543084620233",
+        "adset_id": "120250543084900233",
+        "live_ads": 22,
+        "free_slots": 28,
+        "existing_v3": [],
+        "donors": {
+          "DE": {
+            "ad_id": "120250677861340233",
+            "name": "INVEST_price-video_kinetic_VID916_DE_V2"
+          }
+        }
+      },
+      "MB_LEADS_TR_MIX_202607": {
+        "campaign_id": "120250707886890233",
+        "adset_id": "120250707887280233",
+        "live_ads": 16,
+        "free_slots": 34,
+        "existing_v3": [],
+        "donors": {
+          "TR": {
+            "ad_id": "120250707913270233",
+            "name": "INVEST_price-video_kinetic_VID916_TR_V1"
+          }
+        }
+      },
+      "MB_LEADS_UA_MIX_202607": {
+        "campaign_id": "120250708215740233",
+        "adset_id": "120250708221320233",
+        "live_ads": 16,
+        "free_slots": 34,
+        "existing_v3": [],
+        "donors": {
+          "UA": {
+            "ad_id": "120250708253340233",
+            "name": "INVEST_price-video_kinetic_VID916_UA_V1"
+          }
+        }
+      },
+      "MB_RTG_B_MIX_202607": {
+        "campaign_id": "120250397535350233",
+        "adset_id": "120250397641210233",
+        "live_ads": 33,
+        "free_slots": 17,
+        "existing_v3": [],
+        "donors": {
+          "EN": {
+            "ad_id": "120250677799420233",
+            "name": "INVEST_price-video_kinetic_VID916_EN_V2"
+          },
+          "RU": {
+            "ad_id": "120250677779710233",
+            "name": "INVEST_price-video_kinetic_VID916_RU_V2"
+          },
+          "SR": {
+            "ad_id": "120250677765290233",
+            "name": "INVEST_price-video_kinetic_VID916_SR_V2"
+          }
+        }
+      },
+      "MB_RTG_A_MIX_202607": {
+        "campaign_id": "120251109198470233",
+        "adset_id": "120251109198870233",
+        "live_ads": 12,
+        "free_slots": 38,
+        "existing_v3": [],
+        "donors": {
+          "DE": {
+            "ad_id": "120251109200620233",
+            "name": "INVEST_price-video_kinetic_VID916_DE_V2"
+          },
+          "PL": {
+            "ad_id": "120251109210770233",
+            "name": "INVEST_price-video_kinetic_VID916_PL_V2"
+          }
+        }
+      }
+    }
+  },
+  "donors": {
+    "MB_LEADS_ME_MIX_202607|EN": {
+      "donor_ad_id": "120250677446930233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_EN_V2",
+      "donor_creative_id": "1713153476690838",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Adriatic first line — from €263,200",
+      "message": "Meliá branded residences on Budva's first line. From €263,200 (indicative) · 20% down payment · interest-free instalments until Q4 2027. 10 m to the beach, 5★ Meliá service.",
+      "lead_gen_form_id": "1748082802861437",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_ME_MIX_202607|RU": {
+      "donor_ad_id": "120250677368400233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_RU_V2",
+      "donor_creative_id": "1059448483325928",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Первая линия Адриатики — от €263 200",
+      "message": "Резиденции Meliá на первой линии Будвы. От €263 200 (цены индикативные) · 20% первый взнос · беспроцентная рассрочка до Q4 2027. 10 м до моря, сервис 5★ Meliá.",
+      "lead_gen_form_id": "1990944504878103",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_ME_MIX_202607|SR": {
+      "donor_ad_id": "120250677259240233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_SR_V2",
+      "donor_creative_id": "1342405274688650",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Prva linija Jadrana — od €263.200",
+      "message": "Meliá rezidencije na prvoj liniji mora u Budvi. Od €263.200 (indikativne cene) · 20% učešća · beskamatne rate do Q4 2027. 10 m od plaže, 5★ Meliá servis.",
+      "lead_gen_form_id": "1001277082895735",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_SR_MIX_202607|SR": {
+      "donor_ad_id": "120250677620400233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_SR_V2",
+      "donor_creative_id": "1342405274688650",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Prva linija Jadrana — od €263.200",
+      "message": "Meliá rezidencije na prvoj liniji mora u Budvi. Od €263.200 (indikativne cene) · 20% učešća · beskamatne rate do Q4 2027. 10 m od plaže, 5★ Meliá servis.",
+      "lead_gen_form_id": "1001277082895735",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_DE_MIX_202607|DE": {
+      "donor_ad_id": "120250677675500233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_DE_V2",
+      "donor_creative_id": "1509714346931285",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Erste Meereslinie an der Adria — ab €263.200",
+      "message": "Meliá Residenzen in erster Meereslinie in Budva. Ab €263.200 (unverbindliche Preisangabe) · 20% Anzahlung · zinsfreie Raten bis Q4 2027. 10 m zum Strand, 5★ Meliá Service.",
+      "lead_gen_form_id": "1600030904874809",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_PL_MIX_202607|PL": {
+      "donor_ad_id": "120250677746430233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_PL_V2",
+      "donor_creative_id": "1551895066347096",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Pierwsza linia Adriatyku — od €263 200",
+      "message": "Rezydencje Meliá w pierwszej linii brzegowej Budvy. Od €263 200 (ceny orientacyjne) · 20% pierwszej wpłaty · nieoprocentowane raty do Q4 2027. 10 m do morza, serwis 5★ Meliá.",
+      "lead_gen_form_id": "1342846111284734",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_DE_MIX_20260707|DE": {
+      "donor_ad_id": "120250677861340233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_DE_V2",
+      "donor_creative_id": "1509714346931285",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Erste Meereslinie an der Adria — ab €263.200",
+      "message": "Meliá Residenzen in erster Meereslinie in Budva. Ab €263.200 (unverbindliche Preisangabe) · 20% Anzahlung · zinsfreie Raten bis Q4 2027. 10 m zum Strand, 5★ Meliá Service.",
+      "lead_gen_form_id": "1600030904874809",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_TR_MIX_202607|TR": {
+      "donor_ad_id": "120250707913270233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_TR_V1",
+      "donor_creative_id": "1393183925957903",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Adriyatik'in ilk sırası — €263.200'den başlayan fiyatlarla",
+      "message": "Budva'da denize sıfır Meliá rezidansları. €263.200'den başlayan fiyatlar (gösterge niteliğinde) · %20 peşinat · Q4 2027'ye kadar faizsiz taksit. Denize 10 m, 5★ Meliá hizmeti.",
+      "lead_gen_form_id": "2081818585879954",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_LEADS_UA_MIX_202607|UA": {
+      "donor_ad_id": "120250708253340233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_UA_V1",
+      "donor_creative_id": "1737912544006719",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Перша лінія Адріатики — від €263 200",
+      "message": "Резиденції Meliá на першій лінії моря в Будві. Від €263 200 (орієнтовні ціни) · 20% перший внесок · безвідсоткова розстрочка до Q4 2027. 10 м до пляжу, сервіс 5★ Meliá.",
+      "lead_gen_form_id": "1041430885197460",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_B_MIX_202607|EN": {
+      "donor_ad_id": "120250677799420233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_EN_V2",
+      "donor_creative_id": "1713153476690838",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Adriatic first line — from €263,200",
+      "message": "Meliá branded residences on Budva's first line. From €263,200 (indicative) · 20% down payment · interest-free instalments until Q4 2027. 10 m to the beach, 5★ Meliá service.",
+      "lead_gen_form_id": "1748082802861437",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_B_MIX_202607|RU": {
+      "donor_ad_id": "120250677779710233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_RU_V2",
+      "donor_creative_id": "1059448483325928",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Первая линия Адриатики — от €263 200",
+      "message": "Резиденции Meliá на первой линии Будвы. От €263 200 (цены индикативные) · 20% первый взнос · беспроцентная рассрочка до Q4 2027. 10 м до моря, сервис 5★ Meliá.",
+      "lead_gen_form_id": "1990944504878103",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_B_MIX_202607|SR": {
+      "donor_ad_id": "120250677765290233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_SR_V2",
+      "donor_creative_id": "1342405274688650",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Prva linija Jadrana — od €263.200",
+      "message": "Meliá rezidencije na prvoj liniji mora u Budvi. Od €263.200 (indikativne cene) · 20% učešća · beskamatne rate do Q4 2027. 10 m od plaže, 5★ Meliá servis.",
+      "lead_gen_form_id": "1001277082895735",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "adapt_to_placement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "add_text_overlay": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ads_with_benefits": {
+            "enroll_status": "OPT_OUT"
+          },
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          },
+          "app_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "audio": {
+            "enroll_status": "OPT_OUT"
+          },
+          "auto_promotion_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "biz_ai": {
+            "enroll_status": "OPT_OUT"
+          },
+          "carousel_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "catalog_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_stickers": {
+            "enroll_status": "OPT_OUT"
+          },
+          "customize_product_recommendation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "cv_transformation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "description_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dha_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_cta_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "dynamic_partner_content": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enable_ncs_testimonials": {
+            "enroll_status": "OPT_OUT"
+          },
+          "enhance_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "fb_story_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "feed_caption_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "generate_cta": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hide_price": {
+            "enroll_status": "OPT_OUT"
+          },
+          "hyperlink_formatting": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_feed_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_glados_feed": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_reels_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_stream_tag": {
+            "enroll_status": "OPT_OUT"
+          },
+          "ig_video_native_subtitle": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_animation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_background_gen": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_banner": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_brightness_and_contrast": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_end_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_enhancement": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_templates": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_touchups": {
+            "enroll_status": "OPT_OUT"
+          },
+          "image_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "inline_comment": {
+            "enroll_status": "OPT_OUT"
+          },
+          "local_store_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_liquidity_animated_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_order": {
+            "enroll_status": "OPT_OUT"
+          },
+          "media_type_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_creative_post_carousel": {
+            "enroll_status": "OPT_OUT"
+          },
+          "multi_photo_to_video": {
+            "enroll_status": "OPT_OUT"
+          },
+          "music_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_genai_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_recomposition": {
+            "enroll_status": "OPT_OUT"
+          },
+          "pac_relaxation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_browsing": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_metadata_automation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "product_tags": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_card": {
+            "enroll_status": "OPT_OUT"
+          },
+          "profile_extension": {
+            "enroll_status": "OPT_OUT"
+          },
+          "replace_media_text": {
+            "enroll_status": "OPT_OUT"
+          },
+          "reveal_details_over_time": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_destination_blurbs": {
+            "enroll_status": "OPT_OUT"
+          },
+          "show_summary": {
+            "enroll_status": "OPT_OUT"
+          },
+          "site_extensions": {
+            "enroll_status": "OPT_OUT"
+          },
+          "standard_enhancements_catalog": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_headline": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_extraction_for_tap_target": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_formatting_optimization": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_generation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_optimizations": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_overlay_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "text_translation": {
+            "enroll_status": "OPT_OUT"
+          },
+          "translate_voiceover": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_auto_crop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlight": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_highlights": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_to_image": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop": {
+            "enroll_status": "OPT_OUT"
+          },
+          "video_uncrop_9x16_to_9x18": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_image_filtering": {
+            "enroll_status": "OPT_OUT"
+          },
+          "wa_mm_text_truncation_length": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_A_MIX_202607|DE": {
+      "donor_ad_id": "120251109200620233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_DE_V2",
+      "donor_creative_id": "1509714346931285",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Erste Meereslinie an der Adria — ab €263.200",
+      "message": "Meliá Residenzen in erster Meereslinie in Budva. Ab €263.200 (unverbindliche Preisangabe) · 20% Anzahlung · zinsfreie Raten bis Q4 2027. 10 m zum Strand, 5★ Meliá Service.",
+      "lead_gen_form_id": "1600030904874809",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    },
+    "MB_RTG_A_MIX_202607|PL": {
+      "donor_ad_id": "120251109210770233",
+      "donor_ad_name": "INVEST_price-video_kinetic_VID916_PL_V2",
+      "donor_creative_id": "1551895066347096",
+      "page_id": "723322257538609",
+      "instagram_user_id": "17841475384506205",
+      "title": "Pierwsza linia Adriatyku — od €263 200",
+      "message": "Rezydencje Meliá w pierwszej linii brzegowej Budvy. Od €263 200 (ceny orientacyjne) · 20% pierwszej wpłaty · nieoprocentowane raty do Q4 2027. 10 m do morza, serwis 5★ Meliá.",
+      "lead_gen_form_id": "1342846111284734",
+      "degrees_of_freedom_spec": {
+        "creative_features_spec": {
+          "advantage_plus_creative": {
+            "enroll_status": "OPT_OUT"
+          }
+        }
+      }
+    }
+  },
+  "uploads": {
+    "videos": {
+      "PriceVideoV3_DE_hook-a_4x5.mp4": {
+        "video_id": "2948584068806634",
+        "status": "ready",
+        "ts": "2026-07-28T16:10:56Z"
+      },
+      "PriceVideoV3_DE_hook-a_9x16.mp4": {
+        "video_id": "1033365592613430",
+        "status": "ready",
+        "ts": "2026-07-28T16:11:52Z"
+      },
+      "PriceVideoV3_DE_hook-b_9x16.mp4": {
+        "video_id": "1451449970338496",
+        "status": "ready",
+        "ts": "2026-07-28T16:12:36Z"
+      },
+      "PriceVideoV3_DE_hook-c_9x16.mp4": {
+        "video_id": "1079765724580644",
+        "status": "ready",
+        "ts": "2026-07-28T16:13:20Z"
+      },
+      "PriceVideoV3_PL_hook-a_4x5.mp4": {
+        "video_id": "1583550189787518",
+        "status": "ready",
+        "ts": "2026-07-28T16:14:05Z"
+      },
+      "PriceVideoV3_PL_hook-a_9x16.mp4": {
+        "video_id": "1405527345007604",
+        "status": "ready",
+        "ts": "2026-07-28T16:14:59Z"
+      },
+      "PriceVideoV3_PL_hook-b_9x16.mp4": {
+        "video_id": "1806728643642611",
+        "status": "ready",
+        "ts": "2026-07-28T16:15:37Z"
+      },
+      "PriceVideoV3_PL_hook-c_9x16.mp4": {
+        "video_id": "1084763693961021",
+        "status": "ready",
+        "ts": "2026-07-28T16:16:21Z"
+      },
+      "PriceVideoV3_SR_hook-a_4x5.mp4": {
+        "video_id": "2476387546121757",
+        "status": "ready",
+        "ts": "2026-07-28T16:17:08Z"
+      },
+      "PriceVideoV3_SR_hook-a_9x16.mp4": {
+        "video_id": "2759334097781439",
+        "status": "ready",
+        "ts": "2026-07-28T16:17:59Z"
+      },
+      "PriceVideoV3_SR_hook-b_9x16.mp4": {
+        "video_id": "1033581436131932",
+        "status": "ready",
+        "ts": "2026-07-28T16:18:37Z"
+      },
+      "PriceVideoV3_SR_hook-c_9x16.mp4": {
+        "video_id": "906282368603004",
+        "status": "ready",
+        "ts": "2026-07-28T16:19:20Z"
+      },
+      "PriceVideoV3_TR_hook-a_4x5.mp4": {
+        "video_id": "867619462853209",
+        "status": "ready",
+        "ts": "2026-07-28T16:20:07Z"
+      },
+      "PriceVideoV3_TR_hook-a_9x16.mp4": {
+        "video_id": "1773516920760622",
+        "status": "ready",
+        "ts": "2026-07-28T16:20:58Z"
+      },
+      "PriceVideoV3_TR_hook-b_9x16.mp4": {
+        "video_id": "1368539772032579",
+        "status": "ready",
+        "ts": "2026-07-28T16:21:37Z"
+      },
+      "PriceVideoV3_TR_hook-c_9x16.mp4": {
+        "video_id": "1748747353140026",
+        "status": "ready",
+        "ts": "2026-07-28T16:22:25Z"
+      },
+      "PriceVideoV3_UA_hook-a_4x5.mp4": {
+        "video_id": "1611500077361429",
+        "status": "ready",
+        "ts": "2026-07-28T16:23:15Z"
+      },
+      "PriceVideoV3_UA_hook-a_9x16.mp4": {
+        "video_id": "1028604436537212",
+        "status": "ready",
+        "ts": "2026-07-28T16:24:05Z"
+      },
+      "PriceVideoV3_UA_hook-b_9x16.mp4": {
+        "video_id": "1030631119560890",
+        "status": "ready",
+        "ts": "2026-07-28T16:24:45Z"
+      },
+      "PriceVideoV3_UA_hook-c_9x16.mp4": {
+        "video_id": "2050934435544885",
+        "status": "ready",
+        "ts": "2026-07-28T16:25:29Z"
+      }
+    },
+    "images": {
+      "PriceVideoV3_DE_hook-a_IMG45.png": {
+        "hash": "0a666e75a2e9961cc5b8b75bcc934d8c",
+        "ts": "2026-07-28T16:09:33Z"
+      },
+      "PriceVideoV3_EN_hook-a_IMG45.png": {
+        "hash": "329de9bd12fedadc5081b67dca7b39f3",
+        "ts": "2026-07-28T16:09:42Z"
+      },
+      "PriceVideoV3_PL_hook-a_IMG45.png": {
+        "hash": "1df7441a628a58aee0538089d15ce794",
+        "ts": "2026-07-28T16:09:49Z"
+      },
+      "PriceVideoV3_RU_hook-a_IMG45.png": {
+        "hash": "18ad564d271d3897b2044b2173f36c1a",
+        "ts": "2026-07-28T16:09:58Z"
+      },
+      "PriceVideoV3_SR_hook-a_IMG45.png": {
+        "hash": "15eaaf0f2709bf2d1b73d08c62bbebba",
+        "ts": "2026-07-28T16:10:06Z"
+      }
+    }
+  },
+  "ads": [
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "INVEST_price-video-v3_hook-a_VID916_SR_V1",
+      "ad_id": "120251135465900233",
+      "creative_id": "2132561081021127",
+      "type": "video",
+      "lang": "SR",
+      "hook": "hook-a",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:13:33Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "INVEST_price-video-v3_hook-b_VID916_SR_V1",
+      "ad_id": "120251135472130233",
+      "creative_id": "1393715115961865",
+      "type": "video",
+      "lang": "SR",
+      "hook": "hook-b",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:13:40Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "INVEST_price-video-v3_hook-c_VID916_SR_V1",
+      "ad_id": "120251135475560233",
+      "creative_id": "1042049161869592",
+      "type": "video",
+      "lang": "SR",
+      "hook": "hook-c",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:13:48Z"
+    },
+    {
+      "campaign": "MB_LEADS_SR_MIX_202607",
+      "campaign_id": "120250397204950233",
+      "adset_id": "120250397397660233",
+      "name": "INVEST_price-video-v3_hook-a_VID45_SR_V1",
+      "ad_id": "120251135476860233",
+      "creative_id": "737854469422625",
+      "type": "video",
+      "lang": "SR",
+      "hook": "hook-a",
+      "fmt": "VID45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:13:55Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "INVEST_price-video-v3_hook-a_VID916_DE_V1",
+      "ad_id": "120251135478930233",
+      "creative_id": "1344112090658156",
+      "type": "video",
+      "lang": "DE",
+      "hook": "hook-a",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:14:03Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "INVEST_price-video-v3_hook-b_VID916_DE_V1",
+      "ad_id": "120251135481440233",
+      "creative_id": "2130964431185148",
+      "type": "video",
+      "lang": "DE",
+      "hook": "hook-b",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:14:10Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "INVEST_price-video-v3_hook-c_VID916_DE_V1",
+      "ad_id": "120251135485360233",
+      "creative_id": "1697196404732305",
+      "type": "video",
+      "lang": "DE",
+      "hook": "hook-c",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:14:18Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_202607",
+      "campaign_id": "120250397116900233",
+      "adset_id": "120250397193830233",
+      "name": "INVEST_price-video-v3_hook-a_VID45_DE_V1",
+      "ad_id": "120251135488000233",
+      "creative_id": "1001698786035188",
+      "type": "video",
+      "lang": "DE",
+      "hook": "hook-a",
+      "fmt": "VID45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:14:25Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "INVEST_price-video-v3_hook-a_VID916_PL_V1",
+      "ad_id": "120251135489970233",
+      "creative_id": "2623879451405370",
+      "type": "video",
+      "lang": "PL",
+      "hook": "hook-a",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:14:32Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "INVEST_price-video-v3_hook-b_VID916_PL_V1",
+      "ad_id": "120251135491600233",
+      "creative_id": "1407115147928425",
+      "type": "video",
+      "lang": "PL",
+      "hook": "hook-b",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:14:38Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "INVEST_price-video-v3_hook-c_VID916_PL_V1",
+      "ad_id": "120251135493470233",
+      "creative_id": "1061775839635768",
+      "type": "video",
+      "lang": "PL",
+      "hook": "hook-c",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:14:47Z"
+    },
+    {
+      "campaign": "MB_LEADS_PL_MIX_202607",
+      "campaign_id": "120250397098510233",
+      "adset_id": "120250397100510233",
+      "name": "INVEST_price-video-v3_hook-a_VID45_PL_V1",
+      "ad_id": "120251135494410233",
+      "creative_id": "1389364169835337",
+      "type": "video",
+      "lang": "PL",
+      "hook": "hook-a",
+      "fmt": "VID45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:14:55Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "INVEST_price-video-v3_hook-a_VID916_DE_V1",
+      "ad_id": "120251135630060233",
+      "creative_id": "1316376997234158",
+      "type": "video",
+      "lang": "DE",
+      "hook": "hook-a",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:22:34Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "INVEST_price-video-v3_hook-b_VID916_DE_V1",
+      "ad_id": "120251135630880233",
+      "creative_id": "1559503019014039",
+      "type": "video",
+      "lang": "DE",
+      "hook": "hook-b",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:22:40Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "INVEST_price-video-v3_hook-c_VID916_DE_V1",
+      "ad_id": "120251135632180233",
+      "creative_id": "1358400059810889",
+      "type": "video",
+      "lang": "DE",
+      "hook": "hook-c",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:22:46Z"
+    },
+    {
+      "campaign": "MB_LEADS_DE_MIX_20260707",
+      "campaign_id": "120250543084620233",
+      "adset_id": "120250543084900233",
+      "name": "INVEST_price-video-v3_hook-a_VID45_DE_V1",
+      "ad_id": "120251135633380233",
+      "creative_id": "2107046246575541",
+      "type": "video",
+      "lang": "DE",
+      "hook": "hook-a",
+      "fmt": "VID45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:22:51Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "INVEST_price-video-v3_hook-a_VID916_TR_V1",
+      "ad_id": "120251135634630233",
+      "creative_id": "1374095381482208",
+      "type": "video",
+      "lang": "TR",
+      "hook": "hook-a",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:22:58Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "INVEST_price-video-v3_hook-b_VID916_TR_V1",
+      "ad_id": "120251135635250233",
+      "creative_id": "909679118269927",
+      "type": "video",
+      "lang": "TR",
+      "hook": "hook-b",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:23:05Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "INVEST_price-video-v3_hook-c_VID916_TR_V1",
+      "ad_id": "120251135636000233",
+      "creative_id": "1537130501477810",
+      "type": "video",
+      "lang": "TR",
+      "hook": "hook-c",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:23:12Z"
+    },
+    {
+      "campaign": "MB_LEADS_TR_MIX_202607",
+      "campaign_id": "120250707886890233",
+      "adset_id": "120250707887280233",
+      "name": "INVEST_price-video-v3_hook-a_VID45_TR_V1",
+      "ad_id": "120251135637450233",
+      "creative_id": "1650793089944791",
+      "type": "video",
+      "lang": "TR",
+      "hook": "hook-a",
+      "fmt": "VID45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:23:19Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "INVEST_price-video-v3_hook-a_VID916_UA_V1",
+      "ad_id": "120251135713230233",
+      "creative_id": "1008162958727885",
+      "type": "video",
+      "lang": "UA",
+      "hook": "hook-a",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:31:00Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "INVEST_price-video-v3_hook-b_VID916_UA_V1",
+      "ad_id": "120251135713650233",
+      "creative_id": "2120924348857495",
+      "type": "video",
+      "lang": "UA",
+      "hook": "hook-b",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:31:06Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "INVEST_price-video-v3_hook-c_VID916_UA_V1",
+      "ad_id": "120251135714290233",
+      "creative_id": "1048946637499797",
+      "type": "video",
+      "lang": "UA",
+      "hook": "hook-c",
+      "fmt": "VID916",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:31:14Z"
+    },
+    {
+      "campaign": "MB_LEADS_UA_MIX_202607",
+      "campaign_id": "120250708215740233",
+      "adset_id": "120250708221320233",
+      "name": "INVEST_price-video-v3_hook-a_VID45_UA_V1",
+      "ad_id": "120251135715390233",
+      "creative_id": "1411156274244048",
+      "type": "video",
+      "lang": "UA",
+      "hook": "hook-a",
+      "fmt": "VID45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:31:20Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "INVEST_price-video-v3_hook-a_IMG45_SR_V1",
+      "ad_id": "120251135716110233",
+      "creative_id": "973404672407371",
+      "type": "image",
+      "lang": "SR",
+      "hook": "hook-a",
+      "fmt": "IMG45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:31:27Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "INVEST_price-video-v3_hook-a_IMG45_RU_V1",
+      "ad_id": "120251135716850233",
+      "creative_id": "1081625410873617",
+      "type": "image",
+      "lang": "RU",
+      "hook": "hook-a",
+      "fmt": "IMG45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:31:33Z"
+    },
+    {
+      "campaign": "MB_RTG_B_MIX_202607",
+      "campaign_id": "120250397535350233",
+      "adset_id": "120250397641210233",
+      "name": "INVEST_price-video-v3_hook-a_IMG45_EN_V1",
+      "ad_id": "120251135717320233",
+      "creative_id": "1368952734569121",
+      "type": "image",
+      "lang": "EN",
+      "hook": "hook-a",
+      "fmt": "IMG45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:31:38Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "INVEST_price-video-v3_hook-a_IMG45_DE_V1",
+      "ad_id": "120251135789650233",
+      "creative_id": "1548525846735408",
+      "type": "image",
+      "lang": "DE",
+      "hook": "hook-a",
+      "fmt": "IMG45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:39:16Z"
+    },
+    {
+      "campaign": "MB_RTG_A_MIX_202607",
+      "campaign_id": "120251109198470233",
+      "adset_id": "120251109198870233",
+      "name": "INVEST_price-video-v3_hook-a_IMG45_PL_V1",
+      "ad_id": "120251135790460233",
+      "creative_id": "1061429383107529",
+      "type": "image",
+      "lang": "PL",
+      "hook": "hook-a",
+      "fmt": "IMG45",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "batch": "v3-2026-07-28",
+      "ts": "2026-07-28T17:39:22Z"
+    }
+  ],
+  "skipped": [
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "INVEST_price-video-v3_hook-a_VID916_SR_V1",
+      "reason": "ME at 50-ad cap (paused ads count)"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "INVEST_price-video-v3_hook-a_VID916_RU_V1",
+      "reason": "ME at 50-ad cap (paused ads count)"
+    },
+    {
+      "campaign": "MB_LEADS_ME_MIX_202607",
+      "name": "INVEST_price-video-v3_hook-a_VID916_EN_V1",
+      "reason": "ME at 50-ad cap (paused ads count)"
+    }
+  ],
+  "errors": [],
+  "registry_appended": true,
+  "updated_utc": "2026-07-28T17:39:23Z"
+}

@@ -1,0 +1,1721 @@
+{
+  "batch": "ips-dubai-202609",
+  "account": "act_776404808314031",
+  "created_utc": "2026-09-01T23:43:02Z",
+  "api_version": "v25.0",
+  "event": {
+    "name": "IPS 2026",
+    "dates": "7–9 September 2026",
+    "hours": "10:00–18:00",
+    "venue": "Dubai World Trade Centre, Halls 2–8",
+    "stand": "E25"
+  },
+  "window": {
+    "start": "now (at activation)",
+    "end_time": "2026-09-06T23:59:00+04:00",
+    "tz": "Asia/Dubai"
+  },
+  "geo": {
+    "city": {
+      "key": "368",
+      "name": "Dubai",
+      "type": "city",
+      "country_code": "AE"
+    },
+    "neighborhoods": [
+      {
+        "key": "2933192",
+        "name": "Za'abeel Second",
+        "requested": "Dubai World Trade Centre",
+        "note": "DWTC lies in Za'abeel 2 (DIFC as well)"
+      },
+      {
+        "key": "2933197",
+        "name": "Marsa Dubai",
+        "requested": "Dubai Marina",
+        "note": "official community name of Dubai Marina"
+      },
+      {
+        "key": "2933616",
+        "name": "Jumeirah Palm",
+        "requested": "Palm Jumeirah"
+      },
+      {
+        "key": "2933199",
+        "name": "Jumeira First",
+        "requested": "Jumeirah"
+      },
+      {
+        "key": "2933158",
+        "name": "Al Jumeira Second",
+        "requested": "Jumeirah"
+      },
+      {
+        "key": "2933179",
+        "name": "Jumeira Third",
+        "requested": "Jumeirah"
+      },
+      {
+        "key": "2933160",
+        "name": "Nadd Al Shiba First",
+        "requested": "Nad Al Sheba"
+      },
+      {
+        "key": "2933181",
+        "name": "Nadd Al Shiba Second",
+        "requested": "Nad Al Sheba"
+      },
+      {
+        "key": "2933200",
+        "name": "Nadd Al Shiba Third",
+        "requested": "Nad Al Sheba"
+      },
+      {
+        "key": "2933580",
+        "name": "Nadd Al Shiba Fourth",
+        "requested": "Nad Al Sheba"
+      },
+      {
+        "key": "2933326",
+        "name": "Mirdif",
+        "requested": "Mirdif"
+      }
+    ],
+    "unresolved_pins": [
+      "Downtown Dubai",
+      "Business Bay",
+      "DIFC",
+      "Emirates Hills",
+      "Al Barari"
+    ],
+    "pins_requested": [
+      "Dubai World Trade Centre",
+      "Downtown Dubai",
+      "Business Bay",
+      "DIFC",
+      "Dubai Marina",
+      "Palm Jumeirah",
+      "Jumeirah",
+      "Emirates Hills",
+      "Al Barari",
+      "Nad Al Sheba",
+      "Mirdif"
+    ],
+    "note": "no adgeolocation `place` hits for any requested pin -> no 3 km radius pins; resolved neighborhoods added (no radius); city covers the rest",
+    "city_verified_utc": "2026-09-01T23:54:04Z"
+  },
+  "phase_log": [
+    {
+      "phase": "init",
+      "ts": "2026-09-01T23:43:02Z",
+      "note": "script ops/ips_dubai.py ready (RU included); starting form phase"
+    },
+    {
+      "phase": "form",
+      "ts": "2026-09-01T23:44:30Z",
+      "note": "forms [('EN', '976738438771399'), ('RU', '1750430566285538')]"
+    },
+    {
+      "phase": "upload",
+      "ts": "2026-09-01T23:53:49Z",
+      "note": "10 videos ready"
+    },
+    {
+      "phase": "build",
+      "ts": "2026-09-02T00:04:25Z",
+      "note": "15 ads PAUSED"
+    },
+    {
+      "phase": "activate",
+      "ts": "2026-09-02T00:10:23Z",
+      "note": "15 ads ACTIVE, 0 not activated"
+    },
+    {
+      "phase": "readback",
+      "ts": "2026-09-02T00:11:43Z",
+      "note": "ok"
+    }
+  ],
+  "forms": {
+    "EN": {
+      "id": "976738438771399",
+      "name": "LF_AE_IPS-DUBAI_202609",
+      "reused": false,
+      "variant": "en_US sms keyed",
+      "locale_sent": "en_US",
+      "sms_verify": true,
+      "ts": "2026-09-01T23:44:26Z",
+      "readback": {
+        "id": "976738438771399",
+        "name": "LF_AE_IPS-DUBAI_202609",
+        "locale": "en_US",
+        "status": "ACTIVE",
+        "questions": [
+          {
+            "key": "full_name",
+            "label": "Full name",
+            "type": "FULL_NAME",
+            "id": "1981075319139541"
+          },
+          {
+            "key": "phone",
+            "label": "Phone number",
+            "type": "PHONE",
+            "id": "1459023446284349"
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "EMAIL",
+            "id": "4769477659946597"
+          },
+          {
+            "key": "expo_meeting",
+            "label": "Book a meeting at Stand E25 (IPS Dubai, 7–9 Sept)",
+            "options": [
+              {
+                "key": "meeting_1",
+                "value": "September 7"
+              },
+              {
+                "key": "meeting_2",
+                "value": "September 8"
+              },
+              {
+                "key": "meeting_3",
+                "value": "September 9"
+              },
+              {
+                "key": "meeting_4",
+                "value": "Send me the presentation instead"
+              }
+            ],
+            "type": "CUSTOM",
+            "id": "1048919331344338"
+          },
+          {
+            "key": "budget",
+            "label": "Purchase budget",
+            "options": [
+              {
+                "key": "budget_1",
+                "value": "Up to €250,000"
+              },
+              {
+                "key": "budget_2",
+                "value": "€250,000–400,000"
+              },
+              {
+                "key": "budget_3",
+                "value": "€400,000–700,000"
+              },
+              {
+                "key": "budget_4",
+                "value": "Over €700,000"
+              }
+            ],
+            "type": "CUSTOM",
+            "id": "1415212480672390"
+          }
+        ],
+        "follow_up_action_url": "https://meliabudva.com/",
+        "is_optimized_for_quality": true,
+        "leads_count": 0
+      }
+    },
+    "RU": {
+      "id": "1750430566285538",
+      "name": "LF_AE_IPS-DUBAI_RU_202609",
+      "reused": false,
+      "variant": "ru_RU sms keyed",
+      "locale_sent": "ru_RU",
+      "sms_verify": true,
+      "ts": "2026-09-01T23:44:29Z",
+      "readback": {
+        "id": "1750430566285538",
+        "name": "LF_AE_IPS-DUBAI_RU_202609",
+        "locale": "ru_RU",
+        "status": "ACTIVE",
+        "questions": [
+          {
+            "key": "full_name",
+            "label": "Full name",
+            "type": "FULL_NAME",
+            "id": "2275959009932115"
+          },
+          {
+            "key": "phone",
+            "label": "Phone number",
+            "type": "PHONE",
+            "id": "2061474194459369"
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "EMAIL",
+            "id": "1437421604899296"
+          },
+          {
+            "key": "expo_meeting",
+            "label": "Записаться на встречу на стенде E25 (IPS Dubai, 7–9 сентября)",
+            "options": [
+              {
+                "key": "meeting_1",
+                "value": "7 сентября"
+              },
+              {
+                "key": "meeting_2",
+                "value": "8 сентября"
+              },
+              {
+                "key": "meeting_3",
+                "value": "9 сентября"
+              },
+              {
+                "key": "meeting_4",
+                "value": "Пришлите презентацию"
+              }
+            ],
+            "type": "CUSTOM",
+            "id": "1637833047909995"
+          },
+          {
+            "key": "budget",
+            "label": "Бюджет покупки",
+            "options": [
+              {
+                "key": "budget_1",
+                "value": "До €250 000"
+              },
+              {
+                "key": "budget_2",
+                "value": "€250 000–400 000"
+              },
+              {
+                "key": "budget_3",
+                "value": "€400 000–700 000"
+              },
+              {
+                "key": "budget_4",
+                "value": "Более €700 000"
+              }
+            ],
+            "type": "CUSTOM",
+            "id": "1740217420601230"
+          }
+        ],
+        "follow_up_action_url": "https://meliabudva.com/",
+        "is_optimized_for_quality": true,
+        "leads_count": 0
+      }
+    }
+  },
+  "uploads": {
+    "videos": {
+      "W3-03_DE_9x16.mp4": {
+        "video_id": "2142607439800013",
+        "status": "ready",
+        "source": "w3_full_rollout.json",
+        "size_mb": 41.5,
+        "ts": "2026-09-01T23:44:57Z",
+        "ready_utc": "2026-09-01T23:53:32Z"
+      },
+      "W3-01_DE_9x16.mp4": {
+        "video_id": "1125697216481445",
+        "status": "ready",
+        "source": "w3_full_rollout.json",
+        "size_mb": 41.6,
+        "ts": "2026-09-01T23:44:57Z",
+        "ready_utc": "2026-09-01T23:53:32Z"
+      },
+      "W3-03_TR_9x16.mp4": {
+        "video_id": "1435603615375542",
+        "status": "ready",
+        "source": "w3_full_rollout.json",
+        "size_mb": 41.3,
+        "ts": "2026-09-01T23:44:57Z",
+        "ready_utc": "2026-09-01T23:53:32Z"
+      },
+      "W3-01_TR_9x16.mp4": {
+        "video_id": "1368235598809701",
+        "status": "ready",
+        "source": "w3_full_rollout.json",
+        "size_mb": 41.5,
+        "ts": "2026-09-01T23:44:57Z",
+        "ready_utc": "2026-09-01T23:53:32Z"
+      },
+      "W3-03_UA_9x16.mp4": {
+        "video_id": "941497738994638",
+        "status": "ready",
+        "source": "w3_full_rollout.json",
+        "size_mb": 41.4,
+        "ts": "2026-09-01T23:44:57Z",
+        "ready_utc": "2026-09-01T23:53:32Z"
+      },
+      "W3-01_UA_9x16.mp4": {
+        "video_id": "1013797748347401",
+        "status": "ready",
+        "source": "w3_full_rollout.json",
+        "size_mb": 41.5,
+        "ts": "2026-09-01T23:44:57Z",
+        "ready_utc": "2026-09-01T23:53:32Z"
+      },
+      "W3-03_EN_9x16.mp4": {
+        "video_id": "1379842647685362",
+        "status": "ready",
+        "source": "uploaded",
+        "size_mb": 41.3,
+        "upload_sec": 493,
+        "ts": "2026-09-01T23:53:11Z",
+        "ready_utc": "2026-09-01T23:53:32Z"
+      },
+      "W3-01_RU_9x16.mp4": {
+        "video_id": "1041616925523514",
+        "status": "ready",
+        "source": "uploaded",
+        "size_mb": 41.6,
+        "upload_sec": 505,
+        "ts": "2026-09-01T23:53:22Z",
+        "ready_utc": "2026-09-01T23:53:49Z"
+      },
+      "W3-01_EN_9x16.mp4": {
+        "video_id": "1792158388580137",
+        "status": "ready",
+        "source": "uploaded",
+        "size_mb": 41.5,
+        "upload_sec": 509,
+        "ts": "2026-09-01T23:53:26Z",
+        "ready_utc": "2026-09-01T23:53:49Z"
+      },
+      "W3-03_RU_9x16.mp4": {
+        "video_id": "2514043559009374",
+        "status": "ready",
+        "source": "uploaded",
+        "size_mb": 41.3,
+        "upload_sec": 512,
+        "ts": "2026-09-01T23:53:29Z",
+        "ready_utc": "2026-09-01T23:53:49Z"
+      }
+    }
+  },
+  "campaigns": {
+    "REACH": {
+      "name": "MB_EXPO_IPS-DUBAI_REACH_202609",
+      "adset_name": "AE-DUBAI_REACH_EXPO",
+      "daily_budget": 7000,
+      "objective": "OUTCOME_AWARENESS",
+      "campaign_id": "120252041470810233",
+      "campaign_variant": "abo-explicit",
+      "campaign_status": "ACTIVE/ACTIVE",
+      "campaign_created_utc": "2026-09-01T23:54:07Z",
+      "adset_id": "120252041472130233",
+      "adset_variant": "city+neighborhoods",
+      "pins_applied": true,
+      "adset_status": "ACTIVE/ACTIVE",
+      "adset_created_utc": "2026-09-01T23:54:11Z",
+      "targeting_used": {
+        "age_max": 65,
+        "age_min": 28,
+        "geo_locations": {
+          "cities": [
+            {
+              "country": "AE",
+              "distance_unit": "mile",
+              "key": "368",
+              "name": "Dubai",
+              "region": "Dubai",
+              "region_id": "10"
+            }
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ],
+          "neighborhoods": [
+            {
+              "key": "2933158",
+              "country": "AE",
+              "name": "Al Jumeira Second",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933160",
+              "country": "AE",
+              "name": "Nadd Al Shiba First",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933179",
+              "country": "AE",
+              "name": "Jumeira Third",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933181",
+              "country": "AE",
+              "name": "Nadd Al Shiba Second",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933192",
+              "country": "AE",
+              "name": "Za'abeel Second",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933197",
+              "country": "AE",
+              "name": "Marsa Dubai",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933199",
+              "country": "AE",
+              "name": "Jumeira First",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933200",
+              "country": "AE",
+              "name": "Nadd Al Shiba Third",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933326",
+              "country": "AE",
+              "name": "Mirdif",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933580",
+              "country": "AE",
+              "name": "Nadd Al Shiba Fourth",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933616",
+              "country": "AE",
+              "name": "Jumeirah Palm",
+              "region": "Dubai",
+              "region_id": "10"
+            }
+          ]
+        },
+        "targeting_automation": {
+          "advantage_audience": 0
+        },
+        "user_age_unknown": false
+      },
+      "adset_readback": {
+        "daily_budget": "7000",
+        "end_time": "2026-09-06T21:59:00+0200",
+        "start_time": "2026-09-02T01:54:11+0200",
+        "optimization_goal": "REACH",
+        "billing_event": "IMPRESSIONS",
+        "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+        "frequency_control_specs": [
+          {
+            "event": "IMPRESSIONS",
+            "interval_days": 5,
+            "max_frequency": 3,
+            "type": "CAP"
+          }
+        ],
+        "promoted_object": {
+          "page_id": "723322257538609",
+          "smart_pse_enabled": false
+        }
+      }
+    },
+    "LEADS": {
+      "name": "MB_EXPO_IPS-DUBAI_LEADS_202609",
+      "adset_name": "AE-DUBAI_LEADS_EXPO",
+      "daily_budget": 3000,
+      "objective": "OUTCOME_LEADS",
+      "campaign_id": "120252041472500233",
+      "campaign_variant": "abo-explicit",
+      "campaign_status": "ACTIVE/ACTIVE",
+      "campaign_created_utc": "2026-09-01T23:54:14Z",
+      "adset_id": "120252041473040233",
+      "adset_variant": "city+neighborhoods",
+      "pins_applied": true,
+      "adset_status": "ACTIVE/ACTIVE",
+      "adset_created_utc": "2026-09-01T23:54:18Z",
+      "targeting_used": {
+        "age_max": 65,
+        "age_min": 25,
+        "age_range": [
+          28,
+          65
+        ],
+        "geo_locations": {
+          "cities": [
+            {
+              "country": "AE",
+              "distance_unit": "mile",
+              "key": "368",
+              "name": "Dubai",
+              "region": "Dubai",
+              "region_id": "10"
+            }
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ],
+          "neighborhoods": [
+            {
+              "key": "2933158",
+              "country": "AE",
+              "name": "Al Jumeira Second",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933160",
+              "country": "AE",
+              "name": "Nadd Al Shiba First",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933179",
+              "country": "AE",
+              "name": "Jumeira Third",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933181",
+              "country": "AE",
+              "name": "Nadd Al Shiba Second",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933192",
+              "country": "AE",
+              "name": "Za'abeel Second",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933197",
+              "country": "AE",
+              "name": "Marsa Dubai",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933199",
+              "country": "AE",
+              "name": "Jumeira First",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933200",
+              "country": "AE",
+              "name": "Nadd Al Shiba Third",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933326",
+              "country": "AE",
+              "name": "Mirdif",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933580",
+              "country": "AE",
+              "name": "Nadd Al Shiba Fourth",
+              "region": "Dubai",
+              "region_id": "10"
+            },
+            {
+              "key": "2933616",
+              "country": "AE",
+              "name": "Jumeirah Palm",
+              "region": "Dubai",
+              "region_id": "10"
+            }
+          ]
+        },
+        "targeting_automation": {
+          "advantage_audience": 1
+        }
+      },
+      "adset_readback": {
+        "daily_budget": "3000",
+        "end_time": "2026-09-06T21:59:00+0200",
+        "start_time": "2026-09-02T01:54:18+0200",
+        "optimization_goal": "LEAD_GENERATION",
+        "billing_event": "IMPRESSIONS",
+        "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+        "frequency_control_specs": null,
+        "promoted_object": {
+          "page_id": "723322257538609",
+          "smart_pse_enabled": false
+        }
+      }
+    }
+  },
+  "ads": [
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_keys_VID916_EN_E1",
+      "ad_id": "120252041473830233",
+      "creative_id": "1540898303923378",
+      "type": "video",
+      "lang": "EN",
+      "concept": "keys",
+      "video_id": "1379842647685362",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:54:26Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:09:45Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_seasons_VID916_EN_E1",
+      "ad_id": "120252041474430233",
+      "creative_id": "1089833733736318",
+      "type": "video",
+      "lang": "EN",
+      "concept": "seasons",
+      "video_id": "1792158388580137",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:54:34Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:09:47Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_keys_VID916_DE_E1",
+      "ad_id": "120252041475170233",
+      "creative_id": "2948263105519046",
+      "type": "video",
+      "lang": "DE",
+      "concept": "keys",
+      "video_id": "2142607439800013",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:54:42Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:09:49Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_seasons_VID916_DE_E1",
+      "ad_id": "120252041475930233",
+      "creative_id": "1068895045925493",
+      "type": "video",
+      "lang": "DE",
+      "concept": "seasons",
+      "video_id": "1125697216481445",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:54:51Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:09:52Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_keys_VID916_TR_E1",
+      "ad_id": "120252041477310233",
+      "creative_id": "1451283323496655",
+      "type": "video",
+      "lang": "TR",
+      "concept": "keys",
+      "video_id": "1435603615375542",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:54:58Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:09:54Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_seasons_VID916_TR_E1",
+      "ad_id": "120252041478010233",
+      "creative_id": "2184984532234578",
+      "type": "video",
+      "lang": "TR",
+      "concept": "seasons",
+      "video_id": "1368235598809701",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:55:06Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:09:56Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_keys_VID916_UA_E1",
+      "ad_id": "120252041479010233",
+      "creative_id": "1629404038904577",
+      "type": "video",
+      "lang": "UA",
+      "concept": "keys",
+      "video_id": "941497738994638",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:55:14Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:09:59Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_seasons_VID916_UA_E1",
+      "ad_id": "120252041479770233",
+      "creative_id": "1751954492780446",
+      "type": "video",
+      "lang": "UA",
+      "concept": "seasons",
+      "video_id": "1013797748347401",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:55:22Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:10:01Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_keys_VID916_RU_E1",
+      "ad_id": "120252041480940233",
+      "creative_id": "1060151116720987",
+      "type": "video",
+      "lang": "RU",
+      "concept": "keys",
+      "video_id": "2514043559009374",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:55:30Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:10:05Z"
+    },
+    {
+      "campaign": "REACH",
+      "campaign_id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "name": "EXPO_ips-dubai_seasons_VID916_RU_E1",
+      "ad_id": "120252041481480233",
+      "creative_id": "1986734115356991",
+      "type": "video",
+      "lang": "RU",
+      "concept": "seasons",
+      "video_id": "1041616925523514",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-01T23:55:37Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:10:08Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_keys_VID916_EN_L1",
+      "ad_id": "120252041530170233",
+      "creative_id": "2476409296176476",
+      "type": "video",
+      "lang": "EN",
+      "concept": "keys",
+      "video_id": "1379842647685362",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-02T00:04:01Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:10:11Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_keys_VID916_DE_L1",
+      "ad_id": "120252041530680233",
+      "creative_id": "1205635795109279",
+      "type": "video",
+      "lang": "DE",
+      "concept": "keys",
+      "video_id": "2142607439800013",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-02T00:04:08Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:10:15Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_keys_VID916_TR_L1",
+      "ad_id": "120252041530820233",
+      "creative_id": "1499318235336152",
+      "type": "video",
+      "lang": "TR",
+      "concept": "keys",
+      "video_id": "1435603615375542",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-02T00:04:14Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:10:18Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_keys_VID916_UA_L1",
+      "ad_id": "120252041531310233",
+      "creative_id": "29143736178562720",
+      "type": "video",
+      "lang": "UA",
+      "concept": "keys",
+      "video_id": "941497738994638",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-02T00:04:19Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:10:20Z"
+    },
+    {
+      "campaign": "LEADS",
+      "campaign_id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "name": "EXPO_ips-dubai_keys_VID916_RU_L1",
+      "ad_id": "120252041531650233",
+      "creative_id": "1398496302249838",
+      "type": "video",
+      "lang": "RU",
+      "concept": "keys",
+      "video_id": "2514043559009374",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "batch": "ips-dubai-202609",
+      "ts": "2026-09-02T00:04:24Z",
+      "issues_info": null,
+      "ad_review_feedback": null,
+      "activated_utc": "2026-09-02T00:10:22Z"
+    }
+  ],
+  "review": {
+    "started_utc": "2026-09-02T00:04:54Z",
+    "polls": [
+      {
+        "ts": "2026-09-02T00:06:35Z",
+        "distribution": {
+          "PAUSED": 11,
+          "PENDING_REVIEW": 4
+        }
+      },
+      {
+        "ts": "2026-09-02T00:09:37Z",
+        "distribution": {
+          "PAUSED": 15
+        }
+      }
+    ],
+    "distribution": {
+      "PAUSED": 15
+    },
+    "clean": true
+  },
+  "activation": {
+    "done": true,
+    "done_utc": "2026-09-02T00:10:23Z",
+    "activated_ads": 15,
+    "not_activated": [],
+    "objects": [
+      {
+        "campaign": "REACH",
+        "kind": "campaign",
+        "id": "120252041470810233",
+        "status": "ACTIVE",
+        "effective_status": "ACTIVE",
+        "ts": "2026-09-02T00:09:38Z"
+      },
+      {
+        "campaign": "REACH",
+        "kind": "adset",
+        "id": "120252041472130233",
+        "status": "ACTIVE",
+        "effective_status": "ACTIVE",
+        "ts": "2026-09-02T00:09:40Z"
+      },
+      {
+        "campaign": "LEADS",
+        "kind": "campaign",
+        "id": "120252041472500233",
+        "status": "ACTIVE",
+        "effective_status": "ACTIVE",
+        "ts": "2026-09-02T00:09:42Z"
+      },
+      {
+        "campaign": "LEADS",
+        "kind": "adset",
+        "id": "120252041473040233",
+        "status": "ACTIVE",
+        "effective_status": "ACTIVE",
+        "ts": "2026-09-02T00:09:43Z"
+      }
+    ]
+  },
+  "readback": {
+    "ts": "2026-09-02T00:11:39Z",
+    "campaigns": {
+      "REACH": {
+        "campaign": {
+          "id": "120252041470810233",
+          "name": "MB_EXPO_IPS-DUBAI_REACH_202609",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "objective": "OUTCOME_AWARENESS",
+          "buying_type": "AUCTION",
+          "special_ad_categories": []
+        },
+        "adset": {
+          "id": "120252041472130233",
+          "name": "AE-DUBAI_REACH_EXPO",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "daily_budget": "7000",
+          "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+          "optimization_goal": "REACH",
+          "billing_event": "IMPRESSIONS",
+          "destination_type": "UNDEFINED",
+          "start_time": "2026-09-02T01:54:11+0200",
+          "end_time": "2026-09-06T21:59:00+0200",
+          "targeting": {
+            "age_max": 65,
+            "age_min": 28,
+            "geo_locations": {
+              "cities": [
+                {
+                  "country": "AE",
+                  "distance_unit": "mile",
+                  "key": "368",
+                  "name": "Dubai",
+                  "region": "Dubai",
+                  "region_id": "10"
+                }
+              ],
+              "location_types": [
+                "home",
+                "recent"
+              ],
+              "neighborhoods": [
+                {
+                  "key": "2933158",
+                  "country": "AE",
+                  "name": "Al Jumeira Second",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933160",
+                  "country": "AE",
+                  "name": "Nadd Al Shiba First",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933179",
+                  "country": "AE",
+                  "name": "Jumeira Third",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933181",
+                  "country": "AE",
+                  "name": "Nadd Al Shiba Second",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933192",
+                  "country": "AE",
+                  "name": "Za'abeel Second",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933197",
+                  "country": "AE",
+                  "name": "Marsa Dubai",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933199",
+                  "country": "AE",
+                  "name": "Jumeira First",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933200",
+                  "country": "AE",
+                  "name": "Nadd Al Shiba Third",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933326",
+                  "country": "AE",
+                  "name": "Mirdif",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933580",
+                  "country": "AE",
+                  "name": "Nadd Al Shiba Fourth",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933616",
+                  "country": "AE",
+                  "name": "Jumeirah Palm",
+                  "region": "Dubai",
+                  "region_id": "10"
+                }
+              ]
+            },
+            "targeting_automation": {
+              "advantage_audience": 0
+            },
+            "user_age_unknown": false
+          },
+          "frequency_control_specs": [
+            {
+              "event": "IMPRESSIONS",
+              "interval_days": 5,
+              "max_frequency": 3,
+              "type": "CAP"
+            }
+          ],
+          "promoted_object": {
+            "page_id": "723322257538609",
+            "smart_pse_enabled": false
+          }
+        },
+        "ads": [
+          {
+            "id": "120252041481480233",
+            "name": "EXPO_ips-dubai_seasons_VID916_RU_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1986734115356991"
+            }
+          },
+          {
+            "id": "120252041480940233",
+            "name": "EXPO_ips-dubai_keys_VID916_RU_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1060151116720987"
+            }
+          },
+          {
+            "id": "120252041479770233",
+            "name": "EXPO_ips-dubai_seasons_VID916_UA_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1751954492780446"
+            }
+          },
+          {
+            "id": "120252041479010233",
+            "name": "EXPO_ips-dubai_keys_VID916_UA_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1629404038904577"
+            }
+          },
+          {
+            "id": "120252041478010233",
+            "name": "EXPO_ips-dubai_seasons_VID916_TR_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "2184984532234578"
+            }
+          },
+          {
+            "id": "120252041477310233",
+            "name": "EXPO_ips-dubai_keys_VID916_TR_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1451283323496655"
+            }
+          },
+          {
+            "id": "120252041475930233",
+            "name": "EXPO_ips-dubai_seasons_VID916_DE_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1068895045925493"
+            }
+          },
+          {
+            "id": "120252041475170233",
+            "name": "EXPO_ips-dubai_keys_VID916_DE_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "2948263105519046"
+            }
+          },
+          {
+            "id": "120252041474430233",
+            "name": "EXPO_ips-dubai_seasons_VID916_EN_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1089833733736318"
+            }
+          },
+          {
+            "id": "120252041473830233",
+            "name": "EXPO_ips-dubai_keys_VID916_EN_E1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1540898303923378"
+            }
+          }
+        ]
+      },
+      "LEADS": {
+        "campaign": {
+          "id": "120252041472500233",
+          "name": "MB_EXPO_IPS-DUBAI_LEADS_202609",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "objective": "OUTCOME_LEADS",
+          "buying_type": "AUCTION",
+          "special_ad_categories": []
+        },
+        "adset": {
+          "id": "120252041473040233",
+          "name": "AE-DUBAI_LEADS_EXPO",
+          "status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "daily_budget": "3000",
+          "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+          "optimization_goal": "LEAD_GENERATION",
+          "billing_event": "IMPRESSIONS",
+          "destination_type": "ON_AD",
+          "start_time": "2026-09-02T01:54:18+0200",
+          "end_time": "2026-09-06T21:59:00+0200",
+          "targeting": {
+            "age_max": 65,
+            "age_min": 25,
+            "age_range": [
+              28,
+              65
+            ],
+            "geo_locations": {
+              "cities": [
+                {
+                  "country": "AE",
+                  "distance_unit": "mile",
+                  "key": "368",
+                  "name": "Dubai",
+                  "region": "Dubai",
+                  "region_id": "10"
+                }
+              ],
+              "location_types": [
+                "home",
+                "recent"
+              ],
+              "neighborhoods": [
+                {
+                  "key": "2933158",
+                  "country": "AE",
+                  "name": "Al Jumeira Second",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933160",
+                  "country": "AE",
+                  "name": "Nadd Al Shiba First",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933179",
+                  "country": "AE",
+                  "name": "Jumeira Third",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933181",
+                  "country": "AE",
+                  "name": "Nadd Al Shiba Second",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933192",
+                  "country": "AE",
+                  "name": "Za'abeel Second",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933197",
+                  "country": "AE",
+                  "name": "Marsa Dubai",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933199",
+                  "country": "AE",
+                  "name": "Jumeira First",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933200",
+                  "country": "AE",
+                  "name": "Nadd Al Shiba Third",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933326",
+                  "country": "AE",
+                  "name": "Mirdif",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933580",
+                  "country": "AE",
+                  "name": "Nadd Al Shiba Fourth",
+                  "region": "Dubai",
+                  "region_id": "10"
+                },
+                {
+                  "key": "2933616",
+                  "country": "AE",
+                  "name": "Jumeirah Palm",
+                  "region": "Dubai",
+                  "region_id": "10"
+                }
+              ]
+            },
+            "targeting_automation": {
+              "advantage_audience": 1
+            }
+          },
+          "promoted_object": {
+            "page_id": "723322257538609",
+            "smart_pse_enabled": false
+          }
+        },
+        "ads": [
+          {
+            "id": "120252041531650233",
+            "name": "EXPO_ips-dubai_keys_VID916_RU_L1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1398496302249838"
+            }
+          },
+          {
+            "id": "120252041531310233",
+            "name": "EXPO_ips-dubai_keys_VID916_UA_L1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "29143736178562720"
+            }
+          },
+          {
+            "id": "120252041530820233",
+            "name": "EXPO_ips-dubai_keys_VID916_TR_L1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1499318235336152"
+            }
+          },
+          {
+            "id": "120252041530680233",
+            "name": "EXPO_ips-dubai_keys_VID916_DE_L1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "1205635795109279"
+            }
+          },
+          {
+            "id": "120252041530170233",
+            "name": "EXPO_ips-dubai_keys_VID916_EN_L1",
+            "status": "ACTIVE",
+            "effective_status": "ACTIVE",
+            "creative": {
+              "id": "2476409296176476"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "errors": [],
+  "registry_appended": true,
+  "progress": {
+    "step": "probes done; forms/media/campaigns not yet created on Graph",
+    "probes": {
+      "account": "act_776404808314031 Melia Budva 1, EUR, tz Europe/Belgrade, status 1",
+      "page_token": "META_PAGE_TOKEN in .env is empty -> minted from system user via GET /{page_id}?fields=access_token (works, never printed)",
+      "geo": "Dubai city key 368 (AE); no `place` hits for the 11 pins; 11 neighborhood keys resolved; 5 names unresolved",
+      "forms_on_page": "16 existing, none named LF_AE_IPS-DUBAI*",
+      "campaigns": "no MB_EXPO_IPS-DUBAI_* campaigns exist yet",
+      "media": "8 EN/DE/TR/UA + 2 RU files present in Wave 3; DE 01/03 + UA 01 already uploaded by w3 rollout (ids reused)",
+      "parallel_rollout": "w3_full_rollout.py upload running (PID 28640, 4 workers) -> bandwidth/rate-limit contention expected"
+    },
+    "plan": {
+      "ads": 15,
+      "langs": [
+        "EN",
+        "DE",
+        "TR",
+        "UA",
+        "RU"
+      ],
+      "forms": {
+        "EN": "LF_AE_IPS-DUBAI_202609",
+        "RU": "LF_AE_IPS-DUBAI_RU_202609"
+      }
+    }
+  },
+  "updated_utc": "2026-09-02T00:11:43Z",
+  "dof_mode": "full-opt-out",
+  "dof_spec": {
+    "creative_features_spec": {
+      "adapt_to_placement": {
+        "enroll_status": "OPT_OUT"
+      },
+      "add_text_overlay": {
+        "enroll_status": "OPT_OUT"
+      },
+      "ads_with_benefits": {
+        "enroll_status": "OPT_OUT"
+      },
+      "advantage_plus_creative": {
+        "enroll_status": "OPT_OUT"
+      },
+      "app_highlights": {
+        "enroll_status": "OPT_OUT"
+      },
+      "audio": {
+        "enroll_status": "OPT_OUT"
+      },
+      "auto_promotion_tag": {
+        "enroll_status": "OPT_OUT"
+      },
+      "biz_ai": {
+        "enroll_status": "OPT_OUT"
+      },
+      "carousel_to_video": {
+        "enroll_status": "OPT_OUT"
+      },
+      "catalog_feed_tag": {
+        "enroll_status": "OPT_OUT"
+      },
+      "creative_stickers": {
+        "enroll_status": "OPT_OUT"
+      },
+      "customize_product_recommendation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "cv_transformation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "description_automation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "dha_optimization": {
+        "enroll_status": "OPT_OUT"
+      },
+      "dynamic_cta_text": {
+        "enroll_status": "OPT_OUT"
+      },
+      "dynamic_partner_content": {
+        "enroll_status": "OPT_OUT"
+      },
+      "enable_ncs_testimonials": {
+        "enroll_status": "OPT_OUT"
+      },
+      "enhance_cta": {
+        "enroll_status": "OPT_OUT"
+      },
+      "fb_feed_tag": {
+        "enroll_status": "OPT_OUT"
+      },
+      "fb_reels_tag": {
+        "enroll_status": "OPT_OUT"
+      },
+      "fb_story_tag": {
+        "enroll_status": "OPT_OUT"
+      },
+      "feed_caption_optimization": {
+        "enroll_status": "OPT_OUT"
+      },
+      "generate_cta": {
+        "enroll_status": "OPT_OUT"
+      },
+      "hide_price": {
+        "enroll_status": "OPT_OUT"
+      },
+      "hyperlink_formatting": {
+        "enroll_status": "OPT_OUT"
+      },
+      "ig_feed_tag": {
+        "enroll_status": "OPT_OUT"
+      },
+      "ig_glados_feed": {
+        "enroll_status": "OPT_OUT"
+      },
+      "ig_reels_tag": {
+        "enroll_status": "OPT_OUT"
+      },
+      "ig_stream_tag": {
+        "enroll_status": "OPT_OUT"
+      },
+      "ig_video_native_subtitle": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_animation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_auto_crop": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_background_gen": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_banner": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_brightness_and_contrast": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_end_card": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_enhancement": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_templates": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_text_translation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_touchups": {
+        "enroll_status": "OPT_OUT"
+      },
+      "image_uncrop": {
+        "enroll_status": "OPT_OUT"
+      },
+      "inline_comment": {
+        "enroll_status": "OPT_OUT"
+      },
+      "local_store_extension": {
+        "enroll_status": "OPT_OUT"
+      },
+      "media_liquidity_animated_image": {
+        "enroll_status": "OPT_OUT"
+      },
+      "media_order": {
+        "enroll_status": "OPT_OUT"
+      },
+      "media_type_automation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "multi_creative_post_carousel": {
+        "enroll_status": "OPT_OUT"
+      },
+      "multi_photo_to_video": {
+        "enroll_status": "OPT_OUT"
+      },
+      "music_generation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "pac_genai_recomposition": {
+        "enroll_status": "OPT_OUT"
+      },
+      "pac_recomposition": {
+        "enroll_status": "OPT_OUT"
+      },
+      "pac_relaxation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "product_browsing": {
+        "enroll_status": "OPT_OUT"
+      },
+      "product_extensions": {
+        "enroll_status": "OPT_OUT"
+      },
+      "product_metadata_automation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "product_tags": {
+        "enroll_status": "OPT_OUT"
+      },
+      "profile_card": {
+        "enroll_status": "OPT_OUT"
+      },
+      "profile_extension": {
+        "enroll_status": "OPT_OUT"
+      },
+      "replace_media_text": {
+        "enroll_status": "OPT_OUT"
+      },
+      "reveal_details_over_time": {
+        "enroll_status": "OPT_OUT"
+      },
+      "show_destination_blurbs": {
+        "enroll_status": "OPT_OUT"
+      },
+      "show_summary": {
+        "enroll_status": "OPT_OUT"
+      },
+      "site_extensions": {
+        "enroll_status": "OPT_OUT"
+      },
+      "standard_enhancements_catalog": {
+        "enroll_status": "OPT_OUT"
+      },
+      "text_extraction_for_headline": {
+        "enroll_status": "OPT_OUT"
+      },
+      "text_extraction_for_tap_target": {
+        "enroll_status": "OPT_OUT"
+      },
+      "text_formatting_optimization": {
+        "enroll_status": "OPT_OUT"
+      },
+      "text_generation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "text_optimizations": {
+        "enroll_status": "OPT_OUT"
+      },
+      "text_overlay_translation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "text_translation": {
+        "enroll_status": "OPT_OUT"
+      },
+      "translate_voiceover": {
+        "enroll_status": "OPT_OUT"
+      },
+      "video_auto_crop": {
+        "enroll_status": "OPT_OUT"
+      },
+      "video_filtering": {
+        "enroll_status": "OPT_OUT"
+      },
+      "video_highlight": {
+        "enroll_status": "OPT_OUT"
+      },
+      "video_highlights": {
+        "enroll_status": "OPT_OUT"
+      },
+      "video_to_image": {
+        "enroll_status": "OPT_OUT"
+      },
+      "video_uncrop": {
+        "enroll_status": "OPT_OUT"
+      },
+      "video_uncrop_9x16_to_9x18": {
+        "enroll_status": "OPT_OUT"
+      },
+      "wa_mm_image_filtering": {
+        "enroll_status": "OPT_OUT"
+      },
+      "wa_mm_text_truncation_length": {
+        "enroll_status": "OPT_OUT"
+      }
+    }
+  }
+}

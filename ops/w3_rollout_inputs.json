@@ -1,0 +1,61 @@
+{
+  "me_delete": [
+    {
+      "id": "120250397506900233",
+      "name": "MELIAHOME_avatar-presenter_talking-head_VID45_SR_V1",
+      "spend": 71
+    },
+    {
+      "id": "120250397524670233",
+      "name": "FIRSTLINE_first-line-all-day_allday_VID45_EN_V1",
+      "spend": 37
+    }
+  ],
+  "pause_preview": {
+    "ME": {
+      "active": 47,
+      "tired_to_pause": 35,
+      "remain": 12
+    },
+    "SR": {
+      "active": 26,
+      "tired_to_pause": 15,
+      "remain": 11
+    },
+    "DECH": {
+      "active": 25,
+      "tired_to_pause": 15,
+      "remain": 10
+    },
+    "PL": {
+      "active": 26,
+      "tired_to_pause": 15,
+      "remain": 11
+    },
+    "AT": {
+      "active": 26,
+      "tired_to_pause": 15,
+      "remain": 11
+    },
+    "TR": {
+      "active": 20,
+      "tired_to_pause": 9,
+      "remain": 11
+    },
+    "UA": {
+      "active": 20,
+      "tired_to_pause": 9,
+      "remain": 11
+    },
+    "RTGB": {
+      "active": 41,
+      "tired_to_pause": 20,
+      "remain": 21
+    },
+    "RTGA": {
+      "active": 14,
+      "tired_to_pause": 0,
+      "remain": 14
+    }
+  }
+}

@@ -162,12 +162,44 @@
           "type": "video",
           "refresh": "2026-07-11",
           "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID916_PL_V1",
+          "ad_id": "120251135489970233",
+          "creative_id": "2623879451405370",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-b_VID916_PL_V1",
+          "ad_id": "120251135491600233",
+          "creative_id": "1407115147928425",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-c_VID916_PL_V1",
+          "ad_id": "120251135493470233",
+          "creative_id": "1061775839635768",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID45_PL_V1",
+          "ad_id": "120251135494410233",
+          "creative_id": "1389364169835337",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
         }
       ],
       "counts": {
-        "video": 20,
+        "video": 24,
         "image": 3,
-        "total": 23
+        "total": 27
       }
     },
     {
@@ -332,12 +364,44 @@
           "type": "video",
           "refresh": "2026-07-11",
           "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID916_DE_V1",
+          "ad_id": "120251135478930233",
+          "creative_id": "1344112090658156",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-b_VID916_DE_V1",
+          "ad_id": "120251135481440233",
+          "creative_id": "2130964431185148",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-c_VID916_DE_V1",
+          "ad_id": "120251135485360233",
+          "creative_id": "1697196404732305",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID45_DE_V1",
+          "ad_id": "120251135488000233",
+          "creative_id": "1001698786035188",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
         }
       ],
       "counts": {
-        "video": 20,
+        "video": 24,
         "image": 3,
-        "total": 23
+        "total": 27
       }
     },
     {
@@ -502,12 +566,44 @@
           "type": "video",
           "refresh": "2026-07-11",
           "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID916_SR_V1",
+          "ad_id": "120251135465900233",
+          "creative_id": "2132561081021127",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-b_VID916_SR_V1",
+          "ad_id": "120251135472130233",
+          "creative_id": "1393715115961865",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-c_VID916_SR_V1",
+          "ad_id": "120251135475560233",
+          "creative_id": "1042049161869592",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID45_SR_V1",
+          "ad_id": "120251135476860233",
+          "creative_id": "737854469422625",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
         }
       ],
       "counts": {
-        "video": 20,
+        "video": 24,
         "image": 3,
-        "total": 23
+        "total": 27
       }
     },
     {
@@ -1118,12 +1214,36 @@
           "type": "image",
           "refresh": "2026-07-11",
           "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_IMG45_SR_V1",
+          "ad_id": "120251135716110233",
+          "creative_id": "973404672407371",
+          "type": "image",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_IMG45_RU_V1",
+          "ad_id": "120251135716850233",
+          "creative_id": "1081625410873617",
+          "type": "image",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_IMG45_EN_V1",
+          "ad_id": "120251135717320233",
+          "creative_id": "1368952734569121",
+          "type": "image",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
         }
       ],
       "counts": {
         "video": 18,
-        "image": 15,
-        "total": 33
+        "image": 18,
+        "total": 36
       }
     },
     {
@@ -1424,12 +1544,44 @@
           "type": "video",
           "refresh": "2026-07-11",
           "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID916_DE_V1",
+          "ad_id": "120251135630060233",
+          "creative_id": "1316376997234158",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-b_VID916_DE_V1",
+          "ad_id": "120251135630880233",
+          "creative_id": "1559503019014039",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-c_VID916_DE_V1",
+          "ad_id": "120251135632180233",
+          "creative_id": "1358400059810889",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID45_DE_V1",
+          "ad_id": "120251135633380233",
+          "creative_id": "2107046246575541",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
         }
       ],
       "counts": {
-        "video": 20,
+        "video": 24,
         "image": 2,
-        "total": 22
+        "total": 26
       }
     },
     {
@@ -1550,12 +1702,44 @@
           "creative_id": "962443773491103",
           "type": "image",
           "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID916_TR_V1",
+          "ad_id": "120251135634630233",
+          "creative_id": "1374095381482208",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-b_VID916_TR_V1",
+          "ad_id": "120251135635250233",
+          "creative_id": "909679118269927",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-c_VID916_TR_V1",
+          "ad_id": "120251135636000233",
+          "creative_id": "1537130501477810",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID45_TR_V1",
+          "ad_id": "120251135637450233",
+          "creative_id": "1650793089944791",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
         }
       ],
       "counts": {
-        "video": 14,
+        "video": 18,
         "image": 2,
-        "total": 16
+        "total": 20
       }
     },
     {
@@ -1676,12 +1860,44 @@
           "creative_id": "1376073631098242",
           "type": "image",
           "status": "ACTIVE"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID916_UA_V1",
+          "ad_id": "120251135713230233",
+          "creative_id": "1008162958727885",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-b_VID916_UA_V1",
+          "ad_id": "120251135713650233",
+          "creative_id": "2120924348857495",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-c_VID916_UA_V1",
+          "ad_id": "120251135714290233",
+          "creative_id": "1048946637499797",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_VID45_UA_V1",
+          "ad_id": "120251135715390233",
+          "creative_id": "1411156274244048",
+          "type": "video",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
         }
       ],
       "counts": {
-        "video": 14,
+        "video": 18,
         "image": 2,
-        "total": 16
+        "total": 20
       }
     },
     {
@@ -1748,9 +1964,194 @@
           "name": "MELIAHOME_operator-trust_static_IMG45_PL_V1",
           "ad_id": "120251109223810233",
           "creative_id": "2076867926521010"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_IMG45_DE_V1",
+          "ad_id": "120251135789650233",
+          "creative_id": "1548525846735408",
+          "type": "image",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
+        },
+        {
+          "name": "INVEST_price-video-v3_hook-a_IMG45_PL_V1",
+          "ad_id": "120251135790460233",
+          "creative_id": "1061429383107529",
+          "type": "image",
+          "status": "PAUSED",
+          "batch": "v3-2026-07-28"
         }
       ],
       "launched": "2026-07-27"
+    },
+    {
+      "name": "MB_EXPO_IPS-DUBAI_REACH_202609",
+      "id": "120252041470810233",
+      "adset_id": "120252041472130233",
+      "batch": "ips-dubai-202609",
+      "objective": "OUTCOME_AWARENESS",
+      "adset_name": "AE-DUBAI_REACH_EXPO",
+      "daily_budget": 7000,
+      "end_time": "2026-09-06T23:59:00+04:00",
+      "geo": "AE/Dubai city 368 + resolved neighborhoods",
+      "ads": [
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_EN_E1",
+          "ad_id": "120252041473830233",
+          "creative_id": "1540898303923378",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_seasons_VID916_EN_E1",
+          "ad_id": "120252041474430233",
+          "creative_id": "1089833733736318",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_DE_E1",
+          "ad_id": "120252041475170233",
+          "creative_id": "2948263105519046",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_seasons_VID916_DE_E1",
+          "ad_id": "120252041475930233",
+          "creative_id": "1068895045925493",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_TR_E1",
+          "ad_id": "120252041477310233",
+          "creative_id": "1451283323496655",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_seasons_VID916_TR_E1",
+          "ad_id": "120252041478010233",
+          "creative_id": "2184984532234578",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_UA_E1",
+          "ad_id": "120252041479010233",
+          "creative_id": "1629404038904577",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_seasons_VID916_UA_E1",
+          "ad_id": "120252041479770233",
+          "creative_id": "1751954492780446",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_RU_E1",
+          "ad_id": "120252041480940233",
+          "creative_id": "1060151116720987",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_seasons_VID916_RU_E1",
+          "ad_id": "120252041481480233",
+          "creative_id": "1986734115356991",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        }
+      ],
+      "counts": {
+        "video": 10,
+        "image": 0,
+        "total": 10
+      },
+      "launched": {
+        "ts": "2026-09-02T00:10:23Z",
+        "activated_ads": 15
+      }
+    },
+    {
+      "name": "MB_EXPO_IPS-DUBAI_LEADS_202609",
+      "id": "120252041472500233",
+      "adset_id": "120252041473040233",
+      "batch": "ips-dubai-202609",
+      "objective": "OUTCOME_LEADS",
+      "adset_name": "AE-DUBAI_LEADS_EXPO",
+      "daily_budget": 3000,
+      "end_time": "2026-09-06T23:59:00+04:00",
+      "geo": "AE/Dubai city 368 + resolved neighborhoods",
+      "ads": [
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_EN_L1",
+          "ad_id": "120252041530170233",
+          "creative_id": "2476409296176476",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_DE_L1",
+          "ad_id": "120252041530680233",
+          "creative_id": "1205635795109279",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_TR_L1",
+          "ad_id": "120252041530820233",
+          "creative_id": "1499318235336152",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_UA_L1",
+          "ad_id": "120252041531310233",
+          "creative_id": "29143736178562720",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        },
+        {
+          "name": "EXPO_ips-dubai_keys_VID916_RU_L1",
+          "ad_id": "120252041531650233",
+          "creative_id": "1398496302249838",
+          "type": "video",
+          "status": "ACTIVE",
+          "batch": "ips-dubai-202609"
+        }
+      ],
+      "counts": {
+        "video": 5,
+        "image": 0,
+        "total": 5
+      },
+      "form_id": "976738438771399",
+      "form_ids": {
+        "EN": "976738438771399",
+        "RU": "1750430566285538"
+      },
+      "launched": {
+        "ts": "2026-09-02T00:10:23Z",
+        "activated_ads": 15
+      }
     }
   ],
   "dsa_source": "old DACH adset 120245381260240233 ('New Leads Ad Set', campaign 'Austria- Leads Campaign')",
