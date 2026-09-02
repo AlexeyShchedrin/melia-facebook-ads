@@ -265,6 +265,31 @@ class IgBoostState(Base):
     )
 
 
+class LeadgenFormQuestions(Base):
+    """Instant-form question definitions, cached per form_id (pipeline B).
+
+    Meta delivers a lead's answers as bare option KEYS (`budget_2`); the
+    question and option labels live only on the form object. Instant forms
+    are immutable once published, so one Graph read per form covers its
+    whole lifetime — the row makes label lookups survive worker restarts and
+    Graph hiccups (a restart inside a code=17 rate-limit burst must not ship
+    label-less answers to the CRM). See meta_ads.ingest.form_answers."""
+
+    __tablename__ = "leadgen_form_questions"
+    __table_args__ = ({"schema": SCHEMA},)
+
+    form_id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    # Page whose token read the form (multi-page). NULL = the primary Page.
+    page_id: Mapped[str | None] = mapped_column(String(64), nullable=True)
+    name: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    locale: Mapped[str | None] = mapped_column(String(16), nullable=True)
+    # Graph `questions` verbatim: [{key, label, type, options: [{key, value}]}]
+    questions: Mapped[list[dict[str, Any]]] = mapped_column(JSONB, nullable=False, default=list)
+    fetched_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), nullable=False
+    )
+
+
 class Alert(Base):
     __tablename__ = "alerts"
     __table_args__ = (

@@ -64,6 +64,19 @@ async def create_leadgen_form(
     return resp["id"]
 
 
+_FORM_QUESTION_FIELDS = "id,name,locale,status,questions"
+
+
+async def get_form_questions(form_id: str, page_id: str | None = None) -> dict[str, Any]:
+    """GET /{form_id}?fields=name,locale,questions — the form's question definitions.
+
+    A lead's field_data answers choice questions with the option KEY; the
+    question label and the option labels live only here. The token must belong
+    to the form's Page (multi-page); None = the primary Page."""
+    async with await GraphClient.for_provider(PAGE, page_id) as g:
+        return await g.get(form_id, params={"fields": _FORM_QUESTION_FIELDS})
+
+
 async def list_forms(page_id: str | None = None) -> list[dict[str, Any]]:
     """GET /{page_id}/leadgen_forms — enumerate forms (for the polling reconciler).
 

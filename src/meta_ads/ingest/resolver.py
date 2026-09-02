@@ -27,6 +27,7 @@ from meta_ads.channels.meta.leads import (
     resolve_lead,
 )
 from meta_ads.config import get_settings
+from meta_ads.ingest.form_answers import FormQuestionsCache, build_answers
 from meta_ads.security import sign_ingest
 
 logger = logging.getLogger(__name__)
@@ -35,6 +36,9 @@ logger = logging.getLogger(__name__)
 # the worker restarts on every deploy.
 _ad_names_cache: dict[str, dict[str, str]] = {}
 _form_name_cache: dict[str, str] = {}
+# Question definitions (the labels behind a lead's answers) — memo on top of
+# meta.leadgen_form_questions, see meta_ads.ingest.form_answers.
+_form_questions = FormQuestionsCache()
 
 # Single-flight key for the resolver (arbitrary, stable): "metald" in hex.
 _RESOLVE_LOCK_KEY = 0x6D6574616C64
@@ -68,16 +72,25 @@ async def build_crm_payload(
     raw: dict[str, Any],
     form_id_hint: str | None = None,
     page_id: str | None = None,
+    session: AsyncSession | None = None,
 ) -> dict[str, Any]:
     """Graph lead object -> the CRM ingest contract.
 
     The single place the payload is shaped: the live resolver and the lead_poll
     reconciler both go through here, so a recovered lead is byte-identical to a
     webhook-delivered one.
+
+    `fields` is the flat field_data map the CRM reads identity from; `answers`
+    is the same data for everything that is NOT identity, labeled against the
+    form's questions (meta_ads.ingest.form_answers) so the CRM can show the
+    manager what the visitor picked rather than `budget_2`. `session` lets the
+    label cache read/write meta.leadgen_form_questions; without it (tests,
+    ad-hoc calls) labels come from the memo or a direct Graph read.
     """
     form_id = raw.get("form_id") or form_id_hint
     names = await _names_for(raw.get("ad_id"), form_id, page_id)
-    return {
+    fields = field_data_to_map(raw.get("field_data", []))
+    payload: dict[str, Any] = {
         "leadgen_id": leadgen_id,
         "form_id": form_id,
         "created_time": raw.get("created_time"),
@@ -87,8 +100,13 @@ async def build_crm_payload(
         "platform": raw.get("platform"),
         "is_organic": raw.get("is_organic"),
         **names,  # campaign_name / adset_name / ad_name / form_name
-        "fields": field_data_to_map(raw.get("field_data", [])),
+        "fields": fields,
     }
+    questions = await _form_questions.get(session, form_id, page_id) if form_id else None
+    answers = build_answers(fields, questions)
+    if answers:
+        payload["answers"] = answers
+    return payload
 
 
 @dataclass
@@ -192,7 +210,7 @@ class InboundResolver:
         item = _Inbound(id=0, leadgen_id=leadgen_id, form_id=form_id, page_id=page_id)
         try:
             lead = raw if raw is not None else await resolve_lead(leadgen_id, page_id)
-            payload = await build_crm_payload(leadgen_id, lead, form_id, page_id)
+            payload = await build_crm_payload(leadgen_id, lead, form_id, page_id, session=session)
             crm_lead_id = await self._post_to_crm(payload)
             await self._record(session, item, crm_lead_id=crm_lead_id, error=None)
             return True
