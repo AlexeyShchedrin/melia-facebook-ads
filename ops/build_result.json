@@ -274,13 +274,842 @@
           "type": "image",
           "status": "ACTIVE",
           "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litA_IMG45_PL_W4",
+          "ad_id": "120252280754910233",
+          "creative_id": "28691502043794619",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litB_IMG45_PL_W4",
+          "ad_id": "120252280758490233",
+          "creative_id": "1854031972429116",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litC_IMG45_PL_W4",
+          "ad_id": "120252280758650233",
+          "creative_id": "1412491907506709",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardA_IMG45_PL_W4",
+          "ad_id": "120252280764140233",
+          "creative_id": "903460932639893",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardB_IMG45_PL_W4",
+          "ad_id": "120252280764420233",
+          "creative_id": "1429420169038880",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardC_IMG45_PL_W4",
+          "ad_id": "120252280777040233",
+          "creative_id": "1397160685933691",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardE_IMG45_PL_W4",
+          "ad_id": "120252280783050233",
+          "creative_id": "1815319282799789",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardF_IMG45_PL_W4",
+          "ad_id": "120252280783460233",
+          "creative_id": "3679249002226689",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardG_IMG45_PL_W4",
+          "ad_id": "120252280787610233",
+          "creative_id": "27669464786062274",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-hotel154_IMG45_PL_W4",
+          "ad_id": "120252280791180233",
+          "creative_id": "1038648249198800",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-lobbybar_IMG45_PL_W4",
+          "ad_id": "120252280791430233",
+          "creative_id": "1694016141673850",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_static-bigstat_IMG45_PL_W4",
+          "ad_id": "120252280794800233",
+          "creative_id": "1944465233177579",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_static-cup_IMG45_PL_W4",
+          "ad_id": "120252280795150233",
+          "creative_id": "1422391956655097",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-1br_CAR45_PL_W4",
+          "ad_id": "120252280799330233",
+          "creative_id": "1788739545771777",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_car-2br_CAR45_PL_W4",
+          "ad_id": "120252280799670233",
+          "creative_id": "1436436365130535",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-plans_CAR45_PL_W4",
+          "ad_id": "120252280803090233",
+          "creative_id": "1104290835349669",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_car-details_CAR45_PL_W4",
+          "ad_id": "120252281285860233",
+          "creative_id": "1078971531445279",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_flipbook_VID916_PL_W4",
+          "ad_id": "120252281692950233",
+          "creative_id": "1595889375561091",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID916_PL_W4",
+          "ad_id": "120252281693400233",
+          "creative_id": "1777869203248687",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID916_PL_W4",
+          "ad_id": "120252281694070233",
+          "creative_id": "966249095734540",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID916_PL_W4",
+          "ad_id": "120252281705040233",
+          "creative_id": "1847309636644978",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID916_PL_W4",
+          "ad_id": "120252281707460233",
+          "creative_id": "28516451724662716",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_alt0_VID916_PL_W4",
+          "ad_id": "120252281708560233",
+          "creative_id": "1096631899470782",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID916_PL_W4",
+          "ad_id": "120252281708730233",
+          "creative_id": "1392508309068126",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID916_PL_W4",
+          "ad_id": "120252281709000233",
+          "creative_id": "1097590006082193",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID916_PL_W4",
+          "ad_id": "120252281710710233",
+          "creative_id": "1366649641878840",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID916_PL_W4",
+          "ad_id": "120252281721440233",
+          "creative_id": "2184811932107737",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID916_PL_W4",
+          "ad_id": "120252281722060233",
+          "creative_id": "1862194728410560",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID916_PL_W4",
+          "ad_id": "120252281722640233",
+          "creative_id": "1025563613869059",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID916_PL_W4",
+          "ad_id": "120252281723010233",
+          "creative_id": "961284557058410",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-two-prices_twoprices_VID916_PL_W4",
+          "ad_id": "120252281723660233",
+          "creative_id": "1059481760193859",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_alt0_VID916_PL_W4",
+          "ad_id": "120252281724440233",
+          "creative_id": "2593272787789826",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-date_VID916_PL_W4",
+          "ad_id": "120252281738630233",
+          "creative_id": "1451561246305536",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-sept_VID916_PL_W4",
+          "ad_id": "120252281739890233",
+          "creative_id": "1392430369121822",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_vo_VID916_PL_W4",
+          "ad_id": "120252281741210233",
+          "creative_id": "26619671394397550",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID916_PL_W4",
+          "ad_id": "120252281763230233",
+          "creative_id": "3176808802530066",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_hook-yours_VID916_PL_W4",
+          "ad_id": "120252281763690233",
+          "creative_id": "2061765537766596",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID916_PL_W4",
+          "ad_id": "120252281766750233",
+          "creative_id": "913973421485819",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID916_PL_W4",
+          "ad_id": "120252281789110233",
+          "creative_id": "2540341559763981",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID916_PL_W4",
+          "ad_id": "120252281789850233",
+          "creative_id": "1242469244706987",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID916_PL_W4",
+          "ad_id": "120252281791000233",
+          "creative_id": "2306567800175416",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID916_PL_W4",
+          "ad_id": "120252281791470233",
+          "creative_id": "1103292245885418",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_alt0_VID916_PL_W4",
+          "ad_id": "120252281801890233",
+          "creative_id": "923690073722096",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_alt0_VID916_PL_W4",
+          "ad_id": "120252281802180233",
+          "creative_id": "1063149506518096",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_sep21_VID916_PL_W4",
+          "ad_id": "120252281802830233",
+          "creative_id": "1111523078506225",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID916_PL_W4",
+          "ad_id": "120252281812460233",
+          "creative_id": "957739800681561",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID916_PL_W4",
+          "ad_id": "120252281812790233",
+          "creative_id": "2359627484775733",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-before-dec31_dec31_VID916_PL_W4",
+          "ad_id": "120252281812930233",
+          "creative_id": "1351718383700821",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-runs-the-rest_runs_VID916_PL_W4",
+          "ad_id": "120252281814660233",
+          "creative_id": "1782749496301350",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID45_PL_W4",
+          "ad_id": "120252282724310233",
+          "creative_id": "1114072201575518",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID45_PL_W4",
+          "ad_id": "120252282724590233",
+          "creative_id": "4647768372170770",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID45_PL_W4",
+          "ad_id": "120252282727240233",
+          "creative_id": "1046179498283380",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID45_PL_W4",
+          "ad_id": "120252282741280233",
+          "creative_id": "977096878768780",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_alt0_VID45_PL_W4",
+          "ad_id": "120252282753340233",
+          "creative_id": "1622821096126271",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID45_PL_W4",
+          "ad_id": "120252282753730233",
+          "creative_id": "1430410575675443",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID45_PL_W4",
+          "ad_id": "120252282753930233",
+          "creative_id": "1770642017531845",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID45_PL_W4",
+          "ad_id": "120252282758860233",
+          "creative_id": "2044172816268776",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID45_PL_W4",
+          "ad_id": "120252282759400233",
+          "creative_id": "1143968747965073",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID45_PL_W4",
+          "ad_id": "120252282765500233",
+          "creative_id": "1638327427900635",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID45_PL_W4",
+          "ad_id": "120252282765730233",
+          "creative_id": "1647615833595993",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID45_PL_W4",
+          "ad_id": "120252282771980233",
+          "creative_id": "944886472030887",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-two-prices_twoprices_VID45_PL_W4",
+          "ad_id": "120252282772380233",
+          "creative_id": "1086948850481381",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278951570233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_alt0_VID45_PL_W4",
+          "ad_id": "120252282788340233",
+          "creative_id": "1057938643681490",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-date_VID45_PL_W4",
+          "ad_id": "120252282799830233",
+          "creative_id": "1095871652942442",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-sept_VID45_PL_W4",
+          "ad_id": "120252282800410233",
+          "creative_id": "1597344148590063",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_vo_VID45_PL_W4",
+          "ad_id": "120252282812830233",
+          "creative_id": "4369091826687131",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID45_PL_W4",
+          "ad_id": "120252282821970233",
+          "creative_id": "1334121416449623",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_hook-yours_VID45_PL_W4",
+          "ad_id": "120252282827630233",
+          "creative_id": "1775062713544831",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID45_PL_W4",
+          "ad_id": "120252282827720233",
+          "creative_id": "2597180847397275",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID45_PL_W4",
+          "ad_id": "120252282828550233",
+          "creative_id": "2894265630950560",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID45_PL_W4",
+          "ad_id": "120252282836040233",
+          "creative_id": "1027287673679702",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID45_PL_W4",
+          "ad_id": "120252282846140233",
+          "creative_id": "1562154611846630",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID45_PL_W4",
+          "ad_id": "120252282854200233",
+          "creative_id": "2115413169103772",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_alt0_VID45_PL_W4",
+          "ad_id": "120252282855010233",
+          "creative_id": "1463143169349384",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_alt0_VID45_PL_W4",
+          "ad_id": "120252282864420233",
+          "creative_id": "996246763487557",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_sep21_VID45_PL_W4",
+          "ad_id": "120252282873200233",
+          "creative_id": "1097703582616262",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID45_PL_W4",
+          "ad_id": "120252282874000233",
+          "creative_id": "1631954715149073",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID45_PL_W4",
+          "ad_id": "120252282883690233",
+          "creative_id": "931829389994814",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-before-dec31_dec31_VID45_PL_W4",
+          "ad_id": "120252282884480233",
+          "creative_id": "1891358951825885",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-runs-the-rest_runs_VID45_PL_W4",
+          "ad_id": "120252282884920233",
+          "creative_id": "2856239731426752",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952000233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
         }
       ],
       "counts": {
-        "video": 31,
-        "image": 6,
-        "total": 37
-      }
+        "video": 94,
+        "image": 23,
+        "total": 117
+      },
+      "w4_adsets": [
+        {
+          "name": "PL_BROAD-W4A_AUTO_ADV",
+          "id": "120252278951570233",
+          "slot": "W4A",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250397100510233",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PL_BROAD-W4B_AUTO_ADV",
+          "id": "120252278952000233",
+          "slot": "W4B",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250397100510233",
+          "batch": "w4-2026-09-17-ALL"
+        }
+      ],
+      "w4_form_ids": {
+        "W4_PL_default": "1103999115355975",
+        "W4_PL_instalment": "1741073930445465"
+      },
+      "batches": [
+        "v3-2026-07-28",
+        "w3-2026-09-01",
+        "w4-2026-09-17-ALL"
+      ]
     },
     {
       "name": "MB_LEADS_DE_MIX_202607",
@@ -556,13 +1385,792 @@
           "type": "image",
           "status": "ACTIVE",
           "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_static-cup_IMG45_DE_W4",
+          "ad_id": "120252280548450233",
+          "creative_id": "1067891952652366",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-hotel154_IMG45_DE_W4",
+          "ad_id": "120252280549460233",
+          "creative_id": "4711267305864867",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-lobbybar_IMG45_DE_W4",
+          "ad_id": "120252280587350233",
+          "creative_id": "1600003181564133",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_static-bigstat_IMG45_DE_W4",
+          "ad_id": "120252280587810233",
+          "creative_id": "830479186789682",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_car-2br_CAR45_DE_W4",
+          "ad_id": "120252280606690233",
+          "creative_id": "1816072389734790",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-plans_CAR45_DE_W4",
+          "ad_id": "120252280613540233",
+          "creative_id": "1625667719234548",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litA_IMG45_DE_W4",
+          "ad_id": "120252280613880233",
+          "creative_id": "1047944644730465",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litA2_IMG45_DE_W4",
+          "ad_id": "120252280620090233",
+          "creative_id": "1632362905182031",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litD_IMG45_DE_W4",
+          "ad_id": "120252280635030233",
+          "creative_id": "2448026615728129",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardA_IMG45_DE_W4",
+          "ad_id": "120252280650830233",
+          "creative_id": "1112788991091947",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardD_IMG45_DE_W4",
+          "ad_id": "120252280652960233",
+          "creative_id": "1416857547051095",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardE_IMG45_DE_W4",
+          "ad_id": "120252280695710233",
+          "creative_id": "1400637284914660",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardG_IMG45_DE_W4",
+          "ad_id": "120252280695910233",
+          "creative_id": "1606031724385723",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-1br_CAR45_DE_W4",
+          "ad_id": "120252280701770233",
+          "creative_id": "1865606464815910",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_alt0_VID916_DE_W4",
+          "ad_id": "120252281323510233",
+          "creative_id": "1021658344259805",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-date_VID916_DE_W4",
+          "ad_id": "120252281323880233",
+          "creative_id": "4711779912412818",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-sept_VID916_DE_W4",
+          "ad_id": "120252281324900233",
+          "creative_id": "945038278077997",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_vo_VID916_DE_W4",
+          "ad_id": "120252281333680233",
+          "creative_id": "1465797992369866",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID916_DE_W4",
+          "ad_id": "120252281334490233",
+          "creative_id": "1057462580406357",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID916_DE_W4",
+          "ad_id": "120252281357080233",
+          "creative_id": "1707324543676983",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID916_DE_W4",
+          "ad_id": "120252281357400233",
+          "creative_id": "1800607204468178",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID916_DE_W4",
+          "ad_id": "120252281369100233",
+          "creative_id": "1011240271972471",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID916_DE_W4",
+          "ad_id": "120252281370980233",
+          "creative_id": "1067080002583542",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_alt0_VID916_DE_W4",
+          "ad_id": "120252281379730233",
+          "creative_id": "1127752826433979",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_alt0_VID916_DE_W4",
+          "ad_id": "120252281380740233",
+          "creative_id": "2574146849732095",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_sep21_VID916_DE_W4",
+          "ad_id": "120252281381800233",
+          "creative_id": "1103178395977764",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID916_DE_W4",
+          "ad_id": "120252281389430233",
+          "creative_id": "1376282180881589",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID916_DE_W4",
+          "ad_id": "120252281399080233",
+          "creative_id": "39473821438871743",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-before-dec31_dec31_VID916_DE_W4",
+          "ad_id": "120252281400010233",
+          "creative_id": "1759031748712812",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-two-prices_twoprices_VID916_DE_W4",
+          "ad_id": "120252281401110233",
+          "creative_id": "1768203347843784",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_car-details_CAR45_DE_W4",
+          "ad_id": "120252281285100233",
+          "creative_id": "1036799549397746",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID916_DE_W4",
+          "ad_id": "120252281411090233",
+          "creative_id": "2082146133177555",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_hook-yours_VID916_DE_W4",
+          "ad_id": "120252281411460233",
+          "creative_id": "1351346743447559",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID916_DE_W4",
+          "ad_id": "120252281411680233",
+          "creative_id": "1530913272402655",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID916_DE_W4",
+          "ad_id": "120252281422020233",
+          "creative_id": "1965461564139727",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID916_DE_W4",
+          "ad_id": "120252281422650233",
+          "creative_id": "2084660112414455",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID916_DE_W4",
+          "ad_id": "120252281433560233",
+          "creative_id": "1011091725323712",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_alt0_VID916_DE_W4",
+          "ad_id": "120252281433930233",
+          "creative_id": "2324016938136970",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID916_DE_W4",
+          "ad_id": "120252281443880233",
+          "creative_id": "1051350347685448",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID916_DE_W4",
+          "ad_id": "120252281444480233",
+          "creative_id": "2249260282588324",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID916_DE_W4",
+          "ad_id": "120252281472040233",
+          "creative_id": "1432382789026152",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID916_DE_W4",
+          "ad_id": "120252281475790233",
+          "creative_id": "1386517619724196",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID916_DE_W4",
+          "ad_id": "120252281478480233",
+          "creative_id": "1082367247529351",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID916_DE_W4",
+          "ad_id": "120252281508830233",
+          "creative_id": "929548186466547",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID916_DE_W4",
+          "ad_id": "120252281518370233",
+          "creative_id": "1704129097795979",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_alt0_VID45_DE_W4",
+          "ad_id": "120252282405650233",
+          "creative_id": "1578327987319866",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-date_VID45_DE_W4",
+          "ad_id": "120252282407980233",
+          "creative_id": "2274242970036160",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-sept_VID45_DE_W4",
+          "ad_id": "120252282433780233",
+          "creative_id": "28517885677844467",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_vo_VID45_DE_W4",
+          "ad_id": "120252282434440233",
+          "creative_id": "1426543242690531",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID45_DE_W4",
+          "ad_id": "120252282450980233",
+          "creative_id": "1609553757215575",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID45_DE_W4",
+          "ad_id": "120252282451700233",
+          "creative_id": "1977727356253925",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID45_DE_W4",
+          "ad_id": "120252282452440233",
+          "creative_id": "1630959731919504",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID45_DE_W4",
+          "ad_id": "120252282465280233",
+          "creative_id": "1092358153238093",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID45_DE_W4",
+          "ad_id": "120252282465810233",
+          "creative_id": "1847454539551665",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_alt0_VID45_DE_W4",
+          "ad_id": "120252282483310233",
+          "creative_id": "1079678951694361",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_alt0_VID45_DE_W4",
+          "ad_id": "120252282491060233",
+          "creative_id": "2334314223771947",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_sep21_VID45_DE_W4",
+          "ad_id": "120252282539010233",
+          "creative_id": "1081100314631255",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID45_DE_W4",
+          "ad_id": "120252282540020233",
+          "creative_id": "2012131082831351",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID45_DE_W4",
+          "ad_id": "120252282555860233",
+          "creative_id": "2220583858720182",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-before-dec31_dec31_VID45_DE_W4",
+          "ad_id": "120252282556480233",
+          "creative_id": "1868737614503062",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-two-prices_twoprices_VID45_DE_W4",
+          "ad_id": "120252282573270233",
+          "creative_id": "2041968683119817",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949750233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID45_DE_W4",
+          "ad_id": "120252282573850233",
+          "creative_id": "2072073016744531",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_hook-yours_VID45_DE_W4",
+          "ad_id": "120252282574620233",
+          "creative_id": "1821465645515676",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID45_DE_W4",
+          "ad_id": "120252282582160233",
+          "creative_id": "5030668583826428",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID45_DE_W4",
+          "ad_id": "120252282582790233",
+          "creative_id": "1272494091621641",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID45_DE_W4",
+          "ad_id": "120252282583070233",
+          "creative_id": "27570703002603491",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID45_DE_W4",
+          "ad_id": "120252282599100233",
+          "creative_id": "1760309168537819",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_alt0_VID45_DE_W4",
+          "ad_id": "120252282601260233",
+          "creative_id": "1013672335024176",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID45_DE_W4",
+          "ad_id": "120252282618650233",
+          "creative_id": "28441518765505006",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID45_DE_W4",
+          "ad_id": "120252282618860233",
+          "creative_id": "1798282534527260",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID45_DE_W4",
+          "ad_id": "120252282619240233",
+          "creative_id": "3432002620316081",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID45_DE_W4",
+          "ad_id": "120252282619910233",
+          "creative_id": "1333022472243081",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID45_DE_W4",
+          "ad_id": "120252282629040233",
+          "creative_id": "2047025615933935",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID45_DE_W4",
+          "ad_id": "120252282629270233",
+          "creative_id": "946109617956538",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID45_DE_W4",
+          "ad_id": "120252282636230233",
+          "creative_id": "2055247361802939",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950310233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
         }
       ],
       "counts": {
-        "video": 31,
-        "image": 6,
-        "total": 37
-      }
+        "video": 91,
+        "image": 21,
+        "total": 112
+      },
+      "w4_adsets": [
+        {
+          "name": "DE-CH_BROAD-W4A_AUTO_ADV",
+          "id": "120252278949750233",
+          "slot": "W4A",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250397193830233",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "DE-CH_BROAD-W4B_AUTO_ADV",
+          "id": "120252278950310233",
+          "slot": "W4B",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250397193830233",
+          "batch": "w4-2026-09-17-ALL"
+        }
+      ],
+      "w4_form_ids": {
+        "W4_DE_default": "4604085466547562",
+        "W4_DE_instalment": "1107392061800097"
+      },
+      "batches": [
+        "v3-2026-07-28",
+        "w3-2026-09-01",
+        "w4-2026-09-17-ALL"
+      ]
     },
     {
       "name": "MB_LEADS_SR_MIX_202607",
@@ -838,13 +2446,822 @@
           "type": "image",
           "status": "ACTIVE",
           "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litA_IMG45_SR_W4",
+          "ad_id": "120252280453620233",
+          "creative_id": "27998486366489688",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litA2_IMG45_SR_W4",
+          "ad_id": "120252280454200233",
+          "creative_id": "887213111138035",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litB_IMG45_SR_W4",
+          "ad_id": "120252280459230233",
+          "creative_id": "1057079410451899",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litC_IMG45_SR_W4",
+          "ad_id": "120252280459590233",
+          "creative_id": "2172847700309454",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litD_IMG45_SR_W4",
+          "ad_id": "120252280464710233",
+          "creative_id": "946178025203532",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardA_IMG45_SR_W4",
+          "ad_id": "120252280465690233",
+          "creative_id": "3233146806882148",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardB_IMG45_SR_W4",
+          "ad_id": "120252280472630233",
+          "creative_id": "1564344211527709",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardC_IMG45_SR_W4",
+          "ad_id": "120252280480610233",
+          "creative_id": "1451477820242288",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardD_IMG45_SR_W4",
+          "ad_id": "120252280485180233",
+          "creative_id": "1463918505554443",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardF_IMG45_SR_W4",
+          "ad_id": "120252280497560233",
+          "creative_id": "1104418185606553",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardG_IMG45_SR_W4",
+          "ad_id": "120252280498190233",
+          "creative_id": "1399386065593692",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-hotel154_IMG45_SR_W4",
+          "ad_id": "120252280509870233",
+          "creative_id": "27283544541322335",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-lobbybar_IMG45_SR_W4",
+          "ad_id": "120252280510980233",
+          "creative_id": "1400782852026931",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_static-cup_IMG45_SR_W4",
+          "ad_id": "120252280527390233",
+          "creative_id": "1795332255238004",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_static-bigstat_IMG45_SR_W4",
+          "ad_id": "120252280536010233",
+          "creative_id": "4525428551027891",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-plans_CAR45_SR_W4",
+          "ad_id": "120252280540350233",
+          "creative_id": "1076728835269053",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-1br_CAR45_SR_W4",
+          "ad_id": "120252281055370233",
+          "creative_id": "3428195764027015",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_car-2br_CAR45_SR_W4",
+          "ad_id": "120252281062140233",
+          "creative_id": "1268448545374798",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_car-details_CAR45_SR_W4",
+          "ad_id": "120252281284830233",
+          "creative_id": "1896132234708611",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_flipbook_VID916_SR_W4",
+          "ad_id": "120252281291390233",
+          "creative_id": "1116963697669815",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID916_SR_W4",
+          "ad_id": "120252281292680233",
+          "creative_id": "1086558080751695",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID916_SR_W4",
+          "ad_id": "120252281293880233",
+          "creative_id": "1397880025655816",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID916_SR_W4",
+          "ad_id": "120252281294330233",
+          "creative_id": "1613797640150709",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID916_SR_W4",
+          "ad_id": "120252281294790233",
+          "creative_id": "1505739051419297",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID916_SR_W4",
+          "ad_id": "120252281295570233",
+          "creative_id": "1448430067099208",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_alt0_VID916_SR_W4",
+          "ad_id": "120252281296310233",
+          "creative_id": "1742887810733404",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID916_SR_W4",
+          "ad_id": "120252281296590233",
+          "creative_id": "1970093843661331",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID916_SR_W4",
+          "ad_id": "120252281297260233",
+          "creative_id": "1624471722631309",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID916_SR_W4",
+          "ad_id": "120252281298610233",
+          "creative_id": "3816254388526737",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID916_SR_W4",
+          "ad_id": "120252281300790233",
+          "creative_id": "966029463185169",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID916_SR_W4",
+          "ad_id": "120252281307680233",
+          "creative_id": "1808420736821111",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_alt0_VID916_SR_W4",
+          "ad_id": "120252281308710233",
+          "creative_id": "2632171960587740",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-date_VID916_SR_W4",
+          "ad_id": "120252281309890233",
+          "creative_id": "1113578901009137",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-sept_VID916_SR_W4",
+          "ad_id": "120252281310670233",
+          "creative_id": "4585443991721999",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_silent_VID916_SR_W4",
+          "ad_id": "120252281311360233",
+          "creative_id": "1098386899333780",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID916_SR_W4",
+          "ad_id": "120252281311830233",
+          "creative_id": "1821675872267303",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_hook-yours_VID916_SR_W4",
+          "ad_id": "120252281312380233",
+          "creative_id": "912301591691641",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID916_SR_W4",
+          "ad_id": "120252281313520233",
+          "creative_id": "1078333057934927",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-kljucevi_alt0_VID916_SR_W4",
+          "ad_id": "120252281314410233",
+          "creative_id": "1047633304565966",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-kljucevi_neutral_VID916_SR_W4",
+          "ad_id": "120252281315370233",
+          "creative_id": "2176226723242610",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-kljucevi_drive_VID916_SR_W4",
+          "ad_id": "120252281316320233",
+          "creative_id": "1387439516848328",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID916_SR_W4",
+          "ad_id": "120252281316900233",
+          "creative_id": "4372762926319614",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID916_SR_W4",
+          "ad_id": "120252281318070233",
+          "creative_id": "1060572763512044",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID916_SR_W4",
+          "ad_id": "120252281318850233",
+          "creative_id": "1787380148963323",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_alt0_VID916_SR_W4",
+          "ad_id": "120252281319860233",
+          "creative_id": "1404393707718953",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID916_SR_W4",
+          "ad_id": "120252281320580233",
+          "creative_id": "1070829822240344",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID916_SR_W4",
+          "ad_id": "120252281321110233",
+          "creative_id": "1100319815703193",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID916_SR_W4",
+          "ad_id": "120252281321790233",
+          "creative_id": "1439484531372777",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID916_SR_W4",
+          "ad_id": "120252281322540233",
+          "creative_id": "2164664114448195",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID45_SR_W4",
+          "ad_id": "120252282372360233",
+          "creative_id": "1095704329481384",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID45_SR_W4",
+          "ad_id": "120252282372670233",
+          "creative_id": "2197619094298032",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID45_SR_W4",
+          "ad_id": "120252282373000233",
+          "creative_id": "2133283327395165",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID45_SR_W4",
+          "ad_id": "120252282373160233",
+          "creative_id": "2086742085264529",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID45_SR_W4",
+          "ad_id": "120252282373400233",
+          "creative_id": "4439689996346195",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_alt0_VID45_SR_W4",
+          "ad_id": "120252282374040233",
+          "creative_id": "1068341499146230",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID45_SR_W4",
+          "ad_id": "120252282374270233",
+          "creative_id": "921868173937607",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID45_SR_W4",
+          "ad_id": "120252282374780233",
+          "creative_id": "2854266141626051",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID45_SR_W4",
+          "ad_id": "120252282375120233",
+          "creative_id": "1895273878547048",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID45_SR_W4",
+          "ad_id": "120252282375970233",
+          "creative_id": "1015640398164310",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID45_SR_W4",
+          "ad_id": "120252282377220233",
+          "creative_id": "2470293606825731",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278948590233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_alt0_VID45_SR_W4",
+          "ad_id": "120252282377510233",
+          "creative_id": "1362166425670948",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-date_VID45_SR_W4",
+          "ad_id": "120252282378240233",
+          "creative_id": "1440260344656242",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-sept_VID45_SR_W4",
+          "ad_id": "120252282379520233",
+          "creative_id": "1373519631607683",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_silent_VID45_SR_W4",
+          "ad_id": "120252282380030233",
+          "creative_id": "2872014949836736",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID45_SR_W4",
+          "ad_id": "120252282380430233",
+          "creative_id": "1116082654275921",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_hook-yours_VID45_SR_W4",
+          "ad_id": "120252282380800233",
+          "creative_id": "2189603564935412",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID45_SR_W4",
+          "ad_id": "120252282382280233",
+          "creative_id": "1756299805678829",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-kljucevi_alt0_VID45_SR_W4",
+          "ad_id": "120252282383070233",
+          "creative_id": "1408712757259217",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-kljucevi_neutral_VID45_SR_W4",
+          "ad_id": "120252282383790233",
+          "creative_id": "1781282232921596",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-kljucevi_drive_VID45_SR_W4",
+          "ad_id": "120252282384910233",
+          "creative_id": "2592455014604869",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID45_SR_W4",
+          "ad_id": "120252282385880233",
+          "creative_id": "1091930436951996",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID45_SR_W4",
+          "ad_id": "120252282386420233",
+          "creative_id": "1726544138634818",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID45_SR_W4",
+          "ad_id": "120252282386990233",
+          "creative_id": "4763594437253354",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_alt0_VID45_SR_W4",
+          "ad_id": "120252282387660233",
+          "creative_id": "2056527404997643",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID45_SR_W4",
+          "ad_id": "120252282388010233",
+          "creative_id": "1636235414558712",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID45_SR_W4",
+          "ad_id": "120252282388770233",
+          "creative_id": "1079940911308806",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID45_SR_W4",
+          "ad_id": "120252282389900233",
+          "creative_id": "4626042344292005",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID45_SR_W4",
+          "ad_id": "120252282404120233",
+          "creative_id": "1791473878662328",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278949120233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
         }
       ],
       "counts": {
-        "video": 31,
-        "image": 6,
-        "total": 37
-      }
+        "video": 90,
+        "image": 25,
+        "total": 115
+      },
+      "w4_adsets": [
+        {
+          "name": "RS-BA_BROAD-W4A_AUTO_ADV",
+          "id": "120252278948590233",
+          "slot": "W4A",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250397397660233",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "RS-BA_BROAD-W4B_AUTO_ADV",
+          "id": "120252278949120233",
+          "slot": "W4B",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250397397660233",
+          "batch": "w4-2026-09-17-ALL"
+        }
+      ],
+      "w4_form_ids": {
+        "W4_SR_default": "1799272301494339",
+        "W4_SR_instalment": "1405363841737532"
+      },
+      "batches": [
+        "v3-2026-07-28",
+        "w3-2026-09-01",
+        "w4-2026-09-17-ALL"
+      ]
     },
     {
       "name": "MB_LEADS_ME_MIX_202607",
@@ -2000,13 +4417,503 @@
           "type": "image",
           "status": "ACTIVE",
           "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litA_IMG45_DE_AT_W4",
+          "ad_id": "120252280702090233",
+          "creative_id": "1778313673585321",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litA2_IMG45_DE_AT_W4",
+          "ad_id": "120252280709060233",
+          "creative_id": "1822547482528261",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litD_IMG45_DE_AT_W4",
+          "ad_id": "120252280709420233",
+          "creative_id": "1100591429375922",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardA_IMG45_DE_AT_W4",
+          "ad_id": "120252280715970233",
+          "creative_id": "2338201393696487",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardD_IMG45_DE_AT_W4",
+          "ad_id": "120252280716210233",
+          "creative_id": "1055317977410835",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardE_IMG45_DE_AT_W4",
+          "ad_id": "120252280716490233",
+          "creative_id": "1615608309919759",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardG_IMG45_DE_AT_W4",
+          "ad_id": "120252280716990233",
+          "creative_id": "1074033488670015",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-hotel154_IMG45_DE_AT_W4",
+          "ad_id": "120252280717160233",
+          "creative_id": "29026224176975390",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-lobbybar_IMG45_DE_AT_W4",
+          "ad_id": "120252280726980233",
+          "creative_id": "2125603068045809",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_static-cup_IMG45_DE_AT_W4",
+          "ad_id": "120252280727430233",
+          "creative_id": "1922125835838991",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_static-bigstat_IMG45_DE_AT_W4",
+          "ad_id": "120252280746060233",
+          "creative_id": "1866911954276265",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-1br_CAR45_DE_AT_W4",
+          "ad_id": "120252280750390233",
+          "creative_id": "1006455399069047",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_car-2br_CAR45_DE_AT_W4",
+          "ad_id": "120252280750510233",
+          "creative_id": "1813505653339238",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-plans_CAR45_DE_AT_W4",
+          "ad_id": "120252280754640233",
+          "creative_id": "1013072488169872",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_car-details_CAR45_DE_AT_W4",
+          "ad_id": "120252281285380233",
+          "creative_id": "1036799549397746",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID916_DE_AT_W4",
+          "ad_id": "120252281560590233",
+          "creative_id": "1582353406970226",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID916_DE_AT_W4",
+          "ad_id": "120252281568090233",
+          "creative_id": "1075417095381798",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID916_DE_AT_W4",
+          "ad_id": "120252281568380233",
+          "creative_id": "1992586294754533",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID916_DE_AT_W4",
+          "ad_id": "120252281582510233",
+          "creative_id": "1704039821436751",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_vo_VID916_DE_AT_W4",
+          "ad_id": "120252281582900233",
+          "creative_id": "38550407571271680",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID916_DE_AT_W4",
+          "ad_id": "120252281592030233",
+          "creative_id": "1755834255681045",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID916_DE_AT_W4",
+          "ad_id": "120252281598980233",
+          "creative_id": "1410321071235244",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID916_DE_AT_W4",
+          "ad_id": "120252281605270233",
+          "creative_id": "1379083164299161",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-before-dec31_dec31_VID916_DE_AT_W4",
+          "ad_id": "120252281605950233",
+          "creative_id": "2163683017883830",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID916_DE_AT_W4",
+          "ad_id": "120252281650990233",
+          "creative_id": "1120778220608061",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID916_DE_AT_W4",
+          "ad_id": "120252281651150233",
+          "creative_id": "1604096254548431",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_sep21_VID916_DE_AT_W4",
+          "ad_id": "120252281666520233",
+          "creative_id": "932866879418000",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID916_DE_AT_W4",
+          "ad_id": "120252281679610233",
+          "creative_id": "1397717115819091",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID916_DE_AT_W4",
+          "ad_id": "120252281680250233",
+          "creative_id": "1019961841092247",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID916_DE_AT_W4",
+          "ad_id": "120252281691070233",
+          "creative_id": "4406969749553862",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-two-prices_twoprices_VID916_DE_AT_W4",
+          "ad_id": "120252281692360233",
+          "creative_id": "1801596757509864",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID45_DE_AT_W4",
+          "ad_id": "120252282636350233",
+          "creative_id": "1797950451652933",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID45_DE_AT_W4",
+          "ad_id": "120252282636700233",
+          "creative_id": "1084553400833753",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID45_DE_AT_W4",
+          "ad_id": "120252282655660233",
+          "creative_id": "1461543699367125",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID45_DE_AT_W4",
+          "ad_id": "120252282655740233",
+          "creative_id": "1111987128012620",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_vo_VID45_DE_AT_W4",
+          "ad_id": "120252282655950233",
+          "creative_id": "1964458200917006",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID45_DE_AT_W4",
+          "ad_id": "120252282664540233",
+          "creative_id": "1483466653801595",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID45_DE_AT_W4",
+          "ad_id": "120252282665630233",
+          "creative_id": "1571106184022396",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID45_DE_AT_W4",
+          "ad_id": "120252282666120233",
+          "creative_id": "1502969028521478",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-before-dec31_dec31_VID45_DE_AT_W4",
+          "ad_id": "120252282674450233",
+          "creative_id": "2136860507267764",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID45_DE_AT_W4",
+          "ad_id": "120252282674590233",
+          "creative_id": "3424139587758321",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID45_DE_AT_W4",
+          "ad_id": "120252282691500233",
+          "creative_id": "1407869894653178",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_sep21_VID45_DE_AT_W4",
+          "ad_id": "120252282692070233",
+          "creative_id": "2137948890432862",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID45_DE_AT_W4",
+          "ad_id": "120252282692530233",
+          "creative_id": "1731582601428703",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID45_DE_AT_W4",
+          "ad_id": "120252282709020233",
+          "creative_id": "1075700441828312",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID45_DE_AT_W4",
+          "ad_id": "120252282722220233",
+          "creative_id": "2277784359739704",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-two-prices_twoprices_VID45_DE_AT_W4",
+          "ad_id": "120252282723450233",
+          "creative_id": "1853465799365327",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278950760233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
         }
       ],
       "counts": {
-        "video": 31,
-        "image": 5,
-        "total": 36
-      }
+        "video": 63,
+        "image": 20,
+        "total": 83
+      },
+      "w4_adsets": [
+        {
+          "name": "AT_BROAD-W4A_AUTO_ADV",
+          "id": "120252278950760233",
+          "slot": "W4A",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250543084900233",
+          "batch": "w4-2026-09-17-ALL"
+        }
+      ],
+      "w4_form_ids": {
+        "W4_DE_default": "4604085466547562",
+        "W4_DE_instalment": "1107392061800097"
+      },
+      "batches": [
+        "v3-2026-07-28",
+        "w3-2026-09-01",
+        "w4-2026-09-17-ALL"
+      ]
     },
     {
       "name": "MB_LEADS_TR_MIX_202607",
@@ -2238,13 +5145,423 @@
           "type": "image",
           "status": "ACTIVE",
           "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litB_IMG45_TR_W4",
+          "ad_id": "120252280916630233",
+          "creative_id": "28511135578537241",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardA_IMG45_TR_W4",
+          "ad_id": "120252280935590233",
+          "creative_id": "1030329413340435",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardB_IMG45_TR_W4",
+          "ad_id": "120252280942740233",
+          "creative_id": "1114123551197858",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardC_IMG45_TR_W4",
+          "ad_id": "120252280944750233",
+          "creative_id": "3740294389443630",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardF_IMG45_TR_W4",
+          "ad_id": "120252280974310233",
+          "creative_id": "4757788971217484",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardG_IMG45_TR_W4",
+          "ad_id": "120252280999950233",
+          "creative_id": "2226457154960099",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_static-bigstat_IMG45_TR_W4",
+          "ad_id": "120252281000480233",
+          "creative_id": "3590474757784860",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-hotel154_IMG45_TR_W4",
+          "ad_id": "120252281008510233",
+          "creative_id": "957241340057399",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-1br_CAR45_TR_W4",
+          "ad_id": "120252281014210233",
+          "creative_id": "2582711412160294",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID916_TR_W4",
+          "ad_id": "120252282038230233",
+          "creative_id": "4500007790269156",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID916_TR_W4",
+          "ad_id": "120252282038760233",
+          "creative_id": "1596618438602509",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID916_TR_W4",
+          "ad_id": "120252282119970233",
+          "creative_id": "1606165211202563",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID916_TR_W4",
+          "ad_id": "120252282132440233",
+          "creative_id": "3337685783081384",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID916_TR_W4",
+          "ad_id": "120252282143850233",
+          "creative_id": "1631120065093469",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID916_TR_W4",
+          "ad_id": "120252282144060233",
+          "creative_id": "1400516408886838",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID916_TR_W4",
+          "ad_id": "120252282144400233",
+          "creative_id": "1464330685509170",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID916_TR_W4",
+          "ad_id": "120252282144960233",
+          "creative_id": "1024832843923040",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID916_TR_W4",
+          "ad_id": "120252282145150233",
+          "creative_id": "2096953530894346",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID916_TR_W4",
+          "ad_id": "120252282145570233",
+          "creative_id": "1280069705197783",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID916_TR_W4",
+          "ad_id": "120252282145820233",
+          "creative_id": "1596797605234164",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID916_TR_W4",
+          "ad_id": "120252282155120233",
+          "creative_id": "1676759747216089",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID916_TR_W4",
+          "ad_id": "120252282162950233",
+          "creative_id": "1512596273966067",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID916_TR_W4",
+          "ad_id": "120252282163480233",
+          "creative_id": "1820782739287507",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID916_TR_W4",
+          "ad_id": "120252282172120233",
+          "creative_id": "1784526866048514",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID45_TR_W4",
+          "ad_id": "120252283080320233",
+          "creative_id": "1368194351740361",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID45_TR_W4",
+          "ad_id": "120252283080560233",
+          "creative_id": "1058213783645826",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID45_TR_W4",
+          "ad_id": "120252283089460233",
+          "creative_id": "2561399007617131",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID45_TR_W4",
+          "ad_id": "120252283090020233",
+          "creative_id": "2708812059533227",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID45_TR_W4",
+          "ad_id": "120252283097400233",
+          "creative_id": "4177345492555451",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID45_TR_W4",
+          "ad_id": "120252283097970233",
+          "creative_id": "1066975932900802",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID45_TR_W4",
+          "ad_id": "120252283098170233",
+          "creative_id": "1649919093461481",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID45_TR_W4",
+          "ad_id": "120252283110090233",
+          "creative_id": "1657526662376648",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID45_TR_W4",
+          "ad_id": "120252283111100233",
+          "creative_id": "1586249063241999",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID45_TR_W4",
+          "ad_id": "120252283111830233",
+          "creative_id": "1332186165459121",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID45_TR_W4",
+          "ad_id": "120252283122570233",
+          "creative_id": "1430824755570670",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID45_TR_W4",
+          "ad_id": "120252283123430233",
+          "creative_id": "3691012054396639",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID45_TR_W4",
+          "ad_id": "120252283133000233",
+          "creative_id": "1444287440896957",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID45_TR_W4",
+          "ad_id": "120252283133530233",
+          "creative_id": "1065211132923882",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID45_TR_W4",
+          "ad_id": "120252283139990233",
+          "creative_id": "4573068912965608",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278953110233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
         }
       ],
       "counts": {
-        "video": 25,
-        "image": 5,
-        "total": 30
-      }
+        "video": 55,
+        "image": 14,
+        "total": 69
+      },
+      "w4_adsets": [
+        {
+          "name": "TR_BROAD-W4A_AUTO_ADV",
+          "id": "120252278953110233",
+          "slot": "W4A",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250707887280233",
+          "batch": "w4-2026-09-17-ALL"
+        }
+      ],
+      "w4_form_ids": {
+        "W4_TR_default": "1390489323198129",
+        "W4_TR_instalment": "1413140637584709"
+      },
+      "batches": [
+        "v3-2026-07-28",
+        "w3-2026-09-01",
+        "w4-2026-09-17-ALL"
+      ]
     },
     {
       "name": "MB_LEADS_UA_MIX_202607",
@@ -2476,13 +5793,782 @@
           "type": "image",
           "status": "ACTIVE",
           "batch": "w3-2026-09-01"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_static-cup_IMG45_UA_W4",
+          "ad_id": "120252280803270233",
+          "creative_id": "4212066012261181",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litA_IMG45_UA_W4",
+          "ad_id": "120252280803440233",
+          "creative_id": "1626807908874675",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-literally_litB_IMG45_UA_W4",
+          "ad_id": "120252280811160233",
+          "creative_id": "1093689710150848",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardA_IMG45_UA_W4",
+          "ad_id": "120252280816480233",
+          "creative_id": "947255875104864",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardB_IMG45_UA_W4",
+          "ad_id": "120252280816690233",
+          "creative_id": "1058176383786936",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardE_IMG45_UA_W4",
+          "ad_id": "120252280821400233",
+          "creative_id": "1716627529637205",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-one-number_cardG_IMG45_UA_W4",
+          "ad_id": "120252280821620233",
+          "creative_id": "1061234156720387",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_static-bigstat_IMG45_UA_W4",
+          "ad_id": "120252280828000233",
+          "creative_id": "1670412827789715",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-hotel154_IMG45_UA_W4",
+          "ad_id": "120252280854980233",
+          "creative_id": "1015854578145533",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_static-lobbybar_IMG45_UA_W4",
+          "ad_id": "120252280883740233",
+          "creative_id": "1745263980024456",
+          "type": "image",
+          "format": "IMG45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-1br_CAR45_UA_W4",
+          "ad_id": "120252280889550233",
+          "creative_id": "1101081172262081",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_car-2br_CAR45_UA_W4",
+          "ad_id": "120252280890900233",
+          "creative_id": "1010656191987407",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_car-plans_CAR45_UA_W4",
+          "ad_id": "120252280916020233",
+          "creative_id": "2014299802605961",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_car-details_CAR45_UA_W4",
+          "ad_id": "120252281286320233",
+          "creative_id": "1660364555662756",
+          "type": "image",
+          "format": "CAR45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_alt0_VID916_UA_W4",
+          "ad_id": "120252281830700233",
+          "creative_id": "2100085154229590",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-date_VID916_UA_W4",
+          "ad_id": "120252281831660233",
+          "creative_id": "1384026890598665",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-sept_VID916_UA_W4",
+          "ad_id": "120252281833040233",
+          "creative_id": "1095382520122622",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_silent_VID916_UA_W4",
+          "ad_id": "120252281851210233",
+          "creative_id": "1080352144861697",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID916_UA_W4",
+          "ad_id": "120252281851490233",
+          "creative_id": "942133162278748",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID916_UA_W4",
+          "ad_id": "120252281852420233",
+          "creative_id": "1120204880668567",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID916_UA_W4",
+          "ad_id": "120252281853040233",
+          "creative_id": "1420078656960849",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_alt0_VID916_UA_W4",
+          "ad_id": "120252281865990233",
+          "creative_id": "1617675869768788",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_alt0_VID916_UA_W4",
+          "ad_id": "120252281867240233",
+          "creative_id": "976448785469208",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_sep21_VID916_UA_W4",
+          "ad_id": "120252281868250233",
+          "creative_id": "1018605484538877",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID916_UA_W4",
+          "ad_id": "120252281918140233",
+          "creative_id": "1419336797008471",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID916_UA_W4",
+          "ad_id": "120252281919220233",
+          "creative_id": "946053194622879",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-before-dec31_dec31_VID916_UA_W4",
+          "ad_id": "120252281919620233",
+          "creative_id": "1848549929468601",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-runs-the-rest_runs_VID916_UA_W4",
+          "ad_id": "120252281943070233",
+          "creative_id": "2099017687367954",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID916_UA_W4",
+          "ad_id": "120252281944230233",
+          "creative_id": "1597198278449261",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_hook-yours_VID916_UA_W4",
+          "ad_id": "120252281944990233",
+          "creative_id": "28837190949207790",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID916_UA_W4",
+          "ad_id": "120252281945560233",
+          "creative_id": "28713326671654746",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID916_UA_W4",
+          "ad_id": "120252281968830233",
+          "creative_id": "28103008269392208",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID916_UA_W4",
+          "ad_id": "120252281971530233",
+          "creative_id": "1818748545801696",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID916_UA_W4",
+          "ad_id": "120252281972570233",
+          "creative_id": "1107795004935554",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID916_UA_W4",
+          "ad_id": "120252281974530233",
+          "creative_id": "1520252873239683",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID916_UA_W4",
+          "ad_id": "120252282001600233",
+          "creative_id": "1093801319809235",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_alt0_VID916_UA_W4",
+          "ad_id": "120252282003190233",
+          "creative_id": "1329558352419113",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID916_UA_W4",
+          "ad_id": "120252282004030233",
+          "creative_id": "1050744744605636",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID916_UA_W4",
+          "ad_id": "120252282005440233",
+          "creative_id": "1390124283307303",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID916_UA_W4",
+          "ad_id": "120252282017620233",
+          "creative_id": "1109090671557494",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID916_UA_W4",
+          "ad_id": "120252282017930233",
+          "creative_id": "1394956789494337",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID916_UA_W4",
+          "ad_id": "120252282018350233",
+          "creative_id": "1396209245965507",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID916_UA_W4",
+          "ad_id": "120252282036100233",
+          "creative_id": "1729154654835522",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID916_UA_W4",
+          "ad_id": "120252282036660233",
+          "creative_id": "1644792010633510",
+          "type": "video",
+          "format": "VID916",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_alt0_VID45_UA_W4",
+          "ad_id": "120252282895600233",
+          "creative_id": "1026398093782861",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-date_VID45_UA_W4",
+          "ad_id": "120252282896170233",
+          "creative_id": "1427989606091602",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_hook-sept_VID45_UA_W4",
+          "ad_id": "120252282909390233",
+          "creative_id": "1793096705273987",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-balcony-real_silent_VID45_UA_W4",
+          "ad_id": "120252282910790233",
+          "creative_id": "1400210242178764",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_alt0_VID45_UA_W4",
+          "ad_id": "120252282911500233",
+          "creative_id": "1487096563246098",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-twenty-kitchen_vo_VID45_UA_W4",
+          "ad_id": "120252282922250233",
+          "creative_id": "1662240722185439",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_typing_VID45_UA_W4",
+          "ad_id": "120252282922750233",
+          "creative_id": "1759239348627563",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "FIRSTLINE_w4-chat-thread_alt0_VID45_UA_W4",
+          "ad_id": "120252282940960233",
+          "creative_id": "1590572379434241",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_alt0_VID45_UA_W4",
+          "ad_id": "120252282950660233",
+          "creative_id": "1950844845595293",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "SEASON_w4-holiday-ended_sep21_VID45_UA_W4",
+          "ad_id": "120252282959480233",
+          "creative_id": "1004516455989751",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_living_VID45_UA_W4",
+          "ad_id": "120252282959900233",
+          "creative_id": "1416644100433953",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-site-today_alt0_VID45_UA_W4",
+          "ad_id": "120252282971430233",
+          "creative_id": "2159708281275816",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "INVEST_w4-before-dec31_dec31_VID45_UA_W4",
+          "ad_id": "120252282971940233",
+          "creative_id": "1356279666577318",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-runs-the-rest_runs_VID45_UA_W4",
+          "ad_id": "120252282972820233",
+          "creative_id": "1701088524525385",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952520233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_alt0_VID45_UA_W4",
+          "ad_id": "120252282981950233",
+          "creative_id": "27711831638491170",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_hook-yours_VID45_UA_W4",
+          "ad_id": "120252282982200233",
+          "creative_id": "2518832151863062",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-1br-tour_tour58_VID45_UA_W4",
+          "ad_id": "120252282992510233",
+          "creative_id": "1407517231564449",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_dec_VID45_UA_W4",
+          "ad_id": "120252282992820233",
+          "creative_id": "1587460693020439",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "MELIAHOME_w4-hotel-downstairs_nov_VID45_UA_W4",
+          "ad_id": "120252282998140233",
+          "creative_id": "1719139552499935",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_alt0_VID45_UA_W4",
+          "ad_id": "120252282998670233",
+          "creative_id": "2274779393362063",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_hookB_VID45_UA_W4",
+          "ad_id": "120252282999380233",
+          "creative_id": "1721209892326599",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-not-a-render_dronepass_VID45_UA_W4",
+          "ad_id": "120252283015740233",
+          "creative_id": "1850299086333569",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_alt0_VID45_UA_W4",
+          "ad_id": "120252283016790233",
+          "creative_id": "2720774921693553",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-2br-tour_tour108_VID45_UA_W4",
+          "ad_id": "120252283036050233",
+          "creative_id": "1407152074120474",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_details10_VID45_UA_W4",
+          "ad_id": "120252283036420233",
+          "creative_id": "1017124821364931",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PRODUCT_w4-details_alt0_VID45_UA_W4",
+          "ad_id": "120252283036730233",
+          "creative_id": "2617787968679758",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_alt0_VID45_UA_W4",
+          "ad_id": "120252283044210233",
+          "creative_id": "1078549465096124",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "PROOF_w4-keys-m15_flip_VID45_UA_W4",
+          "ad_id": "120252283044840233",
+          "creative_id": "4485977328286046",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_door_VID45_UA_W4",
+          "ad_id": "120252283053920233",
+          "creative_id": "1074506238518281",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "ENERGY_w4-sound-on_alt0_VID45_UA_W4",
+          "ad_id": "120252283054600233",
+          "creative_id": "1089410190228501",
+          "type": "video",
+          "format": "VID45",
+          "adset_id": "120252278952800233",
+          "status": "PAUSED",
+          "batch": "w4-2026-09-17-ALL"
         }
       ],
       "counts": {
-        "video": 25,
-        "image": 5,
-        "total": 30
-      }
+        "video": 85,
+        "image": 19,
+        "total": 104
+      },
+      "w4_adsets": [
+        {
+          "name": "UA_BROAD-W4A_AUTO_ADV",
+          "id": "120252278952520233",
+          "slot": "W4A",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250708221320233",
+          "batch": "w4-2026-09-17-ALL"
+        },
+        {
+          "name": "UA_BROAD-W4B_AUTO_ADV",
+          "id": "120252278952800233",
+          "slot": "W4B",
+          "daily_budget": "1000",
+          "status": "PAUSED",
+          "donor_adset": "120250708221320233",
+          "batch": "w4-2026-09-17-ALL"
+        }
+      ],
+      "w4_form_ids": {
+        "W4_UA_default": "1435341601799748",
+        "W4_UA_instalment": "1652304946572672"
+      },
+      "batches": [
+        "v3-2026-07-28",
+        "w3-2026-09-01",
+        "w4-2026-09-17-ALL"
+      ]
     },
     {
       "name": "MB_RTG_A_MIX_202607",
@@ -2968,5 +7054,26 @@
   "refresh_2026_07_11": {
     "added_ads": 95,
     "note": "add-only IG-identity refresh; new ads carry instagram_user_id 17841475384506205"
+  },
+  "w4_2026_09_17": {
+    "batch": "w4-2026-09-17-ALL",
+    "ts": "2026-09-18T01:20:40Z",
+    "artifact": "w4_rollout_2026-09-17.json",
+    "note": "wave 4 ALL creatives, 10 new PAUSED ad sets, 393 planned ads, nothing activated",
+    "ads": 393,
+    "adsets": 10,
+    "forms": {
+      "W4_SR_default": "1799272301494339",
+      "W4_SR_instalment": "1405363841737532",
+      "W4_DE_default": "4604085466547562",
+      "W4_DE_instalment": "1107392061800097",
+      "W4_PL_default": "1103999115355975",
+      "W4_PL_instalment": "1741073930445465",
+      "W4_UA_default": "1435341601799748",
+      "W4_UA_instalment": "1652304946572672",
+      "W4_TR_default": "1390489323198129",
+      "W4_TR_instalment": "1413140637584709"
+    },
+    "updated": "2026-09-18T05:43:02Z"
   }
 }

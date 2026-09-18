@@ -1,0 +1,442 @@
+{
+ "PL": {
+  "locale": "pl_PL",
+  "questions": [
+   {
+    "key": "full_name",
+    "label": "Full name",
+    "type": "FULL_NAME",
+    "options": []
+   },
+   {
+    "key": "phone",
+    "label": "Phone number",
+    "type": "PHONE",
+    "options": []
+   },
+   {
+    "key": "email",
+    "label": "Email",
+    "type": "EMAIL",
+    "options": []
+   },
+   {
+    "key": "budget",
+    "label": "Budżet zakupu",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "budget_1",
+      "value": "Do €250 000"
+     },
+     {
+      "key": "budget_2",
+      "value": "€250 000–400 000"
+     },
+     {
+      "key": "budget_3",
+      "value": "€400 000–700 000"
+     },
+     {
+      "key": "budget_4",
+      "value": "Powyżej €700 000"
+     }
+    ]
+   },
+   {
+    "key": "timing",
+    "label": "Kiedy planujesz zakup",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "timing_1",
+      "value": "W ciągu 3 miesięcy"
+     },
+     {
+      "key": "timing_2",
+      "value": "3–6 miesięcy"
+     },
+     {
+      "key": "timing_3",
+      "value": "6–12 miesięcy"
+     },
+     {
+      "key": "timing_4",
+      "value": "Ponad 12 miesięcy"
+     }
+    ]
+   },
+   {
+    "key": "purpose",
+    "label": "Cel zakupu",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "purpose_1",
+      "value": "Dla siebie"
+     },
+     {
+      "key": "purpose_2",
+      "value": "Inwestycja"
+     },
+     {
+      "key": "purpose_3",
+      "value": "Jedno i drugie"
+     }
+    ]
+   }
+  ]
+ },
+ "UA": {
+  "locale": "en_US",
+  "questions": [
+   {
+    "key": "full_name",
+    "label": "Full name",
+    "type": "FULL_NAME",
+    "options": []
+   },
+   {
+    "key": "phone",
+    "label": "Phone number",
+    "type": "PHONE",
+    "options": []
+   },
+   {
+    "key": "email",
+    "label": "Email",
+    "type": "EMAIL",
+    "options": []
+   },
+   {
+    "key": "budget",
+    "label": "Бюджет купівлі",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "budget_1",
+      "value": "До €250 000"
+     },
+     {
+      "key": "budget_2",
+      "value": "€250 000–400 000"
+     },
+     {
+      "key": "budget_3",
+      "value": "€400 000–700 000"
+     },
+     {
+      "key": "budget_4",
+      "value": "Понад €700 000"
+     }
+    ]
+   },
+   {
+    "key": "timing",
+    "label": "Коли плануєте купівлю",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "timing_1",
+      "value": "Протягом 3 місяців"
+     },
+     {
+      "key": "timing_2",
+      "value": "3–6 місяців"
+     },
+     {
+      "key": "timing_3",
+      "value": "6–12 місяців"
+     },
+     {
+      "key": "timing_4",
+      "value": "Понад 12 місяців"
+     }
+    ]
+   },
+   {
+    "key": "purpose",
+    "label": "Мета купівлі",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "purpose_1",
+      "value": "Для себе"
+     },
+     {
+      "key": "purpose_2",
+      "value": "Інвестиція"
+     },
+     {
+      "key": "purpose_3",
+      "value": "І те, й інше"
+     }
+    ]
+   }
+  ]
+ },
+ "TR": {
+  "locale": "tr_TR",
+  "questions": [
+   {
+    "key": "full_name",
+    "label": "Full name",
+    "type": "FULL_NAME",
+    "options": []
+   },
+   {
+    "key": "phone",
+    "label": "Phone number",
+    "type": "PHONE",
+    "options": []
+   },
+   {
+    "key": "email",
+    "label": "Email",
+    "type": "EMAIL",
+    "options": []
+   },
+   {
+    "key": "budget",
+    "label": "Satın alma bütçeniz",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "budget_1",
+      "value": "€250.000'e kadar"
+     },
+     {
+      "key": "budget_2",
+      "value": "€250.000–400.000"
+     },
+     {
+      "key": "budget_3",
+      "value": "€400.000–700.000"
+     },
+     {
+      "key": "budget_4",
+      "value": "€700.000 üzeri"
+     }
+    ]
+   },
+   {
+    "key": "timing",
+    "label": "Ne zaman satın almayı planlıyorsunuz",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "timing_1",
+      "value": "3 ay içinde"
+     },
+     {
+      "key": "timing_2",
+      "value": "3–6 ay"
+     },
+     {
+      "key": "timing_3",
+      "value": "6–12 ay"
+     },
+     {
+      "key": "timing_4",
+      "value": "12 aydan fazla"
+     }
+    ]
+   },
+   {
+    "key": "purpose",
+    "label": "Satın alma amacınız",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "purpose_1",
+      "value": "Kendim için"
+     },
+     {
+      "key": "purpose_2",
+      "value": "Yatırım"
+     },
+     {
+      "key": "purpose_3",
+      "value": "Her ikisi de"
+     }
+    ]
+   }
+  ]
+ },
+ "SR": {
+  "locale": "en_US",
+  "questions": [
+   {
+    "key": "full_name",
+    "label": "Full name",
+    "type": "FULL_NAME",
+    "options": []
+   },
+   {
+    "key": "phone",
+    "label": "Phone number",
+    "type": "PHONE",
+    "options": []
+   },
+   {
+    "key": "email",
+    "label": "Email",
+    "type": "EMAIL",
+    "options": []
+   },
+   {
+    "key": "budget",
+    "label": "Budžet kupovine",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "budget_1",
+      "value": "Do €250.000"
+     },
+     {
+      "key": "budget_2",
+      "value": "€250.000–400.000"
+     },
+     {
+      "key": "budget_3",
+      "value": "€400.000–700.000"
+     },
+     {
+      "key": "budget_4",
+      "value": "Preko €700.000"
+     }
+    ]
+   },
+   {
+    "key": "timing",
+    "label": "Kada planirate kupovinu",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "timing_1",
+      "value": "U naredna 3 meseca"
+     },
+     {
+      "key": "timing_2",
+      "value": "3–6 meseci"
+     },
+     {
+      "key": "timing_3",
+      "value": "6–12 meseci"
+     },
+     {
+      "key": "timing_4",
+      "value": "Više od 12 meseci"
+     }
+    ]
+   },
+   {
+    "key": "purpose",
+    "label": "Svrha kupovine",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "purpose_1",
+      "value": "Za sebe"
+     },
+     {
+      "key": "purpose_2",
+      "value": "Investicija"
+     },
+     {
+      "key": "purpose_3",
+      "value": "Oboje"
+     }
+    ]
+   }
+  ]
+ },
+ "DE": {
+  "locale": "de_DE",
+  "questions": [
+   {
+    "key": "full_name",
+    "label": "Full name",
+    "type": "FULL_NAME",
+    "options": []
+   },
+   {
+    "key": "phone",
+    "label": "Phone number",
+    "type": "PHONE",
+    "options": []
+   },
+   {
+    "key": "email",
+    "label": "Email",
+    "type": "EMAIL",
+    "options": []
+   },
+   {
+    "key": "budget",
+    "label": "Kaufbudget",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "budget_1",
+      "value": "Bis €250.000"
+     },
+     {
+      "key": "budget_2",
+      "value": "€250.000–400.000"
+     },
+     {
+      "key": "budget_3",
+      "value": "€400.000–700.000"
+     },
+     {
+      "key": "budget_4",
+      "value": "Über €700.000"
+     }
+    ]
+   },
+   {
+    "key": "timing",
+    "label": "Zeitrahmen für den Kauf",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "timing_1",
+      "value": "Innerhalb von 3 Monaten"
+     },
+     {
+      "key": "timing_2",
+      "value": "3–6 Monate"
+     },
+     {
+      "key": "timing_3",
+      "value": "6–12 Monate"
+     },
+     {
+      "key": "timing_4",
+      "value": "Über 12 Monate"
+     }
+    ]
+   },
+   {
+    "key": "purpose",
+    "label": "Zweck des Kaufs",
+    "type": "CUSTOM",
+    "options": [
+     {
+      "key": "purpose_1",
+      "value": "Für mich selbst"
+     },
+     {
+      "key": "purpose_2",
+      "value": "Investition"
+     },
+     {
+      "key": "purpose_3",
+      "value": "Beides"
+     }
+    ]
+   }
+  ]
+ }
+}
