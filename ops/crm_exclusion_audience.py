@@ -6,7 +6,7 @@ Runs ON the CRM box (root@crm.kvadra.me) with /opt/facebook-ads/.venv/bin/python
   python crm_exclusion_audience.py status  # audience id / approximate size / adsets' exclusions
 
 PII never leaves the box: only SHA256 hashes go to Meta (schema EMAIL+PHONE, Meta normalization rules).
-Never prints tokens. Idempotent by audience name. Weekly refresh = `build` again (usersreplace session).
+Never prints tokens. Idempotent by audience name. Daily cron on the box: crm_exclusion_refresh.sh (additive `build`); `build --replace` = full usersreplace.
 """
 import csv, hashlib, io, json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 
@@ -73,16 +73,24 @@ def build():
     else:
         print("audience exists:", aud["id"])
     aid = aud["id"]
-    # replace semantics (session) so weekly refresh removes nobody by accident but reflects the full list
+    # Additive upload (exclusion lists only ever grow; nothing is removed). `--replace` = full usersreplace session.
+    replace = "--replace" in sys.argv
     session_id = int(time.time()) % 2_000_000_000
     batches = [rows[i:i + 5000] for i in range(0, len(rows), 5000)]
     for i, b in enumerate(batches):
         payload = {"schema": ["EMAIL", "PHONE"], "data": b}
-        session = {"session_id": session_id, "batch_seq": i + 1, "last_batch_flag": i == len(batches) - 1, "estimated_num_total": len(rows)}
-        r = graph("POST", f"{aid}/usersreplace", data={"payload": json.dumps(payload), "session": json.dumps(session)})
+        data = {"payload": json.dumps(payload)}
+        edge = "users"
+        if replace:
+            edge = "usersreplace"
+            data["session"] = json.dumps({"session_id": session_id, "batch_seq": i + 1, "last_batch_flag": i == len(batches) - 1, "estimated_num_total": len(rows)})
+        r = graph("POST", f"{aid}/{edge}", data=data)
         if "error" in r:
+            sub = r["error"].get("error_subcode")
+            if sub == 1870145:
+                print(f"batch {i+1}: audience still processing a previous update — skipped, next run will catch up"); return aid
             print(f"batch {i+1} ERROR:", json.dumps(r["error"], ensure_ascii=False)); return aid
-        print(f"batch {i+1}/{len(batches)}: received {r.get('num_received')} invalid {r.get('num_invalid_entries')}")
+        print(f"batch {i+1}/{len(batches)} ({edge}): received {r.get('num_received')} invalid {r.get('num_invalid_entries')}")
     return aid
 
 def exclude(adsets):
