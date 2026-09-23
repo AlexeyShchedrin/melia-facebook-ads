@@ -1,0 +1,149 @@
+{
+ "ts": "2026-09-23 11:15",
+ "plan": [
+  {
+   "label": "SR W4-A",
+   "adset": "RS-BA_BROAD-W4A_AUTO_ADV",
+   "was": 10.0,
+   "now": 35.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "SR W4-B (balcony)",
+   "adset": "RS-BA_BROAD-W4B_AUTO_ADV",
+   "was": 10.0,
+   "now": 45.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "SR old control",
+   "adset": "RS-BA_BROAD_AUTO_ADV",
+   "was": 10.0,
+   "now": 25.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "DE+CH W4-A (balcony)",
+   "adset": "DE-CH_BROAD-W4A_AUTO_ADV",
+   "was": 10.0,
+   "now": 60.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "DE+CH W4-B",
+   "adset": "DE-CH_BROAD-W4B_AUTO_ADV",
+   "was": 10.0,
+   "now": 5.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "DE+CH old control",
+   "adset": "DE-CH_BROAD_AUTO_ADV",
+   "was": 10.0,
+   "now": 15.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "PL W4-B (balcony)",
+   "adset": "PL_BROAD-W4B_AUTO_ADV",
+   "was": 10.0,
+   "now": 35.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "PL W4-A",
+   "adset": "PL_BROAD-W4A_AUTO_ADV",
+   "was": 10.0,
+   "now": 5.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "PL old control",
+   "adset": "PL_BROAD_AUTO_ADV",
+   "was": 5.0,
+   "now": 5.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "UA W4-A (balcony)",
+   "adset": "UA_BROAD-W4A_AUTO_ADV",
+   "was": 10.0,
+   "now": 35.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "UA W4-B",
+   "adset": "UA_BROAD-W4B_AUTO_ADV",
+   "was": 10.0,
+   "now": 5.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "UA old control",
+   "adset": "UA_BROAD_AUTO_ADV",
+   "was": 5.0,
+   "now": 5.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "AT W4",
+   "adset": "AT_BROAD-W4A_AUTO_ADV",
+   "was": 10.0,
+   "now": 20.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "AT old control",
+   "adset": "AT_BROAD_AUTO_ADV",
+   "was": 5.0,
+   "now": 5.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "TR W4",
+   "adset": "TR_BROAD-W4A_AUTO_ADV",
+   "was": 10.0,
+   "now": 45.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "TR old control",
+   "adset": "TR_BROAD_AUTO_ADV",
+   "was": 5.0,
+   "now": 5.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "RTG-B Balkans",
+   "adset": "RS-BA-ME_RTG_AUTO_ADV",
+   "was": 10.0,
+   "now": 30.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  },
+  {
+   "label": "ME",
+   "adset": "ME_BROAD_AUTO_ADV",
+   "was": 10.0,
+   "now": 10.0,
+   "status": "ACTIVE",
+   "check": "OK"
+  }
+ ]
+}
