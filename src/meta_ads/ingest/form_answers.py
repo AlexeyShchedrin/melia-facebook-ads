@@ -132,7 +132,7 @@ class FormQuestionsCache:
         try:
             form = await get_form_questions(form_id, page_id)
         except Exception:  # noqa: BLE001
-            logger.warning("form questions: could not fetch form %s", form_id, exc_info=True)
+            logger.warning("form questions: could not fetch form %s", form_id)
             return None
         questions = [dict(q) for q in form.get("questions") or [] if isinstance(q, Mapping)]
         self._memo[form_id] = questions
@@ -152,7 +152,7 @@ class FormQuestionsCache:
                     )
                 ).first()
         except Exception:  # noqa: BLE001
-            logger.warning("form questions: cache read failed for form %s", form_id, exc_info=True)
+            logger.warning("form questions: cache read failed for form %s", form_id)
             return None
         if row is None or not isinstance(row[0], list):
             return None
@@ -187,4 +187,4 @@ class FormQuestionsCache:
                     },
                 )
         except Exception:  # noqa: BLE001
-            logger.warning("form questions: cache write failed for form %s", form_id, exc_info=True)
+            logger.warning("form questions: cache write failed for form %s", form_id)

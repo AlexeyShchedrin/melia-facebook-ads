@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from types import SimpleNamespace
 from typing import Any
 
 import pytest
@@ -234,6 +235,7 @@ async def test_payload_carries_fields_and_labeled_answers(graph, monkeypatch) ->
     async def names(*_a: Any, **_k: Any) -> dict[str, str]:
         return {"form_name": "LF_EN"}
 
+    monkeypatch.setattr(resolver_mod, "get_settings", lambda: SimpleNamespace(meta_app_id="123", meta_page_id="456"))
     monkeypatch.setattr(resolver_mod, "_names_for", names)
     monkeypatch.setattr(resolver_mod, "_form_questions", FormQuestionsCache())
     raw = {
@@ -267,6 +269,7 @@ async def test_identity_only_lead_has_no_answers_key(graph, monkeypatch) -> None
     async def names(*_a: Any, **_k: Any) -> dict[str, str]:
         return {}
 
+    monkeypatch.setattr(resolver_mod, "get_settings", lambda: SimpleNamespace(meta_app_id="123", meta_page_id="456"))
     monkeypatch.setattr(resolver_mod, "_names_for", names)
     raw = {"form_id": "f1", "field_data": [{"name": "email", "values": ["a@b.c"]}]}
     payload = await build_crm_payload("L2", raw, None, None, session=FakeSession())

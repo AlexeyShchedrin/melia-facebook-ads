@@ -94,8 +94,6 @@ def plan_polls(
             continue
         theirs = form.get("leads_count")
         ours = our_counts.get(form_id, 0)
-        if not theirs and not ours:
-            continue  # a form that has never taken a lead — nothing to reconcile
         if isinstance(theirs, int) and theirs > ours:
             plans.append(
                 FormPoll(
@@ -128,11 +126,21 @@ class LeadPoller:
 
         page_id rides along (NULL for pre-multi-page rows = primary Page) so a
         retry resolves with the same Page token the live attempt used."""
+        has_retry_contract = await session.scalar(
+            text("SELECT to_regclass('ads_contract.v_meta_retry_requests') IS NOT NULL")
+        )
+        retry_join = (
+            "LEFT JOIN ads_contract.v_meta_retry_requests r ON r.leadgen_id = p.leadgen_id "
+            "AND r.connection_key = p.connection_key AND r.page_id = p.page_id AND r.form_id = p.form_id "
+            if has_retry_contract else ""
+        )
+        requested = " OR r.requested_at > p.processed_at" if has_retry_contract else ""
         rows = await session.execute(
             text(
-                "SELECT leadgen_id, form_id, page_id FROM meta.processed_inbound "
-                "WHERE crm_lead_id IS NULL AND attempts < :max "
-                "ORDER BY processed_at LIMIT :lim"
+                "SELECT p.leadgen_id, p.form_id, p.page_id FROM meta.processed_inbound p "
+                + retry_join +
+                "WHERE p.crm_lead_id IS NULL AND p.agency_inquiry_id IS NULL "
+                f"AND (p.attempts < :max{requested}) ORDER BY p.processed_at LIMIT :lim"
             ),
             {
                 "max": self._settings.fb_lead_poll_max_attempts,
@@ -173,7 +181,7 @@ class LeadPoller:
             try:
                 page_forms = await list_forms(page_id)
             except Exception:  # noqa: BLE001
-                logger.exception("lead_poll: listing forms for page %s failed", page_id)
+                logger.warning("lead_poll: listing forms for page %s failed", page_id)
                 continue
             plans.extend(
                 plan_polls(
@@ -195,7 +203,7 @@ class LeadPoller:
                 )
             except Exception:  # noqa: BLE001
                 # One unreadable form must not sink the sweep for the other 15.
-                logger.exception("lead_poll: polling form %s failed", plan.form_id)
+                logger.warning("lead_poll: polling form %s failed", plan.form_id)
                 continue
             outcome.forms_polled += 1
             if plan.reason != "routine":

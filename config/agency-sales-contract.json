@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "contract": "agency-sales-inquiry-v2",
+  "capabilities": [
+    "nullable-client-inquiry-receipt",
+    "meta-uuid-inquiry-result",
+    "permanent-sales-activation-latch"
+  ],
+  "databaseDowngradeSupported": false
+}

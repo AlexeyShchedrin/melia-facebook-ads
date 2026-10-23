@@ -43,8 +43,9 @@ def planned(forms: list[dict[str, Any]], counts: dict[str, int]) -> list[Any]:
 # ── planning ────────────────────────────────────────────────────────────────
 
 
-def test_form_that_never_took_a_lead_is_skipped() -> None:
-    assert planned([form("f1", leads=0)], {}) == []
+def test_zero_count_new_form_is_swept_to_recover_its_first_dropped_webhook() -> None:
+    [plan] = planned([form("f1", leads=0)], {})
+    assert plan.since_unix == NOW - DAY
 
 
 def test_inactive_form_is_skipped() -> None:
@@ -123,6 +124,8 @@ class FakeSession:
         raise AssertionError(f"unexpected query: {sql}")
 
     async def scalar(self, stmt: Any, params: dict[str, Any] | None = None) -> bool:
+        if "to_regclass" in str(stmt):
+            return False
         assert "pg_try_advisory_xact_lock" in str(stmt)
         return self._owner.lock_free
 

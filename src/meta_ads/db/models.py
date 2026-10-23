@@ -3,10 +3,12 @@ from __future__ import annotations
 from datetime import date, datetime
 from decimal import Decimal
 from typing import Any
+from uuid import UUID
 
 from sqlalchemy import (
     BigInteger,
     Boolean,
+    CheckConstraint,
     Date,
     DateTime,
     Index,
@@ -18,6 +20,7 @@ from sqlalchemy import (
     func,
 )
 from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.dialects.postgresql import UUID as PG_UUID
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
@@ -150,6 +153,13 @@ class ProcessedInbound(Base):
     __tablename__ = "processed_inbound"
     __table_args__ = (
         Index("ix_meta_processed_inbound_form", "form_id"),
+        CheckConstraint(
+            "COALESCE((result_kind IS NULL AND crm_lead_id IS NULL AND agency_inquiry_id IS NULL AND agency_lead_id IS NULL AND match_status IS NULL) OR "
+            "((result_kind = 'project' OR result_kind IS NULL) AND crm_lead_id > 0 AND agency_inquiry_id IS NULL AND agency_lead_id IS NULL AND match_status IS NULL) OR "
+            "(result_kind = 'agency' AND crm_lead_id IS NULL AND agency_inquiry_id IS NOT NULL AND "
+            "((match_status = 'matched' AND agency_lead_id IS NOT NULL) OR (match_status IN ('conflict','unresolved') AND agency_lead_id IS NULL))), FALSE)",
+            name="ck_meta_inbound_result",
+        ),
         {"schema": SCHEMA},
     )
 
@@ -161,6 +171,12 @@ class ProcessedInbound(Base):
     # failed lead would burn its remaining attempts with the wrong token.
     page_id: Mapped[str | None] = mapped_column(String(64), nullable=True)
     crm_lead_id: Mapped[int | None] = mapped_column(BigInteger, nullable=True)
+    connection_key: Mapped[str | None] = mapped_column(String(160), nullable=True)
+    result_kind: Mapped[str | None] = mapped_column(String(16), nullable=True)
+    agency_inquiry_id: Mapped[UUID | None] = mapped_column(PG_UUID(as_uuid=True), nullable=True)
+    agency_lead_id: Mapped[UUID | None] = mapped_column(PG_UUID(as_uuid=True), nullable=True)
+    match_status: Mapped[str | None] = mapped_column(String(16), nullable=True)
+    delivered_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     error: Mapped[str | None] = mapped_column(Text, nullable=True)
     attempts: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     processed_at: Mapped[datetime] = mapped_column(

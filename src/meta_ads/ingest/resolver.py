@@ -20,6 +20,7 @@ import httpx
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from meta_ads.channels.meta.client import GraphError
 from meta_ads.channels.meta.leads import (
     field_data_to_map,
     resolve_ad_names,
@@ -27,6 +28,7 @@ from meta_ads.channels.meta.leads import (
     resolve_lead,
 )
 from meta_ads.config import get_settings
+from meta_ads.ingest.contract import CrmResult, connection_key, parse_crm_result
 from meta_ads.ingest.form_answers import FormQuestionsCache, build_answers
 from meta_ads.security import sign_ingest
 
@@ -87,10 +89,19 @@ async def build_crm_payload(
     label cache read/write meta.leadgen_form_questions; without it (tests,
     ad-hoc calls) labels come from the memo or a direct Graph read.
     """
+    settings = get_settings()
+    page_id = page_id or settings.meta_page_id
+    if raw.get("id") is not None and str(raw["id"]) != leadgen_id:
+        raise ValueError("Resolved lead identity differs from the queued lead")
+    if form_id_hint and raw.get("form_id") and str(raw["form_id"]) != form_id_hint:
+        raise ValueError("Resolved form identity differs from the queued form")
     form_id = raw.get("form_id") or form_id_hint
     names = await _names_for(raw.get("ad_id"), form_id, page_id)
     fields = field_data_to_map(raw.get("field_data", []))
     payload: dict[str, Any] = {
+        "contract_version": 2,
+        "connection_key": connection_key(settings.meta_app_id, page_id),
+        "page_id": page_id,
         "leadgen_id": leadgen_id,
         "form_id": form_id,
         "created_time": raw.get("created_time"),
@@ -147,48 +158,51 @@ class InboundResolver:
         ]
 
     async def _record(
-        self, session: AsyncSession, item: _Inbound, *, crm_lead_id: int | None, error: str | None
+        self, session: AsyncSession, item: _Inbound, *, result: CrmResult | None, error: str | None
     ) -> None:
-        # A leadgen_id can still be recorded twice (a run that predates the advisory
-        # lock, or a retry): one attempt carries the crm_lead_id, the other an error.
-        # This SET list used to omit crm_lead_id, so whichever attempt INSERTed first
-        # decided what stuck -- when the failing one won the race the successful one's
-        # lead id was thrown away AND its NULL error cleared the failure message, which
-        # left 8 ingested leads looking like they never reached the CRM. Keep the id
-        # once we have one, and treat a racing duplicate's error as noise.
+        # Keep the FIRST durable receipt intact, including an agency inquiry with
+        # no matched client. A late error or racing response cannot change its kind.
+        accepted = "(meta.processed_inbound.crm_lead_id IS NOT NULL OR meta.processed_inbound.agency_inquiry_id IS NOT NULL)"
+        result_columns = ["result_kind", "crm_lead_id", "agency_inquiry_id", "agency_lead_id", "match_status"]
+        keep_receipt = ", ".join(
+            f"{column} = CASE WHEN {accepted} THEN meta.processed_inbound.{column} ELSE EXCLUDED.{column} END"
+            for column in result_columns
+        )
         await session.execute(
             text(
                 "INSERT INTO meta.processed_inbound "
-                "(leadgen_id, form_id, page_id, crm_lead_id, error, attempts, processed_at) "
-                "VALUES (:lid, :fid, :pid, :clid, :err, 1, now()) "
-                "ON CONFLICT (leadgen_id) DO UPDATE SET "
-                "crm_lead_id = COALESCE(EXCLUDED.crm_lead_id, meta.processed_inbound.crm_lead_id), "
-                # page_id is COALESCE-preserved like crm_lead_id: without it the
-                # lead_poll retry would re-resolve a non-primary page's lead with
-                # the wrong (primary) Page token and burn all 5 attempts.
-                "page_id = COALESCE(EXCLUDED.page_id, meta.processed_inbound.page_id), "
-                "error = CASE WHEN COALESCE(EXCLUDED.crm_lead_id, meta.processed_inbound.crm_lead_id) "
-                "IS NULL THEN EXCLUDED.error ELSE NULL END, "
-                "attempts = meta.processed_inbound.attempts + 1, processed_at = now()"
+                "(leadgen_id, form_id, page_id, connection_key, result_kind, crm_lead_id, "
+                "agency_inquiry_id, agency_lead_id, match_status, delivered_at, error, attempts, processed_at) "
+                "VALUES (:lid, :fid, :pid, :connection, :kind, :clid, :inquiry, :agency_lead, :match, CASE WHEN CAST(:kind AS varchar) IS NOT NULL THEN clock_timestamp() ELSE NULL END, :err, 1, clock_timestamp()) "
+                "ON CONFLICT (leadgen_id) DO UPDATE SET " + keep_receipt + ", "
+                "delivered_at = COALESCE(meta.processed_inbound.delivered_at, EXCLUDED.delivered_at), "
+                "page_id = COALESCE(meta.processed_inbound.page_id, EXCLUDED.page_id), "
+                "connection_key = COALESCE(meta.processed_inbound.connection_key, EXCLUDED.connection_key), "
+                f"error = CASE WHEN {accepted} OR EXCLUDED.crm_lead_id IS NOT NULL "
+                "OR EXCLUDED.agency_inquiry_id IS NOT NULL THEN NULL ELSE EXCLUDED.error END, "
+                "attempts = meta.processed_inbound.attempts + 1, processed_at = clock_timestamp()"
             ),
             {
-                "lid": item.leadgen_id,
-                "fid": item.form_id,
-                "pid": item.page_id,
-                "clid": crm_lead_id,
+                "lid": item.leadgen_id, "fid": item.form_id, "pid": item.page_id,
+                "connection": (connection_key(self._settings.meta_app_id, item.page_id or self._settings.meta_page_id)
+                               if self._settings.meta_app_id and (item.page_id or self._settings.meta_page_id) else None),
+                "kind": result.kind if result else None,
+                "clid": result.crm_lead_id if result else None,
+                "inquiry": result.agency_inquiry_id if result else None,
+                "agency_lead": result.agency_lead_id if result else None,
+                "match": result.match_status if result else None,
                 "err": error,
             },
         )
 
-    async def _post_to_crm(self, lead: dict[str, Any]) -> int | None:
-        """HMAC-sign and POST the resolved lead to the CRM ingest route."""
+    async def _post_to_crm(self, lead: dict[str, Any]) -> CrmResult:
+        """HMAC-sign and require a validated durable receipt from the CRM."""
         body = json.dumps(lead, separators=(",", ":")).encode()
         headers = {"content-type": "application/json", "x-fb-signature": sign_ingest(body)}
         async with httpx.AsyncClient(timeout=30.0) as http:
             resp = await http.post(self._settings.crm_ingest_url, content=body, headers=headers)
             resp.raise_for_status()
-            data = resp.json() if resp.content else {}
-            return data.get("leadId") or data.get("lead_id")  # CRM route answers camelCase
+            return parse_crm_result(resp.json() if resp.content else {})
 
     async def ingest_and_record(
         self,
@@ -207,16 +221,45 @@ class InboundResolver:
         (multi-page); None = the primary Page. Returns True when the CRM took the
         lead.
         """
-        item = _Inbound(id=0, leadgen_id=leadgen_id, form_id=form_id, page_id=page_id)
+        item = _Inbound(id=0, leadgen_id=leadgen_id, form_id=form_id, page_id=page_id or self._settings.meta_page_id)
+        # The poller's candidate list was read before acquiring the shared lock.
+        # Recheck here so a concurrently accepted event is never posted again.
+        if await session.scalar(text(
+            "SELECT EXISTS (SELECT 1 FROM meta.processed_inbound WHERE leadgen_id = :id "
+            "AND (crm_lead_id IS NOT NULL OR agency_inquiry_id IS NOT NULL))"
+        ), {"id": leadgen_id}):
+            return True
         try:
             lead = raw if raw is not None else await resolve_lead(leadgen_id, page_id)
             payload = await build_crm_payload(leadgen_id, lead, form_id, page_id, session=session)
-            crm_lead_id = await self._post_to_crm(payload)
-            await self._record(session, item, crm_lead_id=crm_lead_id, error=None)
+            result = await self._post_to_crm(payload)
+            await self._record(session, item, result=result, error=None)
             return True
         except Exception as exc:  # noqa: BLE001
-            logger.exception("resolve failed for leadgen_id=%s", leadgen_id)
-            await self._record(session, item, crm_lead_id=None, error=str(exc))
+            # Graph error strings can include contact data or token-bearing URLs.
+            # Persist and log only stable categories and numeric provider codes.
+            if isinstance(exc, GraphError):
+                code = exc.body.get("error", {}).get("code")
+                error = f"provider_http_{exc.status}_code_{code if isinstance(code, int) else 'unknown'}"
+            elif isinstance(exc, httpx.HTTPStatusError):
+                error = f"crm_http_{exc.response.status_code}"
+                try:
+                    response = exc.response.json()
+                    category = response.get("error") if isinstance(response, dict) else None
+                    if category in {"meta_source_unmapped", "meta_source_disabled", "meta_contract_upgrade_required", "agency_intake_unavailable", "invalid_agency_intake"}:
+                        error = f"crm_{category}"
+                except (ValueError, TypeError):
+                    pass
+            elif isinstance(exc, httpx.TimeoutException):
+                error = "delivery_timeout"
+            elif isinstance(exc, httpx.RequestError):
+                error = "delivery_unavailable"
+            elif isinstance(exc, ValueError):
+                error = "invalid_delivery_contract"
+            else:
+                error = "delivery_failed"
+            logger.warning("resolve failed for leadgen_id=%s: %s", leadgen_id, error)
+            await self._record(session, item, result=None, error=error)
             return False
 
     async def run(self, *, limit: int = 100) -> ResolveOutcome:
