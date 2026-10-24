@@ -21,7 +21,7 @@ Explicit old project form/campaign registry rows retain their routing, including
 
 1. Before deploying the new CRM, compare all active production Meta forms and campaigns with the existing project attribution registry. Resolve unknown or conflicting entries explicitly with the owner. The new CRM rejects unregistered sources immediately on deployment, even while agency sales remain disabled. Do not automatically seed, infer, migrate or reattribute historical leads.
 2. Take the normal database backup and verify the exact CRM/worker commits using the shared acceptance profile.
-3. Apply worker Alembic `0005_agency_intake_receipts` and CRM `0286_agency_meta_sources` with the existing deployment/migration authorities. Neither migration creates a connection or activates sales.
+3. Apply worker Alembic `0005_agency_intake_receipts` and CRM `0287_agency_meta_sources` with the existing deployment/migration authorities. Neither migration creates a connection or activates sales.
 4. Deploy compatible CRM handlers and the worker together before enabling an agency form. The new worker can read old integer responses; the old worker cannot understand UUID agency receipts.
 5. Configure the approved Page/form/optional published property mapping, agency sales latch, integration permissions and worker Page token through the existing authorized operations flow. Tokens stay in the worker, not in the agency UI.
 
